@@ -1,0 +1,60 @@
+WHENEVER I STARTED/RESUMED EARLY ADVISORIES
+
+						2020	2020	2023op	2023op
+						pos.	wind	pos.	wind
+
+DIFFERENCE between NHC and *VC* goes down	459	355	417	353
+DIFFERENCE between NHC and *VC* remains same	20	133	13	138
+DIFFERENCE between NHC and *VC* goes up		382	373	452	391
+
+p-value (either up or down)			0.00437		0.12437	
+
+NHC error goes down				446	267	477	279
+NHC error remains same				1	335	0	357
+NHC error goes up				414	259	405	246
+
+p-value (either up or down)			0.14523	0.38012	0.00838	0.08124
+
+*VC* error goes down				474	389	489	403
+*VC* error remains same				0	92	0	79
+*VC* error goes up				387	380	393	400
+
+p-value (either up or down)			0.00168	0.38650	0.00068	0.47187
+
+diff(NHC,VC)/VCerror goes down			422		374	
+diff(NHC,VC)/VCerror remains same		20		13	
+diff(NHC,VC)/VCerror goes up			419		495	
+
+p-value (either up or down)					0.00002	
+
+-------------------------------------------------------------------------------------
+
+WHENEVER I CEASED/PAUSED EARLY ADVISORIES
+
+						2023	2023	
+						pos.	wind
+
+DIFFERENCE between NHC and *VC* goes down	488	406
+DIFFERENCE between NHC and *VC* remains same	20	112
+DIFFERENCE between NHC and *VC* goes up		435	425
+
+p-value (either up or down)			0.04346	
+
+NHC error goes down				442	280
+NHC error remains same				0	397
+NHC error goes up				501	266
+
+p-value (either up or down)				
+
+*VC* error goes down				444	445
+*VC* error remains same				0	86
+*VC* error goes up				499	412
+
+p-value (either up or down)				
+
+diff(NHC,VC)/VCerror goes down			482	
+diff(NHC,VC)/VCerror remains same		20	
+diff(NHC,VC)/VCerror goes up			441	
+
+p-value (either up or down)			0.09397	
+
