@@ -10,4 +10,6 @@ late_advisoryverification_rsmc.m to compare my late advisory errors with errors 
 
 those files where name contain "nhcdependence" are in order to analyze how my advisory releases have affected behavior of National Hurricane Center ;
 
-tcr_changes.m to analyze how NHC post-season analysis affected my errors and comparable NHC errors.
+tcr_changes.m to analyze how NHC post-season analysis affected my errors and comparable NHC errors ;
+
+two_verification.m to compare my tropical weather outlook errors with NHC errors.
