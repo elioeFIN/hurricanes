@@ -7939,7 +7939,7 @@ basinvect = [basinvect;2;2;2];
 my_wpac_2024_032 = [16.6,119.9,35;    17.2,117.4,40;  17.3,114.2,50;  16.6,110.8,55;  15.5,109.9,35];
 rsmc_wpac_2024_032 = [16.6,120.0,50.4;17.4,117.7,56.0;17.6,113.8,67.2;17.2,110.1,61.6;15.8,109.3,56.0];
 btk_wpac_2024_032 = [17.0,121.2,45;   16.9,118.8,50;  17.0,113.5,60;  16.5,108.4,45;  15.5,107.9,25]; # operationally from U.S. sources
-btk2_wpac_2024_032 = btk_wpac_2024_032; # placeholder
+btk2_wpac_2024_032 = [16.9,121.2,56.0;17.1,118.4,56.0;17.1,113.2,61.6;16.8,108.6,50.4;15.6,108.0,25.0]; # JMA best track (except day 5 wind)
 myvect = [myvect;my_wpac_2024_032];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_032];
 btkvect = [btkvect;btk_wpac_2024_032];
@@ -7952,7 +7952,7 @@ basinvect = [basinvect;1;1;1;1;1];
 my_wpac_2024_033 = [17.3,113.8,55;    17.1,109.8,45;  16.5,109.6,35;  16.6,110.8,30];
 rsmc_wpac_2024_033 = [17.4,113.7,67.2;17.1,109.8,56.0;16.2,109.7,50.4;16.0,110.5,50.4];
 btk_wpac_2024_033 = [17.0,113.5,60;   16.5,108.4,45;  15.5,107.9,25;  16.5,109.0,20]; # operationally from U.S. sources
-btk2_wpac_2024_033 = btk_wpac_2024_033; # placeholder
+btk2_wpac_2024_033 = [17.1,113.2,61.6;16.8,108.6,50.4;15.6,108.0,25.0;16.7,109.0,22.4]; # JMA best track (except days 3-4 wind)
 myvect = [myvect;my_wpac_2024_033];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_033];
 btkvect = [btkvect;btk_wpac_2024_033];
@@ -7965,7 +7965,7 @@ basinvect = [basinvect;1;1;1;1];
 my_wpac_2024_034 = [16.3,108.8,35;    16.3,109.7,0];
 rsmc_wpac_2024_034 = [16.0,108.8,39.2;15.9,109.8,0];
 btk_wpac_2024_034 = [15.3,107.8,30;   16.4,108.7,0]; # operationally from U.S. sources
-btk2_wpac_2024_034 = btk_wpac_2024_034; # placeholder
+btk2_wpac_2024_034 = [15.4,107.8,28.0;16.6,108.7,0]; # JMA best track (except wind)
 myvect = [myvect;my_wpac_2024_034];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_034];
 btkvect = [btkvect;btk_wpac_2024_034];
@@ -7975,10 +7975,10 @@ basinvect = [basinvect;1;1];
 
 # Wpac 035 ... KONG-REY/(LEON) before 2024-10-26-21Z ... certification failed
 
-my_wpac_2024_035 = [16.9,131.1,40;    17.7,128.6,65;  19.5,126.8,90;  22.0,125.0,85;  25.6,123.3,85];
-rsmc_wpac_2024_035 = [17.0,131.1,50.4;17.5,128.6,61.6;19.3,126.7,84.0;21.3,125.1,95.2;25.0,123.2,95.2];
-btk_wpac_2024_035 = [16.7,130.5,50;   17.0,127.9,70;  18.8,125.5,125; 21.0,122.8,115; 25.2,120.1,60]; # operationally from U.S. sources
-btk2_wpac_2024_035 = btk_wpac_2024_035; # placeholder
+my_wpac_2024_035 = [16.9,131.1,40;    17.7,128.6,65;  19.5,126.8,90;   22.0,125.0,85;   25.6,123.3,85];
+rsmc_wpac_2024_035 = [17.0,131.1,50.4;17.5,128.6,61.6;19.3,126.7,84.0; 21.3,125.1,95.2; 25.0,123.2,95.2];
+btk_wpac_2024_035 = [16.7,130.5,50;   17.0,127.9,70;  18.8,125.5,125;  21.0,122.8,115;  25.2,120.1,60]; # operationally from U.S. sources
+btk2_wpac_2024_035 = [16.5,130.3,56.0;17.2,128.0,72.8;18.9,125.4,100.8;21.0,122.8,100.8;25.0,120.2,50.4]; # JMA best track
 myvect = [myvect;my_wpac_2024_035];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_035];
 btkvect = [btkvect;btk_wpac_2024_035];
@@ -7988,10 +7988,10 @@ basinvect = [basinvect;1;1;1;1;1];
 
 # Wpac 036 ... KONG-REY/(LEON) before 2024-10-28-03Z ... certification failed
 
-my_wpac_2024_036 = [17.9,127.1,65;    19.4,124.7,100; 21.4,122.2,100;  25.1,119.4,70;  29.1,122.3,0];
-rsmc_wpac_2024_036 = [17.8,127.3,67.2;19.4,125.0,89.6;21.5,122.6,106.4;25.0,119.8,56.0;28.8,122.9,0];
-btk_wpac_2024_036 = [17.4,127.2,80;   19.1,124.9,130; 22.0,122.2,115;  26.7,120.6,55;  32.6,130.3,0]; # operationally from U.S. sources
-btk2_wpac_2024_036 = btk_wpac_2024_036; # placeholder
+my_wpac_2024_036 = [17.9,127.1,65;    19.4,124.7,100;  21.4,122.2,100;  25.1,119.4,70;  29.1,122.3,0];
+rsmc_wpac_2024_036 = [17.8,127.3,67.2;19.4,125.0,89.6; 21.5,122.6,106.4;25.0,119.8,56.0;28.8,122.9,0];
+btk_wpac_2024_036 = [17.4,127.2,80;   19.1,124.9,130;  22.0,122.2,115;  26.7,120.6,55;  32.6,130.3,0]; # operationally from U.S. sources
+btk2_wpac_2024_036 = [17.5,127.3,84.0;19.1,124.8,112.0;21.9,122.1,95.2; 26.4,120.6,44.8;31.0,128.0,0]; # JMA best track
 myvect = [myvect;my_wpac_2024_036];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_036];
 btkvect = [btkvect;btk_wpac_2024_036];
@@ -8004,7 +8004,7 @@ basinvect = [basinvect;1;1;1;1;1];
 my_wpac_2024_037 = [18.2,126.3,85;    19.7,124.2,105;  23.0,121.6,105;  26.6,120.4,45;  30.5,126.0,0];
 rsmc_wpac_2024_037 = [18.4,126.4,78.4;19.7,124.4,100.8;22.6,121.9,106.4;26.1,119.9,50.4;29.9,124.1,0];
 btk_wpac_2024_037 = [17.8,126.5,95;   19.8,124.2,125;  23.1,121.3,100;  28.3,121.5,50;  34.1,135.0,0]; # operationally from U.S. sources
-btk2_wpac_2024_037 = btk_wpac_2024_037; # placeholder
+btk2_wpac_2024_037 = [17.9,126.7,89.6;19.8,124.3,106.4;23.2,121.3,84.0; 28.3,121.6,44.8;34.1,135.0,0]; # JMA best track (except day 5)
 myvect = [myvect;my_wpac_2024_037];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_037];
 btkvect = [btkvect;btk_wpac_2024_037];
@@ -8017,7 +8017,7 @@ basinvect = [basinvect;1;1;1;1;1];
 my_wpac_2024_038 = [22.0,122.2,130;    26.2,120.3,65;  30.1,124.9,55];
 rsmc_wpac_2024_038 = [22.1,122.2,117.6;26.2,120.2,56.0;30.2,124.7,44.8];
 btk_wpac_2024_038 = [22.0,122.2,115;   26.7,120.6,55;  32.6,130.3,40]; # operationally from U.S. sources
-btk2_wpac_2024_038 = btk_wpac_2024_038; # placeholder
+btk2_wpac_2024_038 = [21.9,122.1,95.2; 26.4,120.6,44.8;31.0,128.0,39.2]; # JMA best track (except day 3 wind)
 myvect = [myvect;my_wpac_2024_038];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_038];
 btkvect = [btkvect;btk_wpac_2024_038];
@@ -8030,7 +8030,7 @@ basinvect = [basinvect;1;1;1];
 my_wpac_2024_039 = [16.6,121.2,65;    18.8,117.6,50;  20.0,115.0,45;  20.6,112.4,0];
 rsmc_wpac_2024_039 = [16.7,121.4,67.2;18.7,117.7,50.4;19.9,114.9,44.8;20.7,113.1,0];
 btk_wpac_2024_039 = [17.0,121.1,70;   19.2,118.1,45;  20.5,115.6,45;  21.2,113.9,0]; # operationally from U.S. sources
-btk2_wpac_2024_039 = btk_wpac_2024_039; # placeholder
+btk2_wpac_2024_039 = [17.1,121.1,61.6;19.1,118.2,50.4;20.7,115.5,44.8;21.2,113.9,0]; # JMA best track
 myvect = [myvect;my_wpac_2024_039];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_039];
 btkvect = [btkvect;btk_wpac_2024_039];
@@ -8040,10 +8040,10 @@ basinvect = [basinvect;1;1;1;1];
 
 # Wpac 040 ... 27W before 2024-11-11-03Z ... CERTIFIED
 
-my_wpac_2024_040 = [13.4,134.1,40;    14.8,128.7,65;  16.7,124.0,90;  19.3,120.1,65;  21.2,119.2,50];
-rsmc_wpac_2024_040 = [13.3,134.3,39.2;14.8,129.0,50.4;16.7,124.4,61.6;19.3,121.2,67.2;21.2,120.5,50.4];
-btk_wpac_2024_040 = [13.6,133.7,45;   15.1,127.8,70;  17.2,123.1,130; 20.5,120.1,65;  22.4,120.3,30]; # operationally from U.S. sources
-btk2_wpac_2024_040 = btk_wpac_2024_040; # placeholder
+my_wpac_2024_040 = [13.4,134.1,40;    14.8,128.7,65;  16.7,124.0,90;   19.3,120.1,65;  21.2,119.2,50];
+rsmc_wpac_2024_040 = [13.3,134.3,39.2;14.8,129.0,50.4;16.7,124.4,61.6; 19.3,121.2,67.2;21.2,120.5,50.4];
+btk_wpac_2024_040 = [13.6,133.7,45;   15.1,127.8,70;  17.2,123.1,130;  20.5,120.1,65;  22.4,120.3,30]; # operationally from U.S. sources
+btk2_wpac_2024_040 = [13.4,133.5,50.4;15.0,127.9,72.8;17.2,123.1,106.4;20.0,120.3,61.6;22.3,120.4,28.0]; # JMA best track (except day 5 wind)
 myvect = [myvect;my_wpac_2024_040];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_040];
 btkvect = [btkvect;btk_wpac_2024_040];
@@ -8056,7 +8056,7 @@ basinvect = [basinvect;1;1;1;1;1];
 my_wpac_2024_041 = [15.6,126.4,65;    18.1,122.1,90;  20.7,120.2,80;  21.6,119.5,45];
 rsmc_wpac_2024_041 = [15.7,126.6,67.2;18.1,122.4,72.8;20.8,120.5,67.2;22.7,121.4,61.6];
 btk_wpac_2024_041 = [15.6,126.5,75;   17.9,122.1,115; 21.1,119.4,45;  22.2,120.6,25]; # operationally from U.S. sources
-btk2_wpac_2024_041 = btk_wpac_2024_041; # placeholder
+btk2_wpac_2024_041 = [15.7,126.4,84.0;17.8,122.2,95.2;20.9,120.1,56.0;22.4,120.5,25.0]; # JMA best track (except day 4 wind)
 myvect = [myvect;my_wpac_2024_041];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_041];
 btkvect = [btkvect;btk_wpac_2024_041];
@@ -8066,10 +8066,10 @@ basinvect = [basinvect;1;1;1;1];
 
 # Wpac 042 ... MAN-YI before 2024-11-12-09Z ... CERTIFIED
 
-my_wpac_2024_042 = [13.5,143.3,35;    12.1,137.3,60;  12.6,130.7,95;  14.6,125.5,100; 17.1,122.6,75];
-rsmc_wpac_2024_042 = [13.4,143.5,44.8;12.1,137.6,61.6;12.6,131.1,84.0;14.7,126.4,95.2;17.1,123.6,95.2];
-btk_wpac_2024_042 = [12.3,142.6,35;   10.6,136.6,50;  10.9,130.4,90;  13.2,125.6,140; 15.8,121.9,130]; # operationally from U.S. sources
-btk2_wpac_2024_042 = btk_wpac_2024_042; # placeholder
+my_wpac_2024_042 = [13.5,143.3,35;    12.1,137.3,60;  12.6,130.7,95;  14.6,125.5,100;  17.1,122.6,75];
+rsmc_wpac_2024_042 = [13.4,143.5,44.8;12.1,137.6,61.6;12.6,131.1,84.0;14.7,126.4,95.2; 17.1,123.6,95.2];
+btk_wpac_2024_042 = [12.3,142.6,35;   10.6,136.6,50;  10.9,130.4,90;  13.2,125.6,140;  15.8,121.9,130]; # operationally from U.S. sources
+btk2_wpac_2024_042 = [12.0,143.6,44.8;10.2,137.1,61.6;10.9,130.4,89.6;13.3,125.6,117.6;15.8,121.9,112.0]; # JMA best track
 myvect = [myvect;my_wpac_2024_042];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_042];
 btkvect = [btkvect;btk_wpac_2024_042];
@@ -8082,7 +8082,7 @@ basinvect = [basinvect;1;1;1;1;1];
 my_wpac_2024_043 = [16.1,125.2,90;    18.8,121.3,90;  21.4,120.2,75;  22.8,121.8,50];
 rsmc_wpac_2024_043 = [16.1,125.3,78.4;18.8,121.6,72.8;21.2,120.5,67.2;22.1,121.7,61.6];
 btk_wpac_2024_043 = [16.2,125.3,115;  18.8,121.1,55;  21.5,119.6,40;  22.1,120.3,25]; # operationally from U.S. sources
-btk2_wpac_2024_043 = btk_wpac_2024_043; # placeholder
+btk2_wpac_2024_043 = [16.2,125.3,89.6;18.7,121.5,72.8;21.4,120.1,50.4;22.2,120.5,25.0]; # JMA best track (except day 4 wind)
 myvect = [myvect;my_wpac_2024_043];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_043];
 btkvect = [btkvect;btk_wpac_2024_043];
@@ -8092,10 +8092,10 @@ basinvect = [basinvect;1;1;1;1];
 
 # Wpac 044 ... MAN-YI before 2024-11-12-15Z ... CERTIFIED
 
-my_wpac_2024_044 = [13.0,141.8,55;    12.0,135.8,80;  12.9,129.9,105; 15.0,125.4,110; 17.0,123.0,90];
-rsmc_wpac_2024_044 = [13.1,142.0,50.4;12.2,136.0,72.8;13.1,129.9,89.6;15.3,125.7,95.2;17.2,123.1,95.2];
-btk_wpac_2024_044 = [11.9,141.2,35;   10.6,135.0,55;  11.5,129.0,100; 13.9,124.6,130; 16.6,120.7,90]; # operationally from U.S. sources
-btk2_wpac_2024_044 = btk_wpac_2024_044; # placeholder
+my_wpac_2024_044 = [13.0,141.8,55;    12.0,135.8,80;  12.9,129.9,105; 15.0,125.4,110;  17.0,123.0,90];
+rsmc_wpac_2024_044 = [13.1,142.0,50.4;12.2,136.0,72.8;13.1,129.9,89.6;15.3,125.7,95.2; 17.2,123.1,95.2];
+btk_wpac_2024_044 = [11.9,141.2,35;   10.6,135.0,55;  11.5,129.0,100; 13.9,124.6,130;  16.6,120.7,90]; # operationally from U.S. sources
+btk2_wpac_2024_044 = [12.4,141.3,44.8;10.5,135.4,61.6;11.4,129.0,95.2;13.9,124.6,117.6;16.5,120.7,95.2]; # JMA best track
 myvect = [myvect;my_wpac_2024_044];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_044];
 btkvect = [btkvect;btk_wpac_2024_044];
@@ -8121,7 +8121,7 @@ basinvect = [basinvect;3;3;3;3;3];
 my_wpac_2024_045 = [13.9,125.0,135;    16.3,121.2,85;  18.6,116.8,55;  18.2,113.5,40];
 rsmc_wpac_2024_045 = [13.9,125.0,106.4;16.4,121.2,84.0;18.5,116.5,67.2;18.0,113.1,39.2];
 btk_wpac_2024_045 = [13.9,124.6,130;   16.6,120.7,90;  18.5,115.9,55;  18.1,112.1,25]; # operationally from U.S. sources
-btk2_wpac_2024_045 = btk_wpac_2024_045; # placeholder
+btk2_wpac_2024_045 = [13.9,124.6,117.6;16.5,120.7,95.2;18.9,116.0,67.2;18.1,112.0,25.0]; # JMA best track (except day 4 wind)
 myvect = [myvect;my_wpac_2024_045];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_045];
 btkvect = [btkvect;btk_wpac_2024_045];
@@ -8147,7 +8147,7 @@ basinvect = [basinvect;3;3;3;3];
 my_nio_2024_07 = [8.4,82.1,35;    10.2,82.2,40;  12.1,81.7,40];
 rsmc_nio_2024_07 = [8.2,81.8,31.8;10.2,81.0,31.8;11.8,80.5,31.8];
 btk_nio_2024_07 = [8.3,82.3,30;   8.9,83.4,25;   10.5,83.3,30]; # operationally from U.S. sources
-btk2_nio_2024_07 = btk_nio_2024_07; # placeholder
+btk2_nio_2024_07 = [8.2,82.4,31.8;9.0,82.2,31.8; 10.4,82.7,31.8]; # IMD prelim report
 myvect = [myvect;my_nio_2024_07];
 rsmcvect = [rsmcvect;rsmc_nio_2024_07];
 btkvect = [btkvect;btk_nio_2024_07];
@@ -8160,7 +8160,7 @@ basinvect = [basinvect;2;2;2];
 my_nio_2024_08 = [9.0,82.2,35;    10.8,81.1,35;  12.2,80.6,45];
 rsmc_nio_2024_08 = [8.3,82.4,31.8;10.1,82.0,37.1;11.7,81.3,37.1];
 btk_nio_2024_08 = [8.6,82.3,30;   9.3,83.8,25;   11.3,82.7,35]; # operationally from U.S. sources
-btk2_nio_2024_08 = btk_nio_2024_08; # placeholder
+btk2_nio_2024_08 = [8.7,82.2,31.8;9.3,82.4,31.8; 10.9,82.5,31.8]; # IMD prelim report
 myvect = [myvect;my_nio_2024_08];
 rsmcvect = [rsmcvect;rsmc_nio_2024_08];
 btkvect = [btkvect;btk_nio_2024_08];
@@ -8173,7 +8173,7 @@ basinvect = [basinvect;2;2;2];
 my_nio_2024_09 = [9.2,82.3,35;    10.2,81.3,40;  11.7,79.5,45];
 rsmc_nio_2024_09 = [8.8,82.5,37.1;10.5,82.1,37.1;12.1,81.1,37.1];
 btk_nio_2024_09 = [8.6,82.4,30;   9.6,84.0,30;   11.9,82.1,40]; # operationally from U.S. sources
-btk2_nio_2024_09 = btk_nio_2024_09; # placeholder
+btk2_nio_2024_09 = [8.9,82.2,31.8;9.6,82.7,31.8; 11.5,81.9,37.1]; # IMD prelim report
 myvect = [myvect;my_nio_2024_09];
 rsmcvect = [rsmcvect;rsmc_nio_2024_09];
 btkvect = [btkvect;btk_nio_2024_09];
@@ -8186,7 +8186,7 @@ basinvect = [basinvect;2;2;2];
 my_nio_2024_10 = [9.9,82.2,35;    11.2,81.5,35;  12.8,80.0,40];
 rsmc_nio_2024_10 = [9.8,82.0,37.1;11.3,81.8,37.1;12.6,80.8,31.8];
 btk_nio_2024_10 = [8.9,83.4,25;   10.5,83.3,30;  12.5,81.4,45]; # operationally from U.S. sources
-btk2_nio_2024_10 = btk_nio_2024_10; # placeholder
+btk2_nio_2024_10 = [9.0,82.2,31.8;10.4,82.7,31.8;12.2,81.2,47.7]; # IMD prelim report
 myvect = [myvect;my_nio_2024_10];
 rsmcvect = [rsmcvect;rsmc_nio_2024_10];
 btkvect = [btkvect;btk_nio_2024_10];
@@ -8199,7 +8199,7 @@ basinvect = [basinvect;2;2;2];
 my_nio_2024_11 = [10.4,81.8,35;    11.4,81.4,35;  13.0,80.7,35];
 rsmc_nio_2024_11 = [10.2,81.8,37.1;11.3,81.3,37.1;12.1,80.4,31.8];
 btk_nio_2024_11 = [9.3,83.8,25;    11.3,82.7,35;  12.4,80.9,45]; # operationally from U.S. sources
-btk2_nio_2024_11 = btk_nio_2024_11; # placeholder
+btk2_nio_2024_11 = [9.3,82.4,31.8; 10.9,82.5,31.8;12.3,80.7,47.7]; # IMD prelim report
 myvect = [myvect;my_nio_2024_11];
 rsmcvect = [rsmcvect;rsmc_nio_2024_11];
 btkvect = [btkvect;btk_nio_2024_11];
@@ -8212,7 +8212,7 @@ basinvect = [basinvect;2;2;2];
 my_shem_2025_003 = [15.5,91.9,40;    16.7,92.2,35;  17.4,91.3,30;  17.4,89.5,25];
 rsmc_shem_2025_003 = [15.2,92.0,44.8;16.6,92.9,39.2;16.7,91.8,33.6;16.4,88.6,28.0];
 btk_shem_2025_003 = [15.4,90.7,45;   17.5,93.8,40;  18.6,94.5,30;  18.7,93.6,25]; # operationally from U.S. sources
-btk2_shem_2025_003 = btk_shem_2025_003; # placeholder
+btk2_shem_2025_003 = [15.3,90.8,56.0;17.5,93.5,39.2;18.6,94.4,33.6;18.7,93.6,28.0]; # BoM best track
 myvect = [myvect;my_shem_2025_003];
 rsmcvect = [rsmcvect;rsmc_shem_2025_003];
 btkvect = [btkvect;btk_shem_2025_003];
@@ -8225,7 +8225,7 @@ basinvect = [basinvect;4;4;4;4];
 my_nio_2024_12 = [10.5,81.7,35;    11.9,81.0,40;  11.6,80.0,30];
 rsmc_nio_2024_12 = [10.4,81.8,37.1;11.5,81.0,37.1;12.3,80.1,31.8];
 btk_nio_2024_12 = [9.6,84.0,30;    11.9,82.1,40;  12.3,80.7,45]; # operationally from U.S. sources
-btk2_nio_2024_12 = btk_nio_2024_12; # placeholder
+btk2_nio_2024_12 = [9.6,82.7,31.8; 11.5,81.9,37.1;12.3,80.3,42.4]; # IMD prelim report
 myvect = [myvect;my_nio_2024_12];
 rsmcvect = [rsmcvect;rsmc_nio_2024_12];
 btkvect = [btkvect;btk_nio_2024_12];
@@ -8238,7 +8238,7 @@ basinvect = [basinvect;2;2;2];
 my_shem_2025_004 = [15.9,91.9,40;    16.8,92.1,35;  16.8,90.0,30];
 rsmc_shem_2025_004 = [16.1,92.1,44.8;16.9,92.6,39.2;16.8,90.5,33.6];
 btk_shem_2025_004 = [16.8,91.9,55;   18.5,94.6,35;  18.5,94.1,30]; # operationally from U.S. sources
-btk2_shem_2025_004 = btk_shem_2025_004; # placeholder
+btk2_shem_2025_004 = [16.7,91.9,61.6;18.4,94.5,33.6;18.7,94.0,28.0]; # BoM best track
 myvect = [myvect;my_shem_2025_004];
 rsmcvect = [rsmcvect;rsmc_shem_2025_004];
 btkvect = [btkvect;btk_shem_2025_004];
@@ -8251,7 +8251,7 @@ basinvect = [basinvect;4;4;4];
 my_nio_2024_13 = [10.0,82.6,35;    11.3,81.4,35;  11.6,80.1,25];
 rsmc_nio_2024_13 = [10.4,81.6,37.1;11.5,80.4,31.8;12.3,79.2,26.5];
 btk_nio_2024_13 = [10.0,83.7,30;   12.3,81.8,40;  12.2,80.3,40]; # operationally from U.S. sources
-btk2_nio_2024_13 = btk_nio_2024_13; # placeholder
+btk2_nio_2024_13 = [10.1,82.8,31.8;11.8,81.7,37.1;12.0,79.8,42.4];
 myvect = [myvect;my_nio_2024_13];
 rsmcvect = [rsmcvect;rsmc_nio_2024_13];
 btkvect = [btkvect;btk_nio_2024_13];
@@ -8264,7 +8264,7 @@ basinvect = [basinvect;2;2;2];
 my_nio_2024_14 = [10.7,82.4,35;    11.6,81.0,30];
 rsmc_nio_2024_14 = [11.0,81.4,31.8;12.0,79.7,26.5];
 btk_nio_2024_14 = [11.3,82.7,35;   12.4,80.9,45]; # operationally from U.S. sources
-btk2_nio_2024_14 = btk_nio_2024_14; # placeholder
+btk2_nio_2024_14 = [10.9,82.5,31.8;12.3,80.7,47.7]; # IMD prelim report
 myvect = [myvect;my_nio_2024_14];
 rsmcvect = [rsmcvect;rsmc_nio_2024_14];
 btkvect = [btkvect;btk_nio_2024_14];
@@ -8277,7 +8277,7 @@ basinvect = [basinvect;2;2];
 my_shem_2025_005 = [17.1,91.9,45;    17.5,90.5,30;  17.4,87.7,25];
 rsmc_shem_2025_005 = [17.2,92.2,56.0;17.6,91.1,33.6;17.3,88.2,28.0];
 btk_shem_2025_005 = [17.5,93.8,40;   18.6,94.5,30;  18.7,93.6,35]; # operationally from U.S. sources
-btk2_shem_2025_005 = btk_shem_2025_005; # placeholder
+btk2_shem_2025_005 = [17.5,93.5,39.2;18.6,94.4,33.6;18.7,93.6,28.0]; # BoM best track
 myvect = [myvect;my_shem_2025_005];
 rsmcvect = [rsmcvect;rsmc_shem_2025_005];
 btkvect = [btkvect;btk_shem_2025_005];
@@ -8290,7 +8290,7 @@ basinvect = [basinvect;4;4;4];
 my_nio_2024_15 = [12.9,80.2,40];
 rsmc_nio_2024_15 = [11.9,80.3,31.8];
 btk_nio_2024_15 = [12.4,80.9,45]; # operationally from U.S. sources
-btk2_nio_2024_15 = btk_nio_2024_15; # placeholder
+btk2_nio_2024_15 = [12.3,80.7,47.7]; # IMD prelim report
 myvect = [myvect;my_nio_2024_15];
 rsmcvect = [rsmcvect;rsmc_nio_2024_15];
 btkvect = [btkvect;btk_nio_2024_15];
@@ -8407,7 +8407,7 @@ basinvect = [basinvect;3;3];
 my_wpac_2024_046 = [11.4,111.2,35;    11.2,109.4,0];
 rsmc_wpac_2024_046 = [11.4,111.1,39.2;11.0,109.5,0];
 btk_wpac_2024_046 = [11.5,112.3,30;   10.6,110.7,0]; # operationally from U.S. sources
-btk2_wpac_2024_046 = btk_wpac_2024_046; # placeholder
+btk2_wpac_2024_046 = [11.5,112.2,39.2;10.6,110.7,0]; # JMA best track
 myvect = [myvect;my_wpac_2024_046];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_046];
 btkvect = [btkvect;btk_wpac_2024_046];
@@ -8420,7 +8420,7 @@ basinvect = [basinvect;1;1];
 my_wpac_2024_047 = [10.8,111.3,35;    11.5,108.9,0];
 rsmc_wpac_2024_047 = [11.0,111.2,39.2;11.5,109.1,0];
 btk_wpac_2024_047 = [11.8,111.9,30;   9.6,110.3,0]; # operationally from U.S. sources
-btk2_wpac_2024_047 = btk_wpac_2024_047; # placeholder
+btk2_wpac_2024_047 = [11.5,112.1,39.2;9.7,110.3,0]; # JMA best track
 myvect = [myvect;my_wpac_2024_047];
 rsmcvect = [rsmcvect;rsmc_wpac_2024_047];
 btkvect = [btkvect;btk_wpac_2024_047];
@@ -8485,10 +8485,10 @@ basinvect = [basinvect;3;3;3;3;3];
 
 # Shem 019 ... 09U/97S before 2025-01-10-09Z ... CERTIFIED
 
-my_shem_2025_019 = [19.2,102.3,30;    19.6,101.5,25;  18.4,99.7,20];
-rsmc_shem_2025_019 = [19.4,102.2,33.6;19.3,101.2,33.6;18.0,99.5,28.0];
-btk_shem_2025_019 = [18.7,102.6,25;   18.9,101.6,25;  17.3,100.4,20]; # operationally from U.S. sources
-btk2_shem_2025_019 = btk_shem_2025_019; # placeholder
+my_shem_2025_019 = [19.2,102.3,30;    19.6,101.5,25;    18.4,99.7,20];
+rsmc_shem_2025_019 = [19.4,102.2,33.6;19.3,101.2,33.6;  18.0,99.5,28.0];
+btk_shem_2025_019 = [18.7,102.6,25;   18.9,101.6,25;    17.3,100.4,20]; # operationally from U.S. sources
+btk2_shem_2025_019 = [18.7,102.6,33.6;18.84,101.63,22.4;17.3,100.5,22.4]; # BoM best track
 myvect = [myvect;my_shem_2025_019];
 rsmcvect = [rsmcvect;rsmc_shem_2025_019];
 btkvect = [btkvect;btk_shem_2025_019];
@@ -8561,6 +8561,814 @@ btk2vect = [btk2vect;btk2_shem_2025_024];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;3;3];
 
+# Shem 025 ... ELVIS before 2025-01-29-03Z ... CERTIFIED
+
+my_shem_2025_025 = [24.9,42.6,40;    28.5,46.4,45;  32.2,51.2,40];
+rsmc_shem_2025_025 = [24.6,42.3,39.2;28.2,45.7,50.4;32.1,50.8,50.4];
+btk_shem_2025_025 = [25.7,43.7,40;   30.6,47.6,40;  36.5,52.7,35]; # operationally from U.S. sources
+btk2_shem_2025_025 = btk_shem_2025_025; # placeholder
+myvect = [myvect;my_shem_2025_025];
+rsmcvect = [rsmcvect;rsmc_shem_2025_025];
+btkvect = [btkvect;btk_shem_2025_025];
+btk2vect = [btk2vect;btk2_shem_2025_025];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Shem 026 ... 07/11S before 2025-01-30-21Z ... CERTIFIED
+
+my_shem_2025_026 = [16.9,63.7,30;    17.9,59.8,35;  19.4,55.8,30;  18.9,53.1,30;  18.6,49.5,35];
+rsmc_shem_2025_026 = [16.9,64.2,39.2;17.9,60.4,33.6;18.9,56.4,28.0;18.8,53.0,33.6;18.0,50.4,39.2];
+btk_shem_2025_026 = [16.9,63.9,35;   18.1,59.7,30;  18.3,53.1,40;  18.7,50.8,35;  20.1,49.6,25]; # operationally from U.S. sources
+btk2_shem_2025_026 = btk_shem_2025_026; # placeholder
+myvect = [myvect;my_shem_2025_026];
+rsmcvect = [rsmcvect;rsmc_shem_2025_026];
+btkvect = [btkvect;btk_shem_2025_026];
+btk2vect = [btk2vect;btk2_shem_2025_026];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 027 ... 07/11S before 2025-01-31-21Z ... CERTIFIED
+
+my_shem_2025_027 = [18.0,59.5,30;    18.8,54.9,35;  18.7,51.4,55;  17.8,45.2,30];
+rsmc_shem_2025_027 = [17.7,59.8,33.6;18.5,55.7,33.6;18.0,51.5,50.4;17.2,46.4,28.0];
+btk_shem_2025_027 = [18.1,59.7,30;   18.3,53.1,40;  18.7,50.8,35;  20.1,49.6,25]; # operationally from U.S. sources
+btk2_shem_2025_027 = btk_shem_2025_027; # placeholder
+myvect = [myvect;my_shem_2025_027];
+rsmcvect = [rsmcvect;rsmc_shem_2025_027];
+btkvect = [btkvect;btk_shem_2025_027];
+btk2vect = [btk2vect;btk2_shem_2025_027];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Shem 028 ... VINCE before 2025-02-04-03Z ... CERTIFIED
+
+my_shem_2025_028 = [18.7,86.1,75];
+rsmc_shem_2025_028 = [18.8,86.3,89.6];
+btk_shem_2025_028 = [18.5,86.9,85]; # operationally from U.S. sources
+btk2_shem_2025_028 = btk_shem_2025_028; # placeholder
+myvect = [myvect;my_shem_2025_028];
+rsmcvect = [rsmcvect;rsmc_shem_2025_028];
+btkvect = [btkvect;btk_shem_2025_028];
+btk2vect = [btk2vect;btk2_shem_2025_028];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;4];
+
+# Shem 029 ... 18U/96S before 2025-02-10-03Z ... CERTIFIED
+
+my_shem_2025_029 = [  16.5,121.2,0;18.0,120.6,0;19.4,120.3,0;20.0,119.4,0;  21.8,119.2,0];
+rsmc_shem_2025_029 = [16.2,120.5,0;17.8,119.7,0;18.9,119.2,0;19.8,119.0,0;  21.4,119.4,0];
+btk_shem_2025_029 = [ 16.7,120.0,0;18.8,118.8,0;19.0,118.2,0;19.5,118.7,0;  21.2,119.4,0]; # operationally from U.S. sources
+btk2_shem_2025_029 = [16.1,120.0,0;18.3,119.3,0;19.0,118.1,0;19.48,118.64,0;21.2,119.4,0]; # BoM best track (except day 5)
+myvect = [myvect;my_shem_2025_029];
+rsmcvect = [rsmcvect;rsmc_shem_2025_029];
+btkvect = [btkvect;btk_shem_2025_029];
+btk2vect = [btk2vect;btk2_shem_2025_029];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 030 ... 18U/96S before 2025-02-10-09Z ... CERTIFIED
+
+my_shem_2025_030 = [  16.7,120.5,0;17.5,120.0,0;18.6,120.0,0;19.5,119.5,0;  20.4,120.4,0];
+rsmc_shem_2025_030 = [16.6,120.3,0;18.1,119.6,0;19.1,119.2,0;20.0,119.0,0;  21.2,119.4,0];
+btk_shem_2025_030 = [ 17.1,119.2,0;19.0,118.7,0;19.1,118.2,0;20.2,119.1,0;  21.5,119.5,0]; # operationally from U.S. sources
+btk2_shem_2025_030 = [16.7,119.6,0;18.9,118.7,0;19.2,118.2,0;20.23,119.13,0;21.5,119.5,0]; # BoM best track (except day 5)
+myvect = [myvect;my_shem_2025_030];
+rsmcvect = [rsmcvect;rsmc_shem_2025_030];
+btkvect = [btkvect;btk_shem_2025_030];
+btk2vect = [btk2vect;btk2_shem_2025_030];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 031 ... 18U/96S before 2025-02-11-03Z ... CERTIFIED
+
+my_shem_2025_031 = [  17.2,120.2,0;18.4,119.1,0;19.9,119.5,0;  20.8,121.2,0];
+rsmc_shem_2025_031 = [17.2,120.1,0;18.6,119.4,0;19.3,119.3,0;  20.8,120.8,0];
+btk_shem_2025_031 = [ 18.8,118.8,0;19.0,118.2,0;19.5,118.7,0;  21.2,119.4,0]; # operationally from U.S. sources
+btk2_shem_2025_031 = [18.3,119.3,0;19.0,118.1,0;19.48,118.64,0;21.2,119.4,0]; # BoM best track (except day 4)
+myvect = [myvect;my_shem_2025_031];
+rsmcvect = [rsmcvect;rsmc_shem_2025_031];
+btkvect = [btkvect;btk_shem_2025_031];
+btk2vect = [btk2vect;btk2_shem_2025_031];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;4;4;4;4];
+
+# Shem 032 ... ZELIA before 2025-02-12-03Z ... CERTIFIED
+
+my_shem_2025_032 = [19.1,119.0,70;     19.7,118.6,90;      21.9,119.4,35];
+rsmc_shem_2025_032 = [19.0,119.2,72.8; 19.6,119.0,95.2;    21.9,119.7,39.2];
+btk_shem_2025_032 = [19.0,118.2,130;   19.5,118.7,115;     21.2,119.4,30]; # operationally from U.S. sources
+btk2_shem_2025_032 = [19.0,118.1,112.0;19.48,118.64,117.6;21.2,119.4,28.0]; # BoM best track (except day 3)
+myvect = [myvect;my_shem_2025_032];
+rsmcvect = [rsmcvect;rsmc_shem_2025_032];
+btkvect = [btkvect;btk_shem_2025_032];
+btk2vect = [btk2vect;btk2_shem_2025_032];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;4;4;4];
+
+# Shem 033 ... ZELIA before 2025-02-12-09Z ... CERTIFIED
+
+my_shem_2025_033 = [19.0,118.0,80;     20.0,117.8,90;     22.5,118.7,35];
+rsmc_shem_2025_033 = [19.2,118.5,78.4; 20.1,118.7,95.2;   22.6,119.3,33.6];
+btk_shem_2025_033 = [19.1,118.2,125;   20.2,119.1,105;    21.5,119.5,30]; # operationally from U.S. sources
+btk2_shem_2025_033 = [19.2,118.2,117.6;20.23,119.13,106.4;21.5,119.5,28.0]; # BoM best track (except day 3)
+myvect = [myvect;my_shem_2025_033];
+rsmcvect = [rsmcvect;rsmc_shem_2025_033];
+btkvect = [btkvect;btk_shem_2025_033];
+btk2vect = [btk2vect;btk2_shem_2025_033];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;4;4;4];
+
+# Shem 034 ... ZELIA before 2025-02-13-03Z ... CERTIFIED
+
+my_shem_2025_034 = [19.6,117.8,120;      21.7,118.0,50];
+rsmc_shem_2025_034 = [19.8,117.9,123.2;  22.0,118.0,50.4];
+btk_shem_2025_034 = [19.5,118.7,115;     21.2,119.4,30]; # operationally from U.S. sources
+btk2_shem_2025_034 = [19.48,118.64,117.6;21.2,119.4,28.0]; # BoM best track (except day 2)
+myvect = [myvect;my_shem_2025_034];
+rsmcvect = [rsmcvect;rsmc_shem_2025_034];
+btkvect = [btkvect;btk_shem_2025_034];
+btk2vect = [btk2vect;btk2_shem_2025_034];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;4;4];
+
+# Shem 035 ... ZELIA before 2025-02-14-03Z ... CERTIFIED
+
+my_shem_2025_035 = [21.9,118.7,45];
+rsmc_shem_2025_035 = [22.1,118.6,56.0];
+btk_shem_2025_035 = [21.2,119.4,30]; # operationally from U.S. sources
+btk2_shem_2025_035 = [21.2,119.4,28.0]; #placeholder (nothing in BoM btk)
+myvect = [myvect;my_shem_2025_035];
+rsmcvect = [rsmcvect;rsmc_shem_2025_035];
+btkvect = [btkvect;btk_shem_2025_035];
+btk2vect = [btk2vect;btk2_shem_2025_035];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;4];
+
+# Shem 036 ... 21U/99S before 2025-02-21-03Z ... CERTIFIED
+
+my_shem_2025_036 = [15.5,112.4,35;    16.5,108.3,50;  18.9,104.8,65;  22.1,103.2,75;   24.6,102.4,55];
+rsmc_shem_2025_036 = [15.1,112.1,39.2;16.0,107.9,56.0;18.1,104.5,67.2;20.9,102.5,78.4; 24.1,101.7,61.6];
+btk_shem_2025_036 = [14.7,112.3,30;   16.2,108.6,30;  18.4,104.6,55;  21.1,102.5,100;  24.7,102.4,65]; # operationally from U.S. sources
+btk2_shem_2025_036 = [15.0,112.3,22.4;16.1,108.4,33.6;18.2,104.6,56.0;21.0,102.5,100.8;24.5,102.1,56.0]; # BoM best track
+myvect = [myvect;my_shem_2025_036];
+rsmcvect = [rsmcvect;rsmc_shem_2025_036];
+btkvect = [btkvect;btk_shem_2025_036];
+btk2vect = [btk2vect;btk2_shem_2025_036];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 037 ... 21U/99S before 2025-02-22-03Z ... CERTIFIED
+
+my_shem_2025_037 = [15.8,108.4,25;    17.3,104.5,35;  20.2,102.2,55;   22.4,100.6,50;  23.0,97.1,30];
+rsmc_shem_2025_037 = [15.9,107.9,33.6;18.1,104.6,44.8;20.8,103.0,61.6; 24.2,102.8,56.0;25.1,102.5,28.0];
+btk_shem_2025_037 = [16.2,108.6,30;   18.4,104.6,55;  21.1,102.5,100;  24.7,102.4,65;  26.6,104.0,35]; # operationally from U.S. sources
+btk2_shem_2025_037 = [16.1,108.4,33.6;18.2,104.6,56.0;21.0,102.5,100.8;24.5,102.1,56.0;26.4,103.8,33.6]; # BoM best track
+myvect = [myvect;my_shem_2025_037];
+rsmcvect = [rsmcvect;rsmc_shem_2025_037];
+btkvect = [btkvect;btk_shem_2025_037];
+btk2vect = [btk2vect;btk2_shem_2025_037];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 038 ... 21U/99S before 2025-02-22-09Z ... CERTIFIED
+
+my_shem_2025_038 = [16.2,107.3,35;    18.5,104.4,45;  21.6,102.9,55;   23.9,102.1,40;  24.3,99.1,20];
+rsmc_shem_2025_038 = [16.4,107.0,33.6;18.7,103.9,39.2;21.7,102.7,56.0; 25.0,103.0,44.8;25.1,102.1,28.0];
+btk_shem_2025_038 = [16.5,107.4,40;   19.0,103.6,75;  21.8,102.3,100;  25.5,102.7,45;  26.8,103.7,30]; # operationally from U.S. sources
+btk2_shem_2025_038 = [16.5,107.0,39.2;19.0,103.7,61.6;21.8,102.2,100.8;25.4,102.7,56.0;25.8,102.5,33.6]; # BoM best track
+myvect = [myvect;my_shem_2025_038];
+rsmcvect = [rsmcvect;rsmc_shem_2025_038];
+btkvect = [btkvect;btk_shem_2025_038];
+btk2vect = [btk2vect;btk2_shem_2025_038];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 039 ... 22U/18P before 2025-02-22-09Z ... CERTIFIED
+
+my_shem_2025_039 = [14.4,151.3,50;    14.9,153.3,60;  15.9,153.9,65;  16.9,154.9,70;  19.3,154.4,65];
+rsmc_shem_2025_039 = [14.2,151.4,50.4;14.7,153.5,61.6;15.6,154.2,67.2;16.5,154.6,72.8;18.0,154.7,78.4];
+btk_shem_2025_039 = [14.7,152.5,50;   13.7,154.3,55;  14.2,154.4,70;  15.2,155.2,80;  17.5,155.4,110]; # operationally from U.S. sources
+btk2_shem_2025_039 = [14.2,152.9,50.4;14.0,154.3,50.4;14.3,154.8,61.6;15.2,155.1,67.2;17.5,155.4,100.8]; # BoM best track
+myvect = [myvect;my_shem_2025_039];
+rsmcvect = [rsmcvect;rsmc_shem_2025_039];
+btkvect = [btkvect;btk_shem_2025_039];
+btk2vect = [btk2vect;btk2_shem_2025_039];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 040 ... ALFRED before 2025-02-24-09Z ... CERTIFIED
+
+my_shem_2025_040 = [14.9,155.3,80;    16.3,155.8,75;  18.5,155.9,75;   19.9,154.9,70;   20.7,153.9,50];
+rsmc_shem_2025_040 = [15.1,155.5,78.4;16.5,156.0,84.0;18.2,156.1,84.0; 19.6,156.2,72.8; 20.7,155.0,56.0];
+btk_shem_2025_040 = [14.2,154.4,70;   15.2,155.2,80;  17.5,155.4,110;  20.0,155.9,105;  22.3,155.6,85]; # operationally from U.S. sources
+btk2_shem_2025_040 = [14.3,154.8,61.6;15.2,155.1,67.2;17.5,155.4,100.8;20.0,155.7,100.8;21.9,155.4,78.4]; # BoM best track
+myvect = [myvect;my_shem_2025_040];
+rsmcvect = [rsmcvect;rsmc_shem_2025_040];
+btkvect = [btkvect;btk_shem_2025_040];
+btk2vect = [btk2vect;btk2_shem_2025_040];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 041 ... GARANCE before 2025-02-26-09Z ... CERTIFIED
+
+my_shem_2025_041 = [18.6,55.4,85;     20.8,55.5,80;  26.1,55.0,65;  31.0,56.1,45];
+rsmc_shem_2025_041 = [18.9,55.4,100.8;21.8,55.4,84.0;27.1,54.9,67.2;31.7,57.3,56.0];
+btk_shem_2025_041 = [18.3,55.3,105;   21.0,55.5,90;  27.8,54.9,55;  33.5,59.0,45]; # operationally from U.S. sources
+btk2_shem_2025_041 = btk_shem_2025_041; # placeholder
+myvect = [myvect;my_shem_2025_041];
+rsmcvect = [rsmcvect;rsmc_shem_2025_041];
+btkvect = [btkvect;btk_shem_2025_041];
+btk2vect = [btk2vect;btk2_shem_2025_041];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Shem 042 ... HONDE before 2025-02-28-03Z ... CERTIFIED
+
+my_shem_2025_042 = [26.2,44.7,60;    26.5,45.4,50;  27.3,45.7,45;  28.1,45.6,40;  29.8,46.3,40];
+rsmc_shem_2025_042 = [26.2,44.6,72.8;26.6,45.3,61.6;26.9,45.7,67.2;27.5,45.7,61.6;29.3,46.0,56.0];
+btk_shem_2025_042 = [27.1,45.7,70;   27.0,45.8,60;  27.1,46.5,55;  28.6,48.0,45;  31.8,49.0,50]; # operationally from U.S. sources
+btk2_shem_2025_042 = btk_shem_2025_042; # placeholder
+myvect = [myvect;my_shem_2025_042];
+rsmcvect = [rsmcvect;rsmc_shem_2025_042];
+btkvect = [btkvect;btk_shem_2025_042];
+btk2vect = [btk2vect;btk2_shem_2025_042];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 043 ... ALFRED before 2025-03-03-03Z ... CERTIFIED
+
+my_shem_2025_043 = [27.2,158.9,45;    27.3,156.5,40;  26.2,154.2,45;  27.0,152.8,25;    27.4,150.2,20];
+rsmc_shem_2025_043 = [27.2,159.1,56.0;27.3,156.7,56.0;26.6,154.7,56.0;26.9,152.4,33.6;  27.2,150.2,28.0];
+btk_shem_2025_043 = [27.3,159.0,55;   27.6,156.4,55;  27.3,155.7,50;  27.6,154.5,45;    27.0,153.3,35]; # operationally from U.S. sources
+btk2_shem_2025_043 = [27.3,159.4,56.0;27.6,156.5,56.0;27.4,155.6,56.0;27.68,154.57,61.6;26.91,153.37,33.6]; # BoM best track
+myvect = [myvect;my_shem_2025_043];
+rsmcvect = [rsmcvect;rsmc_shem_2025_043];
+btkvect = [btkvect;btk_shem_2025_043];
+btk2vect = [btk2vect;btk2_shem_2025_043];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 044 ... ALFRED before 2025-03-03-09Z ... CERTIFIED
+
+my_shem_2025_044 = [27.4,159.1,45;    27.2,156.7,45;  26.7,154.4,50;  27.0,152.4,25];
+rsmc_shem_2025_044 = [27.5,159.2,56.0;27.1,156.2,56.0;26.5,154.2,56.0;26.9,151.8,33.6];
+btk_shem_2025_044 = [28.1,159.0,55;   27.2,156.4,55;  27.3,155.3,50;  27.7,154.1,45]; # operationally from U.S. sources
+btk2_shem_2025_044 = [28.1,159.1,56.0;27.3,156.3,56.0;27.3,155.3,56.0;27.77,154.15,61.6]; # BoM best track
+myvect = [myvect;my_shem_2025_044];
+rsmcvect = [rsmcvect;rsmc_shem_2025_044];
+btkvect = [btkvect;btk_shem_2025_044];
+btk2vect = [btk2vect;btk2_shem_2025_044];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;4;4;4;4];
+
+# Shem 045 ... ALFRED before 2025-03-05-03Z ... CERTIFIED
+
+my_shem_2025_045 = [27.4,155.0,50;    27.2,153.0,40;    27.6,151.8,20];
+rsmc_shem_2025_045 = [27.2,155.0,61.6;27.3,152.8,50.4;  27.4,151.0,28.0];
+btk_shem_2025_045 = [27.3,155.7,50;   27.6,154.5,45;    27.0,153.3,35]; # operationally from U.S. sources
+btk2_shem_2025_045 = [27.4,155.6,56.0;27.68,154.57,61.6;26.91,153.37,33.6]; # BoM best track
+myvect = [myvect;my_shem_2025_045];
+rsmcvect = [rsmcvect;rsmc_shem_2025_045];
+btkvect = [btkvect;btk_shem_2025_045];
+btk2vect = [btk2vect;btk2_shem_2025_045];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;4;4;4];
+
+# Shem 046 ... ALFRED before 2025-03-05-09Z ... CERTIFIED
+
+my_shem_2025_046 = [27.2,154.8,50;    27.4,153.2,35];
+rsmc_shem_2025_046 = [27.3,154.5,67.2;27.3,152.5,39.2];
+btk_shem_2025_046 = [27.3,155.3,50;   27.7,154.1,45]; # operationally from U.S. sources
+btk2_shem_2025_046 = [27.3,155.3,56.0;27.77,154.15,61.6]; # BoM best track
+myvect = [myvect;my_shem_2025_046];
+rsmcvect = [rsmcvect;rsmc_shem_2025_046];
+btkvect = [btkvect;btk_shem_2025_046];
+btk2vect = [btk2vect;btk2_shem_2025_046];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;4;4];
+
+# Shem 047 ... ALFRED before 2025-03-06-21Z ... CERTIFIED
+
+my_shem_2025_047 = [27.2,153.2,40;      27.1,150.8,20];
+rsmc_shem_2025_047 = [27.2,153.2,50.4;  27.2,150.3,28.0];
+btk_shem_2025_047 = [27.3,153.3,35;     27.1,152.8,35]; # operationally from U.S. sources
+btk2_shem_2025_047 = [27.04,153.27,39.2;26.84,151.85,28.0]; # BoM best track
+myvect = [myvect;my_shem_2025_047];
+rsmcvect = [rsmcvect;rsmc_shem_2025_047];
+btkvect = [btkvect;btk_shem_2025_047];
+btk2vect = [btk2vect;btk2_shem_2025_047];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;4;4];
+
+# Shem 048 ... ALFRED before 2025-03-07-03Z ... CERTIFIED
+
+my_shem_2025_048 = [27.2,153.0,35;      28.0,149.6,20];
+rsmc_shem_2025_048 = [27.1,153.3,50.4;  27.7,150.1,28.0];
+btk_shem_2025_048 = [27.0,153.3,35;     26.6,150.3,20]; # operationally from U.S. sources (except day 2)
+btk2_shem_2025_048 = [26.91,153.37,33.6;26.6,150.3,22.4]; # BoM best track
+myvect = [myvect;my_shem_2025_048];
+rsmcvect = [rsmcvect;rsmc_shem_2025_048];
+btkvect = [btkvect;btk_shem_2025_048];
+btk2vect = [btk2vect;btk2_shem_2025_048];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;4;4];
+
+# Shem 049 ... ALFRED before 2025-03-07-09Z ... CERTIFIED
+
+my_shem_2025_049 = [27.0,152.5,30];
+rsmc_shem_2025_049 = [27.0,152.5,33.6];
+btk_shem_2025_049 = [27.0,153.3,35]; # operationally from U.S. sources
+btk2_shem_2025_049 = [26.95,153.31,33.6];
+myvect = [myvect;my_shem_2025_049];
+rsmcvect = [rsmcvect;rsmc_shem_2025_049];
+btkvect = [btkvect;btk_shem_2025_049];
+btk2vect = [btk2vect;btk2_shem_2025_049];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;4];
+
+# Shem 050 ... 12 / 99S before 2025-03-07-21Z ... CERTIFIED
+
+my_shem_2025_050 = [14.3,45.9,35;    14.6,42.2,60;  15.1,39.7,45;  16.5,37.4,25;  19.1,38.2,65];
+rsmc_shem_2025_050 = [14.4,46.0,39.2;14.9,42.2,72.8;15.0,39.6,61.6;16.0,38.0,33.6;17.6,38.6,39.2];
+btk_shem_2025_050 = [14.5,45.6,35;   14.9,41.2,80;  14.5,37.9,45;  16.8,35.4,25;  18.4,35.8,30]; # operationally from U.S. sources
+btk2_shem_2025_050 = btk_shem_2025_050; # placeholder
+myvect = [myvect;my_shem_2025_050];
+rsmcvect = [rsmcvect;rsmc_shem_2025_050];
+btkvect = [btkvect;btk_shem_2025_050];
+btk2vect = [btk2vect;btk2_shem_2025_050];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 051 ... JUDE before 2025-03-09-03Z ... CERTIFIED
+
+my_shem_2025_051 = [15.1,40.9,75;    15.4,38.0,30;  16.8,36.8,25;  19.3,37.1,30;  20.2,40.6,45];
+rsmc_shem_2025_051 = [14.9,40.9,84.0;15.2,38.1,33.6;16.5,36.5,28.0;18.1,37.5,28.0;20.1,41.0,50.4];
+btk_shem_2025_051 = [14.9,40.7,75;   14.6,37.3,35;  17.3,35.1,25;  19.0,36.6,35;  22.5,40.7,45]; # operationally from U.S. sources
+btk2_shem_2025_051 = btk_shem_2025_051; # placeholder
+myvect = [myvect;my_shem_2025_051];
+rsmcvect = [rsmcvect;rsmc_shem_2025_051];
+btkvect = [btkvect;btk_shem_2025_051];
+btk2vect = [btk2vect;btk2_shem_2025_051];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 052 ... JUDE before 2025-03-09-09Z ... CERTIFIED
+
+my_shem_2025_052 = [14.9,40.0,65;    15.4,37.1,30;  17.9,36.6,25;  19.5,38.2,40;  22.5,41.6,45];
+rsmc_shem_2025_052 = [15.0,40.3,67.2;15.6,37.2,39.2;17.3,36.5,33.6;18.8,37.7,39.2;21.7,41.1,56.0];
+btk_shem_2025_052 = [15.2,39.9,65;   15.3,36.5,30;  17.5,35.1,25;  19.6,37.4,40;  23.2,41.5,50]; # operationally from U.S. sources
+btk2_shem_2025_052 = btk_shem_2025_052; # placeholder
+myvect = [myvect;my_shem_2025_052];
+rsmcvect = [rsmcvect;rsmc_shem_2025_052];
+btkvect = [btkvect;btk_shem_2025_052];
+btk2vect = [btk2vect;btk2_shem_2025_052];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 053 ... JUDE before 2025-03-10-21Z ... CERTIFIED
+
+my_shem_2025_053 = [15.7,34.8,25;    17.6,35.8,25;  19.2,38.2,40;  22.5,41.8,55;  26.1,47.1,30];
+rsmc_shem_2025_053 = [16.1,35.3,33.6;17.8,35.7,39.2;19.7,38.5,44.8;22.1,42.5,56.0;24.0,46.6,44.8];
+btk_shem_2025_053 = [16.8,35.4,25;   18.4,35.8,30;  21.5,39.7,45;  24.6,43.3,55;  25.4,49.1,55]; # operationally from U.S. sources
+btk2_shem_2025_053 = btk_shem_2025_053; # placeholder
+myvect = [myvect;my_shem_2025_053];
+rsmcvect = [rsmcvect;rsmc_shem_2025_053];
+btkvect = [btkvect;btk_shem_2025_053];
+btk2vect = [btk2vect;btk2_shem_2025_053];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 054 ... JUDE before 2025-03-12-21Z ... CERTIFIED
+
+my_shem_2025_054 = [20.2,39.5,40;    23.0,43.2,40;  23.5,48.0,30];
+rsmc_shem_2025_054 = [20.4,39.7,39.2;23.3,43.6,44.8;24.4,48.5,39.2];
+btk_shem_2025_054 = [21.5,39.7,45;   24.6,43.3,55;  25.4,49.1,55]; # operationally from U.S. sources
+btk2_shem_2025_054 = btk_shem_2025_054; # placeholder
+myvect = [myvect;my_shem_2025_054];
+rsmcvect = [rsmcvect;rsmc_shem_2025_054];
+btkvect = [btkvect;btk_shem_2025_054];
+btk2vect = [btk2vect;btk2_shem_2025_054];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Shem 055 ... JUDE before 2025-03-13-09Z ... CERTIFIED
+
+my_shem_2025_055 = [22.5,41.3,40;    23.8,45.3,35;  24.0,49.4,35];
+rsmc_shem_2025_055 = [22.1,41.6,50.4;23.8,45.8,39.2;23.7,51.6,39.2];
+btk_shem_2025_055 = [23.2,41.5,50;   25.0,45.2,55;  26.4,53.4,45]; # operationally from U.S. sources
+btk2_shem_2025_055 = btk_shem_2025_055; # placeholder
+myvect = [myvect;my_shem_2025_055];
+rsmcvect = [rsmcvect;rsmc_shem_2025_055];
+btkvect = [btkvect;btk_shem_2025_055];
+btk2vect = [btk2vect;btk2_shem_2025_055];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Shem 056 ... JUDE before 2025-03-14-03Z ... CERTIFIED
+
+my_shem_2025_056 = [24.6,44.0,55;    25.6,49.9,45];
+rsmc_shem_2025_056 = [24.2,44.1,67.2;25.3,50.7,56.0];
+btk_shem_2025_056 = [24.9,43.9,50;   25.8,51.3,50]; # operationally from U.S. sources
+btk2_shem_2025_056 = btk_shem_2025_056; # placeholder
+myvect = [myvect;my_shem_2025_056];
+rsmcvect = [rsmcvect;rsmc_shem_2025_056];
+btkvect = [btkvect;btk_shem_2025_056];
+btk2vect = [btk2vect;btk2_shem_2025_056];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Shem 057 ... 25U/26S before 2025-03-19-03Z ... CERTIFIED
+
+my_shem_2025_057 = [13.8,96.3,35;    15.0,96.9,30;    15.5,97.7,30;  15.7,97.9,30;  16.0,97.5,25];
+rsmc_shem_2025_057 = [13.9,96.8,44.8;14.9,97.3,39.2;  15.3,97.7,33.6;15.5,97.7,33.6;15.6,97.1,33.6];
+btk_shem_2025_057 = [12.9,94.6,45;   14.9,96.5,30;    15.4,98.2,25;  14.5,98.3,25;  12.7,99.4,25]; # operationally from U.S. sources
+btk2_shem_2025_057 = [12.8,94.6,44.8;14.96,96.44,33.6;15.4,98.3,33.6;14.4,98.1,28.0;12.85,99.7,22.4]; # BoM best track
+myvect = [myvect;my_shem_2025_057];
+rsmcvect = [rsmcvect;rsmc_shem_2025_057];
+btkvect = [btkvect;btk_shem_2025_057];
+btk2vect = [btk2vect;btk2_shem_2025_057];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 058 ... 25U/26S before 2025-03-19-09Z ... CERTIFIED
+
+my_shem_2025_058 = [14.1,96.6,35;     15.2,96.7,30;    15.9,96.9,30;   15.0,97.2,35;  14.8,96.3,30];
+rsmc_shem_2025_058 = [14.1,96.7,44.8; 15.2,97.3,39.2;  15.4,97.9,39.2; 15.5,97.8,44.8;15.8,97.9,33.6];
+btk_shem_2025_058 = [13.2,95.0,40;    15.1,96.7,30;    15.3,98.3,25;   13.7,98.0,25;  13.2,100.3,25]; # operationally from U.S. sources
+btk2_shem_2025_058 = [13.24,95.5,39.2;15.05,96.56,33.6;15.3,98.25,28.0;13.8,98.1,28.0;13.2,100.3,28.0]; # BoM best track
+myvect = [myvect;my_shem_2025_058];
+rsmcvect = [rsmcvect;rsmc_shem_2025_058];
+btkvect = [btkvect;btk_shem_2025_058];
+btk2vect = [btk2vect;btk2_shem_2025_058];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 059 ... 25U/26S before 2025-03-19-21Z ... CERTIFIED
+
+my_shem_2025_059 = [14.2,96.8,45;      15.0,98.3,30;   15.4,98.9,30;  15.4,99.9,45;   16.1,100.9,45];
+rsmc_shem_2025_059 = [14.2,96.7,39.2;  15.3,98.6,33.6; 15.6,99.0,33.6;15.6,98.6,39.2; 15.7,97.7,33.6];
+btk_shem_2025_059 = [14.4,96.3,35;     15.5,97.8,25;   14.7,98.3,25;  12.6,98.7,25;   13.0,101.9,25]; # operationally from U.S. sources
+btk2_shem_2025_059 = [14.42,96.34,33.6;15.35,97.9,33.6;14.6,98.3,28.0;12.85,98.4,22.4;12.9,101.8,28.0]; # BoM best track
+myvect = [myvect;my_shem_2025_059];
+rsmcvect = [rsmcvect;rsmc_shem_2025_059];
+btkvect = [btkvect;btk_shem_2025_059];
+btk2vect = [btk2vect;btk2_shem_2025_059];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 060 ... 25U/26S before 2025-03-20-15Z ... CERTIFIED
+
+my_shem_2025_060 = [15.4,97.0,30;    14.7,98.0,25;   13.7,98.7,30;    14.0,98.3,30;   14.3,99.1,25];
+rsmc_shem_2025_060 = [15.3,97.6,33.6;14.7,98.3,28.0; 13.7,99.0,33.6;  14.1,99.7,33.6; 14.5,99.5,39.2];
+btk_shem_2025_060 = [15.4,97.5,25;   15.0,98.5,25;   13.0,98.1,25;    13.3,100.8,25;  14.0,103.4,15]; # operationally from U.S. sources
+btk2_shem_2025_060 = [15.3,97.5,33.6;15.15,98.5,28.0;13.05,98.05,22.4;13.2,100.8,28.0;14.0,103.4,16.8]; # BoM best track (except day 5)
+myvect = [myvect;my_shem_2025_060];
+rsmcvect = [rsmcvect;rsmc_shem_2025_060];
+btkvect = [btkvect;btk_shem_2025_060];
+btk2vect = [btk2vect;btk2_shem_2025_060];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 061 ... 25U/26S before 2025-03-21-03Z ... CERTIFIED
+# (no BoM forecast)
+
+# Shem 062 ... COURTNEY before 2025-03-25-21Z ... CERTIFIED
+
+my_shem_2025_062 = [17.2,103.2,50;    16.9,98.6,55;  17.1,94.0,60;   18.5,89.4,60;   20.3,86.4,70];
+rsmc_shem_2025_062 = [17.1,103.0,50.4;16.6,98.9,61.6;16.9,94.2,67.2; 18.2,89.9,61.6; 19.8,86.8,50.4];
+btk_shem_2025_062 = [17.4,102.2,70;   16.8,98.2,85;  17.4,93.1,115;  19.5,89.3,125;  22.3,87.9,75]; # operationally from U.S. sources
+btk2_shem_2025_062 = [17.3,102.1,72.8;16.6,98.0,78.4;17.4,93.1,100.8;19.5,89.3,123.2;22.3,87.9,72.8]; # BoM best track (except days 4-5)
+myvect = [myvect;my_shem_2025_062];
+rsmcvect = [rsmcvect;rsmc_shem_2025_062];
+btkvect = [btkvect;btk_shem_2025_062];
+btk2vect = [btk2vect;btk2_shem_2025_062];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 063 ... COURTNEY before 2025-03-26-03Z ... CERTIFIED
+
+my_shem_2025_063 = [17.3,102.1,55;    17.2,97.6,70;  17.8,93.0,85;   19.5,89.1,60;   21.2,86.7,70];
+rsmc_shem_2025_063 = [17.4,102.4,67.2;17.0,98.0,78.4;17.7,93.2,95.2; 19.2,89.1,95.2; 21.0,86.7,84.0];
+btk_shem_2025_063 = [17.0,101.1,70;   16.8,97.3,80;  17.6,92.1,115;  20.1,88.8,115;  23.1,88.1,70]; # operationally from U.S. sources
+btk2_shem_2025_063 = [17.1,101.0,72.8;16.5,96.7,78.4;17.5,91.9,112.0;20.1,88.8,115.0;23.1,88.1,70.0]; # BoM best track (except days 4-5)
+myvect = [myvect;my_shem_2025_063];
+rsmcvect = [rsmcvect;rsmc_shem_2025_063];
+btkvect = [btkvect;btk_shem_2025_063];
+btk2vect = [btk2vect;btk2_shem_2025_063];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 064 ... COURTNEY before 2025-03-26-15Z ... CERTIFIED
+
+my_shem_2025_064 = [16.8,98.9,75;    16.9,94.3,90;   18.5,89.9,110;  20.1,87.1,80;   21.6,85.3,65];
+rsmc_shem_2025_064 = [16.9,99.2,78.4;17.1,94.7,100.8;18.5,89.9,117.6;20.1,86.8,106.4;21.7,84.8,72.8];
+btk_shem_2025_064 = [16.8,99.1,80;   17.1,94.6,110;  18.6,90.1,130;  21.8,88.0,80;   24.6,88.8,60]; # operationally from U.S. sources
+btk2_shem_2025_064 = [16.7,99.2,78.4;17.3,94.5,89.6; 18.6,90.1,123.2;21.8,88.0,78.4; 24.6,88.8,61.6]; # BoM best track (except days 4-5)
+myvect = [myvect;my_shem_2025_064];
+rsmcvect = [rsmcvect;rsmc_shem_2025_064];
+btkvect = [btkvect;btk_shem_2025_064];
+btk2vect = [btk2vect;btk2_shem_2025_064];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 065 ... COURTNEY before 2025-03-27-21Z ... CERTIFIED
+
+my_shem_2025_065 = [17.3,93.5,90;     18.9,89.5,100;  21.3,87.7,85;  22.8,87.4,55;  23.6,85.4,35];
+rsmc_shem_2025_065 = [17.2,93.4,100.8;18.8,89.3,112.0;21.1,87.2,95.2;22.8,87.0,61.6;24.1,85.4,50.4];
+btk_shem_2025_065 = [17.4,93.1,115;   19.5,89.3,125;  22.3,87.9,75;  24.8,88.8,55;  24.8,88.5,35]; # operationally from U.S. sources
+btk2_shem_2025_065 = [17.4,93.1,100.8;19.5,89.3,123.2;22.3,87.9,72.8;24.8,88.8,56.0;24.8,88.5,33.6]; # BoM best track (day 1 only)
+myvect = [myvect;my_shem_2025_065];
+rsmcvect = [rsmcvect;rsmc_shem_2025_065];
+btkvect = [btkvect;btk_shem_2025_065];
+btk2vect = [btk2vect;btk2_shem_2025_065];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 066 ... 28U/93S before 2025-03-27-21Z ... CERTIFIED
+
+my_shem_2025_066 = [16.2,124.3,40;    18.6,124.4,20];
+rsmc_shem_2025_066 = [16.2,124.5,44.8;18.9,124.6,28.0];
+btk_shem_2025_066 = [16.2,123.9,50;   19.9,124.8,30]; # operationally from U.S. sources
+btk2_shem_2025_066 = [16.4,123.9,56.0;19.7,124.3,28.0]; # BoM best track
+myvect = [myvect;my_shem_2025_066];
+rsmcvect = [rsmcvect;rsmc_shem_2025_066];
+btkvect = [btkvect;btk_shem_2025_066];
+btk2vect = [btk2vect;btk2_shem_2025_066];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;4;4];
+
+# Shem 067 ... COURTNEY before 2025-03-28-03Z ... CERTIFIED
+
+my_shem_2025_067 = [17.7,92.3,90;     19.5,88.4,95;   22.1,87.6,80;  23.8,87.6,55;  24.9,85.7,25];
+rsmc_shem_2025_067 = [17.6,92.4,95.2; 19.6,88.6,106.4;22.0,87.6,89.6;23.4,87.4,56.0;24.8,85.3,50.4];
+btk_shem_2025_067 = [17.6,92.1,115;   20.1,88.8,115;  23.1,88.1,70;  24.9,88.7,50;  25.2,87.8,35]; # operationally from U.S. sources
+btk2_shem_2025_067 = [17.5,91.9,112.0;20.1,88.8,115.0;23.1,88.1,70.0;24.9,88.7,50.4;25.2,87.8,33.6]; # BoM best track (day 1 only)
+myvect = [myvect;my_shem_2025_067];
+rsmcvect = [rsmcvect;rsmc_shem_2025_067];
+btkvect = [btkvect;btk_shem_2025_067];
+btk2vect = [btk2vect;btk2_shem_2025_067];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 068 ... 28U/93S before 2025-03-28-03Z ... CERTIFIED
+
+my_shem_2025_068 = [17.1,124.1,35;    19.2,124.1,20];
+rsmc_shem_2025_068 = [17.1,124.1,44.8;19.3,124.1,28.0];
+btk_shem_2025_068 = [17.4,123.9,35;   20.3,124.3,25]; # operationally from U.S. sources
+btk2_shem_2025_068 = [17.1,123.9,39.2;20.2,124.3,28.0]; # BoM best track
+myvect = [myvect;my_shem_2025_068];
+rsmcvect = [rsmcvect;rsmc_shem_2025_068];
+btkvect = [btkvect;btk_shem_2025_068];
+btk2vect = [btk2vect;btk2_shem_2025_068];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;4;4];
+
+# Shem 069(a) ... 29U/96P before 2025-04-11-15Z ... CERTIFIED ... relative to BoM
+
+my_shem_2025_069a = [12.1,126.9,40;    13.4,124.4,45;  14.2,122.5,70;  14.2,120.6,85;  14.6,118.1,95];
+rsmc_shem_2025_069a = [11.9,126.9,44.8;13.0,124.4,56.0;13.6,122.4,72.8;13.6,120.4,89.6;14.1,118.2,95.2];
+btk_shem_2025_069a = [11.7,126.4,35;   13.2,124.0,35;  14.0,122.9,40;  13.9,120.8,55;  14.4,118.9,140]; # operationally from U.S. sources
+btk2_shem_2025_069a = [11.5,126.3,33.6;13.1,123.9,33.6;13.7,123.0,33.6;13.8,121.2,39.2;14.3,118.9,106.4]; # BoM best track
+myvect = [myvect;my_shem_2025_069a];
+rsmcvect = [rsmcvect;rsmc_shem_2025_069a];
+btkvect = [btkvect;btk_shem_2025_069a];
+btk2vect = [btk2vect;btk2_shem_2025_069a];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 069(b) ... 29U/96P before 2025-04-11-15Z ... CERTIFIED ... relative to BMKG
+
+my_shem_2025_069b = [12.1,126.9,40;    13.4,124.4,45;  14.2,122.5,70];
+rsmc_shem_2025_069b = [11.9,126.9,44.8;13.0,124.4,56.0;13.6,122.4,72.8];
+btk_shem_2025_069b = [11.7,126.4,35;   13.2,124.0,35;  14.0,122.9,40]; # operationally from U.S. sources
+btk2_shem_2025_069b = [11.5,126.3,33.6;13.1,123.9,33.6;13.7,123.0,33.6]; # BoM best track
+myvect = [myvect;my_shem_2025_069b];
+rsmcvect = [rsmcvect;rsmc_shem_2025_069b];
+btkvect = [btkvect;btk_shem_2025_069b];
+btk2vect = [btk2vect;btk2_shem_2025_069b];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;8;8;8];
+
+# Shem 070 ... 29U/29S before 2025-04-11-21Z ... CERTIFIED
+
+my_shem_2025_070 = [12.5,125.9,40;    13.3,123.2,50;    13.5,121.4,70;  13.5,119.4,85;   14.0,117.1,80];
+rsmc_shem_2025_070 = [12.3,126.0,44.8;13.3,123.5,61.6;  13.6,121.6,78.4;13.7,119.5,89.6; 14.4,117.6,95.2];
+btk_shem_2025_070 = [12.0,126.1,35;   13.3,123.1,40;    13.6,122.6,45;  13.9,120.3,60;   14.7,118.8,125]; # operationally from U.S. sources
+btk2_shem_2025_070 = [11.9,126.1,33.6;13.33,123.36,33.6;13.8,122.8,33.6;13.8,120.25,56.0;14.7,118.85,112.0]; # BoM best track
+myvect = [myvect;my_shem_2025_070];
+rsmcvect = [rsmcvect;rsmc_shem_2025_070];
+btkvect = [btkvect;btk_shem_2025_070];
+btk2vect = [btk2vect;btk2_shem_2025_070];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 071 ... 29U/29S before 2025-04-12-15Z ... CERTIFIED
+
+my_shem_2025_071 = [12.9,124.2,45;    13.2,122.8,60;  13.2,120.8,80;  13.6,118.8,85;   14.3,118.8,75];
+rsmc_shem_2025_071 = [12.9,124.1,50.4;13.2,122.4,67.2;13.2,120.6,84.0;13.4,118.6,95.2; 14.2,118.8,95.2];
+btk_shem_2025_071 = [13.2,124.0,35;   14.0,122.9,40;  13.9,120.8,55;  14.4,118.9,140;  15.3,120.3,80]; # operationally from U.S. sources
+btk2_shem_2025_071 = [13.1,123.9,33.6;13.7,123.0,33.6;13.8,121.2,39.2;14.3,118.9,106.4;15.33,120.45,72.8]; # BoM best track
+myvect = [myvect;my_shem_2025_071];
+rsmcvect = [rsmcvect;rsmc_shem_2025_071];
+btkvect = [btkvect;btk_shem_2025_071];
+btk2vect = [btk2vect;btk2_shem_2025_071];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 072 ... 29U/29S before 2025-04-13-03Z ... CERTIFIED
+
+my_shem_2025_072 = [13.0,124.0,45;    13.1,122.2,50;  13.2,119.9,75;   13.6,118.6,90;     14.4,119.6,55];
+rsmc_shem_2025_072 = [13.1,124.1,44.8;13.3,121.8,56.0;13.4,119.8,78.4; 14.0,118.7,72.8;   14.5,120.0,39.2];
+btk_shem_2025_072 = [13.5,122.5,40;   13.8,122.1,45;  14.1,119.7,80;   15.0,119.0,120;    16.0,123.3,55]; # operationally from U.S. sources
+btk2_shem_2025_072 = [13.4,123.1,33.6;13.8,122.4,39.2;14.0,119.75,67.2;14.98,118.92,112.0;15.6,123.4,39.2]; # BoM best track
+myvect = [myvect;my_shem_2025_072];
+rsmcvect = [rsmcvect;rsmc_shem_2025_072];
+btkvect = [btkvect;btk_shem_2025_072];
+btk2vect = [btk2vect;btk2_shem_2025_072];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 073 ... 29U/29S before 2025-04-14-03Z ... CERTIFIED
+
+my_shem_2025_073 = [13.6,121.2,55;    13.7,118.8,60;   14.2,117.5,70;     14.6,118.7,55];
+rsmc_shem_2025_073 = [13.5,121.2,39.2;13.6,118.7,56.0; 14.1,117.3,72.8;   14.3,118.5,50.4];
+btk_shem_2025_073 = [13.8,122.1,45;   14.1,119.7,80;   15.0,119.0,120;    16.0,123.3,55]; # operationally from U.S. sources
+btk2_shem_2025_073 = [13.8,122.4,39.2;14.0,119.75,67.2;14.98,118.92,112.0;15.6,123.4,39.2]; # BoM best track
+myvect = [myvect;my_shem_2025_073];
+rsmcvect = [rsmcvect;rsmc_shem_2025_073];
+btkvect = [btkvect;btk_shem_2025_073];
+btk2vect = [btk2vect;btk2_shem_2025_073];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;4;4;4;4];
+
+# Shem 074 ... 29U/29S before 2025-04-14-09Z ... CERTIFIED
+
+my_shem_2025_074 = [13.4,121.0,60;    13.7,118.9,60;  14.5,118.0,60;    14.9,119.8,50];
+rsmc_shem_2025_074 = [13.5,120.9,44.8;13.7,118.4,61.6;14.5,117.8,67.2;  15.0,119.7,50.4];
+btk_shem_2025_074 = [14.0,121.6,45;   14.2,119.2,120; 15.3,120.3,80;    16.0,123.9,40]; # operationally from U.S. sources
+btk2_shem_2025_074 = [13.8,121.9,33.6;14.1,119.1,89.6;15.18,119.36,95.2;15.86,124.21,39.2]; # BoM best track
+myvect = [myvect;my_shem_2025_074];
+rsmcvect = [rsmcvect;rsmc_shem_2025_074];
+btkvect = [btkvect;btk_shem_2025_074];
+btk2vect = [btk2vect;btk2_shem_2025_074];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;4;4;4;4];
+
+# Shem 075 ... ERROL before 2025-04-15-21Z ... CERTIFIED
+
+my_shem_2025_075 = [14.1,118.5,90;      14.9,119.8,60;    15.8,122.3,35];
+rsmc_shem_2025_075 = [14.2,118.5,89.6;  14.9,119.6,61.6;  15.8,122.1,39.2];
+btk_shem_2025_075 = [14.7,118.8,125;    16.0,121.6,70;    16.0,125.1,20]; # operationally from U.S. sources
+btk2_shem_2025_075 = [14.7,118.85,112.0;15.37,122.16,61.6;16.0,125.1,22.4]; # BoM best track (except day 3)
+myvect = [myvect;my_shem_2025_075];
+rsmcvect = [rsmcvect;rsmc_shem_2025_075];
+btkvect = [btkvect;btk_shem_2025_075];
+btk2vect = [btk2vect;btk2_shem_2025_075];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;4;4;4];
+
+# Shem 076 ... ERROL before 2025-04-16-03Z ... CERTIFIED
+
+my_shem_2025_076 = [14.6,118.8,90;       15.4,120.4,50];
+rsmc_shem_2025_076 = [14.5,118.7,95.2;   15.1,120.2,56.0];
+btk_shem_2025_076 = [15.0,119.0,120;     16.0,123.3,55]; # operationally from U.S. sources
+btk2_shem_2025_076 = [14.98,118.92,112.0;15.6,123.4,39.2]; # BoM best track
+myvect = [myvect;my_shem_2025_076];
+rsmcvect = [rsmcvect;rsmc_shem_2025_076];
+btkvect = [btkvect;btk_shem_2025_076];
+btk2vect = [btk2vect;btk2_shem_2025_076];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;4;4];
+
+# Shem 077 ... ERROL before 2025-04-16-15Z ... CERTIFIED
+
+my_shem_2025_077 = [15.0,119.4,100;     15.9,122.0,55];
+rsmc_shem_2025_077 = [15.0,119.5,100.8; 15.8,122.1,56.0];
+btk_shem_2025_077 = [15.3,120.3,80;     16.0,124.5,30]; # operationally from U.S. sources
+btk2_shem_2025_077 = [15.33,120.45,72.8;16.18,124.78,28.0]; # BoM best track
+myvect = [myvect;my_shem_2025_077];
+rsmcvect = [rsmcvect;rsmc_shem_2025_077];
+btkvect = [btkvect;btk_shem_2025_077];
+btk2vect = [btk2vect;btk2_shem_2025_077];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;4;4];
+
+# Shem 078 ... ERROL before 2025-04-17-21Z ... CERTIFIED
+
+my_shem_2025_078 = [17.0,124.7,25];
+rsmc_shem_2025_078 = [16.9,124.4,33.6];
+btk_shem_2025_078 = [16.0,125.1,20]; # operationally from U.S. sources
+btk2_shem_2025_078 = [16.0,125.1,22.4]; # nothing in BoM best track
+myvect = [myvect;my_shem_2025_078];
+rsmcvect = [rsmcvect;rsmc_shem_2025_078];
+btkvect = [btkvect;btk_shem_2025_078];
+btk2vect = [btk2vect;btk2_shem_2025_078];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;4];
+
+# Shem 079 ... 30U/97P before 2025-04-17-21Z ... CERTIFIED
+
+my_shem_2025_079 = [11.6,140.7,30;    12.0,141.1,30;  12.0,138.5,25;  11.1,135.8,30;  10.2,133.4,30];
+rsmc_shem_2025_079 = [11.7,140.5,39.2;12.6,140.4,39.2;12.6,138.3,33.6;11.9,135.6,33.6;10.5,132.5,28.0];
+btk_shem_2025_079 = [11.9,141.1,30;   12.5,141.0,30;  12.6,139.5,30;  10.9,135.4,30;  9.8,132.3,20]; # operationally from U.S. sources
+btk2_shem_2025_079 = btk_shem_2025_079; # placeholder
+myvect = [myvect;my_shem_2025_079];
+rsmcvect = [rsmcvect;rsmc_shem_2025_079];
+btkvect = [btkvect;btk_shem_2025_079];
+btk2vect = [btk2vect;btk2_shem_2025_079];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 080 ... 30U/31P before 2025-04-18-21Z ... CERTIFIED
+
+my_shem_2025_080 = [12.6,141.1,35;    12.2,139.1,35;  11.4,135.9,30;  9.5,132.7,30;  8.4,131.4,30];
+rsmc_shem_2025_080 = [12.5,141.0,39.2;12.2,139.1,44.8;11.3,136.1,33.6;9.8,133.1,33.6;8.8,131.6,28.0];
+btk_shem_2025_080 = [12.5,141.0,30;   12.6,139.5,30;  10.9,135.4,30;  9.8,132.3,20;  7.7,132.4,20]; # operationally from U.S. sources
+btk2_shem_2025_080 = btk_shem_2025_080; # placeholder
+myvect = [myvect;my_shem_2025_080];
+rsmcvect = [rsmcvect;rsmc_shem_2025_080];
+btkvect = [btkvect;btk_shem_2025_080];
+btk2vect = [btk2vect;btk2_shem_2025_080];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 081 ... 30U/31P before 2025-04-20-03Z ... CERTIFIED
+
+my_shem_2025_081 = [12.4,138.5,40;    11.3,135.7,30;  9.9,133.8,30;  9.0,133.2,25;  8.9,132.7,35];
+rsmc_shem_2025_081 = [12.3,138.6,44.8;11.2,135.6,33.6;9.7,133.5,33.6;8.9,132.8,28.0;8.8,132.4,28.0];
+btk_shem_2025_081 = [12.3,138.5,30;   10.4,134.1,30;  8.1,131.9,20;  8.5,132.8,20;  8.5,133.8,20]; # operationally from U.S. sources
+btk2_shem_2025_081 = btk_shem_2025_081; # placeholder
+myvect = [myvect;my_shem_2025_081];
+rsmcvect = [rsmcvect;rsmc_shem_2025_081];
+btkvect = [btkvect;btk_shem_2025_081];
+btk2vect = [btk2vect;btk2_shem_2025_081];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 082 ... 30U/31P before 2025-04-20-09Z ... CERTIFIED
+
+my_shem_2025_082 = [12.3,137.8,35;    11.1,135.2,30;  9.6,133.4,30;  9.1,132.4,25;  9.4,131.7,25];
+rsmc_shem_2025_082 = [12.2,137.9,39.2;10.8,134.9,33.6;9.6,133.3,33.6;9.0,132.8,28.0;9.1,132.3,28.0];
+btk_shem_2025_082 = [12.1,137.6,35;   10.3,134.0,30;  7.7,131.5,20;  8.8,133.1,20;  9.1,134.7,20]; # operationally from U.S. sources
+btk2_shem_2025_082 = btk_shem_2025_082; # placeholder
+myvect = [myvect;my_shem_2025_082];
+rsmcvect = [rsmcvect;rsmc_shem_2025_082];
+btkvect = [btkvect;btk_shem_2025_082];
+btk2vect = [btk2vect;btk2_shem_2025_082];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 083 ... 30U/31P before 2025-04-21-03Z ... CERTIFIED
+
+my_shem_2025_083 = [10.8,135.0,30;    9.5,133.4,30;  8.4,133.0,30;  9.1,132.5,25;  9.6,132.9,25];
+rsmc_shem_2025_083 = [10.6,135.2,33.6;9.2,133.2,33.6;8.6,132.8,33.6;9.2,132.7,33.6;10.2,132.5,28.0];
+btk_shem_2025_083 = [10.4,134.1,30;   8.1,131.9,20;  8.5,132.8,20;  8.5,133.8,20;  10.4,135.5,15]; # operationally from U.S. sources
+btk2_shem_2025_083 = btk_shem_2025_083; # placeholder
+myvect = [myvect;my_shem_2025_083];
+rsmcvect = [rsmcvect;rsmc_shem_2025_083];
+btkvect = [btkvect;btk_shem_2025_083];
+btk2vect = [btk2vect;btk2_shem_2025_083];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 084 ... 30U/31P before 2025-04-21-21Z ... CERTIFIED
+
+my_shem_2025_084 = [9.5,132.4,30;    7.5,130.9,25;  7.6,131.9,25;  9.3,133.4,25;  10.4,134.1,30];
+rsmc_shem_2025_084 = [9.2,132.2,33.6;7.6,130.8,33.6;7.7,131.9,33.6;9.2,133.5,28.0;10.1,134.2,28.0];
+btk_shem_2025_084 = [9.8,132.3,20;   7.7,132.4,20;  9.0,133.8,20;  10.8,136.1,15; 11.2,135.6,15]; # operationally from U.S. sources
+btk2_shem_2025_084 = btk_shem_2025_084; # placeholder
+myvect = [myvect;my_shem_2025_084];
+rsmcvect = [rsmcvect;rsmc_shem_2025_084];
+btkvect = [btkvect;btk_shem_2025_084];
+btk2vect = [btk2vect;btk2_shem_2025_084];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 085 ... 30U/31P before 2025-04-22-03Z ... CERTIFIED
+
+my_shem_2025_085 = [9.2,131.9,30;    8.1,131.4,25;  8.6,132.5,25;  10.5,133.5,25; 10.8,132.9,35];
+rsmc_shem_2025_085 = [9.1,131.7,33.6;7.9,130.8,33.6;8.5,132.1,28.0;9.7,133.6,28.0;10.4,133.1,28.0];
+btk_shem_2025_085 = [8.1,131.9,20;   8.5,132.8,20;  8.5,133.8,20;  10.4,135.5,15; 11.1,136.0,15]; # operationally from U.S. sources
+btk2_shem_2025_085 = btk_shem_2025_085; # placeholder
+myvect = [myvect;my_shem_2025_085];
+rsmcvect = [rsmcvect;rsmc_shem_2025_085];
+btkvect = [btkvect;btk_shem_2025_085];
+btk2vect = [btk2vect;btk2_shem_2025_085];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
+
+# Shem 086 ... 30U/31P before 2025-04-22-09Z ... CERTIFIED
+
+my_shem_2025_086 = [8.8,131.0,30;    7.7,131.0,25;  8.8,132.5,25;  10.0,132.8,25;  10.5,132.6,35];
+rsmc_shem_2025_086 = [8.8,131.3,33.6;7.9,131.0,28.0;8.9,132.6,28.0;10.1,133.8,28.0;10.6,133.0,28.0];
+btk_shem_2025_086 = [7.7,131.5,20;   8.8,133.1,20;  9.1,134.7,20;  10.6,135.4,15;  11.0,136.3,15]; # operationally from U.S. sources
+btk2_shem_2025_086 = btk_shem_2025_086; # placeholder
+myvect = [myvect;my_shem_2025_086];
+rsmcvect = [rsmcvect;rsmc_shem_2025_086];
+btkvect = [btkvect;btk_shem_2025_086];
+btk2vect = [btk2vect;btk2_shem_2025_086];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;4;4;4;4;4];
 
 
 
@@ -8571,7 +9379,7 @@ basinvect = [basinvect;3;3];
 btkvect=(btkvect+btk2vect)/2;
 # rsmcvect(:,3) = 5*floor(rsmcvect(:,3)/5+0.5);
 
-x=3;
+x=6;
 
 my3d = 12756/1.852/2*[ cos(myvect(:,1)/180*pi).*cos(myvect(:,2)/180*pi) , cos(myvect(:,1)/180*pi).*sin(myvect(:,2)/180*pi) , sin(myvect(:,1)/180*pi) ];
 rsmc3d = 12756/1.852/2*[ cos(rsmcvect(:,1)/180*pi).*cos(rsmcvect(:,2)/180*pi) , cos(rsmcvect(:,1)/180*pi).*sin(rsmcvect(:,2)/180*pi) , sin(rsmcvect(:,1)/180*pi) ];

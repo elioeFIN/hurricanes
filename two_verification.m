@@ -1909,22 +1909,85 @@ leadtime = [leadtime,2,7,7];
 # 293 - before 2025-04-02-01Z - nothing projected/formed in NHC AOR
 # my at https://x.com/elioeFIN/status/1907218155379802416
 
-# 294 - before 2025-04-03-19Z - ?
+# 294 - before 2025-04-03-19Z - ghost
 # my at https://x.com/elioeFIN/status/1907858234439872876
 
-nhcvect = [nhcvect,];
-myvect = [myvect,];
-formed = [formed,];
-leadtime = [leadtime,];
+nhcvect = [nhcvect,0];
+myvect = [myvect,0.1];
+formed = [formed,0];
+leadtime = [leadtime,7];
 
-# 295 - before 2025-04-05-19Z - ?
+# 295 - before 2025-04-05-19Z - ghost
 # my at https://x.com/elioeFIN/status/1908583127192125643
 
-nhcvect = [nhcvect,];
-myvect = [myvect,];
-formed = [formed,];
-leadtime = [leadtime,];
+nhcvect = [nhcvect,0];
+myvect = [myvect,0.1];
+formed = [formed,0];
+leadtime = [leadtime,7];
 
+# 296 - before 2025-04-07-01Z - ghost
+# my at https://x.com/elioeFIN/status/1909029710475952528
+
+nhcvect = [nhcvect,0];
+myvect = [myvect,0.1];
+formed = [formed,0];
+leadtime = [leadtime,7];
+
+# 297 - before 2025-04-08-01Z - ghost
+# my at https://x.com/elioeFIN/status/1909398854941782100
+
+nhcvect = [nhcvect,0];
+myvect = [myvect,0.1];
+formed = [formed,0];
+leadtime = [leadtime,7];
+
+# 298 - before 2025-04-09-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/1909760964871749854
+
+# 299 - before 2025-04-10-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/1910117067665055821
+
+# 300 - before 2025-04-11-13Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/1910655794678292665
+
+# 301 - before 2025-04-12-13Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/1911022469353267533
+
+# 302 - before 2025-04-14-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/1911567677115560141
+
+# 303 - before 2025-04-16-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/1912292861447455213
+
+# 304 - before 2025-04-20-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/1913744153617572116
+
+# 305 - before 2025-04-21-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/1914101713822257512
+
+# 306 - before 2025-04-22-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/1914463437364543979
+
+# 307 - before 2025-04-23-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/1915106114238111979
+
+# 308 - before 2025-04-24-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/1915471664940277804
+
+# 309 - before 2025-04-25-19Z - ???
+# my at https://x.com/elioeFIN/status/1915829019829809507
+
+# 310 - before 2025-04-27-13Z - ???
+# my at https://x.com/elioeFIN/status/1916465108009574577
+
+# 311 - before 2025-04-28-19Z - ???
+# my at https://x.com/elioeFIN/status/1916917627982692639
+
+# 312 - before 2025-04-29-19Z - ???
+# my at https://x.com/elioeFIN/status/1917280624651690411
+
+# 313 - before 2025-05-01-13Z - ???
+# my at https://x.com/elioeFIN/status/1917906267655283130
 
 
 
