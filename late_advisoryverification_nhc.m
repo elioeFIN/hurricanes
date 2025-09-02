@@ -1,11 +1,11 @@
 # to be run with GNU Octave
-# data last added 2025/04/27, data ready for all forecasts issued on or before 2025/04/22
+# data last added 2025/08/30, data ready for all forecasts issued on or before 2025/08/30
 
 # to compare elioe's performance to U.S. agencies;
 # regarding "late advisories" posted after NHC/CPHC/JTWC advisories had become public (if they existed in that advisory cycle);
 # the code includes American forecast (nhcvect), elioe's forecast (myvect) and actual position and 1-min wind (btkvect)
 # ... whenever all three are available.
-# "basinvect" numbers: 1 for North Atlantic (agency=NHC), 2 for East Pacific (agency=NHC), 3 for WPac/NIO/SHem (agency=JTWC), 4 for CPac (agency=CPHC)
+# "basinvect" numbers: 1 for North Atlantic (agency=NHC), 2 for East Pacific (agency=NHC), 3 for WPac/NIO/SHem (agency=JTWC), 4 for CPac (agency=CPHC), 5 for CPac (agency=NHC)
 
 # in CPac/EPac/NAtl, if not stated in comment otherwise, data source is operational track originally from https://ftp.nhc.noaa.gov/atcf/btk/
 # in case of revisions to data, I may have recorded the values before or after such revision
@@ -17031,14 +17031,14 @@ basinvect = [basinvect;3;3;3;3;3];
 # Shem 017 ... DIKELEDI around 2025-01-14-21Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1879266738690457747
 
-nhc_shem_2025_017 = [24.5,41.8,70;29.6,47.5,70;32.0,55.9,50];
-my_shem_2025_017 = [24.6,41.8,80;29.4,46.7,75;31.7,54.3,45];
-btk_shem_2025_017 = [25.7,42.3,90;32.2,49.0,75;35.0,61.9,45];
+nhc_shem_2025_017 = [24.5,41.8,70;29.6,47.5,70;32.0,55.9,50;32.5,63.3,35];
+my_shem_2025_017 = [24.6,41.8,80;29.4,46.7,75;31.7,54.3,45;31.3,58.1,40];
+btk_shem_2025_017 = [25.7,42.3,90;32.2,49.0,75;35.0,61.9,45;34.35,78.03,33.6]; # day 4 MFR data table
 nhcvect = [nhcvect;nhc_shem_2025_017];
 myvect = [myvect;my_shem_2025_017];
 btkvect = [btkvect;btk_shem_2025_017];
-leadtimevect = [leadtimevect;1;2;3];
-basinvect = [basinvect;3;3;3];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
 
 # Shem 018 ... 11U/10S around 2025-01-18-21Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1880726773799014539
@@ -17219,14 +17219,14 @@ basinvect = [basinvect;3;3;3;3;3];
 # Shem 036 ... GARANCE around 2025-02-26-03Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1894583946559574113
 
-nhc_shem_2025_036 = [18.4,54.9,80;20.8,55.5,100;25.5,55.0,75;30.5,56.6,55];
-my_shem_2025_036 = [18.6,55.3,80;21.1,55.3,80;26.3,54.7,70;30.9,55.3,45];
-btk_shem_2025_036 = [17.9,55.0,105;19.7,55.3,105;26.0,54.8,55;32.7,56.8,50];
+nhc_shem_2025_036 = [18.4,54.9,80;20.8,55.5,100;25.5,55.0,75;30.5,56.6,55;33.4,62.2,45];
+my_shem_2025_036 = [18.6,55.3,80;21.1,55.3,80;26.3,54.7,70;30.9,55.3,45;33.6,60.1,40];
+btk_shem_2025_036 = [17.9,55.0,105;19.7,55.3,105;26.0,54.8,55;32.7,56.8,50;34.03,64.38,44.8]; # day 5 MFR data table
 nhcvect = [nhcvect;nhc_shem_2025_036];
 myvect = [myvect;my_shem_2025_036];
 btkvect = [btkvect;btk_shem_2025_036];
-leadtimevect = [leadtimevect;1;2;3;4];
-basinvect = [basinvect;3;3;3;3];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
 
 # Shem 037 ... ALFRED around 2025-02-26-03Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1894588624840077409
@@ -17243,14 +17243,14 @@ basinvect = [basinvect;3;3;3;3;3];
 # Shem 038 ... GARANCE around 2025-02-26-21Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1894847125738979738
 
-nhc_shem_2025_038 = [19.6,55.5,105;24.6,55.2,75;30.0,56.3,60;33.0,60.6,50];
-my_shem_2025_038 = [19.8,55.5,110;24.3,54.8,70;30.7,54.3,60;33.9,59.5,50];
-btk_shem_2025_038 = [19.0,55.3,105;24.1,54.9,65;31.0,55.5,50;34.4,62.8,45];
+nhc_shem_2025_038 = [19.6,55.5,105;24.6,55.2,75;30.0,56.3,60;33.0,60.6,50;34.3,67.8,40];
+my_shem_2025_038 = [19.8,55.5,110;24.3,54.8,70;30.7,54.3,60;33.9,59.5,50;33.2,68.2,35];
+btk_shem_2025_038 = [19.0,55.3,105;24.1,54.9,65;31.0,55.5,50;34.4,62.8,45;36.75,74.36,33.6]; # day 5 MFR data table
 nhcvect = [nhcvect;nhc_shem_2025_038];
 myvect = [myvect;my_shem_2025_038];
 btkvect = [btkvect;btk_shem_2025_038];
-leadtimevect = [leadtimevect;1;2;3;4];
-basinvect = [basinvect;3;3;3;3];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
 
 # Shem 039 ... ALFRED around 2025-02-27-21Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1895215668922064981
@@ -17724,6 +17724,1662 @@ basinvect = [basinvect;3;3];
 # my at https://x.com/elioeFIN/status/1914786944346685752
 # (no JTWC forecast)
 
+# Shem 083 ... 33U/93P around 2025-05-10-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1921130090026480041
+# (no JTWC forecast)
+
+# Shem 084 ... 33U/93P around 2025-05-10-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1921302529872130482
+# (no JTWC forecast)
+
+# Shem 085 ... 33U/32P around 2025-05-11-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1921489410102554669
+
+nhc_shem_2025_085 = [9.2,137.6,35];
+my_shem_2025_085 = [8.1,137.4,30];
+btk_shem_2025_085 = [8.1,137.2,30];
+nhcvect = [nhcvect;nhc_shem_2025_085];
+myvect = [myvect;my_shem_2025_085];
+btkvect = [btkvect;btk_shem_2025_085];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;3];
+
+# Shem 086 ... 33U/32P around 2025-05-11-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1921576791744888858
+
+nhc_shem_2025_086 = [9.2,137.4,35];
+my_shem_2025_086 = [8.1,136.2,30];
+btk_shem_2025_086 = [7.8,137.2,25];
+nhcvect = [nhcvect;nhc_shem_2025_086];
+myvect = [myvect;my_shem_2025_086];
+btkvect = [btkvect;btk_shem_2025_086];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;3];
+
+# Shem 087 ... 33U/32P around 2025-05-11-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1921666036664795267
+
+nhc_shem_2025_087 = [8.8,136.1,30];
+my_shem_2025_087 = [8.5,135.8,25];
+btk_shem_2025_087 = [8.3,136.1,20];
+nhcvect = [nhcvect;nhc_shem_2025_087];
+myvect = [myvect;my_shem_2025_087];
+btkvect = [btkvect;btk_shem_2025_087];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;3];
+
+# Epac 001 ... 01E around 2025-05-29-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1928012432238129655
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep01/ep012025.discus.003.shtml
+
+nhc_epac_2025_001 = [15.6,108.3,50;18.8,109.0,45;21.8,108.8,25];
+my_epac_2025_001 = [15.7,108.1,45;18.8,108.9,40;22.2,108.7,20];
+btk_epac_2025_001 = [16.1,108.2,45;19.6,109.2,35;22.4,109.5,20]; # day 3 self-made
+nhcvect = [nhcvect;nhc_epac_2025_001];
+myvect = [myvect;my_epac_2025_001];
+btkvect = [btkvect;btk_epac_2025_001];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;2;2;2];
+
+# Epac 002 ... ALVIN around 2025-05-29-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1928191629287968821
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep01/ep012025.discus.005.shtml
+
+nhc_epac_2025_002 = [17.6,108.7,50;20.5,109.1,35];
+my_epac_2025_002 = [17.5,108.6,45;20.7,109.0,30];
+btk_epac_2025_002 = [17.7,108.9,45;21.0,109.7,25]; # day 2 self-made
+nhcvect = [nhcvect;nhc_epac_2025_002];
+myvect = [myvect;my_epac_2025_002];
+btkvect = [btkvect;btk_epac_2025_002];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Epac 003 ... ALVIN around 2025-05-30-09Z ... CERTIFIED 
+# my at https://x.com/elioeFIN/status/1928374559729648018
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep01/ep012025.discus.007.shtml
+
+nhc_epac_2025_003 = [19.5,109.2,35;22.8,109.5,25];
+my_epac_2025_003 = [19.4,109.2,35;22.8,109.4,20];
+btk_epac_2025_003 = [19.6,109.2,35;22.4,109.5,20]; # day 2 self-made
+nhcvect = [nhcvect;nhc_epac_2025_003];
+myvect = [myvect;my_epac_2025_003];
+btkvect = [btkvect;btk_epac_2025_003];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Epac 004 ... ALVIN around 2025-05-30-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1928462470152139078
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep01/ep012025.discus.008.shtml
+
+nhc_epac_2025_004 = [20.3,109.4,30;23.5,109.5,20];
+my_epac_2025_004 = [20.0,109.4,30;23.3,109.4,20];
+btk_epac_2025_004 = [20.4,109.5,30;23.3,109.4,20]; # day 2 self-made
+nhcvect = [nhcvect;nhc_epac_2025_004];
+myvect = [myvect;my_epac_2025_004];
+btkvect = [btkvect;btk_epac_2025_004];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Epac 005 ... ALVIN around 2025-05-30-21Z ... CERTIFIED 
+# my at https://x.com/elioeFIN/status/1928556209725935816
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep01/ep012025.discus.009.shtml
+
+nhc_epac_2025_005 = [20.8,109.5,30];
+my_epac_2025_005 = [21.1,109.4,30];
+btk_epac_2025_005 = [21.0,109.7,25]; # self-made
+nhcvect = [nhcvect;nhc_epac_2025_005];
+myvect = [myvect;my_epac_2025_005];
+btkvect = [btkvect;btk_epac_2025_005];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;2];
+
+# Epac 006 ... ALVIN around 2025-05-31-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1928742124599599589
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep01/ep012025.discus.011.shtml
+
+nhc_epac_2025_006 = [22.3,109.5,25];
+my_epac_2025_006 = [22.3,109.4,25];
+btk_epac_2025_006 = [22.4,109.5,20]; # self-made
+nhcvect = [nhcvect;nhc_epac_2025_006];
+myvect = [myvect;my_epac_2025_006];
+btkvect = [btkvect;btk_epac_2025_006];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;2];
+
+# Epac 007 ... 91E around 2025-06-07-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1931367077404700911
+# (no NHC advisory)
+
+# Epac 008 ... 92E around 2025-06-07-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1931369271319298186
+# (no NHC advisory)
+
+# Epac 009 ... BARBARA around 2025-06-08-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1931640578099302725
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep02/ep022025.discus.001.shtml
+
+nhc_epac_2025_009 = [17.0,105.4,65;19.1,108.8,60];
+my_epac_2025_009 = [17.2,105.3,60;19.2,109.3,55];
+btk_epac_2025_009 = [16.7,105.3,60;19.1,107.9,50];
+nhcvect = [nhcvect;nhc_epac_2025_009];
+myvect = [myvect;my_epac_2025_009];
+btkvect = [btkvect;btk_epac_2025_009];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Epac 010 ... BARBARA around 2025-06-08-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1931726949249957915
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep02/ep022025.discus.002.shtml
+
+nhc_epac_2025_010 = [17.6,106.2,75;19.4,109.6,55];
+my_epac_2025_010 = [17.7,106.2,75;19.4,109.7,55];
+btk_epac_2025_010 = [17.3,105.8,65;19.7,108.2,45];
+nhcvect = [nhcvect;nhc_epac_2025_010];
+myvect = [myvect;my_epac_2025_010];
+btkvect = [btkvect;btk_epac_2025_010];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Epac 011 ... BARBARA around 2025-06-08-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1931816676817002913
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep02/ep022025.discus.003.shtml
+
+nhc_epac_2025_011 = [17.8,107.0,70;19.6,110.0,50];
+my_epac_2025_011 = [17.8,106.9,70;19.8,110.1,50];
+btk_epac_2025_011 = [17.9,106.5,65;20.6,108.1,35];
+nhcvect = [nhcvect;nhc_epac_2025_011];
+myvect = [myvect;my_epac_2025_011];
+btkvect = [btkvect;btk_epac_2025_011];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Epac 012 ... COSME around 2025-06-08-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1931818443986149694
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep03/ep032025.discus.002.shtml
+
+nhc_epac_2025_012 = [14.7,113.1,60;15.5,113.7,55;17.5,112.8,30];
+my_epac_2025_012 = [14.7,113.2,60;15.5,113.9,50;17.5,112.6,30];
+btk_epac_2025_012 = [14.8,113.8,60;15.6,115.1,50;17.0,113.3,25]; # day 3 self-made
+nhcvect = [nhcvect;nhc_epac_2025_012];
+myvect = [myvect;my_epac_2025_012];
+btkvect = [btkvect;btk_epac_2025_012];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;2;2;2];
+
+# Epac 013 ... BARBARA around 2025-06-09-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1931999530775413239
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep02/ep022025.discus.005.shtml
+
+nhc_epac_2025_013 = [18.8,108.4,60];
+my_epac_2025_013 = [18.9,108.5,55];
+btk_epac_2025_013 = [19.1,107.9,50];
+nhcvect = [nhcvect;nhc_epac_2025_013];
+myvect = [myvect;my_epac_2025_013];
+btkvect = [btkvect;btk_epac_2025_013];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;2];
+
+# Epac 014 ... COSME around 2025-06-09-15Z ... CERTIFIED 
+# my at https://x.com/elioeFIN/status/1932087335979561416
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep03/ep032025.discus.005.shtml
+
+nhc_epac_2025_014 = [15.2,114.4,65;17.0,113.4,50;19.6,114.0,25];
+my_epac_2025_014 = [15.1,114.5,65;16.8,113.5,45;19.7,114.2,25];
+btk_epac_2025_014 = [15.4,114.8,55;16.2,113.9,30;17.9,110.7,15]; # day 3 self-made
+nhcvect = [nhcvect;nhc_epac_2025_014];
+myvect = [myvect;my_epac_2025_014];
+btkvect = [btkvect;btk_epac_2025_014];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;2;2;2];
+
+# Wpac 001 ... 01W around 2025-06-10-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1932445451279646864
+# (day 5 missing due to gaps)
+
+nhc_wpac_2025_001 = [15.5,111.7,40;17.2,109.9,55;19.2,108.9,45;21.2,109.5,35];
+my_wpac_2025_001 = [16.1,111.8,40;17.5,110.1,55;19.6,109.4,45;22.9,110.8,30];
+btk_wpac_2025_001 = [16.5,111.5,30;17.4,109.2,50;18.8,108.3,60;22.3,110.6,50];
+nhcvect = [nhcvect;nhc_wpac_2025_001];
+myvect = [myvect;my_wpac_2025_001];
+btkvect = [btkvect;btk_wpac_2025_001];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Epac 015 ... COSME around 2025-06-10-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1932449295157842095
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep03/ep032025.discus.009.shtml
+
+nhc_epac_2025_015 = [16.6,113.9,40;18.8,113.5,25];
+my_epac_2025_015 = [16.5,114.0,35;19.0,113.4,20];
+btk_epac_2025_015 = [16.2,113.9,30;17.9,110.7,15]; # day 2 self-made
+nhcvect = [nhcvect;nhc_epac_2025_015];
+myvect = [myvect;my_epac_2025_015];
+btkvect = [btkvect;btk_epac_2025_015];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Wpac 002 ... 01W around 2025-06-10-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1932539500275904706
+
+nhc_wpac_2025_002 = [16.0,112.1,45;17.7,110.3,65;19.8,109.9,45;23.4,111.9,35;24.8,114.2,25];
+my_wpac_2025_002 = [16.4,111.8,40;18.0,109.8,65;20.6,109.7,50;24.1,112.4,35;27.5,117.2,30];
+btk_wpac_2025_002 = [16.3,110.9,40;17.7,109.0,50;19.7,108.9,55;23.3,111.4,35;28.1,119.9,25];
+nhcvect = [nhcvect;nhc_wpac_2025_002];
+myvect = [myvect;my_wpac_2025_002];
+btkvect = [btkvect;btk_wpac_2025_002];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Epac 016 ... COSME around 2025-06-10-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1932542493561696382
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep03/ep032025.discus.010.shtml
+
+nhc_epac_2025_016 = [17.1,114.1,30;19.1,114.1,20];
+my_epac_2025_016 = [17.0,114.2,30;19.1,114.4,20];
+btk_epac_2025_016 = [17.0,113.3,25;18.2,109.8,15]; # all self-made
+nhcvect = [nhcvect;nhc_epac_2025_016];
+myvect = [myvect;my_epac_2025_016];
+btkvect = [btkvect;btk_epac_2025_016];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Wpac 003 ... WUTIP around 2025-06-11-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1932811819749642703
+# (day 4 missing due to gaps)
+
+nhc_wpac_2025_003 = [17.7,109.4,45;19.8,108.8,45;22.5,110.1,30];
+my_wpac_2025_003 = [17.7,109.6,45;19.8,108.8,50;22.7,110.2,30];
+btk_wpac_2025_003 = [17.4,109.2,50;18.8,108.3,60;22.3,110.6,50];
+nhcvect = [nhcvect;nhc_wpac_2025_003];
+myvect = [myvect;my_wpac_2025_003];
+btkvect = [btkvect;btk_wpac_2025_003];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Wpac 004 ... WUTIP around 2025-06-11-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1932901964754338021
+
+nhc_wpac_2025_004 = [17.7,109.2,55;20.0,109.2,45;22.9,110.9,35;26.6,115.9,20];
+my_wpac_2025_004 = [17.8,109.3,55;20.2,109.4,45;23.6,111.4,35;27.7,117.8,20];
+btk_wpac_2025_004 = [17.7,109.0,50;19.7,108.9,55;23.3,111.4,35;28.1,119.9,25];
+nhcvect = [nhcvect;nhc_wpac_2025_004];
+myvect = [myvect;my_wpac_2025_004];
+btkvect = [btkvect;btk_wpac_2025_004];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Wpac 005 ... WUTIP around 2025-06-13-15Z ... CERTIFIED 
+# my at https://x.com/elioeFIN/status/1933532697118310665
+# (day 2 missing due to gaps)
+
+nhc_wpac_2025_005 = [21.7,110.0,50];
+my_wpac_2025_005 = [21.9,110.1,50];
+btk_wpac_2025_005 = [22.3,110.6,50];
+nhcvect = [nhcvect;nhc_wpac_2025_005];
+myvect = [myvect;my_wpac_2025_005];
+btkvect = [btkvect;btk_wpac_2025_005];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;3];
+
+# Epac 017 ... 04E around 2025-06-13-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1933538315518816317
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep04/ep042025.discus.004.shtml
+
+nhc_epac_2025_017 = [16.0,104.1,45;17.8,107.7,50;18.2,111.6,30;18.3,115.0,20];
+my_epac_2025_017 = [16.1,103.9,45;18.1,107.7,50;18.6,111.7,25;18.7,115.1,20];
+btk_epac_2025_017 = [16.2,103.8,50;18.1,107.4,50;18.8,110.5,25;19.2,113.5,15]; # days 3-4 self-made
+nhcvect = [nhcvect;nhc_epac_2025_017];
+myvect = [myvect;my_epac_2025_017];
+btkvect = [btkvect;btk_epac_2025_017];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;2;2;2;2];
+
+# Epac 018 ... DALILA around 2025-06-14-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1933899628061065392
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep04/ep042025.discus.008.shtml
+
+nhc_epac_2025_018 = [17.9,108.2,45;18.1,112.0,30;18.2,115.5,20];
+my_epac_2025_018 = [17.9,108.2,50;18.1,112.2,30;18.0,115.4,20];
+btk_epac_2025_018 = [18.1,107.4,50;18.8,110.5,25;19.2,113.5,15]; # days 2-3 self-made
+nhcvect = [nhcvect;nhc_epac_2025_018];
+myvect = [myvect;my_epac_2025_018];
+btkvect = [btkvect;btk_epac_2025_018];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;2;2;2];
+
+# Epac 019 ... DALILA around 2025-06-14-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1933988900311126503
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep04/ep042025.discus.009.shtml
+
+nhc_epac_2025_019 = [17.8,108.7,45;17.9,112.6,25];
+my_epac_2025_019 = [17.9,108.7,45;18.0,112.7,25];
+btk_epac_2025_019 = [18.2,108.0,40;18.8,111.2,20]; # day 2 self-made
+nhcvect = [nhcvect;nhc_epac_2025_019];
+myvect = [myvect;my_epac_2025_019];
+btkvect = [btkvect;btk_epac_2025_019];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Epac 020 ... ERICK around 2025-06-17-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1934989566139670654
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep05/ep052025.discus.004.shtml
+
+nhc_epac_2025_020 = [13.6,96.0,70;16.0,98.5,95];
+my_epac_2025_020 = [13.7,95.9,70;16.2,98.4,90];
+btk_epac_2025_020 = [13.6,95.7,70;16.4,98.4,95];
+nhcvect = [nhcvect;nhc_epac_2025_020];
+myvect = [myvect;my_epac_2025_020];
+btkvect = [btkvect;btk_epac_2025_020];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Epac 021 ... ERICK around 2025-06-17-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1935077541611716907
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep05/ep052025.discus.005.shtml
+
+nhc_epac_2025_021 = [14.2,96.4,80;16.9,99.0,80];
+my_epac_2025_021 = [14.4,96.4,75;17.2,99.1,70];
+btk_epac_2025_021 = [14.2,96.3,90;17.1,99.3,65];
+nhcvect = [nhcvect;nhc_epac_2025_021];
+myvect = [myvect;my_epac_2025_021];
+btkvect = [btkvect;btk_epac_2025_021];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Epac 022 ... ERICK around 2025-06-18-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1935350566722457774
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep05/ep052025.discus.008.shtml
+
+nhc_epac_2025_022 = [15.9,98.1,100];
+my_epac_2025_022 = [16.0,97.9,90];
+btk_epac_2025_022 = [16.4,98.4,95];
+nhcvect = [nhcvect;nhc_epac_2025_022];
+myvect = [myvect;my_epac_2025_022];
+btkvect = [btkvect;btk_epac_2025_022];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;2];
+
+# Wpac 006 ... 02W around 2025-06-22-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1936800401350689006
+
+nhc_wpac_2025_006 = [27.1,142.6,40;30.7,140.1,40;33.7,139.6,30;37.3,142.9,20];
+my_wpac_2025_006 = [27.1,142.0,35;31.0,139.9,40;34.4,140.1,25;37.6,143.1,20];
+btk_wpac_2025_006 = [27.0,143.0,40;30.6,140.1,35;33.7,139.8,25;39.3,145.5,30];
+nhcvect = [nhcvect;nhc_wpac_2025_006];
+myvect = [myvect;my_wpac_2025_006];
+btkvect = [btkvect;btk_wpac_2025_006];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Wpac 007 ... 02W around 2025-06-22-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1936891278987600026
+
+nhc_wpac_2025_007 = [27.7,142.1,40;31.2,140.4,40;34.6,140.0,35;37.9,144.8,20];
+my_wpac_2025_007 = [27.8,142.1,35;31.5,140.2,40;34.5,140.0,30;37.5,145.3,20];
+btk_wpac_2025_007 = [28.4,141.9,35;31.3,139.8,30;34.5,140.3,25;41.3,147.8,30];
+nhcvect = [nhcvect;nhc_wpac_2025_007];
+myvect = [myvect;my_wpac_2025_007];
+btkvect = [btkvect;btk_wpac_2025_007];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Wpac 008 ... SEPAT around 2025-06-23-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1937168753386537291
+
+nhc_wpac_2025_008 = [30.9,140.3,35;34.1,140.1,30;38.1,143.3,20];
+my_wpac_2025_008 = [31.0,140.3,40;34.1,139.9,30;37.9,143.9,20];
+btk_wpac_2025_008 = [30.6,140.1,35;33.7,139.8,25;39.3,145.5,30];
+nhcvect = [nhcvect;nhc_wpac_2025_008];
+myvect = [myvect;my_wpac_2025_008];
+btkvect = [btkvect;btk_wpac_2025_008];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Wpac 009 ... SEPAT around 2025-06-24-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1937523549067002124
+
+nhc_wpac_2025_009 = [33.4,139.7,30;37.6,143.7,35];
+my_wpac_2025_009 = [33.6,139.5,35;37.9,143.7,35];
+btk_wpac_2025_009 = [33.7,139.8,25;39.3,145.5,30];
+nhcvect = [nhcvect;nhc_wpac_2025_009];
+myvect = [myvect;my_wpac_2025_009];
+btkvect = [btkvect;btk_wpac_2025_009];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Atl 001 ... 02L around 2025-06-29-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1939244098914795722
+# NHC at https://www.nhc.noaa.gov/archive/2025/al02/al022025.discus.003.shtml
+
+nhc_atl_2025_001 = [21.6,98.0,30];
+my_atl_2025_001 = [21.7,98.0,30];
+btk_atl_2025_001 = [22.4,98.7,25];
+nhcvect = [nhcvect;nhc_atl_2025_001];
+myvect = [myvect;my_atl_2025_001];
+btkvect = [btkvect;btk_atl_2025_001];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;1];
+
+# Epac 023 ... 06E around 2025-06-29-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1939249327739711732
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep06/ep062025.discus.001.shtml
+
+nhc_epac_2025_023 = [14.5,101.5,35;16.8,104.6,60;18.8,107.5,85;20.9,109.9,65;22.6,112.1,40];
+my_epac_2025_023 = [14.6,101.7,35;16.8,105.0,55;18.7,107.8,75;20.9,110.4,55;22.5,113.1,35];
+btk_epac_2025_023 = [14.5,101.3,40;16.7,104.7,70;18.4,107.9,100;19.9,110.5,55;22.5,113.6,30]; # day 5 self-made
+nhcvect = [nhcvect;nhc_epac_2025_023];
+myvect = [myvect;my_epac_2025_023];
+btkvect = [btkvect;btk_epac_2025_023];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;2;2;2;2;2];
+
+# Epac 024 ... FLOSSIE around 2025-06-29-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1939336996561830315
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep06/ep062025.discus.002.shtml
+
+nhc_epac_2025_024 = [15.2,102.1,55;17.5,105.4,75;19.8,108.4,75;21.7,110.4,55;23.9,112.8,30];
+my_epac_2025_024 = [15.2,102.1,50;17.6,105.5,75;19.9,108.6,70;21.9,110.6,50;24.0,113.1,30];
+btk_epac_2025_024 = [15.3,102.1,45;17.1,105.5,80;18.8,108.7,95;20.3,111.3,45;23.0,114.7,25]; # day 5 self-made
+nhcvect = [nhcvect;nhc_epac_2025_024];
+myvect = [myvect;my_epac_2025_024];
+btkvect = [btkvect;btk_epac_2025_024];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;2;2;2;2;2];
+
+# Epac 025 ... FLOSSIE around 2025-06-29-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1939429397993496689
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep06/ep062025.discus.003.shtml
+
+nhc_epac_2025_025 = [15.5,102.7,55;17.9,106.0,80;20.0,108.8,80;22.0,110.8,55;24.0,113.1,30];
+my_epac_2025_025 = [15.5,102.6,55;17.8,106.1,80;19.8,108.9,75;21.9,110.8,50;23.7,113.1,25];
+btk_epac_2025_025 = [15.9,103.0,55;17.6,106.3,95;19.3,109.4,85;20.9,112.0,35;23.4,115.7,25];
+nhcvect = [nhcvect;nhc_epac_2025_025];
+myvect = [myvect;my_epac_2025_025];
+btkvect = [btkvect;btk_epac_2025_025];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;2;2;2;2;2];
+
+# Epac 026 ... FLOSSIE around 2025-06-30-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1939699883616715028
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep06/ep062025.discus.006.shtml
+
+nhc_epac_2025_026 = [17.4,105.4,75;19.2,108.2,85;20.9,110.4,60;23.0,112.6,40;24.5,114.0,25];
+my_epac_2025_026 = [17.3,105.2,70;19.2,108.0,85;20.7,110.4,55;22.9,112.7,35;24.7,114.3,20];
+btk_epac_2025_026 = [17.1,105.5,80;18.8,108.7,95;20.3,111.3,45;23.0,114.7,25;23.6,117.9,20]; # days 4-5 self-made
+nhcvect = [nhcvect;nhc_epac_2025_026];
+myvect = [myvect;my_epac_2025_026];
+btkvect = [btkvect;btk_epac_2025_026];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;2;2;2;2;2];
+
+# Epac 027 ... FLOSSIE around 2025-06-30-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1939790482063708462
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep06/ep062025.discus.007.shtml
+
+nhc_epac_2025_027 = [17.9,106.7,80;19.5,109.3,80;21.0,111.6,50;22.9,113.2,30;24.9,114.7,20];
+my_epac_2025_027 = [17.9,106.6,80;19.5,109.4,80;20.7,111.5,45;22.7,113.3,30;24.8,115.2,20];
+btk_epac_2025_027 = [17.6,106.3,95;19.3,109.4,85;20.9,112.0,35;23.4,115.7,25;23.7,118.5,15]; # days 4-5 self-made
+nhcvect = [nhcvect;nhc_epac_2025_027];
+myvect = [myvect;my_epac_2025_027];
+btkvect = [btkvect;btk_epac_2025_027];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;2;2;2;2;2];
+
+# Epac 028 ... FLOSSIE around 2025-07-01-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1940061790110400831
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep06/ep062025.discus.010.shtml
+
+nhc_epac_2025_028 = [19.0,108.4,100;20.6,110.8,70;22.2,113.2,40;23.5,116.0,25];
+my_epac_2025_028 = [19.1,108.3,95;20.9,110.9,65;22.5,113.3,35;24.0,115.6,20];
+btk_epac_2025_028 = [18.8,108.7,95;20.3,111.3,45;23.0,114.7,25;23.6,117.9,20];
+nhcvect = [nhcvect;nhc_epac_2025_028];
+myvect = [myvect;my_epac_2025_028];
+btkvect = [btkvect;btk_epac_2025_028];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;2;2;2;2];
+
+# Epac 029 ... FLOSSIE around 2025-07-01-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1940150403644919918
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep06/ep062025.discus.011.shtml
+
+nhc_epac_2025_029 = [19.5,109.3,90;21.3,112.0,55;22.9,114.6,30;24.0,117.4,25];
+my_epac_2025_029 = [19.4,109.2,95;21.3,112.0,55;22.9,114.5,25;24.0,117.4,20];
+btk_epac_2025_029 = [19.3,109.4,85;20.9,112.0,35;23.4,115.7,25;23.7,118.5,15]; # days 3-4 self-made
+nhcvect = [nhcvect;nhc_epac_2025_029];
+myvect = [myvect;my_epac_2025_029];
+btkvect = [btkvect;btk_epac_2025_029];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;2;2;2;2];
+
+# Epac 030 ... FLOSSIE around 2025-07-02-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1940512846993150398
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep06/ep062025.discus.015.shtml
+
+nhc_epac_2025_030 = [21.1,112.3,55;23.1,115.4,30;24.7,118.8,20];
+my_epac_2025_030 = [21.0,112.1,50;23.1,115.4,25;24.6,118.8,20];
+btk_epac_2025_030 = [20.9,112.0,35;23.4,115.7,25;23.7,118.5,15]; # days 2-3 self-made
+nhcvect = [nhcvect;nhc_epac_2025_030];
+myvect = [myvect;my_epac_2025_030];
+btkvect = [btkvect;btk_epac_2025_030];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;2;2;2];
+
+# Wpac 010 ... MUN around 2025-07-03-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1940782160006582725
+
+nhc_wpac_2025_010 = [30.2,146.1,70;31.7,148.1,65;33.4,149.5,60;35.9,149.7,45;38.4,149.6,35];
+my_wpac_2025_010 = [30.5,145.7,70;32.0,148.0,65;33.6,149.5,60;36.0,149.1,40;39.3,150.7,30];
+btk_wpac_2025_010 = [30.2,145.3,55;31.3,148.0,55;33.5,149.6,50;36.7,148.0,30;41.4,153.0,25];
+nhcvect = [nhcvect;nhc_wpac_2025_010];
+myvect = [myvect;my_wpac_2025_010];
+btkvect = [btkvect;btk_wpac_2025_010];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Epac 031 ... FLOSSIE around 2025-07-03-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1940784820361351268
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep06/ep062025.discus.018.shtml
+
+nhc_epac_2025_031 = [22.6,114.5,25;24.3,117.7,20];
+my_epac_2025_031 = [22.7,114.4,25;24.4,117.7,15];
+btk_epac_2025_031 = [23.0,114.7,25;23.6,117.9,20]; # all self-made
+nhcvect = [nhcvect;nhc_epac_2025_031];
+myvect = [myvect;my_epac_2025_031];
+btkvect = [btkvect;btk_epac_2025_031];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Wpac 011 ... 05W/(BISING) around 2025-07-04-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1941148380849455438
+# (day 5 missing due to gaps)
+
+nhc_wpac_2025_011 = [21.2,117.7,55;23.5,119.0,75;26.1,120.2,60;28.2,120.0,45];
+my_wpac_2025_011 = [20.9,117.7,50;23.7,119.6,70;25.7,121.4,60;27.7,121.3,35];
+btk_wpac_2025_011 = [20.8,118.0,60;23.0,119.6,90;27.1,121.7,45;27.9,121.2,35];
+nhcvect = [nhcvect;nhc_wpac_2025_011];
+myvect = [myvect;my_wpac_2025_011];
+btkvect = [btkvect;btk_wpac_2025_011];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Wpac 012 ... MUN around 2025-07-04-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1941155821083361601
+
+nhc_wpac_2025_012 = [31.6,147.8,70;33.6,149.5,65;36.4,148.6,45;39.9,150.6,30];
+my_wpac_2025_012 = [31.6,148.0,55;33.6,149.8,60;36.9,148.5,35;40.4,150.1,30];
+btk_wpac_2025_012 = [31.3,148.0,55;33.5,149.6,50;36.7,148.0,30;41.4,153.0,25];
+nhcvect = [nhcvect;nhc_wpac_2025_012];
+myvect = [myvect;my_wpac_2025_012];
+btkvect = [btkvect;btk_wpac_2025_012];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Wpac 013 ... DANAS/(BISING) around 2025-07-05-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1941507242936893517
+# (day 4 missing due to gaps)
+
+nhc_wpac_2025_013 = [23.2,119.4,80;26.5,121.5,75;27.5,120.2,45];
+my_wpac_2025_013 = [23.1,119.2,75;26.9,121.6,70;27.8,120.9,45];
+btk_wpac_2025_013 = [23.0,119.6,90;27.1,121.7,45;27.9,121.2,35];
+nhcvect = [nhcvect;nhc_wpac_2025_013];
+myvect = [myvect;my_wpac_2025_013];
+btkvect = [btkvect;btk_wpac_2025_013];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Wpac 014 ... MUN around 2025-07-05-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1941509694251753516
+
+nhc_wpac_2025_014 = [33.1,149.6,60;36.3,147.9,40;40.2,148.9,25];
+my_wpac_2025_014 = [33.0,149.7,45;36.2,147.6,35;40.7,149.4,25];
+btk_wpac_2025_014 = [33.5,149.6,50;36.7,148.0,30;41.4,153.0,25];
+nhcvect = [nhcvect;nhc_wpac_2025_014];
+myvect = [myvect;my_wpac_2025_014];
+btkvect = [btkvect;btk_wpac_2025_014];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Atl 002 ... CHANTAL around 2025-07-05-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1941513402083573947
+# NHC at https://www.nhc.noaa.gov/archive/2025/al03/al032025.discus.004.shtml
+
+nhc_atl_2025_002 = [33.1,79.3,45;35.8,78.0,30];
+my_atl_2025_002 = [33.1,79.5,40;35.6,78.3,25];
+btk_atl_2025_002 = [34.0,79.2,35;37.3,77.0,25];
+nhcvect = [nhcvect;nhc_atl_2025_002];
+myvect = [myvect;my_atl_2025_002];
+btkvect = [btkvect;btk_atl_2025_002];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;1;1];
+
+# Atl 003 ... CHANTAL around 2025-07-05-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1941600804894298200
+# NHC at https://www.nhc.noaa.gov/archive/2025/al03/al032025.discus.005.shtml
+
+nhc_atl_2025_003 = [34.1,79.6,30];
+my_atl_2025_003 = [33.9,79.5,30];
+btk_atl_2025_003 = [34.5,79.3,25];
+nhcvect = [nhcvect;nhc_atl_2025_003];
+myvect = [myvect;my_atl_2025_003];
+btkvect = [btkvect;btk_atl_2025_003];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;1];
+
+# Wpac 015 ... DANAS/(BISING) around 2025-07-06-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1941870495592292736
+# (day 3 missing due to gaps)
+
+nhc_wpac_2025_015 = [26.7,122.4,65;27.6,121.4,50;25.1,116.7,20];
+my_wpac_2025_015 = [27.0,122.6,70;27.3,122.0,50;24.6,117.9,25];
+btk_wpac_2025_015 = [27.1,121.7,45;27.9,121.2,35;23.3,115.2,15];
+nhcvect = [nhcvect;nhc_wpac_2025_015];
+myvect = [myvect;my_wpac_2025_015];
+btkvect = [btkvect;btk_wpac_2025_015];
+leadtimevect = [leadtimevect;1;2;4]; # NOTE THE MISSING DAY 3 !!!!!
+basinvect = [basinvect;3;3;3];
+
+# Wpac 016 ... DANAS/(BISING) around 2025-07-07-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1942234636735635657
+# (day 2 missing due to gaps)
+
+nhc_wpac_2025_016 = [28.0,120.9,45;25.3,114.3,20];
+my_wpac_2025_016 = [27.8,121.1,45;25.4,116.4,20];
+btk_wpac_2025_016 = [27.9,121.2,35;23.3,115.2,15];
+nhcvect = [nhcvect;nhc_wpac_2025_016];
+myvect = [myvect;my_wpac_2025_016];
+btkvect = [btkvect;btk_wpac_2025_016];
+leadtimevect = [leadtimevect;1;3]; # NOTE THE MISSING DAY 2 !!!!!!
+basinvect = [basinvect;3;3];
+
+# Wpac 017 ... 06W around 2025-07-11-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1943691649378324923
+
+nhc_wpac_2025_017 = [25.9,141.0,35;30.1,142.2,50;38.8,143.1,45;48.6,149.8,30];
+my_wpac_2025_017 = [26.1,140.9,35;30.4,142.0,50;38.9,142.1,45;47.5,148.4,30];
+btk_wpac_2025_017 = [24.9,141.6,35;30.2,143.3,35;39.8,142.7,40;48.2,151.3,25];
+nhcvect = [nhcvect;nhc_wpac_2025_017];
+myvect = [myvect;my_wpac_2025_017];
+btkvect = [btkvect;btk_wpac_2025_017];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Shem 001 ... 01/01S around 2025-07-16-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1945591341712343139
+
+nhc_shem_2026_001 = [10.1,86.9,40;11.4,83.0,35];
+my_shem_2026_001 = [10.1,86.2,40;11.6,82.2,40];
+btk_shem_2026_001 = [10.3,87.6,35;12.2,82.5,30];
+nhcvect = [nhcvect;nhc_shem_2026_001];
+myvect = [myvect;my_shem_2026_001];
+btkvect = [btkvect;btk_shem_2026_001];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Wpac 018 ... TD/96W/(CRISING) around 2025-07-17-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1945864811348156529
+# (no JTWC forecast)
+
+# Wpac 019 ... WIPHA/(CRISING) around 2025-07-18-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1946223989694542151
+
+nhc_wpac_2025_019 = [21.3,118.0,50;21.8,112.8,50;21.2,109.1,40;20.6,105.8,30];
+my_wpac_2025_019 = [21.2,118.0,45;21.8,112.2,50;21.0,108.2,35;20.9,105.4,25];
+btk_wpac_2025_019 = [21.0,117.7,50;21.7,111.7,60;21.1,108.3,50;20.2,106.0,35];
+nhcvect = [nhcvect;nhc_wpac_2025_019];
+myvect = [myvect;my_wpac_2025_019];
+btkvect = [btkvect;btk_wpac_2025_019];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Wpac 020 ... WIPHA/(CRISING) around 2025-07-20-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1947035622851420600
+
+nhc_wpac_2025_020 = [20.8,108.0,60;20.3,105.0,40];
+my_wpac_2025_020 = [20.7,108.0,60;20.3,105.2,35];
+btk_wpac_2025_020 = [20.8,107.6,50;20.1,105.2,30];
+nhcvect = [nhcvect;nhc_wpac_2025_020];
+myvect = [myvect;my_wpac_2025_020];
+btkvect = [btkvect;btk_wpac_2025_020];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Wpac 021 ... WIPHA/(CRISING) around 2025-07-21-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1947125923750306171
+
+nhc_wpac_2025_021 = [20.8,106.9,55];
+my_wpac_2025_021 = [20.7,107.1,55];
+btk_wpac_2025_021 = [20.6,106.9,45];
+nhcvect = [nhcvect;nhc_wpac_2025_021];
+myvect = [myvect;my_wpac_2025_021];
+btkvect = [btkvect;btk_wpac_2025_021];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;3];
+
+# Wpac 022 ... 10W/(DANTE) around 2025-07-22-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1947675221923700902
+
+nhc_wpac_2025_022 = [23.2,129.3,40;26.0,126.6,40;27.4,123.7,30];
+my_wpac_2025_022 = [22.2,128.7,40;25.0,126.2,45;27.0,123.5,35];
+btk_wpac_2025_022 = [22.0,129.3,40;26.0,127.2,35;26.2,121.7,25];
+nhcvect = [nhcvect;nhc_wpac_2025_022];
+myvect = [myvect;my_wpac_2025_022];
+btkvect = [btkvect;btk_wpac_2025_022];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Wpac 023 ... 10W/(DANTE) around 2025-07-22-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1947759099233357903
+
+nhc_wpac_2025_023 = [23.0,129.1,40;25.8,126.4,40;27.3,123.3,35];
+my_wpac_2025_023 = [22.7,128.3,40;25.5,125.5,45;26.6,122.4,40];
+btk_wpac_2025_023 = [23.1,128.2,40;26.9,124.9,35;26.3,121.0,25];
+nhcvect = [nhcvect;nhc_wpac_2025_023];
+myvect = [myvect;my_wpac_2025_023];
+btkvect = [btkvect;btk_wpac_2025_023];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Wpac 024 ... FRANCISCO/(DANTE) around 2025-07-23-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1948119899974324632
+
+nhc_wpac_2025_024 = [26.1,125.0,35;26.9,121.8,30];
+my_wpac_2025_024 = [25.9,124.8,35;26.7,121.5,35];
+btk_wpac_2025_024 = [26.9,124.9,35;26.3,121.0,25];
+nhcvect = [nhcvect;nhc_wpac_2025_024];
+myvect = [myvect;my_wpac_2025_024];
+btkvect = [btkvect;btk_wpac_2025_024];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Wpac 025 ... CO-MAY/(EMONG) around 2025-07-23-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1948123373826978237
+
+nhc_wpac_2025_025 = [17.5,120.1,85;23.1,124.2,30];
+my_wpac_2025_025 = [17.3,120.2,70;23.2,125.0,30];
+btk_wpac_2025_025 = [16.7,120.2,60;23.6,124.9,30];
+nhcvect = [nhcvect;nhc_wpac_2025_025];
+myvect = [myvect;my_wpac_2025_025];
+btkvect = [btkvect;btk_wpac_2025_025];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Wpac 026 ... KROSA around 2025-07-24-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1948401816581832723
+
+nhc_wpac_2025_026 = [18.3,144.0,40;20.7,145.0,55;24.5,145.6,60;28.1,144.9,50;29.5,144.7,50];
+my_wpac_2025_026 = [18.0,144.0,40;20.6,145.2,55;24.6,146.2,55;28.1,145.6,45;29.9,145.5,60];
+btk_wpac_2025_026 = [17.8,143.7,45;18.5,144.5,50;22.7,145.4,60;27.5,143.7,60;28.6,142.9,50];
+nhcvect = [nhcvect;nhc_wpac_2025_026];
+myvect = [myvect;my_wpac_2025_026];
+btkvect = [btkvect;btk_wpac_2025_026];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 027 ... KROSA around 2025-07-24-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1948485507979046991
+
+nhc_wpac_2025_027 = [18.1,144.0,50;20.6,144.9,65;25.0,145.5,65;28.0,145.6,55;30.1,146.4,55];
+my_wpac_2025_027 = [18.2,144.2,45;21.0,145.4,65;25.6,146.3,65;28.9,146.9,60;30.2,147.8,65];
+btk_wpac_2025_027 = [17.7,143.4,45;19.5,145.0,55;24.4,145.3,80;28.0,143.1,50;28.7,142.8,40];
+nhcvect = [nhcvect;nhc_wpac_2025_027];
+myvect = [myvect;my_wpac_2025_027];
+btkvect = [btkvect;btk_wpac_2025_027];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 028 ... KROSA around 2025-07-25-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1948757172638162987
+
+nhc_wpac_2025_028 = [20.1,144.9,55;24.3,145.7,60;27.6,145.8,55;29.3,146.9,55;31.3,150.3,65];
+my_wpac_2025_028 = [19.7,144.8,55;24.0,145.8,60;27.8,145.6,60;29.1,146.4,65;30.3,149.9,70];
+btk_wpac_2025_028 = [18.5,144.5,50;22.7,145.4,60;27.5,143.7,60;28.6,142.9,50;29.0,143.2,40];
+nhcvect = [nhcvect;nhc_wpac_2025_028];
+myvect = [myvect;my_wpac_2025_028];
+btkvect = [btkvect;btk_wpac_2025_028];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 029 ... KROSA around 2025-07-25-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1948843529091903513
+
+nhc_wpac_2025_029 = [20.6,144.6,50;24.5,145.2,55;27.0,144.6,55;29.2,145.2,60;31.0,147.6,65];
+my_wpac_2025_029 = [20.2,145.0,55;24.7,145.7,60;28.0,145.4,55;29.7,146.7,65;30.5,147.7,60];
+btk_wpac_2025_029 = [19.5,145.0,55;24.4,145.3,80;28.0,143.1,50;28.7,142.8,40;29.3,143.2,45];
+nhcvect = [nhcvect;nhc_wpac_2025_029];
+myvect = [myvect;my_wpac_2025_029];
+btkvect = [btkvect;btk_wpac_2025_029];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 030 ... KROSA around 2025-07-26-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1949121828103819461
+
+nhc_wpac_2025_030 = [22.8,145.2,50;26.7,144.5,55;27.9,143.5,60;28.8,144.2,60;29.7,145.6,70];
+my_wpac_2025_030 = [23.1,145.6,55;27.2,144.4,60;28.5,142.8,65;28.9,142.9,65;30.4,144.5,65];
+btk_wpac_2025_030 = [22.7,145.4,60;27.5,143.7,60;28.6,142.9,50;29.0,143.2,40;30.8,142.3,45];
+nhcvect = [nhcvect;nhc_wpac_2025_030];
+myvect = [myvect;my_wpac_2025_030];
+btkvect = [btkvect;btk_wpac_2025_030];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 031 ... KROSA around 2025-07-27-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1949571467596943500
+
+nhc_wpac_2025_031 = [27.8,144.3,90;28.9,144.0,75;29.4,144.6,70;30.5,145.5,75;32.1,146.4,75];
+my_wpac_2025_031 = [27.9,143.5,90;28.3,143.0,80;28.2,144.7,80;29.8,148.2,75;34.1,148.4,70];
+btk_wpac_2025_031 = [28.0,143.1,50;28.7,142.8,40;29.3,143.2,45;31.6,142.0,45;35.2,141.8,55];
+nhcvect = [nhcvect;nhc_wpac_2025_031];
+myvect = [myvect;my_wpac_2025_031];
+btkvect = [btkvect;btk_wpac_2025_031];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 032 ... CO-MAY/(EMONG) around 2025-07-27-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1949576163933741481
+
+nhc_wpac_2025_032 = [27.9,125.2,50;29.3,122.2,45;30.1,121.2,35;31.1,120.5,25;32.4,120.1,20];
+my_wpac_2025_032 = [27.4,124.9,45;29.3,121.5,45;30.8,120.2,35;31.4,118.6,25;33.1,118.7,20];
+btk_wpac_2025_032 = [27.0,125.0,35;29.3,122.9,40;31.2,120.4,30;31.8,117.8,25;32.4,117.2,20];
+nhcvect = [nhcvect;nhc_wpac_2025_032];
+myvect = [myvect;my_wpac_2025_032];
+btkvect = [btkvect;btk_wpac_2025_032];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Cpac 01 ... 01C around 2025-07-27-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1949585710471876759
+# NHC at https://www.nhc.noaa.gov/archive/2025/cp01/cp012025.discus.003.shtml
+
+nhc_cpac_2025_01 = [11.2,150.4,45;11.2,155.3,50;11.8,161.6,40;12.5,168.8,35;13.9,176.0,30];
+my_cpac_2025_01 = [11.2,150.6,45;11.4,155.7,50;11.8,161.9,40;12.4,169.3,35;13.7,176.2,30];
+btk_cpac_2025_01 = [10.7,150.6,65;10.9,155.0,110;11.6,161.7,60;13.0,169.8,45;14.7,176.7,35];
+nhcvect = [nhcvect;nhc_cpac_2025_01];
+myvect = [myvect;my_cpac_2025_01];
+btkvect = [btkvect;btk_cpac_2025_01];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;5;5;5;5;5];
+
+# Cpac 02 ... IONA around 2025-07-28-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1949663308396511571
+# NHC at https://www.nhc.noaa.gov/archive/2025/cp01/cp012025.discus.004.shtml
+
+nhc_cpac_2025_02 = [11.0,151.7,55;11.1,156.4,60;12.1,162.9,45;13.0,170.4,35;14.4,177.4,30];
+my_cpac_2025_02 = [11.0,151.6,55;11.2,156.3,60;12.2,162.6,45;13.0,170.0,35;14.0,176.6,30];
+btk_cpac_2025_02 = [10.8,151.6,70;11.0,156.4,105;11.7,163.8,45;13.5,171.7,45;15.5,178.8,30];
+nhcvect = [nhcvect;nhc_cpac_2025_02];
+myvect = [myvect;my_cpac_2025_02];
+btkvect = [btkvect;btk_cpac_2025_02];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;5;5;5;5;5];
+
+# Cpac 03 ... IONA around 2025-07-28-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1949936764593864891
+# NHC at https://www.nhc.noaa.gov/archive/2025/cp01/cp012025.discus.007.shtml
+
+nhc_cpac_2025_03 = [10.6,155.0,95;10.9,161.0,80;11.7,168.1,55;12.9,175.2,45;14.7,181.5,40];
+my_cpac_2025_03 = [10.6,154.9,95;11.0,160.9,80;11.6,168.0,55;13.1,175.1,45;14.7,181.6,35];
+btk_cpac_2025_03 = [10.9,155.0,110;11.6,161.7,60;13.0,169.8,45;14.7,176.7,35;18.0,183.3,30];
+nhcvect = [nhcvect;nhc_cpac_2025_03];
+myvect = [myvect;my_cpac_2025_03];
+btkvect = [btkvect;btk_cpac_2025_03];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;5;5;5;5;5];
+
+# Cpac 04 ... KELI around 2025-07-28-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1949938705046614363
+# NHC at https://www.nhc.noaa.gov/archive/2025/cp02/cp022025.discus.002.shtml
+
+nhc_cpac_2025_04 = [12.1,148.3,40;12.3,153.8,35];
+my_cpac_2025_04 = [12.2,148.2,35;12.4,153.7,35];
+btk_cpac_2025_04 = [12.7,149.1,35;13.7,155.7,30];
+nhcvect = [nhcvect;nhc_cpac_2025_04];
+myvect = [myvect;my_cpac_2025_04];
+btkvect = [btkvect;btk_cpac_2025_04];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;5;5];
+
+# Wpac 033 ... KROSA around 2025-07-29-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1950296241272672767
+
+nhc_wpac_2025_033 = [29.3,142.9,40;31.1,141.7,50;33.3,139.7,60;36.0,142.2,55;38.7,149.7,45];
+my_wpac_2025_033 = [29.3,142.9,40;31.0,142.0,50;33.2,140.5,50;35.5,141.5,45;38.3,147.6,40];
+btk_wpac_2025_033 = [29.3,143.2,45;31.6,142.0,45;35.2,141.8,55;39.0,147.9,55;42.0,160.3,45];
+nhcvect = [nhcvect;nhc_wpac_2025_033];
+myvect = [myvect;my_wpac_2025_033];
+btkvect = [btkvect;btk_wpac_2025_033];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Cpac 05 ... IONA around 2025-07-29-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1950300399933788540
+# NHC at https://www.nhc.noaa.gov/archive/2025/cp01/cp012025.discus.011.shtml
+
+nhc_cpac_2025_05 = [11.2,160.7,90;11.9,167.7,70;13.5,174.0,55;15.3,179.6,50;17.2,184.4,40];
+my_cpac_2025_05 = [11.2,160.8,90;12.0,167.8,65;13.5,174.3,50;15.4,179.9,45;17.7,184.6,35];
+btk_cpac_2025_05 = [11.6,161.7,60;13.0,169.8,45;14.7,176.7,35;18.0,183.3,30;22.2,188.7,25];
+nhcvect = [nhcvect;nhc_cpac_2025_05];
+myvect = [myvect;my_cpac_2025_05];
+btkvect = [btkvect;btk_cpac_2025_05];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;5;5;5;5;5];
+
+# Wpac 034 ... KROSA around 2025-07-30-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1950567367584497867
+
+nhc_wpac_2025_034 = [30.8,142.2,45;33.3,140.2,55;36.1,142.0,45;39.3,149.6,35;41.6,158.8,25];
+my_wpac_2025_034 = [30.9,142.1,45;33.6,140.2,55;37.4,142.6,40;38.8,149.9,30;40.9,156.6,40];
+btk_wpac_2025_034 = [30.8,142.3,45;34.3,141.3,60;38.3,146.0,55;41.2,157.5,50;43.6,169.6,35];
+nhcvect = [nhcvect;nhc_wpac_2025_034];
+myvect = [myvect;my_wpac_2025_034];
+btkvect = [btkvect;btk_wpac_2025_034];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Cpac 06 ... IONA around 2025-07-30-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1950663338838589544
+# NHC at https://www.nhc.noaa.gov/archive/2025/cp01/cp012025.discus.015.shtml
+
+nhc_cpac_2025_06 = [12.7,169.3,40;14.1,175.9,40;16.0,181.3,40;18.1,185.9,35];
+my_cpac_2025_06 = [12.7,169.3,40;14.0,176.1,35;15.9,181.6,35;18.2,186.0,30];
+btk_cpac_2025_06 = [13.0,169.8,45;14.7,176.7,35;18.0,183.3,30;22.2,188.7,25];
+nhcvect = [nhcvect;nhc_cpac_2025_06];
+myvect = [myvect;my_cpac_2025_06];
+btkvect = [btkvect;btk_cpac_2025_06];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;5;5;5;5];
+
+# Epac 032 ... GIL around 2025-07-31-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1951022705303494844
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep07/ep072025.discus.003.shtml
+
+nhc_epac_2025_032 = [15.6,122.2,70;18.4,129.0,70;20.7,135.4,45;21.8,141.2,30;22.6,147.0,25];
+my_epac_2025_032 = [15.6,122.0,65;18.5,128.6,65;20.7,135.1,40;21.8,140.5,30;22.3,145.8,25];
+btk_epac_2025_032 = [15.6,122.7,60;18.4,129.5,60;20.8,136.6,35;21.3,142.5,25;22.3,147.8,30]; # days 3-5 self-made
+nhcvect = [nhcvect;nhc_epac_2025_032];
+myvect = [myvect;my_epac_2025_032];
+btkvect = [btkvect;btk_epac_2025_032];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;2;2;2;2;2];
+
+# Epac 033 ... GIL around 2025-08-02-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1951659183188709528
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep07/ep072025.discus.010.shtml
+
+nhc_epac_2025_033 = [20.6,133.8,45;22.3,139.2,35;23.0,144.0,30];
+my_epac_2025_033 = [20.6,133.9,45;22.2,139.5,30;23.0,144.3,25];
+btk_epac_2025_033 = [20.4,134.9,45;21.2,141.1,30;21.8,146.3,30]; # days 2-3 self-made
+nhcvect = [nhcvect;nhc_epac_2025_033];
+myvect = [myvect;my_epac_2025_033];
+btkvect = [btkvect;btk_epac_2025_033];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;2;2;2];
+
+# Epac 034 ... GIL around 2025-08-03-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1952018590959288633
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep07/ep072025.discus.014.shtml
+
+nhc_epac_2025_034 = [21.7,141.0,30;22.0,146.2,30];
+my_epac_2025_034 = [21.7,141.1,30;22.1,146.4,30];
+btk_epac_2025_034 = [21.2,141.1,30;21.8,146.3,30]; # days 1-2 self-made
+nhcvect = [nhcvect;nhc_epac_2025_034];
+myvect = [myvect;my_epac_2025_034];
+btkvect = [btkvect;btk_epac_2025_034];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Atl 004 ... DEXTER around 2025-08-04-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1952384430984638541
+# NHC at https://www.nhc.noaa.gov/archive/2025/al04/al042025.discus.003.shtml
+
+nhc_atl_2025_004 = [37.6,63.4,45;39.4,59.1,45;41.0,50.7,45;43.9,43.5,45;46.5,36.1,45];
+my_atl_2025_004 = [37.5,63.5,45;39.2,59.0,45;40.9,51.4,45;43.0,45.6,40;46.0,37.1,45];
+btk_atl_2025_004 = [37.7,63.9,35;39.7,59.0,45;41.0,51.4,50;44.8,43.5,60;45.9,34.0,35]; # days 4-5 self-made
+nhcvect = [nhcvect;nhc_atl_2025_004];
+myvect = [myvect;my_atl_2025_004];
+btkvect = [btkvect;btk_atl_2025_004];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 005 ... DEXTER around 2025-08-05-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1952659931045216563
+# NHC at https://www.nhc.noaa.gov/archive/2025/al04/al042025.discus.006.shtml
+
+nhc_atl_2025_005 = [39.2,60.7,35;40.6,54.5,45;43.5,45.5,45;46.5,35.5,40];
+my_atl_2025_005 = [39.1,60.9,35;40.5,54.7,40;42.5,46.5,40;44.2,38.0,40];
+btk_atl_2025_005 = [39.4,60.5,40;40.4,53.2,45;44.0,45.0,60;45.9,36.7,40]; # days 3-4 self-made
+nhcvect = [nhcvect;nhc_atl_2025_005];
+myvect = [myvect;my_atl_2025_005];
+btkvect = [btkvect;btk_atl_2025_005];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;1;1;1;1];
+
+# Atl 006 ... DEXTER around 2025-08-06-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1953108800073826808
+# NHC at https://www.nhc.noaa.gov/archive/2025/al04/al042025.discus.011.shtml
+
+nhc_atl_2025_006 = [41.5,51.4,55;44.4,43.6,55;45.6,34.8,40;47.0,26.2,35];
+my_atl_2025_006 = [41.4,51.5,55;44.4,43.3,55;45.9,33.9,40;47.5,25.8,35];
+btk_atl_2025_006 = [41.0,51.4,50;44.8,43.5,60;45.9,34.0,35;47.6,25.8,25]; # days 2-4 self-made
+nhcvect = [nhcvect;nhc_atl_2025_006];
+myvect = [myvect;my_atl_2025_006];
+btkvect = [btkvect;btk_atl_2025_006];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;1;1;1;1];
+
+# Epac 035 ... HENRIETTE around 2025-08-06-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1953113031912669662
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep08/ep082025.discus.010.shtml
+
+nhc_epac_2025_035 = [18.6,135.0,40;19.6,141.1,40;21.5,146.6,40;24.2,151.3,45;27.5,155.0,60];
+my_epac_2025_035 = [18.8,135.0,40;19.8,141.3,35;21.8,146.9,35;24.7,151.3,40;28.2,155.2,50];
+btk_epac_2025_035 = [18.5,134.6,45;19.5,140.8,35;21.1,146.2,30;24.2,150.9,55;28.3,155.8,70];
+nhcvect = [nhcvect;nhc_epac_2025_035];
+myvect = [myvect;my_epac_2025_035];
+btkvect = [btkvect;btk_epac_2025_035];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;2;2;2;2;2];
+
+# Atl 007 ... DEXTER around 2025-08-07-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1953471950753243501
+# NHC at https://www.nhc.noaa.gov/archive/2025/al04/al042025.discus.015.shtml
+
+nhc_atl_2025_007 = [44.2,43.8,60;45.9,35.4,45;47.1,26.8,30;48.0,20.0,30];
+my_atl_2025_007 = [44.3,43.9,55;46.0,35.2,40;47.6,26.2,30;48.6,20.3,30];
+btk_atl_2025_007 = [44.8,43.5,60;45.9,34.0,35;47.6,25.8,25;48.4,20.4,25]; # all self-made
+nhcvect = [nhcvect;nhc_atl_2025_007];
+myvect = [myvect;my_atl_2025_007];
+btkvect = [btkvect;btk_atl_2025_007];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;1;1;1;1];
+
+# Epac 036 ... HENRIETTE around 2025-08-07-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1953475798985281892
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep08/ep082025.discus.014.shtml
+
+nhc_epac_2025_036 = [19.5,140.9,45;21.4,146.5,45;24.3,151.4,50;28.0,155.8,65;31.5,160.0,70];
+my_epac_2025_036 = [19.6,140.7,40;21.3,146.5,40;24.3,151.3,50;28.2,155.7,60;32.0,159.8,60];
+btk_epac_2025_036 = [19.5,140.8,35;21.1,146.2,30;24.2,150.9,55;28.3,155.8,70;32.3,161.0,60];
+nhcvect = [nhcvect;nhc_epac_2025_036];
+myvect = [myvect;my_epac_2025_036];
+btkvect = [btkvect;btk_epac_2025_036];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;2;2;2;2;2];
+
+# Epac 037 ... IVO around 2025-08-07-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1953564119950410000
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep09/ep092025.discus.005.shtml
+
+nhc_epac_2025_037 = [21.1,110.9,70;21.6,114.1,55;21.9,117.5,30;22.5,121.0,25];
+my_epac_2025_037 = [21.1,110.6,60;21.9,113.7,45;22.1,117.0,30;22.6,120.1,25];
+btk_epac_2025_037 = [20.4,110.7,55;20.9,113.1,45;21.9,116.7,35;23.3,120.0,20]; # day 4 self-made
+nhcvect = [nhcvect;nhc_epac_2025_037];
+myvect = [myvect;my_epac_2025_037];
+btkvect = [btkvect;btk_epac_2025_037];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;2;2;2;2];
+
+# Epac 038 ... HENRIETTE around 2025-08-07-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1953567629173576029
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep08/ep082025.discus.015.shtml
+
+nhc_epac_2025_038 = [19.9,142.2,40;22.1,147.5,40;25.2,152.3,55;28.9,156.7,70;32.6,160.6,65];
+my_epac_2025_038 = [20.0,142.2,40;22.1,147.7,40;25.1,152.4,50;28.9,156.6,60;32.1,160.0,60];
+btk_epac_2025_038 = [19.8,142.3,30;21.9,147.6,35;25.2,151.9,65;29.3,157.2,75;33.6,162.3,55];
+nhcvect = [nhcvect;nhc_epac_2025_038];
+myvect = [myvect;my_epac_2025_038];
+btkvect = [btkvect;btk_epac_2025_038];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;2;2;2;2;2];
+
+# Epac 039 ... IVO around 2025-08-08-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1953831926130749712
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep09/ep092025.discus.008.shtml
+
+nhc_epac_2025_039 = [21.3,113.4,60;21.5,116.6,45;22.0,120.0,30];
+my_epac_2025_039 = [21.0,113.3,55;21.3,116.4,45;21.9,119.9,30];
+btk_epac_2025_039 = [20.9,112.4,50;21.6,115.6,35;23.1,119.1,25];
+nhcvect = [nhcvect;nhc_epac_2025_039];
+myvect = [myvect;my_epac_2025_039];
+btkvect = [btkvect;btk_epac_2025_039];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;2;2;2];
+
+# Cpac 07 ... HENRIETTE around 2025-08-08-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1953836574015193263
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep08/ep082025.discus.018.shtml
+
+nhc_cpac_2025_07 = [21.3,146.3,30;24.1,150.9,45;27.9,155.7,65;32.3,160.4,65];
+my_cpac_2025_07 = [21.3,146.2,30;24.1,150.8,45;28.0,155.9,55;32.8,160.2,55];
+btk_cpac_2025_07 = [21.1,146.2,30;24.2,150.9,55;28.3,155.8,70;32.3,161.0,60];
+nhcvect = [nhcvect;nhc_cpac_2025_07];
+myvect = [myvect;my_cpac_2025_07];
+btkvect = [btkvect;btk_cpac_2025_07];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;5;5;5;5];
+
+# Cpac 08 ... HENRIETTE around 2025-08-09-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1954197932913185214
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep08/ep082025.discus.022.shtml
+
+nhc_cpac_2025_08 = [23.9,150.6,40;27.9,155.3,50;32.0,160.4,55];
+my_cpac_2025_08 = [23.9,150.6,40;28.1,155.4,50;32.4,160.7,50];
+btk_cpac_2025_08 = [24.2,150.9,55;28.3,155.8,70;32.3,161.0,60];
+nhcvect = [nhcvect;nhc_cpac_2025_08];
+myvect = [myvect;my_cpac_2025_08];
+btkvect = [btkvect;btk_cpac_2025_08];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;5;5;5];
+
+# Epac 040 ... IVO around 2025-08-09-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1954284372749889606
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep09/ep092025.discus.013.shtml
+
+nhc_epac_2025_040 = [22.0,116.5,35;22.8,120.6,25];
+my_epac_2025_040 = [21.9,116.5,35;23.0,120.5,20];
+btk_epac_2025_040 = [21.9,116.7,35;23.3,120.0,20]; # day 2 self-made
+nhcvect = [nhcvect;nhc_epac_2025_040];
+myvect = [myvect;my_epac_2025_040];
+btkvect = [btkvect;btk_epac_2025_040];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Atl 008 ... 97L around 2025-08-10-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1954560414248792315
+# (no NHC advisory)
+
+# Atl 009 ... ERIN around 2025-08-11-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1954922969366684007
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.001.shtml
+
+nhc_atl_2025_009 = [17.4,35.1,50;17.1,41.7,60;18.0,48.4,80;19.6,54.0,90;21.5,60.0,100];
+my_atl_2025_009 = [17.6,35.0,45;17.4,41.8,55;18.1,48.6,70;19.8,54.2,85;21.5,59.7,100];
+btk_atl_2025_009 = [17.3,35.4,40;16.4,42.7,45;16.3,48.9,50;18.0,55.3,65;19.6,62.1,130];
+nhcvect = [nhcvect;nhc_atl_2025_009];
+myvect = [myvect;my_atl_2025_009];
+btkvect = [btkvect;btk_atl_2025_009];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 010 ... ERIN around 2025-08-11-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1955012626427285703
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.002.shtml
+
+nhc_atl_2025_010 = [17.3,37.1,50;17.3,44.0,60;18.5,50.0,80;20.0,55.6,95;22.0,60.5,100];
+my_atl_2025_010 = [17.4,36.8,50;17.4,43.6,65;18.5,49.3,80;19.6,54.8,95;21.4,59.6,100];
+btk_atl_2025_010 = [17.1,37.4,40;16.3,44.3,45;16.6,50.4,50;18.7,56.8,65;19.8,63.4,140];
+nhcvect = [nhcvect;nhc_atl_2025_010];
+myvect = [myvect;my_atl_2025_010];
+btkvect = [btkvect;btk_atl_2025_010];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 011 ... ERIN around 2025-08-12-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1955285531836698882
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.005.shtml
+
+nhc_atl_2025_011 = [16.5,42.3,40;17.1,48.3,55;18.5,54.4,75;19.8,60.3,90;21.4,65.0,100];
+my_atl_2025_011 = [16.3,42.3,40;16.6,47.7,45;18.2,53.3,65;19.8,59.3,75;21.5,64.5,90];
+btk_atl_2025_011 = [16.4,42.7,45;16.3,48.9,50;18.0,55.3,65;19.6,62.1,130;20.7,67.0,110];
+nhcvect = [nhcvect;nhc_atl_2025_011];
+myvect = [myvect;my_atl_2025_011];
+btkvect = [btkvect;btk_atl_2025_011];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 012 ... ERIN around 2025-08-12-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1955372608272339202
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.006.shtml
+
+nhc_atl_2025_012 = [16.4,43.9,45;17.2,49.9,60;18.6,56.0,85;20.0,61.5,95;22.2,65.7,100];
+my_atl_2025_012 = [16.4,43.7,50;17.2,49.6,65;18.4,54.4,85;20.0,59.0,100;22.5,63.3,100];
+btk_atl_2025_012 = [16.3,44.3,45;16.6,50.4,50;18.7,56.8,65;19.8,63.4,140;21.5,68.0,110];
+nhcvect = [nhcvect;nhc_atl_2025_012];
+myvect = [myvect;my_atl_2025_012];
+btkvect = [btkvect;btk_atl_2025_012];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 013 ... ERIN around 2025-08-13-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1955464166933926138
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.007.shtml
+
+nhc_atl_2025_013 = [16.2,45.5,45;17.3,51.4,60;18.9,57.5,85;20.5,62.6,100;22.5,66.5,100];
+my_atl_2025_013 = [16.1,45.1,45;17.2,50.8,50;19.0,56.1,75;20.9,60.6,85;22.8,64.7,95];
+btk_atl_2025_013 = [16.3,45.9,45;16.9,51.9,60;19.4,58.6,75;20.0,64.5,125;22.1,68.8,110];
+nhcvect = [nhcvect;nhc_atl_2025_013];
+myvect = [myvect;my_atl_2025_013];
+btkvect = [btkvect;btk_atl_2025_013];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 014 ... ERIN around 2025-08-13-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1955644908028789194
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.009.shtml
+
+nhc_atl_2025_014 = [16.6,48.6,50;18.2,54.3,65;19.9,60.0,85;21.7,64.6,100;23.9,67.3,105];
+my_atl_2025_014 = [16.4,48.5,50;17.9,53.9,60;19.9,59.4,80;21.6,63.8,90;23.7,66.4,100];
+btk_atl_2025_014 = [16.3,48.9,50;18.0,55.3,65;19.6,62.1,130;20.7,67.0,110;22.9,70.5,120];
+nhcvect = [nhcvect;nhc_atl_2025_014];
+myvect = [myvect;my_atl_2025_014];
+btkvect = [btkvect;btk_atl_2025_014];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 015 ... ERIN around 2025-08-13-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1955734275267145853
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.010.shtml
+
+nhc_atl_2025_015 = [16.9,50.1,55;18.4,55.9,75;20.2,61.4,95;22.2,65.8,100;24.8,68.2,105];
+my_atl_2025_015 = [16.8,50.4,55;18.3,56.0,80;20.0,61.1,100;22.1,65.1,100;24.7,68.0,105];
+btk_atl_2025_015 = [16.6,50.4,50;18.7,56.8,65;19.8,63.4,140;21.5,68.0,110;23.6,71.0,120];
+nhcvect = [nhcvect;nhc_atl_2025_015];
+myvect = [myvect;my_atl_2025_015];
+btkvect = [btkvect;btk_atl_2025_015];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 016 ... ERIN around 2025-08-14-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1956006080632291425
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.013.shtml
+
+nhc_atl_2025_016 = [17.8,55.0,65;19.4,60.7,90;21.3,65.1,100;23.5,68.0,105;26.5,69.8,110];
+my_atl_2025_016 = [17.8,55.1,65;19.4,60.9,90;21.2,65.3,100;23.4,68.2,110;26.2,69.7,110];
+btk_atl_2025_016 = [18.0,55.3,65;19.6,62.1,130;20.7,67.0,110;22.9,70.5,120;25.2,72.1,90];
+nhcvect = [nhcvect;nhc_atl_2025_016];
+myvect = [myvect;my_atl_2025_016];
+btkvect = [btkvect;btk_atl_2025_016];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 017 ... ERIN around 2025-08-14-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1956098895995363459
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.014.shtml
+
+nhc_atl_2025_017 = [18.1,56.6,65;19.8,62.2,90;21.7,66.1,100;24.2,68.9,105;27.2,70.3,110];
+my_atl_2025_017 = [17.9,56.7,70;19.5,62.4,90;21.4,66.6,100;23.7,69.2,105;26.5,70.7,110];
+btk_atl_2025_017 = [18.7,56.8,65;19.8,63.4,140;21.5,68.0,110;23.6,71.0,120;26.1,72.5,90];
+nhcvect = [nhcvect;nhc_atl_2025_017];
+myvect = [myvect;my_atl_2025_017];
+btkvect = [btkvect;btk_atl_2025_017];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 018 ... ERIN around 2025-08-15-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1956189377773572276
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.015.shtml
+
+nhc_atl_2025_018 = [18.6,58.3,80;20.3,63.3,100;22.4,67.0,115;25.0,69.4,110;28.0,70.4,105];
+my_atl_2025_018 = [18.5,58.3,80;20.2,63.7,95;22.2,67.6,110;24.9,69.9,115;28.1,70.9,105];
+btk_atl_2025_018 = [19.4,58.6,75;20.0,64.5,125;22.1,68.8,110;24.0,71.4,110;27.2,72.8,90];
+nhcvect = [nhcvect;nhc_atl_2025_018];
+myvect = [myvect;my_atl_2025_018];
+btkvect = [btkvect;btk_atl_2025_018];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 019 ... ERIN around 2025-08-15-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1956370927849034032
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.017.shtml
+
+nhc_atl_2025_019 = [19.8,61.4,90;21.6,66.0,110;23.8,69.2,120;26.5,70.8,115;30.3,71.0,110];
+my_atl_2025_019 = [19.8,61.3,90;21.7,65.9,110;24.0,68.9,115;26.7,70.1,115;30.8,70.3,105];
+btk_atl_2025_019 = [19.6,62.1,130;20.7,67.0,110;22.9,70.5,120;25.2,72.1,90;29.6,73.7,95];
+nhcvect = [nhcvect;nhc_atl_2025_019];
+myvect = [myvect;my_atl_2025_019];
+btkvect = [btkvect;btk_atl_2025_019];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 020 ... ERIN around 2025-08-16-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1956731232147874242
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.021.shtml
+
+nhc_atl_2025_020 = [21.0,66.8,130;23.5,69.7,130;26.4,70.9,120;30.6,70.9,115;35.7,66.4,95];
+my_atl_2025_020 = [21.0,66.8,130;23.5,69.7,130;26.4,70.8,125;30.6,70.8,115;35.5,66.4,95];
+btk_atl_2025_020 = [20.7,67.0,110;22.9,70.5,120;25.2,72.1,90;29.6,73.7,95;34.9,71.7,90];
+nhcvect = [nhcvect;nhc_atl_2025_020];
+myvect = [myvect;my_atl_2025_020];
+btkvect = [btkvect;btk_atl_2025_020];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 021 ... ERIN around 2025-08-16-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1956822759927103719
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.022.shtml
+
+nhc_atl_2025_021 = [21.4,67.6,140;24.0,70.2,130;27.3,71.3,120;31.7,70.8,110;36.8,65.0,100];
+my_atl_2025_021 = [21.4,67.7,140;23.9,70.5,125;27.0,72.0,125;31.3,71.7,110;36.2,66.6,100];
+btk_atl_2025_021 = [21.5,68.0,110;23.6,71.0,120;26.1,72.5,90;30.7,73.6,95;35.9,70.1,85];
+nhcvect = [nhcvect;nhc_atl_2025_021];
+myvect = [myvect;my_atl_2025_021];
+btkvect = [btkvect;btk_atl_2025_021];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 022 ... ERIN around 2025-08-17-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1957098512916578741
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.025.shtml
+
+nhc_atl_2025_022 = [23.1,70.2,125;25.9,72.2,115;30.0,72.7,105;34.3,70.4,95;39.0,62.0,85];
+my_atl_2025_022 = [23.0,70.5,115;25.9,72.4,115;29.7,73.0,100;34.3,70.6,95;39.1,60.8,85];
+btk_atl_2025_022 = [22.9,70.5,120;25.2,72.1,90;29.6,73.7,95;34.9,71.7,90;38.5,64.6,80];
+nhcvect = [nhcvect;nhc_atl_2025_022];
+myvect = [myvect;my_atl_2025_022];
+btkvect = [btkvect;btk_atl_2025_022];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 023 ... ERIN around 2025-08-17-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1957185077177438610
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.026.shtml
+
+nhc_atl_2025_023 = [24.0,71.0,125;27.1,72.5,115;31.2,72.7,105;35.3,69.3,95;40.3,59.5,85];
+my_atl_2025_023 = [23.8,71.2,120;26.8,72.7,105;30.9,73.0,95;34.8,69.2,95;40.2,58.9,85];
+btk_atl_2025_023 = [23.6,71.0,120;26.1,72.5,90;30.7,73.6,95;35.9,70.1,85;39.4,61.4,80];
+nhcvect = [nhcvect;nhc_atl_2025_023];
+myvect = [myvect;my_atl_2025_023];
+btkvect = [btkvect;btk_atl_2025_023];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 024 ... ERIN around 2025-08-18-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1957279637320433806
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.027.shtml
+
+nhc_atl_2025_024 = [24.6,71.3,115;28.0,72.8,105;32.0,72.5,95;36.5,67.5,90;41.4,56.7,80];
+my_atl_2025_024 = [24.4,71.5,110;27.7,73.2,100;31.9,73.1,95;36.1,68.3,90;40.6,57.9,85];
+btk_atl_2025_024 = [24.0,71.4,110;27.2,72.8,90;32.1,73.3,95;36.9,68.4,85;40.7,57.8,80];
+nhcvect = [nhcvect;nhc_atl_2025_024];
+myvect = [myvect;my_atl_2025_024];
+btkvect = [btkvect;btk_atl_2025_024];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 025 ... ERIN around 2025-08-18-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1957459870900277648
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.029.shtml
+
+nhc_atl_2025_025 = [25.7,72.5,115;29.5,73.5,105;33.9,71.6,95;37.7,65.0,90;42.4,53.0,75];
+my_atl_2025_025 = [25.5,72.6,110;29.2,73.7,100;33.6,71.8,95;37.4,65.2,90;42.8,51.5,75];
+btk_atl_2025_025 = [25.2,72.1,90;29.6,73.7,95;34.9,71.7,90;38.5,64.6,80;42.2,50.4,70]; # day 5 self-made
+nhcvect = [nhcvect;nhc_atl_2025_025];
+myvect = [myvect;my_atl_2025_025];
+btkvect = [btkvect;btk_atl_2025_025];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 026 ... ERIN around 2025-08-18-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1957548646167159222
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.030.shtml
+
+nhc_atl_2025_026 = [26.5,72.8,115;30.5,73.7,100;34.8,71.2,95;38.0,64.0,85;41.0,56.5,75];
+my_atl_2025_026 = [26.4,73.0,110;30.3,74.0,95;34.4,71.8,85;37.8,65.5,80;41.1,58.5,65];
+btk_atl_2025_026 = [26.1,72.5,90;30.7,73.6,95;35.9,70.1,85;39.4,61.4,80;44.0,44.7,65]; # day 5 self-made
+nhcvect = [nhcvect;nhc_atl_2025_026];
+myvect = [myvect;my_atl_2025_026];
+btkvect = [btkvect;btk_atl_2025_026];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 027 ... ERIN around 2025-08-19-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1957823307400536082
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.033.shtml
+
+nhc_atl_2025_027 = [29.1,73.9,90;33.7,72.4,95;37.3,66.6,85;40.3,58.7,65;42.8,50.0,55];
+my_atl_2025_027 = [29.0,74.0,90;33.6,72.4,90;37.4,66.7,80;41.2,57.8,65;43.8,48.3,50];
+btk_atl_2025_027 = [29.6,73.7,95;34.9,71.7,90;38.5,64.6,80;42.2,50.4,70;50.7,30.8,75]; # days 4-5 self-made
+nhcvect = [nhcvect;nhc_atl_2025_027];
+myvect = [myvect;my_atl_2025_027];
+btkvect = [btkvect;btk_atl_2025_027];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 028 ... ERIN around 2025-08-19-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1957909308869603472
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.034.shtml
+
+nhc_atl_2025_028 = [30.3,73.8,95;34.9,71.3,95;38.4,64.7,85;41.0,56.0,65;43.0,46.0,50];
+my_atl_2025_028 = [30.2,73.9,95;34.9,71.5,95;38.6,64.7,80;42.2,53.2,60;44.6,40.7,45];
+btk_atl_2025_028 = [30.7,73.6,95;35.9,70.1,85;39.4,61.4,80;44.0,44.7,65;52.7,28.2,65]; # days 4-5 self-made
+nhcvect = [nhcvect;nhc_atl_2025_028];
+myvect = [myvect;my_atl_2025_028];
+btkvect = [btkvect;btk_atl_2025_028];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 029 ... ERIN around 2025-08-20-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1958185912824746095
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.037.shtml
+
+nhc_atl_2025_029 = [34.4,72.2,105;38.6,65.5,90;42.5,54.3,65;47.4,40.0,55;52.5,27.4,50];
+my_atl_2025_029 = [34.2,72.2,100;38.3,65.5,85;42.3,54.2,65;47.8,38.2,45;52.5,26.2,40];
+btk_atl_2025_029 = [34.9,71.7,90;38.5,64.6,80;42.2,50.4,70;50.7,30.8,75;56.1,22.2,50]; # days 3-5 self-made
+nhcvect = [nhcvect;nhc_atl_2025_029];
+myvect = [myvect;my_atl_2025_029];
+btkvect = [btkvect;btk_atl_2025_029];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 030 ... ERIN around 2025-08-20-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1958272858930503817
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.038.shtml
+
+nhc_atl_2025_030 = [35.5,70.6,100;39.2,63.0,85;43.1,50.8,55;49.0,34.5,55;54.0,23.0,45];
+my_atl_2025_030 = [35.4,70.8,95;39.0,63.5,80;42.5,51.3,55;48.8,33.0,50;53.5,21.2,40];
+btk_atl_2025_030 = [35.9,70.1,85;39.4,61.4,80;44.0,44.7,65;52.7,28.2,65;57.4,21.3,45]; # days 3-5 self-made
+nhcvect = [nhcvect;nhc_atl_2025_030];
+myvect = [myvect;my_atl_2025_030];
+btkvect = [btkvect;btk_atl_2025_030];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Atl 031 ... ERIN around 2025-08-21-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1958545477013504346
+# NHC at https://www.nhc.noaa.gov/archive/2025/al05/al052025.discus.041.shtml
+
+nhc_atl_2025_031 = [39.1,64.5,80;43.2,51.7,70;49.4,35.7,60;54.5,25.0,55;56.9,21.1,45];
+my_atl_2025_031 = [38.9,64.6,80;43.2,51.7,65;49.5,35.8,50;55.4,24.2,45;57.5,21.6,35];
+btk_atl_2025_031 = [38.5,64.6,80;42.2,50.4,70;50.7,30.8,75;56.1,22.2,50;60.0,21.6,40]; # days 2-5 self-made
+nhcvect = [nhcvect;nhc_atl_2025_031];
+myvect = [myvect;my_atl_2025_031];
+btkvect = [btkvect;btk_atl_2025_031];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Wpac 035 ... KAJIKI/(ISANG) around 2025-08-23-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1959360255382491377
+
+nhc_wpac_2025_035 = [17.7,107.8,70;18.1,103.3,35;18.9,99.4,10];
+my_wpac_2025_035 = [17.9,107.8,70;18.5,103.7,40;18.7,100.7,15];
+btk_wpac_2025_035 = [18.1,108.4,90;18.7,104.9,45;19.5,100.6,15];
+nhcvect = [nhcvect;nhc_wpac_2025_035];
+myvect = [myvect;my_wpac_2025_035];
+btkvect = [btkvect;btk_wpac_2025_035];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Atl 032 ... FERNAND around 2025-08-24-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1959635042218692952
+# NHC at https://www.nhc.noaa.gov/archive/2025/al06/al062025.discus.004.shtml
+
+nhc_atl_2025_032 = [34.8,57.8,50;39.3,54.3,45;44.5,46.0,35];
+my_atl_2025_032 = [34.7,58.0,45;39.4,54.4,40;45.0,46.0,35];
+btk_atl_2025_032 = [33.8,58.4,50;37.3,55.1,35;38.2,50.4,40];
+nhcvect = [nhcvect;nhc_atl_2025_032];
+myvect = [myvect;my_atl_2025_032];
+btkvect = [btkvect;btk_atl_2025_032];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;1;1;1];
+
+# Wpac 036 ... KAJIKI/(ISANG) around 2025-08-24-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1959718922363847158
+
+nhc_wpac_2025_036 = [18.9,104.3,50];
+my_wpac_2025_036 = [19.0,104.3,55];
+btk_wpac_2025_036 = [18.7,104.9,45];
+nhcvect = [nhcvect;nhc_wpac_2025_036];
+myvect = [myvect;my_wpac_2025_036];
+btkvect = [btkvect;btk_wpac_2025_036];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;3];
+
+# Atl 033 ... FERNAND around 2025-08-24-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1959721854559715710
+# NHC at https://www.nhc.noaa.gov/archive/2025/al06/al062025.discus.005.shtml
+
+nhc_atl_2025_033 = [35.1,57.6,50;40.0,53.0,40];
+my_atl_2025_033 = [35.3,57.7,45;40.6,53.2,40];
+btk_atl_2025_033 = [34.8,57.6,50;37.8,54.0,35];
+nhcvect = [nhcvect;nhc_atl_2025_033];
+myvect = [myvect;my_atl_2025_033];
+btkvect = [btkvect;btk_atl_2025_033];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;1;1];
+
+# Atl 034 ... FERNAND around 2025-08-25-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1959811219835203947
+# NHC at https://www.nhc.noaa.gov/archive/2025/al06/al062025.discus.006.shtml
+
+nhc_atl_2025_034 = [36.2,56.7,45;41.5,51.0,35];
+my_atl_2025_034 = [36.2,56.9,45;41.8,51.5,35];
+btk_atl_2025_034 = [35.6,56.8,45;38.2,52.7,40];
+nhcvect = [nhcvect;nhc_atl_2025_034];
+myvect = [myvect;my_atl_2025_034];
+btkvect = [btkvect;btk_atl_2025_034];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;1;1];
+
+# Epac 041 ... 10E around 2025-08-25-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1959815373358059944
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep10/ep102025.discus.002.shtml
+
+nhc_epac_2025_041 = [18.2,114.2,40;20.4,117.9,50;23.0,120.2,40;25.0,121.5,30;26.3,122.2,25];
+my_epac_2025_041 = [18.2,114.4,40;20.5,118.5,50;23.1,120.9,40;25.1,121.3,25;26.0,122.1,20];
+btk_epac_2025_041 = [17.6,114.9,55;20.4,117.7,55;24.4,120.6,40;25.8,121.1,20;24.8,122.1,15]; # days 4-5 self-made
+nhcvect = [nhcvect;nhc_epac_2025_041];
+myvect = [myvect;my_epac_2025_041];
+btkvect = [btkvect;btk_epac_2025_041];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;2;2;2;2;2];
+
+# Epac 042 ... JULIETTE around 2025-08-25-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1959996117455892685
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep10/ep102025.discus.004.shtml
+
+nhc_epac_2025_042 = [18.8,116.5,50;21.6,119.6,50;24.2,121.4,35;26.0,121.5,20];
+my_epac_2025_042 = [18.8,116.4,45;21.9,119.6,45;24.6,121.3,30;26.6,120.8,15];
+btk_epac_2025_042 = [18.7,116.2,60;22.5,119.2,45;25.7,120.8,30;25.6,121.6,15]; # days 3-4 self-made
+nhcvect = [nhcvect;nhc_epac_2025_042];
+myvect = [myvect;my_epac_2025_042];
+btkvect = [btkvect;btk_epac_2025_042];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;2;2;2;2];
+
+# Atl 035 ... FERNAND around 2025-08-25-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1960081290083860790
+# NHC at https://www.nhc.noaa.gov/archive/2025/al06/al062025.discus.009.shtml
+
+nhc_atl_2025_035 = [38.7,53.8,40;43.0,48.0,30];
+my_atl_2025_035 = [39.0,54.0,40;43.5,48.4,30];
+btk_atl_2025_035 = [37.8,54.0,35;38.9,48.4,45];
+nhcvect = [nhcvect;nhc_atl_2025_035];
+myvect = [myvect;my_atl_2025_035];
+btkvect = [btkvect;btk_atl_2025_035];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;1;1];
+
+# Epac 043 ... JULIETTE around 2025-08-25-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1960084942936821882
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep10/ep102025.discus.005.shtml
+
+nhc_epac_2025_043 = [19.3,117.7,65;22.2,120.6,55;24.5,122.0,35;25.7,122.0,25];
+my_epac_2025_043 = [19.2,117.7,60;22.1,120.9,50;24.6,122.2,30;25.1,122.3,20];
+btk_epac_2025_043 = [19.5,116.8,55;23.5,120.0,40;25.8,121.0,25;25.0,122.1,15]; # days 3-4 self-made
+nhcvect = [nhcvect;nhc_epac_2025_043];
+myvect = [myvect;my_epac_2025_043];
+btkvect = [btkvect;btk_epac_2025_043];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;2;2;2;2];
+
+# Atl 036 ... FERNAND around 2025-08-26-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1960356290682581051
+# NHC at https://www.nhc.noaa.gov/archive/2025/al06/al062025.discus.012.shtml
+
+nhc_atl_2025_036 = [40.4,50.1,40];
+my_atl_2025_036 = [40.4,49.9,35];
+btk_atl_2025_036 = [38.2,50.4,40];
+nhcvect = [nhcvect;nhc_atl_2025_036];
+myvect = [myvect;my_atl_2025_036];
+btkvect = [btkvect;btk_atl_2025_036];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;1];
+
+# Epac 044 ... JULIETTE around 2025-08-26-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1960356950417289525
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep10/ep102025.discus.008.shtml
+
+nhc_epac_2025_044 = [21.6,119.2,55;24.0,121.4,40;25.6,122.7,20];
+my_epac_2025_044 = [21.7,119.1,55;24.3,121.1,35;26.1,122.0,20];
+btk_epac_2025_044 = [22.5,119.2,45;25.7,120.8,30;25.6,121.6,15]; # days 2-3 self-made
+nhcvect = [nhcvect;nhc_epac_2025_044];
+myvect = [myvect;my_epac_2025_044];
+btkvect = [btkvect;btk_epac_2025_044];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;2;2;2];
+
+# Atl 037 ... FERNAND around 2025-08-26-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1960443414631305268
+# NHC at https://www.nhc.noaa.gov/archive/2025/al06/al062025.discus.013.shtml
+
+nhc_atl_2025_037 = [40.1,48.3,40;43.7,37.9,35];
+my_atl_2025_037 = [40.1,48.4,35;43.7,37.9,35];
+btk_atl_2025_037 = [38.9,48.4,45;43.0,39.3,35]; # day 2 self-made
+nhcvect = [nhcvect;nhc_atl_2025_037];
+myvect = [myvect;my_atl_2025_037];
+btkvect = [btkvect;btk_atl_2025_037];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;1;1];
+
+# Epac 045 ... JULIETTE around 2025-08-26-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1960447098517639355
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep10/ep102025.discus.009.shtml
+
+nhc_epac_2025_045 = [22.7,119.8,50;25.2,121.2,30;26.5,121.9,20];
+my_epac_2025_045 = [22.7,119.8,45;25.4,121.1,30;26.6,121.5,15];
+btk_epac_2025_045 = [23.5,120.0,40;25.8,121.0,25;25.0,122.1,15]; # days 2-3 self-made
+nhcvect = [nhcvect;nhc_epac_2025_045];
+myvect = [myvect;my_epac_2025_045];
+btkvect = [btkvect;btk_epac_2025_045];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;2;2;2];
+
+# Epac 046 ... JULIETTE around 2025-08-27-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1960715992914444631
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep10/ep102025.discus.012.shtml
+
+nhc_epac_2025_046 = [26.0,120.6,35;27.8,120.6,20];
+my_epac_2025_046 = [25.9,120.6,30;28.0,120.5,15];
+btk_epac_2025_046 = [25.7,120.8,30;25.6,121.6,15]; # days 1-2 self-made
+nhcvect = [nhcvect;nhc_epac_2025_046];
+myvect = [myvect;my_epac_2025_046];
+btkvect = [btkvect;btk_epac_2025_046];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+
+# Atl 038 ... FERNAND around 2025-08-27-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1960721290148634933
+# NHC at https://www.nhc.noaa.gov/archive/2025/al06/al062025.discus.016.shtml
+
+nhc_atl_2025_038 = [41.6,41.9,35];
+my_atl_2025_038 = [41.5,42.1,35];
+btk_atl_2025_038 = [41.8,41.9,35]; # day 1 self-made
+nhcvect = [nhcvect;nhc_atl_2025_038];
+myvect = [myvect;my_atl_2025_038];
+btkvect = [btkvect;btk_atl_2025_038];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;1];
+
 
 
 ##
@@ -17741,7 +19397,7 @@ nhcinterror = abs( nhcvect(:,3)-btkvect(:,3) );
 myinterror = abs( myvect(:,3)-btkvect(:,3) );
 ourintdiff = abs( nhcvect(:,3)-myvect(:,3) );
 
-j = 4; # change this to match to basin in which you want error comparison
+j = 3; # change this to match to basin in which you want error comparison
 
 [sum(myposerror.*(leadtimevect==1).*(basinvect==j))/sum(nhcposerror.*(leadtimevect==1).*(basinvect==j)) , sum(myinterror.*(leadtimevect==1).*(basinvect==j))/sum(nhcinterror.*(leadtimevect==1).*(basinvect==j)) , sum((leadtimevect==1).*(basinvect==j))]
 [sum(myposerror.*(leadtimevect==2).*(basinvect==j))/sum(nhcposerror.*(leadtimevect==2).*(basinvect==j)) , sum(myinterror.*(leadtimevect==2).*(basinvect==j))/sum(nhcinterror.*(leadtimevect==2).*(basinvect==j)) , sum((leadtimevect==2).*(basinvect==j))]
