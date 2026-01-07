@@ -1,5 +1,5 @@
 # to be run with GNU Octave
-# data last added 2025/08/30, data ready for forecasts issued on or before 2025/08/30
+# data last added 2026/01/05, data ready for forecasts issued on or before 2025/12/31
 
 # to compare elioe's performance to U.S. agencies;
 # regarding "early advisories" posted most likely before NHC/CPHC/JTWC advisories had become public (if they existed in that advisory cycle);
@@ -22,7 +22,10 @@
 
 # additionally, data points may be "self-made": for 2020-22 those would be mostly based on synoptic charts published by NHC, as well as FU Berlin
 # and those data points would exist in cases where FU Berlin disagreed with NHC regarding a system's dissipation (in NAtl only)
-# for 2023, those "self-made" data points are based on model initializations (in NAtl/EPac only)
+# 2023 through 2025, those "self-made" data points are based on model initializations, when those indicate continues existence of low pressure / circulation center
+# and they are made whenever useful for verifying NAtl/EPac advisories
+# beginning in 2026, "self-made" data points will be made for vorticity maximum even after unambiguous dissipation
+# and they are made whenever useful for verifying NAtl/EPac/CPac advisories
 
 # a special case is PTC 03L / Claudette of 2021, which I consider to be two separate systems. The part of code to compare errors of PTC 03L using
 # data of Claudette exists in chronologically proper place, but is behind comment markers by default.
@@ -15336,7 +15339,7 @@ basinvect = [basinvect;3];
 
 my_wpac_2024_004 = [14.9,122.1,35;16.5,123.4,45;20.3,127.6,70;27.2,134.2,65;35.3,145.0,45];
 nhc_wpac_2024_004 = [15.2,121.8,35;17.7,123.4,45;21.3,126.6,70;26.3,132.4,65;32.7,141.9,50];
-btk_wpac_2024_004 = [14.1,121.4,55;15.8,122.8,90;18.5,125.5,75;24.3,130.8,70;28.2,134.8,55];
+btk_wpac_2024_004 = [14.0,121.4,55;15.8,122.8,85;18.7,125.7,65;24.3,130.8,75;28.2,134.7,50]; # JTWC best track
 myvect = [myvect;my_wpac_2024_004];
 nhcvect = [nhcvect;nhc_wpac_2024_004];
 btkvect = [btkvect;btk_wpac_2024_004];
@@ -15352,7 +15355,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_005 = [14.6,121.5,40;17.1,123.2,50;20.6,126.4,65;24.3,132.7,50;26.4,135.7,45];
 nhc_wpac_2024_005 = [14.8,121.5,35;16.6,123.3,60;19.4,126.2,75;24.0,130.7,60;28.6,135.9,45];
-btk_wpac_2024_005 = [14.5,121.8,55;16.2,123.5,95;19.9,126.8,75;25.2,131.8,60;29.0,135.8,50];
+btk_wpac_2024_005 = [14.4,121.8,60;16.4,123.5,85;19.9,126.8,65;25.3,132.0,65;28.9,135.7,45]; # JTWC best track
 myvect = [myvect;my_wpac_2024_005];
 nhcvect = [nhcvect;nhc_wpac_2024_005];
 btkvect = [btkvect;btk_wpac_2024_005];
@@ -15364,7 +15367,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_nio_2024_04 = [22.1,89.1,40;24.5,90.8,25];
 nhc_nio_2024_04 = [22.3,89.1,50;24.5,91.3,30];
-btk_nio_2024_04 = [22.6,89.1,50;24.9,91.2,40];
+btk_nio_2024_04 = [22.6,88.8,50;24.8,91.0,20]; # JTWC best track
 myvect = [myvect;my_nio_2024_04];
 nhcvect = [nhcvect;nhc_nio_2024_04];
 btkvect = [btkvect;btk_nio_2024_04];
@@ -15376,7 +15379,7 @@ basinvect = [basinvect;3;3];
 
 my_nio_2024_05 = [23.4,89.4,40];
 nhc_nio_2024_05 = [23.0,89.3,40];
-btk_nio_2024_05 = [23.2,89.3,45];
+btk_nio_2024_05 = [23.1,89.1,45]; # JTWC best track
 myvect = [myvect;my_nio_2024_05];
 nhcvect = [nhcvect;nhc_nio_2024_05];
 btkvect = [btkvect;btk_nio_2024_05];
@@ -15388,7 +15391,7 @@ basinvect = [basinvect;3];
 
 my_wpac_2024_006 = [16.8,123.4,75;20.0,127.3,90;24.0,131.3,80;27.9,135.9,55;31.8,142.7,40];
 nhc_wpac_2024_006 = [16.7,123.5,85;20.1,126.8,100;24.4,130.8,85;28.6,135.4,60;33.0,142.2,45];
-btk_wpac_2024_006 = [16.2,123.5,95;19.9,126.8,75;25.2,131.8,60;29.0,135.8,50;34.2,142.8,45];
+btk_wpac_2024_006 = [16.4,123.5,85;19.9,126.8,65;25.3,132.0,65;28.9,135.7,45;34.2,142.8,45]; # JTWC best track (except day 5)
 myvect = [myvect;my_wpac_2024_006];
 nhcvect = [nhcvect;nhc_wpac_2024_006];
 btkvect = [btkvect;btk_wpac_2024_006];
@@ -15400,7 +15403,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_007 = [18.6,125.8,125;23.7,130.7,100;27.9,134.6,80;32.3,139.6,50];
 nhc_wpac_2024_007 = [18.9,125.8,105;23.8,130.8,95;28.0,134.7,70;33.0,140.9,50];
-btk_wpac_2024_007 = [18.5,125.5,75;24.3,130.8,70;28.2,134.8,55;33.1,139.9,45];
+btk_wpac_2024_007 = [18.7,125.7,65;24.3,130.8,75;28.2,134.7,50;33.2,140.1,35]; # JTWC best track
 myvect = [myvect;my_wpac_2024_007];
 nhcvect = [nhcvect;nhc_wpac_2024_007];
 btkvect = [btkvect;btk_wpac_2024_007];
@@ -15412,7 +15415,7 @@ basinvect = [basinvect;3;3;3;3];
 
 my_wpac_2024_008 = [19.8,126.8,100;24.8,131.9,85;28.5,135.8,65;34.2,142.8,50];
 nhc_wpac_2024_008 = [19.8,127.0,100;24.5,131.5,90;29.2,136.4,65;33.9,143.2,50];
-btk_wpac_2024_008 = [19.9,126.8,75;25.2,131.8,60;29.0,135.8,50;34.2,142.8,45];
+btk_wpac_2024_008 = [19.9,126.8,65;25.3,132.0,65;28.9,135.7,45;34.6,143.2,35]; # JTWC best track
 myvect = [myvect;my_wpac_2024_008];
 nhcvect = [nhcvect;nhc_wpac_2024_008];
 btkvect = [btkvect;btk_wpac_2024_008];
@@ -15514,7 +15517,7 @@ basinvect = [basinvect;1;1;1;1;1];
 
 my_wpac_2024_009 = [16.8,112.1,35;18.8,111.3,35;21.1,110.1,25];
 nhc_wpac_2024_009 = [16.8,112.2,35;18.9,110.7,45;20.8,109.9,35];
-btk_wpac_2024_009 = [16.1,111.7,35;18.8,110.2,50;21.0,108.0,55];
+btk_wpac_2024_009 = [16.0,111.7,35;18.9,110.3,40;21.1,107.9,50]; # JTWC best track
 myvect = [myvect;my_wpac_2024_009];
 nhcvect = [nhcvect;nhc_wpac_2024_009];
 btkvect = [btkvect;btk_wpac_2024_009];
@@ -15526,7 +15529,7 @@ basinvect = [basinvect;3;3;3];
 
 my_wpac_2024_010 = [16.1,127.6,35;17.7,126.4,50;18.9,126.0,80;22.0,126.0,115;24.9,124.3,105];
 nhc_wpac_2024_010 = [16.5,126.9,30;18.3,125.8,40;20.0,125.8,50;22.6,125.5,75;25.4,124.4,95];
-btk_wpac_2024_010 = [16.6,126.4,40;17.0,125.7,55;19.1,125.0,70;22.8,123.5,120;24.7,121.4,95];
+btk_wpac_2024_010 = [16.7,126.7,40;17.1,125.5,55;19.1,125.1,75;22.9,123.5,110;24.5,121.4,90]; # JTWC best track
 myvect = [myvect;my_wpac_2024_010];
 nhcvect = [nhcvect;nhc_wpac_2024_010];
 btkvect = [btkvect;btk_wpac_2024_010];
@@ -15538,7 +15541,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_011 = [18.6,110.7,45;20.7,108.6,40;22.0,107.8,15];
 nhc_wpac_2024_011 = [18.6,109.7,45;20.6,108.1,40;21.5,107.3,20];
-btk_wpac_2024_011 = [18.8,110.2,50;21.0,108.0,55;21.9,106.3,20];
+btk_wpac_2024_011 = [18.9,110.3,40;21.1,107.9,50;21.9,106.3,20]; # JTWC best track (except day 3)
 myvect = [myvect;my_wpac_2024_011];
 nhcvect = [nhcvect;nhc_wpac_2024_011];
 btkvect = [btkvect;btk_wpac_2024_011];
@@ -15550,7 +15553,7 @@ basinvect = [basinvect;3;3;3];
 
 my_wpac_2024_012 = [17.9,125.3,55;19.4,124.6,65;21.1,124.0,85;25.3,122.3,85;27.8,118.5,70];
 nhc_wpac_2024_012 = [18.0,124.9,50;19.5,124.1,70;22.2,123.6,95;25.5,122.2,100;28.6,120.0,65];
-btk_wpac_2024_012 = [17.0,125.7,55;19.1,125.0,70;22.8,123.5,120;24.7,121.4,95;25.6,118.6,45];
+btk_wpac_2024_012 = [17.1,125.5,55;19.1,125.1,75;22.9,123.5,110;24.5,121.4,90;25.6,118.6,40]; # JTWC best track
 myvect = [myvect;my_wpac_2024_012];
 nhcvect = [nhcvect;nhc_wpac_2024_012];
 btkvect = [btkvect;btk_wpac_2024_012];
@@ -15562,7 +15565,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_013 = [19.8,109.3,35;21.6,108.8,20;22.2,107.2,15];
 nhc_wpac_2024_013 = [19.9,109.2,35;21.5,108.1,25;22.2,107.6,20];
-btk_wpac_2024_013 = [20.1,108.7,55;21.6,107.4,30;21.2,105.3,20];
+btk_wpac_2024_013 = [20.1,108.7,50;21.6,107.4,30;21.2,105.3,20]; # JTWC best track (except day 3)
 myvect = [myvect;my_wpac_2024_013];
 nhcvect = [nhcvect;nhc_wpac_2024_013];
 btkvect = [btkvect;btk_wpac_2024_013];
@@ -15574,7 +15577,7 @@ basinvect = [basinvect;3;3;3];
 
 my_wpac_2024_014 = [18.2,125.4,55;20.0,125.4,70;24.2,124.1,95;26.2,121.2,80;28.4,119.4,50];
 nhc_wpac_2024_014 = [18.2,125.3,60;20.4,124.9,80;23.6,124.2,100;26.3,122.1,75;28.8,119.8,50];
-btk_wpac_2024_014 = [18.1,125.5,55;20.8,125.2,90;24.2,122.5,125;25.1,119.8,60;27.5,117.8,35];
+btk_wpac_2024_014 = [17.9,125.4,65;20.8,125.1,85;24.2,122.4,125;25.3,119.6,60;27.6,117.3,30]; # JTWC best track
 myvect = [myvect;my_wpac_2024_014];
 nhcvect = [nhcvect;nhc_wpac_2024_014];
 btkvect = [btkvect;btk_wpac_2024_014];
@@ -15586,7 +15589,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_015 = [18.7,125.1,60;22.1,124.4,80;25.0,122.0,85;26.3,119.3,60;29.7,117.6,30];
 nhc_wpac_2024_015 = [18.6,125.6,65;21.9,125.1,95;24.6,123.2,95;26.5,120.1,65;29.5,117.7,30];
-btk_wpac_2024_015 = [19.1,125.0,70;22.8,123.5,120;24.7,121.4,95;25.6,118.6,45;29.5,116.5,25];
+btk_wpac_2024_015 = [19.1,125.1,75;22.9,123.5,110;24.5,121.4,90;25.6,118.6,40;29.5,116.5,25]; # JTWC best track
 myvect = [myvect;my_wpac_2024_015];
 nhcvect = [nhcvect;nhc_wpac_2024_015];
 btkvect = [btkvect;btk_wpac_2024_015];
@@ -15598,7 +15601,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_016 = [19.8,125.4,65;23.2,123.9,95;25.4,120.8,85;26.8,118.2,50];
 nhc_wpac_2024_016 = [19.7,125.7,65;23.0,124.4,95;25.2,121.5,85;26.9,118.5,45];
-btk_wpac_2024_016 = [19.7,125.0,80;23.5,123.3,120;25.1,120.2,75;26.5,118.3,35];
+btk_wpac_2024_016 = [19.7,124.9,80;23.5,123.3,115;25.2,120.3,70;26.0,117.8,35]; # JTWC best track
 myvect = [myvect;my_wpac_2024_016];
 nhcvect = [nhcvect;nhc_wpac_2024_016];
 btkvect = [btkvect;btk_wpac_2024_016];
@@ -15610,7 +15613,7 @@ basinvect = [basinvect;3;3;3;3];
 
 my_wpac_2024_017 = [20.6,125.1,75;24.0,123.0,100;25.3,119.8,70;27.4,117.5,40];
 nhc_wpac_2024_017 = [20.8,125.3,70;24.1,123.5,90;25.9,120.6,70;27.8,118.3,45];
-btk_wpac_2024_017 = [20.8,125.2,90;24.2,122.5,125;25.1,119.8,60;27.5,117.8,35];
+btk_wpac_2024_017 = [20.8,125.1,85;24.2,122.4,125;25.3,119.6,60;27.6,117.3,30]; # JTWC best track
 myvect = [myvect;my_wpac_2024_017];
 nhcvect = [nhcvect;nhc_wpac_2024_017];
 btkvect = [btkvect;btk_wpac_2024_017];
@@ -15622,7 +15625,7 @@ basinvect = [basinvect;3;3;3;3];
 
 my_wpac_2024_018 = [27.2,117.9,40];
 nhc_wpac_2024_018 = [27.0,117.5,45];
-btk_wpac_2024_018 = [26.5,118.3,35];
+btk_wpac_2024_018 = [26.0,117.8,35]; # JTWC best track
 myvect = [myvect;my_wpac_2024_018];
 nhcvect = [nhcvect;nhc_wpac_2024_018];
 btkvect = [btkvect;btk_wpac_2024_018];
@@ -15634,7 +15637,7 @@ basinvect = [basinvect;3];
 
 my_wpac_2024_019 = [27.7,117.4,35];
 nhc_wpac_2024_019 = [27.4,117.5,35];
-btk_wpac_2024_019 = [27.5,117.8,35];
+btk_wpac_2024_019 = [27.6,117.3,30]; # JTWC best track
 myvect = [myvect;my_wpac_2024_019];
 nhcvect = [nhcvect;nhc_wpac_2024_019];
 btkvect = [btkvect;btk_wpac_2024_019];
@@ -15687,7 +15690,7 @@ basinvect = [basinvect;1;1;1;1;1];
 
 my_wpac_2024_020 = [28.6,144.4,40;32.7,145.9,45;37.2,146.2,55;41.0,147.7,45;44.6,150.7,20];
 nhc_wpac_2024_020 = [28.3,144.0,40;32.6,145.2,50;37.0,145.6,55;40.1,146.7,45;43.1,148.6,30];
-btk_wpac_2024_020 = [27.9,144.8,55;32.1,146.0,60;35.6,145.4,50;37.6,143.9,50;39.8,139.9,35];
+btk_wpac_2024_020 = [27.8,144.9,50;32.3,146.1,60;35.7,145.4,45;37.6,143.9,45;39.8,139.9,30]; # JTWC best track
 myvect = [myvect;my_wpac_2024_020];
 nhcvect = [nhcvect;nhc_wpac_2024_020];
 btkvect = [btkvect;btk_wpac_2024_020];
@@ -15711,7 +15714,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_021 = [18.0,122.0,50;18.9,119.8,65;18.7,117.8,100;19.2,116.4,110;20.8,113.7,115];
 nhc_wpac_2024_021 = [18.1,121.9,45;19.3,119.5,55;19.1,117.1,80;19.4,114.7,100;20.2,112.4,110];
-btk_wpac_2024_021 = [18.2,120.6,40;18.9,118.5,60;19.2,116.3,120;19.2,113.0,135;20.2,109.0,105];
+btk_wpac_2024_021 = [17.8,120.9,25;18.8,118.4,60;19.1,116.2,125;19.2,113.0,145;20.2,109.0,105]; # JTWC best track
 myvect = [myvect;my_wpac_2024_021];
 nhcvect = [nhcvect;nhc_wpac_2024_021];
 btkvect = [btkvect;btk_wpac_2024_021];
@@ -15723,7 +15726,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_022 = [18.8,121.7,40;19.5,119.5,65;19.1,116.3,90;19.3,114.0,105;20.4,111.6,90];
 nhc_wpac_2024_022 = [18.5,120.7,45;19.2,118.3,65;19.2,116.0,90;19.8,113.0,110;20.6,110.6,100];
-btk_wpac_2024_022 = [18.4,119.6,40;19.1,117.7,70;19.0,115.8,140;19.2,112.2,130;20.3,108.2,115];
+btk_wpac_2024_022 = [18.3,119.6,35;19.0,117.8,70;19.1,115.7,130;19.2,112.2,130;20.5,108.2,110]; # JTWC best track
 myvect = [myvect;my_wpac_2024_022];
 nhcvect = [nhcvect;nhc_wpac_2024_022];
 btkvect = [btkvect;btk_wpac_2024_022];
@@ -15735,7 +15738,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_023 = [19.2,120.2,50;19.0,117.4,70;18.7,115.2,90;19.4,112.9,100;21.3,110.4,80];
 nhc_wpac_2024_023 = [19.0,120.1,50;19.3,117.8,75;19.4,115.3,110;20.1,112.4,110;21.0,109.6,90];
-btk_wpac_2024_023 = [18.5,119.1,40;19.1,117.4,80;19.2,115.1,125;19.7,111.3,125;21.0,106.9,110];
+btk_wpac_2024_023 = [18.5,119.0,45;19.1,117.5,85;19.2,115.1,120;19.8,111.2,125;20.9,107.1,110]; # JTWC best track
 myvect = [myvect;my_wpac_2024_023];
 nhcvect = [nhcvect;nhc_wpac_2024_023];
 btkvect = [btkvect;btk_wpac_2024_023];
@@ -15747,7 +15750,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_024 = [19.0,118.7,55;19.1,116.7,80;19.1,114.3,105;20.6,111.5,100;22.2,108.1,60];
 nhc_wpac_2024_024 = [18.9,118.8,45;18.9,115.9,80;19.0,113.3,110;19.8,110.4,90;21.1,106.8,65];
-btk_wpac_2024_024 = [18.9,118.5,60;19.2,116.3,120;19.2,113.0,135;20.2,109.0,105;21.2,105.1,60];
+btk_wpac_2024_024 = [18.8,118.4,60;19.1,116.2,125;19.2,113.0,145;20.2,109.0,105;21.2,105.0,60]; # JTWC best track
 myvect = [myvect;my_wpac_2024_024];
 nhcvect = [nhcvect;nhc_wpac_2024_024];
 btkvect = [btkvect;btk_wpac_2024_024];
@@ -15759,7 +15762,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_025 = [18.9,117.3,65;18.7,115.1,85;19.7,111.9,105;21.1,108.7,65;22.4,105.1,30];
 nhc_wpac_2024_025 = [19.0,117.2,55;19.0,115.0,90;19.6,111.8,90;20.8,108.2,70;21.6,105.5,25];
-btk_wpac_2024_025 = [19.1,117.4,80;19.2,115.1,125;19.7,111.3,125;21.0,106.9,110;21.5,104.2,35];
+btk_wpac_2024_025 = [19.1,117.5,85;19.2,115.1,120;19.8,111.2,125;20.9,107.1,110;21.4,103.9,30]; # JTWC best track
 myvect = [myvect;my_wpac_2024_025];
 nhcvect = [nhcvect;nhc_wpac_2024_025];
 btkvect = [btkvect;btk_wpac_2024_025];
@@ -15771,7 +15774,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_026 = [19.0,116.9,65;19.0,114.5,95;20.0,110.9,90;21.0,107.7,55;22.4,104.0,20];
 nhc_wpac_2024_026 = [19.1,117.0,75;19.2,114.7,100;20.1,111.2,100;21.3,107.3,55;22.2,103.8,20];
-btk_wpac_2024_026 = [19.2,116.9,110;19.3,114.1,125;20.0,110.2,120;21.0,105.9,75;23.0,103.1,35];
+btk_wpac_2024_026 = [19.2,117.0,110;19.3,114.1,125;20.1,110.2,110;21.0,106.0,80;21.7,103.6,20]; # JTWC best track
 myvect = [myvect;my_wpac_2024_026];
 nhcvect = [nhcvect;nhc_wpac_2024_026];
 btkvect = [btkvect;btk_wpac_2024_026];
@@ -15783,7 +15786,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_027 = [19.2,116.1,85;19.4,113.0,100;20.4,109.1,95;21.6,106.0,40;22.3,101.2,20];
 nhc_wpac_2024_027 = [18.9,116.2,80;19.3,113.3,115;20.3,109.6,95;21.4,105.7,60;22.0,102.5,20];
-btk_wpac_2024_027 = [19.2,116.3,120;19.2,113.0,135;20.2,109.0,105;21.2,105.1,60;22.0,103.3,25];
+btk_wpac_2024_027 = [19.1,116.2,125;19.2,113.0,145;20.2,109.0,105;21.2,105.0,60;22.0,103.3,25]; # JTWC best track (except day 5)
 myvect = [myvect;my_wpac_2024_027];
 nhcvect = [nhcvect;nhc_wpac_2024_027];
 btkvect = [btkvect;btk_wpac_2024_027];
@@ -15795,7 +15798,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_028 = [19.3,114.3,125;20.3,110.7,115;21.5,107.0,65;21.8,102.7,25];
 nhc_wpac_2024_028 = [19.6,114.1,130;20.5,110.6,110;21.3,106.3,60;22.0,102.4,20];
-btk_wpac_2024_028 = [19.3,114.1,125;20.0,110.2,120;21.0,105.9,75;23.0,103.1,35];
+btk_wpac_2024_028 = [19.3,114.1,125;20.1,110.2,110;21.0,106.0,80;21.7,103.6,20]; # JTWC best track
 myvect = [myvect;my_wpac_2024_028];
 nhcvect = [nhcvect;nhc_wpac_2024_028];
 btkvect = [btkvect;btk_wpac_2024_028];
@@ -15807,7 +15810,7 @@ basinvect = [basinvect;3;3;3;3];
 
 my_wpac_2024_029 = [19.4,113.5,145;20.7,109.9,100;22.0,106.0,45;22.5,103.0,20];
 nhc_wpac_2024_029 = [19.7,113.5,130;20.6,109.6,110;21.6,105.5,60;22.2,102.1,20];
-btk_wpac_2024_029 = [19.2,113.0,135;20.2,109.0,105;21.2,105.1,60;22.0,103.3,25];
+btk_wpac_2024_029 = [19.2,113.0,145;20.2,109.0,105;21.2,105.0,60;22.0,103.3,25]; # JTWC best track (except day 4)
 myvect = [myvect;my_wpac_2024_029];
 nhcvect = [nhcvect;nhc_wpac_2024_029];
 btkvect = [btkvect;btk_wpac_2024_029];
@@ -15819,7 +15822,7 @@ basinvect = [basinvect;3;3;3;3];
 
 my_wpac_2024_030 = [20.3,110.7,105;21.6,106.9,45;22.0,103.0,20];
 nhc_wpac_2024_030 = [20.2,110.5,100;21.2,106.4,55;21.9,102.2,20];
-btk_wpac_2024_030 = [20.0,110.2,120;21.0,105.9,75;23.0,103.1,35];
+btk_wpac_2024_030 = [20.1,110.2,110;21.0,106.0,80;21.7,103.6,20]; # JTWC best track
 myvect = [myvect;my_wpac_2024_030];
 nhcvect = [nhcvect;nhc_wpac_2024_030];
 btkvect = [btkvect;btk_wpac_2024_030];
@@ -15831,7 +15834,7 @@ basinvect = [basinvect;3;3;3];
 
 my_wpac_2024_031 = [20.2,109.4,90;21.6,105.9,45;22.6,102.9,15];
 nhc_wpac_2024_031 = [20.4,109.3,100;21.5,105.6,55;22.0,101.9,20];
-btk_wpac_2024_031 = [20.2,109.0,105;21.2,105.1,60;22.0,103.3,25];
+btk_wpac_2024_031 = [20.2,109.0,105;21.2,105.0,60;22.0,103.3,25]; # JTWC best track (except day 3)
 myvect = [myvect;my_wpac_2024_031];
 nhcvect = [nhcvect;nhc_wpac_2024_031];
 btkvect = [btkvect;btk_wpac_2024_031];
@@ -15902,7 +15905,7 @@ basinvect = [basinvect;1;1;1;1];
 
 my_wpac_2024_032 = [16.6,119.9,35;17.2,117.4,40;17.3,114.2,50;16.6,110.8,55;15.5,109.9,35];
 nhc_wpac_2024_032 = [16.6,120.6,45;17.0,117.8,50;17.3,113.8,60;17.0,110.5,55;16.7,109.7,40];
-btk_wpac_2024_032 = [17.0,121.2,45;16.9,118.8,50;17.0,113.5,60;16.5,108.4,45;15.5,107.9,25];
+btk_wpac_2024_032 = [17.0,121.1,40;17.1,118.8,50;17.0,113.6,65;16.5,108.5,55;15.6,107.9,25]; # JTWC best track
 myvect = [myvect;my_wpac_2024_032];
 nhcvect = [nhcvect;nhc_wpac_2024_032];
 btkvect = [btkvect;btk_wpac_2024_032];
@@ -15914,7 +15917,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_033 = [17.3,113.8,55;17.1,109.8,45;16.5,109.6,35;16.6,110.8,30];
 nhc_wpac_2024_033 = [17.2,114.8,55;16.8,111.3,50;16.0,110.5,35;15.6,111.8,30];
-btk_wpac_2024_033 = [17.0,113.5,60;16.5,108.4,45;15.5,107.9,25;16.5,109.0,20];
+btk_wpac_2024_033 = [17.0,113.6,65;16.5,108.5,55;15.6,107.9,25;16.5,109.0,20]; # JTWC best track (except day 4)
 myvect = [myvect;my_wpac_2024_033];
 nhcvect = [nhcvect;nhc_wpac_2024_033];
 btkvect = [btkvect;btk_wpac_2024_033];
@@ -15926,7 +15929,7 @@ basinvect = [basinvect;3;3;3;3];
 
 my_wpac_2024_034 = [16.3,108.8,35;16.3,109.7,25];
 nhc_wpac_2024_034 = [16.2,108.1,35;15.7,108.3,30];
-btk_wpac_2024_034 = [15.3,107.8,30;16.4,108.7,25];
+btk_wpac_2024_034 = [15.4,107.7,30;16.4,108.7,25]; # JTWC best track (day 1 only)
 myvect = [myvect;my_wpac_2024_034];
 nhcvect = [nhcvect;nhc_wpac_2024_034];
 btkvect = [btkvect;btk_wpac_2024_034];
@@ -15938,7 +15941,7 @@ basinvect = [basinvect;3;3];
 
 my_wpac_2024_035 = [16.9,131.1,40;17.7,128.6,65;19.5,126.8,90;22.0,125.0,85;25.6,123.3,85];
 nhc_wpac_2024_035 = [16.9,131.0,50;17.7,128.4,70;19.3,126.9,90;21.5,125.9,105;24.1,125.1,110];
-btk_wpac_2024_035 = [16.7,130.5,50;17.0,127.9,70;18.8,125.5,125;21.0,122.8,115;25.2,120.1,60];
+btk_wpac_2024_035 = [16.5,130.4,45;17.0,127.9,70;18.9,125.4,130;21.1,122.8,115;25.3,120.0,55]; # JTWC best track
 myvect = [myvect;my_wpac_2024_035];
 nhcvect = [nhcvect;nhc_wpac_2024_035];
 btkvect = [btkvect;btk_wpac_2024_035];
@@ -15950,7 +15953,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_036 = [17.9,127.1,65;19.4,124.7,100;21.4,122.2,100;25.1,119.4,70;29.1,122.3,30];
 nhc_wpac_2024_036 = [17.8,126.5,75;19.4,124.3,110;21.5,122.0,110;24.6,120.0,85;27.9,122.2,40];
-btk_wpac_2024_036 = [17.4,127.2,80;19.1,124.9,130;22.0,122.2,115;26.7,120.6,55;32.6,130.3,40];
+btk_wpac_2024_036 = [17.4,127.2,80;19.2,124.9,140;22.0,122.1,110;26.6,120.6,60;32.6,130.3,40]; # JTWC best track (except day 5)
 myvect = [myvect;my_wpac_2024_036];
 nhcvect = [nhcvect;nhc_wpac_2024_036];
 btkvect = [btkvect;btk_wpac_2024_036];
@@ -15962,7 +15965,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_037 = [18.2,126.3,85;19.7,124.2,105;23.0,121.6,105;26.6,120.4,45;30.5,126.0,30];
 nhc_wpac_2024_037 = [17.8,126.5,80;19.4,124.1,115;21.9,121.7,110;25.3,120.2,80;28.7,124.0,40];
-btk_wpac_2024_037 = [17.8,126.5,95;19.8,124.2,125;23.1,121.3,100;28.3,121.5,50;34.1,135.0,35];
+btk_wpac_2024_037 = [17.9,126.6,100;19.8,124.2,125;23.1,121.3,100;28.3,121.4,50;34.1,135.0,35]; # JTWC best track (except day 5)
 myvect = [myvect;my_wpac_2024_037];
 nhcvect = [nhcvect;nhc_wpac_2024_037];
 btkvect = [btkvect;btk_wpac_2024_037];
@@ -15974,7 +15977,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_038 = [22.0,122.2,130;26.2,120.3,65;30.1,124.9,55];
 nhc_wpac_2024_038 = [21.8,122.2,130;26.0,120.6,60;30.5,124.8,45];
-btk_wpac_2024_038 = [22.0,122.2,115;26.7,120.6,55;32.6,130.3,40];
+btk_wpac_2024_038 = [22.0,122.1,110;26.6,120.6,60;32.6,130.3,40]; # JTWC best track (except day 3)
 myvect = [myvect;my_wpac_2024_038];
 nhcvect = [nhcvect;nhc_wpac_2024_038];
 btkvect = [btkvect;btk_wpac_2024_038];
@@ -15986,7 +15989,7 @@ basinvect = [basinvect;3;3;3];
 
 my_wpac_2024_039 = [16.6,121.2,65;18.8,117.6,50;20.0,115.0,45;20.6,112.4,25];
 nhc_wpac_2024_039 = [16.8,120.8,65;18.4,117.4,45;19.6,115.0,40;20.1,113.2,35];
-btk_wpac_2024_039 = [17.0,121.1,70;19.2,118.1,45;20.5,115.6,45;21.2,113.9,25];
+btk_wpac_2024_039 = [17.0,121.1,65;19.2,118.0,35;20.6,115.4,40;21.2,113.8,30]; # JTWC best track
 myvect = [myvect;my_wpac_2024_039];
 nhcvect = [nhcvect;nhc_wpac_2024_039];
 btkvect = [btkvect;btk_wpac_2024_039];
@@ -15998,7 +16001,7 @@ basinvect = [basinvect;3;3;3;3];
 
 my_wpac_2024_040 = [13.4,134.1,40;14.8,128.7,65;16.7,124.0,90;19.3,120.1,65;21.2,119.2,50];
 nhc_wpac_2024_040 = [14.2,133.3,45;15.5,128.0,70;17.3,123.1,85;20.2,120.5,75;22.6,120.5,35];
-btk_wpac_2024_040 = [13.6,133.7,45;15.1,127.8,70;17.2,123.1,130;20.5,120.1,65;22.4,120.3,30];
+btk_wpac_2024_040 = [13.4,133.3,50;15.1,127.8,70;17.2,123.1,125;20.4,119.9,70;22.8,120.3,30]; # JTWC best track
 myvect = [myvect;my_wpac_2024_040];
 nhcvect = [nhcvect;nhc_wpac_2024_040];
 btkvect = [btkvect;btk_wpac_2024_040];
@@ -16010,7 +16013,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_041 = [15.6,126.4,65;18.1,122.1,90;20.7,120.2,80;21.6,119.5,45];
 nhc_wpac_2024_041 = [15.9,126.4,80;18.3,122.3,100;20.9,120.6,85;22.8,121.7,60];
-btk_wpac_2024_041 = [15.6,126.5,75;17.9,122.1,115;21.1,119.4,45;22.2,120.6,25];
+btk_wpac_2024_041 = [15.6,126.5,85;17.9,122.1,100;21.1,119.4,55;22.3,120.5,25]; # JTWC best track
 myvect = [myvect;my_wpac_2024_041];
 nhcvect = [nhcvect;nhc_wpac_2024_041];
 btkvect = [btkvect;btk_wpac_2024_041];
@@ -16022,7 +16025,7 @@ basinvect = [basinvect;3;3;3;3];
 
 my_wpac_2024_042 = [13.5,143.3,35;12.1,137.3,60;12.6,130.7,95;14.6,125.5,100;17.1,122.6,75];
 nhc_wpac_2024_042 = [13.5,142.9,45;12.7,136.8,60;13.3,131.0,90;15.2,126.6,100;17.3,123.9,90];
-btk_wpac_2024_042 = [12.3,142.6,35;10.6,136.6,50;10.9,130.4,90;13.2,125.6,140;15.8,121.9,130];
+btk_wpac_2024_042 = [12.2,142.7,35;10.5,136.7,45;10.9,130.4,90;13.2,125.6,135;15.8,121.9,130]; # JTWC best track
 myvect = [myvect;my_wpac_2024_042];
 nhcvect = [nhcvect;nhc_wpac_2024_042];
 btkvect = [btkvect;btk_wpac_2024_042];
@@ -16034,7 +16037,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_043 = [16.1,125.2,90;18.8,121.3,90;21.4,120.2,75;22.8,121.8,50];
 nhc_wpac_2024_043 = [16.4,125.4,80;19.1,121.6,95;21.4,120.7,85;23.2,122.3,45];
-btk_wpac_2024_043 = [16.2,125.3,115;18.8,121.1,55;21.5,119.6,40;22.1,120.3,25];
+btk_wpac_2024_043 = [16.2,125.2,115;18.8,121.4,75;21.7,119.5,40;21.6,120.5,20]; # JTWC best track
 myvect = [myvect;my_wpac_2024_043];
 nhcvect = [nhcvect;nhc_wpac_2024_043];
 btkvect = [btkvect;btk_wpac_2024_043];
@@ -16046,7 +16049,7 @@ basinvect = [basinvect;3;3;3;3];
 
 my_wpac_2024_044 = [13.0,141.8,55;12.0,135.8,80;12.9,129.9,105;15.0,125.4,110;17.0,123.0,90];
 nhc_wpac_2024_044 = [13.2,141.6,60;12.6,135.1,95;13.6,129.5,105;15.8,125.6,105;18.3,122.6,90];
-btk_wpac_2024_044 = [11.9,141.2,35;10.6,135.0,55;11.5,129.0,100;13.9,124.6,130;16.6,120.7,90];
+btk_wpac_2024_044 = [11.9,141.2,35;10.3,135.0,50;11.4,129.0,100;13.9,124.6,130;16.4,120.8,90]; # JTWC best track
 myvect = [myvect;my_wpac_2024_044];
 nhcvect = [nhcvect;nhc_wpac_2024_044];
 btkvect = [btkvect;btk_wpac_2024_044];
@@ -16062,7 +16065,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_wpac_2024_045 = [13.9,125.0,135;16.3,121.2,85;18.6,116.8,55;18.2,113.5,40];
 nhc_wpac_2024_045 = [13.6,124.5,125;16.1,120.3,85;18.1,116.0,65;18.1,112.5,45];
-btk_wpac_2024_045 = [13.9,124.6,130;16.6,120.7,90;18.5,115.9,55;18.1,112.1,25];
+btk_wpac_2024_045 = [13.9,124.6,130;16.4,120.8,90;18.6,116.3,55;18.1,111.8,30]; # JTWC best track
 myvect = [myvect;my_wpac_2024_045];
 nhcvect = [nhcvect;nhc_wpac_2024_045];
 btkvect = [btkvect;btk_wpac_2024_045];
@@ -16198,7 +16201,7 @@ basinvect = [basinvect;3;3];
 
 my_wpac_2024_046 = [11.4,111.2,35;11.2,109.4,25;11.6,106.6,20];
 nhc_wpac_2024_046 = [11.3,111.3,35;10.9,109.5,25;9.7,106.5,20];
-btk_wpac_2024_046 = [11.5,112.3,30;10.6,110.7,25;8.8,108.3,25];
+btk_wpac_2024_046 = [11.7,112.3,25;10.6,110.7,20;8.8,108.3,25]; # JTWC best track (except day 3)
 myvect = [myvect;my_wpac_2024_046];
 nhcvect = [nhcvect;nhc_wpac_2024_046];
 btkvect = [btkvect;btk_wpac_2024_046];
@@ -16210,7 +16213,7 @@ basinvect = [basinvect;3;3;3];
 
 my_wpac_2024_047 = [10.8,111.3,35;11.5,108.9,20];
 nhc_wpac_2024_047 = [11.1,111.3,35;10.6,109.4,20];
-btk_wpac_2024_047 = [11.8,111.9,30;9.6,110.3,25];
+btk_wpac_2024_047 = [11.6,111.9,30;9.5,110.5,20]; # JTWC best track (except day 3)
 myvect = [myvect;my_wpac_2024_047];
 nhcvect = [nhcvect;nhc_wpac_2024_047];
 btkvect = [btkvect;btk_wpac_2024_047];
@@ -17079,6 +17082,418 @@ nhcvect = [nhcvect;nhc_wpac_2025_016];
 btkvect = [btkvect;btk_wpac_2025_016];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;3;3;3];
+
+# Atl 007 ... 91L before 2025-09-04-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1963682260756127856
+# (no NHC advisory)
+
+# Atl 008 ... 91L before 2025-09-05-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1964045967260602614
+# (no NHC advisory)
+
+# Shem 001 ... 03/03S before 2025-09-10-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1965859037003788787
+
+my_shem_2026_001 = [8.9,62.5,30;8.5,60.4,25];
+nhc_shem_2026_001 = [8.8,62.3,35;8.0,60.5,30];
+btk_shem_2026_001 = [9.0,62.8,35;7.6,60.2,25];
+myvect = [myvect;my_shem_2026_001];
+nhcvect = [nhcvect;nhc_shem_2026_001];
+btkvect = [btkvect;btk_shem_2026_001];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Epac 013 ... 95E before 2025-09-11-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1966217867566920195
+# NHC at https://www.nhc.noaa.gov/archive/2025/ep13/ep132025.discus.001.shtml
+
+my_epac_2025_013 = [17.0,103.1,35;18.3,106.0,40;18.8,107.7,45;19.8,109.8,40;22.1,112.1,40];
+nhc_epac_2025_013 = [16.7,102.4,35;17.7,106.3,45;18.6,109.1,65;20.0,111.5,70;22.1,113.7,55];
+btk_epac_2025_013 = [17.3,102.4,35;18.4,107.7,30;18.7,110.3,40;20.4,113.9,55;22.6,117.4,30];
+myvect = [myvect;my_epac_2025_013];
+nhcvect = [nhcvect;nhc_epac_2025_013];
+btkvect = [btkvect;btk_epac_2025_013];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;2;2;2;2;2];
+
+# Atl 009 ... 92L before 2025-09-16-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1967755101621379091
+# (no NHC advisory)
+
+# Atl 010 ... 92L before 2025-09-16-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1967939497217392867
+# (no NHC advisory)
+
+# Atl 011 ... 94L before 2025-09-26-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1971388904860418388
+# (no NHC advisory)
+
+# Atl 012 ... 94L before 2025-09-26-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1971657420368990650
+# NHC at https://www.nhc.noaa.gov/archive/2025/al09/al092025.discus.001.shtml
+
+my_atl_2025_012 = [22.9,75.9,40;25.7,77.0,50;29.9,78.0,60;32.9,79.6,50;32.7,79.9,35];
+nhc_atl_2025_012 = [22.7,75.8,30;25.6,76.9,45;29.7,78.0,65;31.8,78.9,65;32.3,79.3,60];
+btk_atl_2025_012 = [22.1,76.5,30;23.8,77.3,35;27.2,77.3,55;29.1,76.0,75;31.3,69.2,85];
+myvect = [myvect;my_atl_2025_012];
+nhcvect = [nhcvect;nhc_atl_2025_012];
+btkvect = [btkvect;btk_atl_2025_012];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Nio 01 ... BOB 07 / 01B before 2025-10-01-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1973463802441244943
+
+my_nio_2025_01 = [19.7,85.8,35];
+nhc_nio_2025_01 = [19.9,84.0,25];
+btk_nio_2025_01 = [20.4,84.1,35];
+myvect = [myvect;my_nio_2025_01];
+nhcvect = [nhcvect;nhc_nio_2025_01];
+btkvect = [btkvect;btk_nio_2025_01];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;3];
+
+# Nio 02 ... SHAKHTI before 2025-10-03-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1974104951954813083
+# (day 5 missing due to gaps)
+
+my_nio_2025_02 = [21.7,64.7,65;21.1,63.0,55;20.6,63.3,45;21.5,66.3,35];
+nhc_nio_2025_02 = [21.7,64.5,60;20.8,62.6,60;20.5,64.0,45;21.2,68.1,35];
+btk_nio_2025_02 = [21.3,63.4,65;20.1,60.7,60;19.7,60.2,35;19.0,61.2,25];
+myvect = [myvect;my_nio_2025_02];
+nhcvect = [nhcvect;nhc_nio_2025_02];
+btkvect = [btkvect;btk_nio_2025_02];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Wpac 017 ... FENGSHEN/(96W,RAMIL) before 2025-10-17-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1979271640736485511
+# (no JTWC forecast)
+
+# Shem 002 ... 04/04S before 2025-10-18-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1979633896993235023
+
+my_shem_2026_002 = [8.7,68.2,45;9.0,66.3,40;9.5,65.0,40;10.0,62.7,30;10.0,59.1,30];
+nhc_shem_2026_002 = [8.8,68.5,40;9.3,66.3,40;9.9,63.9,40;10.6,60.4,40;10.6,56.7,35];
+btk_shem_2026_002 = [8.6,68.2,40;9.1,67.0,60;9.9,64.2,60;10.4,60.5,55;10.0,57.9,40];
+myvect = [myvect;my_shem_2026_002];
+nhcvect = [nhcvect;nhc_shem_2026_002];
+btkvect = [btkvect;btk_shem_2026_002];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 018 ... FENGSHEN/(RAMIL) before 2025-10-19-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1979993938451726452
+
+my_wpac_2025_018 = [18.5,113.3,55;17.2,111.4,55;14.8,109.9,45];
+nhc_wpac_2025_018 = [18.6,113.7,60;17.8,111.3,60;16.2,109.2,40];
+btk_wpac_2025_018 = [17.9,113.2,45;17.3,111.8,50;16.5,108.7,35];
+myvect = [myvect;my_wpac_2025_018];
+nhcvect = [nhcvect;nhc_wpac_2025_018];
+btkvect = [btkvect;btk_wpac_2025_018];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Shem 003 ... CHENGE before 2025-10-20-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1980084302214836595
+# (no JTWC forecast)
+
+# Atl 013 ... 98L before 2025-10-20-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1980353310160019649
+# (no NHC advisory)
+
+# Atl 014 ... 98L before 2025-10-21-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1980621316584505373
+# NHC at https://www.nhc.noaa.gov/archive/2025/al13/al132025.discus.001.shtml
+
+my_atl_2025_014 = [14.7,73.6,50;15.4,74.6,50;16.1,73.8,50;17.1,73.8,50;17.2,74.9,55];
+nhc_atl_2025_014 = [14.8,73.5,55;15.7,74.5,60;16.5,74.5,60;16.9,74.5,65;17.2,74.9,70];
+btk_atl_2025_014 = [14.3,73.6,45;15.3,75.0,40;15.9,75.0,40;16.4,75.0,60;16.4,76.4,120];
+myvect = [myvect;my_atl_2025_014];
+nhcvect = [nhcvect;nhc_atl_2025_014];
+btkvect = [btkvect;btk_atl_2025_014];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Wpac 019 ... KALMAEGI before 2025-11-01-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1984708618512711974
+
+my_wpac_2025_019 = [11.0,131.2,60;10.7,126.5,95;11.0,121.8,85;13.2,117.1,80;14.7,111.9,75];
+nhc_wpac_2025_019 = [11.1,131.8,65;11.1,126.0,90;11.8,121.2,80;13.0,115.5,100;14.4,110.3,105];
+btk_wpac_2025_019 = [11.0,130.1,60;11.1,124.4,80;10.9,119.9,70;13.2,114.3,100;14.1,107.9,80];
+myvect = [myvect;my_wpac_2025_019];
+nhcvect = [nhcvect;nhc_wpac_2025_019];
+btkvect = [btkvect;btk_wpac_2025_019];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 020 ... KALMAEGI/(TINO) before 2025-11-02-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1985070237213987143
+
+my_wpac_2025_020 = [10.7,124.8,75;11.1,119.7,80;12.6,114.8,90;13.9,109.4,80];
+nhc_wpac_2025_020 = [10.5,124.8,80;11.3,119.5,75;12.5,114.5,95;14.0,109.5,100];
+btk_wpac_2025_020 = [11.1,124.4,80;10.9,119.9,70;13.2,114.3,100;14.1,107.9,80];
+myvect = [myvect;my_wpac_2025_020];
+nhcvect = [nhcvect;nhc_wpac_2025_020];
+btkvect = [btkvect;btk_wpac_2025_020];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Wpac 021 ... KALMAEGI/(TINO) before 2025-11-03-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1985156190301470916
+
+my_wpac_2025_021 = [10.5,123.7,70;11.3,119.2,75;12.4,113.7,85;13.8,109.2,80];
+nhc_wpac_2025_021 = [10.4,123.6,65;11.4,118.7,75;12.7,113.3,95;14.2,108.4,70];
+btk_wpac_2025_021 = [10.6,123.2,70;11.4,119.1,75;13.2,112.1,115;14.4,106.5,50];
+myvect = [myvect;my_wpac_2025_021];
+nhcvect = [nhcvect;nhc_wpac_2025_021];
+btkvect = [btkvect;btk_wpac_2025_021];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Wpac 022 ... KALMAEGI/(TINO) before 2025-11-03-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1985428281127039047
+
+my_wpac_2025_022 = [11.4,119.3,75;12.5,114.0,100;13.9,108.5,75];
+nhc_wpac_2025_022 = [11.8,119.3,75;12.9,114.5,100;14.5,109.0,90];
+btk_wpac_2025_022 = [10.9,119.9,70;13.2,114.3,100;14.1,107.9,80];
+myvect = [myvect;my_wpac_2025_022];
+nhcvect = [nhcvect;nhc_wpac_2025_022];
+btkvect = [btkvect;btk_wpac_2025_022];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Wpac 023 ... KALMAEGI/(TINO) before 2025-11-04-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1985795101914751103
+
+my_wpac_2025_023 = [12.6,114.7,95;13.9,109.0,80];
+nhc_wpac_2025_023 = [12.5,114.7,85;13.8,109.1,85];
+btk_wpac_2025_023 = [13.2,114.3,100;14.1,107.9,80];
+myvect = [myvect;my_wpac_2025_023];
+nhcvect = [nhcvect;nhc_wpac_2025_023];
+btkvect = [btkvect;btk_wpac_2025_023];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Wpac 024 ... 32W before 2025-11-04-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1985799105487257844
+
+my_wpac_2025_024 = [9.9,142.3,45;12.2,139.9,80;14.0,135.7,105;15.3,130.4,100;16.8,124.8,100];
+nhc_wpac_2025_024 = [9.7,141.0,60;11.8,138.6,90;13.4,135.2,110;14.8,128.8,120;16.1,122.7,115];
+btk_wpac_2025_024 = [9.4,140.9,30;10.7,138.6,45;12.2,133.8,70;13.7,126.6,110;16.5,120.3,95];
+myvect = [myvect;my_wpac_2025_024];
+nhcvect = [nhcvect;nhc_wpac_2025_024];
+btkvect = [btkvect;btk_wpac_2025_024];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 025 ... 32W before 2025-11-05-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1985884938520990072
+
+my_wpac_2025_025 = [10.2,142.1,55;12.7,139.4,95;13.6,135.2,115;15.2,129.1,110;16.9,124.0,110];
+nhc_wpac_2025_025 = [10.1,142.1,55;12.1,139.1,85;12.9,134.6,110;14.3,128.2,120;16.3,121.9,115];
+btk_wpac_2025_025 = [10.2,140.0,40;11.4,137.9,55;12.5,132.1,80;14.0,124.8,110;17.0,119.2,85];
+myvect = [myvect;my_wpac_2025_025];
+nhcvect = [nhcvect;nhc_wpac_2025_025];
+btkvect = [btkvect;btk_wpac_2025_025];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 026 ... FUNG-WONG/(UWAN) before 2025-11-07-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1986878477123887391
+
+my_wpac_2025_026 = [14.0,126.9,100;16.5,120.6,100;18.1,118.4,65;20.5,117.8,55;22.7,118.8,45];
+nhc_wpac_2025_026 = [13.7,127.3,100;16.2,121.3,85;18.1,119.0,75;20.4,118.5,70;24.0,121.1,60];
+btk_wpac_2025_026 = [13.7,126.6,110;16.5,120.3,95;18.8,118.3,65;21.4,119.0,50;23.1,121.8,35];
+myvect = [myvect;my_wpac_2025_026];
+nhcvect = [nhcvect;nhc_wpac_2025_026];
+btkvect = [btkvect;btk_wpac_2025_026];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;1;1;1;1;1];
+
+# Wpac 027 ... FUNG-WONG/(UWAN) before 2025-11-09-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1987603356915732501
+
+my_wpac_2025_027 = [19.0,117.4,80;21.1,117.4,60;24.0,119.5,50;25.9,125.0,35];
+nhc_wpac_2025_027 = [18.6,117.8,75;21.3,118.0,65;24.9,121.2,50;25.4,124.9,40];
+btk_wpac_2025_027 = [18.8,118.3,65;21.4,119.0,50;23.1,121.8,35;25.8,129.0,25];
+myvect = [myvect;my_wpac_2025_027];
+nhcvect = [nhcvect;nhc_wpac_2025_027];
+btkvect = [btkvect;btk_wpac_2025_027];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;1;1;1;1];
+
+# Wpac 028 ... FUNG-WONG/(UWAN) before 2025-11-12-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1988690494424248423
+
+my_wpac_2025_028 = [24.9,127.4,35];
+nhc_wpac_2025_028 = [25.3,127.9,30];
+btk_wpac_2025_028 = [25.8,129.0,25];
+myvect = [myvect;my_wpac_2025_028];
+nhcvect = [nhcvect;nhc_wpac_2025_028];
+btkvect = [btkvect;btk_wpac_2025_028];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;1];
+
+# Shem 004 ... FINA before 2025-11-18-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1990865477690593641
+
+my_shem_2026_004 = [9.3,133.0,50;10.1,133.8,60;11.4,132.5,60;12.1,130.3,45;12.9,129.3,50];
+nhc_shem_2026_004 = [9.7,133.2,65;10.4,133.9,60;11.4,133.1,50;12.1,131.6,45;13.2,129.4,50];
+btk_shem_2026_004 = [9.5,133.0,60;10.4,133.0,60;11.7,131.8,70;12.4,129.8,90;13.9,128.5,105];
+myvect = [myvect;my_shem_2026_004];
+nhcvect = [nhcvect;nhc_shem_2026_004];
+btkvect = [btkvect;btk_shem_2026_004];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 005 ... FINA before 2025-11-19-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1990959365268832357
+
+my_shem_2026_005 = [9.4,133.4,55;10.3,134.0,55;11.5,132.5,55;12.2,130.0,45;12.4,128.8,40];
+nhc_shem_2026_005 = [9.6,133.8,65;10.7,133.8,55;11.7,132.8,50;12.4,131.0,45;13.0,129.4,50];
+btk_shem_2026_005 = [9.8,133.2,65;10.3,132.5,65;11.8,131.4,85;12.8,129.7,100;14.1,128.2,100];
+myvect = [myvect;my_shem_2026_005];
+nhcvect = [nhcvect;nhc_shem_2026_005];
+btkvect = [btkvect;btk_shem_2026_005];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 006 ... FINA before 2025-11-21-21Z ... certified?
+# my at https://x.com/elioeFIN/status/1991957371992862893
+
+my_shem_2026_006 = [12.3,130.1,65;13.0,128.6,65;13.2,127.0,55;13.0,126.1,35];
+nhc_shem_2026_006 = [12.7,130.2,80;14.1,128.5,80;14.8,127.8,60;14.9,127.1,35];
+btk_shem_2026_006 = [12.4,129.8,90;13.9,128.5,105;14.5,127.7,85;15.1,127.8,25];
+myvect = [myvect;my_shem_2026_006];
+nhcvect = [nhcvect;nhc_shem_2026_006];
+btkvect = [btkvect;btk_shem_2026_006];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Shem 007 ... FINA before 2025-11-22-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1992319802787192837
+
+my_shem_2026_007 = [13.1,128.5,85;13.4,126.8,55;13.6,125.9,30];
+nhc_shem_2026_007 = [13.4,128.4,85;13.9,127.0,50;14.1,126.1,40];
+btk_shem_2026_007 = [13.9,128.5,105;14.5,127.7,85;15.1,127.8,25];
+myvect = [myvect;my_shem_2026_007];
+nhcvect = [nhcvect;nhc_shem_2026_007];
+btkvect = [btkvect;btk_shem_2026_007];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Shem 008 ... FINA before 2025-11-23-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1992676123185144104
+
+my_shem_2026_008 = [13.9,127.0,50;14.4,125.8,25];
+nhc_shem_2026_008 = [14.5,127.3,55;15.0,126.2,30];
+btk_shem_2026_008 = [14.5,127.7,85;15.1,127.8,25];
+myvect = [myvect;my_shem_2026_008];
+nhcvect = [nhcvect;nhc_shem_2026_008];
+btkvect = [btkvect;btk_shem_2026_008];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Shem 009 ... FINA before 2025-11-24-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1992763665913716796
+
+my_shem_2026_009 = [14.2,127.1,40;14.8,126.4,20];
+nhc_shem_2026_009 = [14.6,127.2,55;15.3,126.4,30];
+btk_shem_2026_009 = [14.8,127.6,55;15.4,127.6,25];
+myvect = [myvect;my_shem_2026_009];
+nhcvect = [nhcvect;nhc_shem_2026_009];
+btkvect = [btkvect;btk_shem_2026_009];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Wpac 029 ... TD/92W/(VERBENA) before 2025-11-24-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1993039163768422721
+
+my_wpac_2025_029 = [12.1,119.0,40;13.0,115.2,60;12.7,113.2,50;12.4,112.1,45;13.4,111.3,60];
+nhc_wpac_2025_029 = [11.5,118.9,45;12.6,115.4,65;12.5,113.5,60;12.7,112.1,45;13.4,111.3,40];
+btk_wpac_2025_029 = [12.0,119.3,50;13.2,114.8,70;12.3,113.6,60;13.3,112.4,50;13.7,112.2,45];
+myvect = [myvect;my_wpac_2025_029];
+nhcvect = [nhcvect;nhc_wpac_2025_029];
+btkvect = [btkvect;btk_wpac_2025_029];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 030 ... KOTO/(VERBENA) before 2025-11-25-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/1993400657420918954
+
+my_wpac_2025_030 = [12.9,114.7,65;12.5,113.4,60;12.6,113.2,50;13.2,112.9,60;13.7,111.9,65];
+nhc_wpac_2025_030 = [13.1,115.5,70;12.6,114.0,60;12.6,113.2,50;13.3,112.6,45;14.0,112.0,50];
+btk_wpac_2025_030 = [13.2,114.8,70;12.3,113.6,60;13.3,112.4,50;13.7,112.2,45;14.9,111.8,35];
+myvect = [myvect;my_wpac_2025_030];
+nhcvect = [nhcvect;nhc_wpac_2025_030];
+btkvect = [btkvect;btk_wpac_2025_030];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 031 ... KOTO/(VERBENA) before 2025-11-26-21Z ... certified?
+# my at https://x.com/elioeFIN/status/1993759357108936889
+
+my_wpac_2025_031 = [12.9,113.2,65;13.0,111.9,50;13.8,111.7,55;14.7,111.0,65;15.2,109.3,55];
+nhc_wpac_2025_031 = [13.0,113.2,60;13.2,112.4,50;14.1,111.9,45;14.5,111.4,45;14.4,110.5,35];
+btk_wpac_2025_031 = [12.3,113.6,60;13.3,112.4,50;13.7,112.2,45;14.9,111.8,35;14.3,111.2,30];
+myvect = [myvect;my_wpac_2025_031];
+nhcvect = [nhcvect;nhc_wpac_2025_031];
+btkvect = [btkvect;btk_wpac_2025_031];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 010 ... GRANT before 2025-12-28-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2005357677866877096
+# (no JTWC forecast)
+
+# Shem 011 ... HAYLEY before 2025-12-28-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2005365391229624695
+
+my_shem_2026_011 = [16.1,120.6,60;16.9,123.0,50];
+nhc_shem_2026_011 = [16.0,120.5,75;16.6,123.3,45];
+btk_shem_2026_011 = [16.1,120.3,90;16.8,124.3,55];
+myvect = [myvect;my_shem_2026_011];
+nhcvect = [nhcvect;nhc_shem_2026_011];
+btkvect = [btkvect;btk_shem_2026_011];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Shem 012 ... GRANT before 2025-12-29-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2005714955216343258
+# (no JTWC forecast)
+
+# Shem 013 ... GRANT before 2025-12-30-21Z ... certification failed
+# my at https://x.com/elioeFIN/status/2006088611423502421
+# (no JTWC forecast)
+
+# Shem 014 ... GRANT before 2025-12-31-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2006165644962656763
+
+my_shem_2026_014 = [16.1,69.4,60;15.4,66.6,60;15.0,64.2,60;14.8,62.4,50;15.1,59.2,45];
+nhc_shem_2026_014 = [16.3,69.2,80;15.9,67.2,60;15.3,64.8,55;15.5,61.9,55;16.3,58.5,60];
+btk_shem_2026_014 = [16.2,69.1,70;15.8,67.3,35;14.6,65.5,35;15.5,62.8,30;16.1,57.5,30];
+myvect = [myvect;my_shem_2026_014];
+nhcvect = [nhcvect;nhc_shem_2026_014];
+btkvect = [btkvect;btk_shem_2026_014];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 015 ... GRANT before 2026-01-01-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2006810210653094276
+# (no JTWC forecast)
+
+# Shem 016 ... GRANT before 2026-01-03-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2007435338906493159
+
+my_shem_2026_016 = [];
+nhc_shem_2026_016 = [];
+btk_shem_2026_016 = [];
+myvect = [myvect;my_shem_2026_016];
+nhcvect = [nhcvect;nhc_shem_2026_016];
+btkvect = [btkvect;btk_shem_2026_016];
+leadtimevect = [leadtimevect;];
+basinvect = [basinvect;];
 
 
 
