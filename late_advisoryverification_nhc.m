@@ -1,5 +1,5 @@
 # to be run with GNU Octave
-# data last added 2026/01/05, data ready for all forecasts issued on or before 2025/12/31
+# data last added 2026/04/19, data ready for all forecasts issued on or before 2026/04/15
 
 # to compare elioe's performance to U.S. agencies;
 # regarding "late advisories" posted after NHC/CPHC/JTWC advisories had become public (if they existed in that advisory cycle);
@@ -20969,13 +20969,13 @@ certified = [certified;2];
 
 nhc_epac_2025_001 = [15.6,108.3,50;18.8,109.0,45;21.8,108.8,25];
 my_epac_2025_001 = [15.7,108.1,45;18.8,108.9,40;22.2,108.7,20];
-btk_epac_2025_001 = [16.1,108.2,45;19.6,109.2,35;22.4,109.5,20]; # day 3 self-made
+btk_epac_2025_001 = [16.1,108.3,45;19.6,109.2,35;22.4,109.4,25]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_001];
 myvect = [myvect;my_epac_2025_001];
 btkvect = [btkvect;btk_epac_2025_001];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;1;0];
+datasource = [datasource;3;2;2];
 certified = [certified;2;2;2];
 
 # Epac 002 ... ALVIN around 2025-05-29-21Z ... CERTIFIED
@@ -20985,13 +20985,13 @@ certified = [certified;2;2;2];
 
 nhc_epac_2025_002 = [17.6,108.7,50;20.5,109.1,35];
 my_epac_2025_002 = [17.5,108.6,45;20.7,109.0,30];
-btk_epac_2025_002 = [17.7,108.9,45;21.0,109.7,25]; # day 2 self-made
+btk_epac_2025_002 = [17.7,108.9,45;21.1,109.7,30]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_002];
 myvect = [myvect;my_epac_2025_002];
 btkvect = [btkvect;btk_epac_2025_002];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;1;0];
+datasource = [datasource;3;2];
 certified = [certified;2;2];
 
 # Epac 003 ... ALVIN around 2025-05-30-09Z ... CERTIFIED 
@@ -21001,13 +21001,13 @@ certified = [certified;2;2];
 
 nhc_epac_2025_003 = [19.5,109.2,35;22.8,109.5,25];
 my_epac_2025_003 = [19.4,109.2,35;22.8,109.4,20];
-btk_epac_2025_003 = [19.6,109.2,35;22.4,109.5,20]; # day 2 self-made
+btk_epac_2025_003 = [19.6,109.2,35;22.4,109.4,25]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_003];
 myvect = [myvect;my_epac_2025_003];
 btkvect = [btkvect;btk_epac_2025_003];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;1;0];
+datasource = [datasource;2;2];
 certified = [certified;2;2];
 
 # Epac 004 ... ALVIN around 2025-05-30-15Z ... CERTIFIED
@@ -21017,13 +21017,13 @@ certified = [certified;2;2];
 
 nhc_epac_2025_004 = [20.3,109.4,30;23.5,109.5,20];
 my_epac_2025_004 = [20.0,109.4,30;23.3,109.4,20];
-btk_epac_2025_004 = [20.4,109.5,30;23.3,109.4,20]; # day 2 self-made
+btk_epac_2025_004 = [20.4,109.5,30;23.3,109.4,20]; # TCR (day 2 self-made)
 nhcvect = [nhcvect;nhc_epac_2025_004];
 myvect = [myvect;my_epac_2025_004];
 btkvect = [btkvect;btk_epac_2025_004];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;1;0];
+datasource = [datasource;2;0];
 certified = [certified;2;2];
 
 # Epac 005 ... ALVIN around 2025-05-30-21Z ... CERTIFIED 
@@ -21033,13 +21033,13 @@ certified = [certified;2;2];
 
 nhc_epac_2025_005 = [20.8,109.5,30];
 my_epac_2025_005 = [21.1,109.4,30];
-btk_epac_2025_005 = [21.0,109.7,25]; # self-made
+btk_epac_2025_005 = [21.1,109.7,30]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_005];
 myvect = [myvect;my_epac_2025_005];
 btkvect = [btkvect;btk_epac_2025_005];
 leadtimevect = [leadtimevect;1];
 basinvect = [basinvect;2];
-datasource = [datasource;0];
+datasource = [datasource;2];
 certified = [certified;2];
 
 # Epac 006 ... ALVIN around 2025-05-31-09Z ... CERTIFIED
@@ -21049,13 +21049,13 @@ certified = [certified;2];
 
 nhc_epac_2025_006 = [22.3,109.5,25];
 my_epac_2025_006 = [22.3,109.4,25];
-btk_epac_2025_006 = [22.4,109.5,20]; # self-made
+btk_epac_2025_006 = [22.4,109.4,25]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_006];
 myvect = [myvect;my_epac_2025_006];
 btkvect = [btkvect;btk_epac_2025_006];
 leadtimevect = [leadtimevect;1];
 basinvect = [basinvect;2];
-datasource = [datasource;0];
+datasource = [datasource;2];
 certified = [certified;2];
 
 # Epac 007 ... 91E around 2025-06-07-15Z ... CERTIFIED
@@ -21073,48 +21073,48 @@ certified = [certified;2];
 # snapshot: https://web.archive.org/web/20250608093125/https://elioestracks.blogspot.com/2024/04/advisory-list.html
 # NHC at https://www.nhc.noaa.gov/archive/2025/ep02/ep022025.discus.001.shtml
 
-nhc_epac_2025_009 = [17.0,105.4,65;19.1,108.8,60];
-my_epac_2025_009 = [17.2,105.3,60;19.2,109.3,55];
-btk_epac_2025_009 = [16.7,105.3,60;19.1,107.9,50];
+nhc_epac_2025_009 = [17.0,105.4,65;19.1,108.8,60;19.8,112.2,35];
+my_epac_2025_009 = [17.2,105.3,60;19.2,109.3,55;19.9,112.3,35];
+btk_epac_2025_009 = [16.7,105.3,65;19.1,107.9,50;21.3,107.5,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_009];
 myvect = [myvect;my_epac_2025_009];
 btkvect = [btkvect;btk_epac_2025_009];
-leadtimevect = [leadtimevect;1;2];
-basinvect = [basinvect;2;2];
-datasource = [datasource;1;1];
-certified = [certified;2;2];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;2;2;2];
+datasource = [datasource;3;3;2];
+certified = [certified;2;2;2];
 
 # Epac 010 ... BARBARA around 2025-06-08-15Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1931726949249957915
 # snapshot: https://web.archive.org/web/20250608150159/https://elioestracks.blogspot.com/2024/04/advisory-list.html
 # NHC at https://www.nhc.noaa.gov/archive/2025/ep02/ep022025.discus.002.shtml
 
-nhc_epac_2025_010 = [17.6,106.2,75;19.4,109.6,55];
-my_epac_2025_010 = [17.7,106.2,75;19.4,109.7,55];
-btk_epac_2025_010 = [17.3,105.8,65;19.7,108.2,45];
+nhc_epac_2025_010 = [17.6,106.2,75;19.4,109.6,55;19.5,112.6,35];
+my_epac_2025_010 = [17.7,106.2,75;19.4,109.7,55;19.3,112.8,35];
+btk_epac_2025_010 = [17.3,105.9,65;19.8,108.2,45;21.5,107.2,15]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_010];
 myvect = [myvect;my_epac_2025_010];
 btkvect = [btkvect;btk_epac_2025_010];
-leadtimevect = [leadtimevect;1;2];
-basinvect = [basinvect;2;2];
-datasource = [datasource;1;1];
-certified = [certified;2;2];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;2;2;2];
+datasource = [datasource;3;3;2];
+certified = [certified;2;2;2];
 
 # Epac 011 ... BARBARA around 2025-06-08-21Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1931816676817002913
 # snapshot: https://web.archive.org/web/20250608210539/https://elioestracks.blogspot.com/2024/04/advisory-list.html
 # NHC at https://www.nhc.noaa.gov/archive/2025/ep02/ep022025.discus.003.shtml
 
-nhc_epac_2025_011 = [17.8,107.0,70;19.6,110.0,50];
-my_epac_2025_011 = [17.8,106.9,70;19.8,110.1,50];
-btk_epac_2025_011 = [17.9,106.5,65;20.6,108.1,35];
+nhc_epac_2025_011 = [17.8,107.0,70;19.6,110.0,50;19.4,112.8,25];
+my_epac_2025_011 = [17.8,106.9,70;19.8,110.1,50;19.7,113.1,25];
+btk_epac_2025_011 = [17.9,106.6,65;20.5,108.1,35;21.7,107.2,15]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_011];
 myvect = [myvect;my_epac_2025_011];
 btkvect = [btkvect;btk_epac_2025_011];
-leadtimevect = [leadtimevect;1;2];
-basinvect = [basinvect;2;2];
-datasource = [datasource;1;1];
-certified = [certified;2;2];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;2;2;2];
+datasource = [datasource;3;2;2];
+certified = [certified;2;2;2];
 
 # Epac 012 ... COSME around 2025-06-08-21Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1931818443986149694
@@ -21123,13 +21123,13 @@ certified = [certified;2;2];
 
 nhc_epac_2025_012 = [14.7,113.1,60;15.5,113.7,55;17.5,112.8,30];
 my_epac_2025_012 = [14.7,113.2,60;15.5,113.9,50;17.5,112.6,30];
-btk_epac_2025_012 = [14.8,113.8,60;15.6,115.1,50;17.0,113.3,25]; # day 3 self-made
+btk_epac_2025_012 = [14.7,113.6,60;15.6,115.2,50;16.5,112.9,25]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_012];
 myvect = [myvect;my_epac_2025_012];
 btkvect = [btkvect;btk_epac_2025_012];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;1;0];
+datasource = [datasource;3;3;2];
 certified = [certified;2;2;2];
 
 # Epac 013 ... BARBARA around 2025-06-09-09Z ... CERTIFIED
@@ -21137,16 +21137,16 @@ certified = [certified;2;2;2];
 # snapshot: https://web.archive.org/web/20250609090342/https://elioestracks.blogspot.com/2024/04/advisory-list.html
 # NHC at https://www.nhc.noaa.gov/archive/2025/ep02/ep022025.discus.005.shtml
 
-nhc_epac_2025_013 = [18.8,108.4,60];
-my_epac_2025_013 = [18.9,108.5,55];
-btk_epac_2025_013 = [19.1,107.9,50];
+nhc_epac_2025_013 = [18.8,108.4,60;20.3,110.5,30];
+my_epac_2025_013 = [18.9,108.5,55;20.5,111.0,30];
+btk_epac_2025_013 = [19.1,107.9,50;21.3,107.5,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_013];
 myvect = [myvect;my_epac_2025_013];
 btkvect = [btkvect;btk_epac_2025_013];
-leadtimevect = [leadtimevect;1];
-basinvect = [basinvect;2];
-datasource = [datasource;1];
-certified = [certified;2];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;2;2];
+datasource = [datasource;3;2];
+certified = [certified;2;2];
 
 # Epac 014 ... COSME around 2025-06-09-15Z ... CERTIFIED 
 # my at https://x.com/elioeFIN/status/1932087335979561416
@@ -21155,13 +21155,13 @@ certified = [certified;2];
 
 nhc_epac_2025_014 = [15.2,114.4,65;17.0,113.4,50;19.6,114.0,25];
 my_epac_2025_014 = [15.1,114.5,65;16.8,113.5,45;19.7,114.2,25];
-btk_epac_2025_014 = [15.4,114.8,55;16.2,113.9,30;17.9,110.7,15]; # day 3 self-made
+btk_epac_2025_014 = [15.3,114.9,60;16.2,113.8,30;17.9,110.7,15]; # TCR (day 3 self-made)
 nhcvect = [nhcvect;nhc_epac_2025_014];
 myvect = [myvect;my_epac_2025_014];
 btkvect = [btkvect;btk_epac_2025_014];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;1;0];
+datasource = [datasource;3;2;0];
 certified = [certified;2;2;2];
 
 # Wpac 001 ... 01W around 2025-06-10-15Z ... CERTIFIED
@@ -21187,13 +21187,13 @@ certified = [certified;2;2;2;2];
 
 nhc_epac_2025_015 = [16.6,113.9,40;18.8,113.5,25];
 my_epac_2025_015 = [16.5,114.0,35;19.0,113.4,20];
-btk_epac_2025_015 = [16.2,113.9,30;17.9,110.7,15]; # day 2 self-made
+btk_epac_2025_015 = [16.2,113.8,30;17.9,110.7,15]; # TCR (day 2 self-made)
 nhcvect = [nhcvect;nhc_epac_2025_015];
 myvect = [myvect;my_epac_2025_015];
 btkvect = [btkvect;btk_epac_2025_015];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;1;0];
+datasource = [datasource;2;0];
 certified = [certified;2;2];
 
 # Wpac 002 ... 01W around 2025-06-10-21Z ... CERTIFIED
@@ -21218,13 +21218,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_016 = [17.1,114.1,30;19.1,114.1,20];
 my_epac_2025_016 = [17.0,114.2,30;19.1,114.4,20];
-btk_epac_2025_016 = [17.0,113.3,25;18.2,109.8,15]; # all self-made
+btk_epac_2025_016 = [16.5,112.9,25;18.2,109.8,15]; # TCR (day 2 self-made)
 nhcvect = [nhcvect;nhc_epac_2025_016];
 myvect = [myvect;my_epac_2025_016];
 btkvect = [btkvect;btk_epac_2025_016];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;0;0];
+datasource = [datasource;2;0];
 certified = [certified;2;2];
 
 # Wpac 003 ... WUTIP around 2025-06-11-15Z ... CERTIFIED
@@ -21281,13 +21281,13 @@ certified = [certified;2];
 
 nhc_epac_2025_017 = [16.0,104.1,45;17.8,107.7,50;18.2,111.6,30;18.3,115.0,20];
 my_epac_2025_017 = [16.1,103.9,45;18.1,107.7,50;18.6,111.7,25;18.7,115.1,20];
-btk_epac_2025_017 = [16.2,103.8,50;18.1,107.4,50;18.8,110.5,25;19.2,113.5,15]; # days 3-4 self-made
+btk_epac_2025_017 = [16.2,103.8,50;18.1,107.4,50;18.8,110.5,25;19.2,113.2,15]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_017];
 myvect = [myvect;my_epac_2025_017];
 btkvect = [btkvect;btk_epac_2025_017];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;1;0;0];
+datasource = [datasource;3;3;2;2];
 certified = [certified;2;2;2;2];
 
 # Epac 018 ... DALILA around 2025-06-14-15Z ... CERTIFIED
@@ -21297,13 +21297,13 @@ certified = [certified;2;2;2;2];
 
 nhc_epac_2025_018 = [17.9,108.2,45;18.1,112.0,30;18.2,115.5,20];
 my_epac_2025_018 = [17.9,108.2,50;18.1,112.2,30;18.0,115.4,20];
-btk_epac_2025_018 = [18.1,107.4,50;18.8,110.5,25;19.2,113.5,15]; # days 2-3 self-made
+btk_epac_2025_018 = [18.1,107.4,50;18.8,110.5,25;19.2,113.2,15]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_018];
 myvect = [myvect;my_epac_2025_018];
 btkvect = [btkvect;btk_epac_2025_018];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;0;0];
+datasource = [datasource;3;2;2];
 certified = [certified;2;2;2];
 
 # Epac 019 ... DALILA around 2025-06-14-21Z ... CERTIFIED
@@ -21313,13 +21313,13 @@ certified = [certified;2;2;2];
 
 nhc_epac_2025_019 = [17.8,108.7,45;17.9,112.6,25];
 my_epac_2025_019 = [17.9,108.7,45;18.0,112.7,25];
-btk_epac_2025_019 = [18.2,108.0,40;18.8,111.2,20]; # day 2 self-made
+btk_epac_2025_019 = [18.3,108.0,40;18.9,111.1,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_019];
 myvect = [myvect;my_epac_2025_019];
 btkvect = [btkvect;btk_epac_2025_019];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;1;0];
+datasource = [datasource;3;2];
 certified = [certified;2;2];
 
 # Epac 020 ... ERICK around 2025-06-17-15Z ... CERTIFIED
@@ -21329,13 +21329,13 @@ certified = [certified;2;2];
 
 nhc_epac_2025_020 = [13.6,96.0,70;16.0,98.5,95];
 my_epac_2025_020 = [13.7,95.9,70;16.2,98.4,90];
-btk_epac_2025_020 = [13.6,95.7,70;16.4,98.4,95];
+btk_epac_2025_020 = [13.7,95.7,75;16.4,98.4,105]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_020];
 myvect = [myvect;my_epac_2025_020];
 btkvect = [btkvect;btk_epac_2025_020];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;1;1];
+datasource = [datasource;3;3];
 certified = [certified;2;2];
 
 # Epac 021 ... ERICK around 2025-06-17-21Z ... CERTIFIED
@@ -21345,13 +21345,13 @@ certified = [certified;2;2];
 
 nhc_epac_2025_021 = [14.2,96.4,80;16.9,99.0,80];
 my_epac_2025_021 = [14.4,96.4,75;17.2,99.1,70];
-btk_epac_2025_021 = [14.2,96.3,90;17.1,99.3,65];
+btk_epac_2025_021 = [14.2,96.3,95;17.1,99.3,65]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_021];
 myvect = [myvect;my_epac_2025_021];
 btkvect = [btkvect;btk_epac_2025_021];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;1;1];
+datasource = [datasource;3;3];
 certified = [certified;2;2];
 
 # Epac 022 ... ERICK around 2025-06-18-15Z ... CERTIFIED
@@ -21361,13 +21361,13 @@ certified = [certified;2;2];
 
 nhc_epac_2025_022 = [15.9,98.1,100];
 my_epac_2025_022 = [16.0,97.9,90];
-btk_epac_2025_022 = [16.4,98.4,95];
+btk_epac_2025_022 = [16.4,98.4,105]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_022];
 myvect = [myvect;my_epac_2025_022];
 btkvect = [btkvect;btk_epac_2025_022];
 leadtimevect = [leadtimevect;1];
 basinvect = [basinvect;2];
-datasource = [datasource;1];
+datasource = [datasource;3];
 certified = [certified;2];
 
 # Wpac 006 ... 02W around 2025-06-22-15Z ... CERTIFIED
@@ -21437,13 +21437,13 @@ certified = [certified;2;2];
 
 nhc_atl_2025_001 = [21.6,98.0,30];
 my_atl_2025_001 = [21.7,98.0,30];
-btk_atl_2025_001 = [22.4,98.7,25];
+btk_atl_2025_001 = [22.3,98.2,25]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_001];
 myvect = [myvect;my_atl_2025_001];
 btkvect = [btkvect;btk_atl_2025_001];
 leadtimevect = [leadtimevect;1];
 basinvect = [basinvect;1];
-datasource = [datasource;1];
+datasource = [datasource;3];
 certified = [certified;2];
 
 # Epac 023 ... 06E around 2025-06-29-09Z ... CERTIFIED
@@ -21453,13 +21453,13 @@ certified = [certified;2];
 
 nhc_epac_2025_023 = [14.5,101.5,35;16.8,104.6,60;18.8,107.5,85;20.9,109.9,65;22.6,112.1,40];
 my_epac_2025_023 = [14.6,101.7,35;16.8,105.0,55;18.7,107.8,75;20.9,110.4,55;22.5,113.1,35];
-btk_epac_2025_023 = [14.5,101.3,40;16.7,104.7,70;18.4,107.9,100;19.9,110.5,55;22.5,113.6,30]; # day 5 self-made
+btk_epac_2025_023 = [14.6,101.4,40;16.8,104.7,70;18.4,107.9,100;20.0,110.6,50;22.3,113.8,30]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_023];
 myvect = [myvect;my_epac_2025_023];
 btkvect = [btkvect;btk_epac_2025_023];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 024 ... FLOSSIE around 2025-06-29-15Z ... CERTIFIED
@@ -21469,13 +21469,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_024 = [15.2,102.1,55;17.5,105.4,75;19.8,108.4,75;21.7,110.4,55;23.9,112.8,30];
 my_epac_2025_024 = [15.2,102.1,50;17.6,105.5,75;19.9,108.6,70;21.9,110.6,50;24.0,113.1,30];
-btk_epac_2025_024 = [15.3,102.1,45;17.1,105.5,80;18.8,108.7,95;20.3,111.3,45;23.0,114.7,25]; # day 5 self-made
+btk_epac_2025_024 = [15.3,102.1,45;17.2,105.5,80;18.8,108.7,95;20.3,111.3,40;22.9,114.8,30]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_024];
 myvect = [myvect;my_epac_2025_024];
 btkvect = [btkvect;btk_epac_2025_024];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 025 ... FLOSSIE around 2025-06-29-21Z ... CERTIFIED
@@ -21485,13 +21485,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_025 = [15.5,102.7,55;17.9,106.0,80;20.0,108.8,80;22.0,110.8,55;24.0,113.1,30];
 my_epac_2025_025 = [15.5,102.6,55;17.8,106.1,80;19.8,108.9,75;21.9,110.8,50;23.7,113.1,25];
-btk_epac_2025_025 = [15.9,103.0,55;17.6,106.3,95;19.3,109.4,85;20.9,112.0,35;23.4,115.7,25]; # day 5 self-made
+btk_epac_2025_025 = [15.9,103.0,55;17.6,106.3,95;19.3,109.4,85;20.9,112.0,35;23.4,115.8,25]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_025];
 myvect = [myvect;my_epac_2025_025];
 btkvect = [btkvect;btk_epac_2025_025];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 026 ... FLOSSIE around 2025-06-30-15Z ... CERTIFIED
@@ -21501,13 +21501,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_026 = [17.4,105.4,75;19.2,108.2,85;20.9,110.4,60;23.0,112.6,40;24.5,114.0,25];
 my_epac_2025_026 = [17.3,105.2,70;19.2,108.0,85;20.7,110.4,55;22.9,112.7,35;24.7,114.3,20];
-btk_epac_2025_026 = [17.1,105.5,80;18.8,108.7,95;20.3,111.3,45;23.0,114.7,25;23.6,117.9,20]; # days 4-5 self-made
+btk_epac_2025_026 = [17.2,105.5,80;18.8,108.7,95;20.4,111.3,40;22.9,114.8,30;24.1,117.9,15]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_026];
 myvect = [myvect;my_epac_2025_026];
 btkvect = [btkvect;btk_epac_2025_026];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 027 ... FLOSSIE around 2025-06-30-21Z ... CERTIFIED
@@ -21517,13 +21517,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_027 = [17.9,106.7,80;19.5,109.3,80;21.0,111.6,50;22.9,113.2,30;24.9,114.7,20];
 my_epac_2025_027 = [17.9,106.6,80;19.5,109.4,80;20.7,111.5,45;22.7,113.3,30;24.8,115.2,20];
-btk_epac_2025_027 = [17.6,106.3,95;19.3,109.4,85;20.9,112.0,35;23.4,115.7,25;23.7,118.5,15]; # days 4-5 self-made
+btk_epac_2025_027 = [17.6,106.3,95;19.3,109.4,85;20.9,112.0,35;23.4,115.8,25;24.1,118.5,15]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_027];
 myvect = [myvect;my_epac_2025_027];
 btkvect = [btkvect;btk_epac_2025_027];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 028 ... FLOSSIE around 2025-07-01-15Z ... CERTIFIED
@@ -21533,13 +21533,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_028 = [19.0,108.4,100;20.6,110.8,70;22.2,113.2,40;23.5,116.0,25];
 my_epac_2025_028 = [19.1,108.3,95;20.9,110.9,65;22.5,113.3,35;24.0,115.6,20];
-btk_epac_2025_028 = [18.8,108.7,95;20.3,111.3,45;23.0,114.7,25;23.6,117.9,20]; # days 3-4 self-made
+btk_epac_2025_028 = [18.8,108.7,95;20.4,111.3,40;22.9,114.8,30;24.1,117.9,15]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_028];
 myvect = [myvect;my_epac_2025_028];
 btkvect = [btkvect;btk_epac_2025_028];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;1;0;0];
+datasource = [datasource;3;2;2;2];
 certified = [certified;2;2;2;2];
 
 # Epac 029 ... FLOSSIE around 2025-07-01-21Z ... CERTIFIED
@@ -21549,13 +21549,13 @@ certified = [certified;2;2;2;2];
 
 nhc_epac_2025_029 = [19.5,109.3,90;21.3,112.0,55;22.9,114.6,30;24.0,117.4,25];
 my_epac_2025_029 = [19.4,109.2,95;21.3,112.0,55;22.9,114.5,25;24.0,117.4,20];
-btk_epac_2025_029 = [19.3,109.4,85;20.9,112.0,35;23.4,115.7,25;23.7,118.5,15]; # days 3-4 self-made
+btk_epac_2025_029 = [19.3,109.4,85;20.9,112.0,35;23.4,115.8,25;24.1,118.5,15]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_029];
 myvect = [myvect;my_epac_2025_029];
 btkvect = [btkvect;btk_epac_2025_029];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;1;0;0];
+datasource = [datasource;3;2;2;2];
 certified = [certified;2;2;2;2];
 
 # Epac 030 ... FLOSSIE around 2025-07-02-21Z ... CERTIFIED
@@ -21565,13 +21565,13 @@ certified = [certified;2;2;2;2];
 
 nhc_epac_2025_030 = [21.1,112.3,55;23.1,115.4,30;24.7,118.8,20];
 my_epac_2025_030 = [21.0,112.1,50;23.1,115.4,25;24.6,118.8,20];
-btk_epac_2025_030 = [20.9,112.0,35;23.4,115.7,25;23.7,118.5,15]; # days 2-3 self-made
+btk_epac_2025_030 = [20.9,112.0,35;23.4,115.8,25;24.1,118.5,15]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_030];
 myvect = [myvect;my_epac_2025_030];
 btkvect = [btkvect;btk_epac_2025_030];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;0;0];
+datasource = [datasource;2;2;2];
 certified = [certified;2;2;2];
 
 # Wpac 010 ... MUN around 2025-07-03-15Z ... CERTIFIED
@@ -21596,13 +21596,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_031 = [22.6,114.5,25;24.3,117.7,20];
 my_epac_2025_031 = [22.7,114.4,25;24.4,117.7,15];
-btk_epac_2025_031 = [23.0,114.7,25;23.6,117.9,20]; # all self-made
+btk_epac_2025_031 = [22.9,114.8,30;24.1,117.9,15]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_031];
 myvect = [myvect;my_epac_2025_031];
 btkvect = [btkvect;btk_epac_2025_031];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;0;0];
+datasource = [datasource;2;2];
 certified = [certified;2;2];
 
 # Wpac 011 ... 05W/(BISING) around 2025-07-04-15Z ... CERTIFIED
@@ -21674,13 +21674,13 @@ certified = [certified;2;2;2];
 
 nhc_atl_2025_002 = [33.1,79.3,45;35.8,78.0,30];
 my_atl_2025_002 = [33.1,79.5,40;35.6,78.3,25];
-btk_atl_2025_002 = [34.0,79.2,35;37.3,77.0,25];
+btk_atl_2025_002 = [33.9,79.1,35;37.2,77.0,25]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_002];
 myvect = [myvect;my_atl_2025_002];
 btkvect = [btkvect;btk_atl_2025_002];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;1;1];
-datasource = [datasource;1;1];
+datasource = [datasource;3;2];
 certified = [certified;2;2];
 
 # Atl 003 ... CHANTAL around 2025-07-05-21Z ... CERTIFIED
@@ -21690,13 +21690,13 @@ certified = [certified;2;2];
 
 nhc_atl_2025_003 = [34.1,79.6,30];
 my_atl_2025_003 = [33.9,79.5,30];
-btk_atl_2025_003 = [34.5,79.3,25];
+btk_atl_2025_003 = [34.6,79.1,25]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_003];
 myvect = [myvect;my_atl_2025_003];
 btkvect = [btkvect;btk_atl_2025_003];
 leadtimevect = [leadtimevect;1];
 basinvect = [basinvect;1];
-datasource = [datasource;1];
+datasource = [datasource;3];
 certified = [certified;2];
 
 # Wpac 015 ... DANAS/(BISING) around 2025-07-06-15Z ... CERTIFIED
@@ -21984,13 +21984,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_cpac_2025_01 = [11.2,150.4,45;11.2,155.3,50;11.8,161.6,40;12.5,168.8,35;13.9,176.0,30];
 my_cpac_2025_01 = [11.2,150.6,45;11.4,155.7,50;11.8,161.9,40;12.4,169.3,35;13.7,176.2,30];
-btk_cpac_2025_01 = [10.7,150.6,65;10.9,155.0,110;11.6,161.7,60;13.0,169.8,45;14.7,176.7,35];
+btk_cpac_2025_01 = [10.7,150.6,65;10.9,155.0,110;11.6,161.7,55;13.0,169.8,40;14.7,176.7,35]; # TCR (except day 5)
 nhcvect = [nhcvect;nhc_cpac_2025_01];
 myvect = [myvect;my_cpac_2025_01];
 btkvect = [btkvect;btk_cpac_2025_01];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;5;5;5;5;5];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;1];
 certified = [certified;2;2;2;2;2];
 
 # Cpac 02 ... IONA around 2025-07-28-03Z ... CERTIFIED
@@ -22000,13 +22000,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_cpac_2025_02 = [11.0,151.7,55;11.1,156.4,60;12.1,162.9,45;13.0,170.4,35;14.4,177.4,30];
 my_cpac_2025_02 = [11.0,151.6,55;11.2,156.3,60;12.2,162.6,45;13.0,170.0,35;14.0,176.6,30];
-btk_cpac_2025_02 = [10.8,151.6,70;11.0,156.4,105;11.7,163.8,45;13.5,171.7,45;15.5,178.8,30];
+btk_cpac_2025_02 = [10.8,151.6,75;11.0,156.4,100;11.8,163.8,45;13.4,171.7,35;15.5,178.8,30]; # TCR (except day 5)
 nhcvect = [nhcvect;nhc_cpac_2025_02];
 myvect = [myvect;my_cpac_2025_02];
 btkvect = [btkvect;btk_cpac_2025_02];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;5;5;5;5;5];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;1];
 certified = [certified;2;2;2;2;2];
 
 # Cpac 03 ... IONA around 2025-07-28-21Z ... CERTIFIED
@@ -22016,13 +22016,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_cpac_2025_03 = [10.6,155.0,95;10.9,161.0,80;11.7,168.1,55;12.9,175.2,45;14.7,181.5,40];
 my_cpac_2025_03 = [10.6,154.9,95;11.0,160.9,80;11.6,168.0,55;13.1,175.1,45;14.7,181.6,35];
-btk_cpac_2025_03 = [10.9,155.0,110;11.6,161.7,60;13.0,169.8,45;14.7,176.7,35;18.0,183.3,30];
+btk_cpac_2025_03 = [10.9,155.0,110;11.6,161.7,55;13.0,169.8,40;14.7,176.7,35;18.0,183.3,30]; # TCR (except days 4-5)
 nhcvect = [nhcvect;nhc_cpac_2025_03];
 myvect = [myvect;my_cpac_2025_03];
 btkvect = [btkvect;btk_cpac_2025_03];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;5;5;5;5;5];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;1;1];
 certified = [certified;2;2;2;2;2];
 
 # Cpac 04 ... KELI around 2025-07-28-21Z ... CERTIFIED
@@ -22032,13 +22032,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_cpac_2025_04 = [12.1,148.3,40;12.3,153.8,35];
 my_cpac_2025_04 = [12.2,148.2,35;12.4,153.7,35];
-btk_cpac_2025_04 = [12.7,149.1,35;13.7,155.7,30];
+btk_cpac_2025_04 = [12.7,149.2,40;13.7,155.7,30]; # TCR (except day 2)
 nhcvect = [nhcvect;nhc_cpac_2025_04];
 myvect = [myvect;my_cpac_2025_04];
 btkvect = [btkvect;btk_cpac_2025_04];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;5;5];
-datasource = [datasource;1;1];
+datasource = [datasource;3;1];
 certified = [certified;2;2];
 
 # Wpac 033 ... KROSA around 2025-07-29-21Z ... CERTIFIED
@@ -22063,13 +22063,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_cpac_2025_05 = [11.2,160.7,90;11.9,167.7,70;13.5,174.0,55;15.3,179.6,50;17.2,184.4,40];
 my_cpac_2025_05 = [11.2,160.8,90;12.0,167.8,65;13.5,174.3,50;15.4,179.9,45;17.7,184.6,35];
-btk_cpac_2025_05 = [11.6,161.7,60;13.0,169.8,45;14.7,176.7,35;18.0,183.3,30;22.2,188.7,25];
+btk_cpac_2025_05 = [11.6,161.7,55;13.0,169.8,40;14.7,176.7,35;18.0,183.3,30;22.2,188.7,25]; # TCR (except days 3-5)
 nhcvect = [nhcvect;nhc_cpac_2025_05];
 myvect = [myvect;my_cpac_2025_05];
 btkvect = [btkvect;btk_cpac_2025_05];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;5;5;5;5;5];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;1;1;1];
 certified = [certified;2;2;2;2;2];
 
 # Wpac 034 ... KROSA around 2025-07-30-15Z ... CERTIFIED
@@ -22094,13 +22094,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_cpac_2025_06 = [12.7,169.3,40;14.1,175.9,40;16.0,181.3,40;18.1,185.9,35];
 my_cpac_2025_06 = [12.7,169.3,40;14.0,176.1,35;15.9,181.6,35;18.2,186.0,30];
-btk_cpac_2025_06 = [13.0,169.8,45;14.7,176.7,35;18.0,183.3,30;22.2,188.7,25];
+btk_cpac_2025_06 = [13.0,169.8,40;14.7,176.7,35;18.0,183.3,30;22.2,188.7,25]; # TCR (day 1 only)
 nhcvect = [nhcvect;nhc_cpac_2025_06];
 myvect = [myvect;my_cpac_2025_06];
 btkvect = [btkvect;btk_cpac_2025_06];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;5;5;5;5];
-datasource = [datasource;1;1;1;1];
+datasource = [datasource;3;1;1;1];
 certified = [certified;2;2;2;2];
 
 # Epac 032 ... GIL around 2025-07-31-21Z ... CERTIFIED
@@ -22110,13 +22110,13 @@ certified = [certified;2;2;2;2];
 
 nhc_epac_2025_032 = [15.6,122.2,70;18.4,129.0,70;20.7,135.4,45;21.8,141.2,30;22.6,147.0,25];
 my_epac_2025_032 = [15.6,122.0,65;18.5,128.6,65;20.7,135.1,40;21.8,140.5,30;22.3,145.8,25];
-btk_epac_2025_032 = [15.6,122.7,60;18.4,129.5,60;20.8,136.6,35;21.3,142.5,25;22.3,147.8,30]; # days 3-5 self-made
+btk_epac_2025_032 = [15.5,122.6,60;18.4,129.5,60;20.6,136.6,40;21.2,142.4,30;22.3,147.8,30]; # TCR (day 5 self-made)
 nhcvect = [nhcvect;nhc_epac_2025_032];
 myvect = [myvect;my_epac_2025_032];
 btkvect = [btkvect;btk_epac_2025_032];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;0;0;0];
+datasource = [datasource;3;3;2;2;0];
 certified = [certified;2;2;2;2;2];
 
 # Epac 033 ... GIL around 2025-08-02-15Z ... CERTIFIED
@@ -22126,13 +22126,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_033 = [20.6,133.8,45;22.3,139.2,35;23.0,144.0,30];
 my_epac_2025_033 = [20.6,133.9,45;22.2,139.5,30;23.0,144.3,25];
-btk_epac_2025_033 = [20.4,134.9,45;21.2,141.1,30;21.8,146.3,30]; # days 2-3 self-made
+btk_epac_2025_033 = [20.3,134.8,45;21.1,141.2,30;21.8,146.3,30]; # TCR (day 3 self-made)
 nhcvect = [nhcvect;nhc_epac_2025_033];
 myvect = [myvect;my_epac_2025_033];
 btkvect = [btkvect;btk_epac_2025_033];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;0;0];
+datasource = [datasource;2;2;0];
 certified = [certified;2;2;2];
 
 # Epac 034 ... GIL around 2025-08-03-15Z ... CERTIFIED
@@ -22142,13 +22142,13 @@ certified = [certified;2;2;2];
 
 nhc_epac_2025_034 = [21.7,141.0,30;22.0,146.2,30];
 my_epac_2025_034 = [21.7,141.1,30;22.1,146.4,30];
-btk_epac_2025_034 = [21.2,141.1,30;21.8,146.3,30]; # days 1-2 self-made
+btk_epac_2025_034 = [21.1,141.2,30;21.8,146.3,30]; # TCR (day 2 self-made)
 nhcvect = [nhcvect;nhc_epac_2025_034];
 myvect = [myvect;my_epac_2025_034];
 btkvect = [btkvect;btk_epac_2025_034];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;0;0];
+datasource = [datasource;2;0];
 certified = [certified;2;2];
 
 # Atl 004 ... DEXTER around 2025-08-04-15Z ... CERTIFIED
@@ -22159,13 +22159,13 @@ certified = [certified;2;2];
 
 nhc_atl_2025_004 = [37.6,63.4,45;39.4,59.1,45;41.0,50.7,45;43.9,43.5,45;46.5,36.1,45];
 my_atl_2025_004 = [37.5,63.5,45;39.2,59.0,45;40.9,51.4,45;43.0,45.6,40;46.0,37.1,45];
-btk_atl_2025_004 = [37.7,63.9,35;39.7,59.0,45;41.0,51.4,50;44.8,43.5,60;45.9,34.0,35]; # days 4-5 self-made
+btk_atl_2025_004 = [37.7,63.9,35;39.6,59.0,50;40.9,51.3,60;44.7,43.5,70;45.9,34.1,40]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_004];
 myvect = [myvect;my_atl_2025_004];
 btkvect = [btkvect;btk_atl_2025_004];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 005 ... DEXTER around 2025-08-05-09Z ... CERTIFIED
@@ -22175,13 +22175,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_005 = [39.2,60.7,35;40.6,54.5,45;43.5,45.5,45;46.5,35.5,40];
 my_atl_2025_005 = [39.1,60.9,35;40.5,54.7,40;42.5,46.5,40;44.2,38.0,40];
-btk_atl_2025_005 = [39.4,60.5,40;40.4,53.2,45;44.0,45.0,60;45.9,36.7,40]; # days 3-4 self-made
+btk_atl_2025_005 = [39.3,60.5,45;40.4,53.2,55;43.6,45.0,70;45.7,36.7,45]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_005];
 myvect = [myvect;my_atl_2025_005];
 btkvect = [btkvect;btk_atl_2025_005];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;1;1;1;1];
-datasource = [datasource;1;1;0;0];
+datasource = [datasource;3;2;2;2];
 certified = [certified;2;2;2;2];
 
 # Atl 006 ... DEXTER around 2025-08-06-15Z ... CERTIFIED
@@ -22191,13 +22191,13 @@ certified = [certified;2;2;2;2];
 
 nhc_atl_2025_006 = [41.5,51.4,55;44.4,43.6,55;45.6,34.8,40;47.0,26.2,35];
 my_atl_2025_006 = [41.4,51.5,55;44.4,43.3,55;45.9,33.9,40;47.5,25.8,35];
-btk_atl_2025_006 = [41.0,51.4,50;44.8,43.5,60;45.9,34.0,35;47.6,25.8,25]; # days 2-4 self-made
+btk_atl_2025_006 = [40.9,51.3,60;44.7,43.5,70;45.9,34.1,40;47.6,25.9,30]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_006];
 myvect = [myvect;my_atl_2025_006];
 btkvect = [btkvect;btk_atl_2025_006];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;1;1;1;1];
-datasource = [datasource;1;0;0;0];
+datasource = [datasource;2;2;2;2];
 certified = [certified;2;2;2;2];
 
 # Epac 035 ... HENRIETTE around 2025-08-06-15Z ... CERTIFIED
@@ -22207,13 +22207,13 @@ certified = [certified;2;2;2;2];
 
 nhc_epac_2025_035 = [18.6,135.0,40;19.6,141.1,40;21.5,146.6,40;24.2,151.3,45;27.5,155.0,60];
 my_epac_2025_035 = [18.8,135.0,40;19.8,141.3,35;21.8,146.9,35;24.7,151.3,40;28.2,155.2,50];
-btk_epac_2025_035 = [18.5,134.6,45;19.5,140.8,35;21.1,146.2,30;24.2,150.9,55;28.3,155.8,70];
+btk_epac_2025_035 = [18.5,134.6,45;19.5,140.8,35;21.1,146.3,30;24.2,150.9,55;28.3,155.8,75]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_035];
 myvect = [myvect;my_epac_2025_035];
 btkvect = [btkvect;btk_epac_2025_035];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;2;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 007 ... DEXTER around 2025-08-07-15Z ... CERTIFIED
@@ -22223,13 +22223,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_007 = [44.2,43.8,60;45.9,35.4,45;47.1,26.8,30;48.0,20.0,30];
 my_atl_2025_007 = [44.3,43.9,55;46.0,35.2,40;47.6,26.2,30;48.6,20.3,30];
-btk_atl_2025_007 = [44.8,43.5,60;45.9,34.0,35;47.6,25.8,25;48.4,20.4,25]; # all self-made
+btk_atl_2025_007 = [44.7,43.5,70;45.9,34.1,40;47.6,25.9,30;48.5,20.5,25]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_007];
 myvect = [myvect;my_atl_2025_007];
 btkvect = [btkvect;btk_atl_2025_007];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;1;1;1;1];
-datasource = [datasource;0;0;0;0];
+datasource = [datasource;2;2;2;2];
 certified = [certified;2;2;2;2];
 
 # Epac 036 ... HENRIETTE around 2025-08-07-15Z ... CERTIFIED
@@ -22239,13 +22239,13 @@ certified = [certified;2;2;2;2];
 
 nhc_epac_2025_036 = [19.5,140.9,45;21.4,146.5,45;24.3,151.4,50;28.0,155.8,65;31.5,160.0,70];
 my_epac_2025_036 = [19.6,140.7,40;21.3,146.5,40;24.3,151.3,50;28.2,155.7,60;32.0,159.8,60];
-btk_epac_2025_036 = [19.5,140.8,35;21.1,146.2,30;24.2,150.9,55;28.3,155.8,70;32.3,161.0,60];
+btk_epac_2025_036 = [19.5,140.8,35;21.1,146.3,30;24.2,150.9,55;28.3,155.8,75;32.3,161.0,60]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_036];
 myvect = [myvect;my_epac_2025_036];
 btkvect = [btkvect;btk_epac_2025_036];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;2;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 037 ... IVO around 2025-08-07-21Z ... CERTIFIED
@@ -22255,13 +22255,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_037 = [21.1,110.9,70;21.6,114.1,55;21.9,117.5,30;22.5,121.0,25];
 my_epac_2025_037 = [21.1,110.6,60;21.9,113.7,45;22.1,117.0,30;22.6,120.1,25];
-btk_epac_2025_037 = [20.4,110.7,55;20.9,113.1,45;21.9,116.7,35;23.3,120.0,20]; # day 4 self-made
+btk_epac_2025_037 = [20.3,110.7,55;20.9,113.1,45;22.0,116.6,35;23.3,120.0,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_037];
 myvect = [myvect;my_epac_2025_037];
 btkvect = [btkvect;btk_epac_2025_037];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;1;1;0];
+datasource = [datasource;3;3;3;2];
 certified = [certified;2;2;2;2];
 
 # Epac 038 ... HENRIETTE around 2025-08-07-21Z ... CERTIFIED
@@ -22271,13 +22271,13 @@ certified = [certified;2;2;2;2];
 
 nhc_epac_2025_038 = [19.9,142.2,40;22.1,147.5,40;25.2,152.3,55;28.9,156.7,70;32.6,160.6,65];
 my_epac_2025_038 = [20.0,142.2,40;22.1,147.7,40;25.1,152.4,50;28.9,156.6,60;32.1,160.0,60];
-btk_epac_2025_038 = [19.8,142.3,30;21.9,147.6,35;25.2,151.9,65;29.3,157.2,75;33.6,162.3,55];
+btk_epac_2025_038 = [19.8,142.3,30;21.8,147.5,35;25.2,151.9,65;29.3,157.2,75;33.6,162.3,55]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_038];
 myvect = [myvect;my_epac_2025_038];
 btkvect = [btkvect;btk_epac_2025_038];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;2;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 039 ... IVO around 2025-08-08-15Z ... CERTIFIED
@@ -22287,13 +22287,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_039 = [21.3,113.4,60;21.5,116.6,45;22.0,120.0,30];
 my_epac_2025_039 = [21.0,113.3,55;21.3,116.4,45;21.9,119.9,30];
-btk_epac_2025_039 = [20.9,112.4,50;21.6,115.6,35;23.1,119.1,25];
+btk_epac_2025_039 = [20.8,112.5,50;21.6,115.6,35;23.0,119.1,25]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_039];
 myvect = [myvect;my_epac_2025_039];
 btkvect = [btkvect;btk_epac_2025_039];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;1;1];
+datasource = [datasource;3;3;2];
 certified = [certified;2;2;2];
 
 # Cpac 07 ... HENRIETTE around 2025-08-08-15Z ... CERTIFIED
@@ -22301,32 +22301,32 @@ certified = [certified;2;2;2];
 # snapshot: https://web.archive.org/web/20250808152024/https://elioestracks.blogspot.com/2024/04/advisory-list.html
 # NHC at https://www.nhc.noaa.gov/archive/2025/ep08/ep082025.discus.018.shtml
 
-nhc_cpac_2025_07 = [21.3,146.3,30;24.1,150.9,45;27.9,155.7,65;32.3,160.4,65];
-my_cpac_2025_07 = [21.3,146.2,30;24.1,150.8,45;28.0,155.9,55;32.8,160.2,55];
-btk_cpac_2025_07 = [21.1,146.2,30;24.2,150.9,55;28.3,155.8,70;32.3,161.0,60];
+nhc_cpac_2025_07 = [21.3,146.3,30;24.1,150.9,45;27.9,155.7,65;32.3,160.4,65;37.1,165.1,50];
+my_cpac_2025_07 = [21.3,146.2,30;24.1,150.8,45;28.0,155.9,55;32.8,160.2,55;37.6,164.9,45];
+btk_cpac_2025_07 = [21.1,146.3,30;24.2,150.9,55;28.3,155.8,75;32.3,161.0,60;37.4,166.3,35]; # TCR
 nhcvect = [nhcvect;nhc_cpac_2025_07];
 myvect = [myvect;my_cpac_2025_07];
 btkvect = [btkvect;btk_cpac_2025_07];
-leadtimevect = [leadtimevect;1;2;3;4];
-basinvect = [basinvect;5;5;5;5];
-datasource = [datasource;1;1;1;1];
-certified = [certified;2;2;2;2];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;5;5;5;5;5];
+datasource = [datasource;2;2;2;2;2];
+certified = [certified;2;2;2;2;2];
 
 # Cpac 08 ... HENRIETTE around 2025-08-09-15Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1954197932913185214
 # snapshot: https://web.archive.org/web/20250809151336/https://elioestracks.blogspot.com/2024/04/advisory-list.html
 # NHC at https://www.nhc.noaa.gov/archive/2025/ep08/ep082025.discus.022.shtml
 
-nhc_cpac_2025_08 = [23.9,150.6,40;27.9,155.3,50;32.0,160.4,55];
-my_cpac_2025_08 = [23.9,150.6,40;28.1,155.4,50;32.4,160.7,50];
-btk_cpac_2025_08 = [24.2,150.9,55;28.3,155.8,70;32.3,161.0,60];
+nhc_cpac_2025_08 = [23.9,150.6,40;27.9,155.3,50;32.0,160.4,55;36.1,165.0,40];
+my_cpac_2025_08 = [23.9,150.6,40;28.1,155.4,50;32.4,160.7,50;36.5,165.3,40];
+btk_cpac_2025_08 = [24.2,150.9,55;28.3,155.8,75;32.3,161.0,60;37.4,166.3,35]; # TCR
 nhcvect = [nhcvect;nhc_cpac_2025_08];
 myvect = [myvect;my_cpac_2025_08];
 btkvect = [btkvect;btk_cpac_2025_08];
-leadtimevect = [leadtimevect;1;2;3];
-basinvect = [basinvect;5;5;5];
-datasource = [datasource;1;1;1];
-certified = [certified;2;2;2];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;5;5;5;5];
+datasource = [datasource;3;3;3;2];
+certified = [certified;2;2;2;2];
 
 # Epac 040 ... IVO around 2025-08-09-21Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1954284372749889606
@@ -22335,13 +22335,13 @@ certified = [certified;2;2;2];
 
 nhc_epac_2025_040 = [22.0,116.5,35;22.8,120.6,25];
 my_epac_2025_040 = [21.9,116.5,35;23.0,120.5,20];
-btk_epac_2025_040 = [21.9,116.7,35;23.3,120.0,20]; # day 2 self-made
+btk_epac_2025_040 = [22.0,116.6,35;23.3,120.0,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_040];
 myvect = [myvect;my_epac_2025_040];
 btkvect = [btkvect;btk_epac_2025_040];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;1;0];
+datasource = [datasource;3;2];
 certified = [certified;2;2];
 
 # Atl 008 ... 97L around 2025-08-10-15Z ... CERTIFIED
@@ -22356,13 +22356,13 @@ certified = [certified;2;2];
 
 nhc_atl_2025_009 = [17.4,35.1,50;17.1,41.7,60;18.0,48.4,80;19.6,54.0,90;21.5,60.0,100];
 my_atl_2025_009 = [17.6,35.0,45;17.4,41.8,55;18.1,48.6,70;19.8,54.2,85;21.5,59.7,100];
-btk_atl_2025_009 = [17.3,35.4,40;16.4,42.7,45;16.3,48.9,50;18.0,55.3,65;19.6,62.1,130];
+btk_atl_2025_009 = [17.3,35.4,40;16.4,42.7,45;16.3,48.9,50;18.0,55.2,65;19.6,62.1,130]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_009];
 myvect = [myvect;my_atl_2025_009];
 btkvect = [btkvect;btk_atl_2025_009];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 010 ... ERIN around 2025-08-11-21Z ... CERTIFIED
@@ -22372,13 +22372,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_010 = [17.3,37.1,50;17.3,44.0,60;18.5,50.0,80;20.0,55.6,95;22.0,60.5,100];
 my_atl_2025_010 = [17.4,36.8,50;17.4,43.6,65;18.5,49.3,80;19.6,54.8,95;21.4,59.6,100];
-btk_atl_2025_010 = [17.1,37.4,40;16.3,44.3,45;16.6,50.4,50;18.7,56.8,65;19.8,63.4,140];
+btk_atl_2025_010 = [17.1,37.4,40;16.3,44.3,45;16.6,50.4,55;18.7,56.8,65;19.8,63.4,140]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_010];
 myvect = [myvect;my_atl_2025_010];
 btkvect = [btkvect;btk_atl_2025_010];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 011 ... ERIN around 2025-08-12-15Z ... CERTIFIED
@@ -22388,13 +22388,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_011 = [16.5,42.3,40;17.1,48.3,55;18.5,54.4,75;19.8,60.3,90;21.4,65.0,100];
 my_atl_2025_011 = [16.3,42.3,40;16.6,47.7,45;18.2,53.3,65;19.8,59.3,75;21.5,64.5,90];
-btk_atl_2025_011 = [16.4,42.7,45;16.3,48.9,50;18.0,55.3,65;19.6,62.1,130;20.7,67.0,110];
+btk_atl_2025_011 = [16.4,42.7,45;16.3,48.9,50;18.0,55.2,65;19.6,62.1,130;20.7,67.0,110]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_011];
 myvect = [myvect;my_atl_2025_011];
 btkvect = [btkvect;btk_atl_2025_011];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 012 ... ERIN around 2025-08-12-21Z ... CERTIFIED
@@ -22404,13 +22404,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_012 = [16.4,43.9,45;17.2,49.9,60;18.6,56.0,85;20.0,61.5,95;22.2,65.7,100];
 my_atl_2025_012 = [16.4,43.7,50;17.2,49.6,65;18.4,54.4,85;20.0,59.0,100;22.5,63.3,100];
-btk_atl_2025_012 = [16.3,44.3,45;16.6,50.4,50;18.7,56.8,65;19.8,63.4,140;21.5,68.0,110];
+btk_atl_2025_012 = [16.3,44.3,45;16.6,50.4,55;18.7,56.8,65;19.8,63.4,140;21.5,68.0,110]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_012];
 myvect = [myvect;my_atl_2025_012];
 btkvect = [btkvect;btk_atl_2025_012];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 013 ... ERIN around 2025-08-13-03Z ... CERTIFIED
@@ -22420,13 +22420,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_013 = [16.2,45.5,45;17.3,51.4,60;18.9,57.5,85;20.5,62.6,100;22.5,66.5,100];
 my_atl_2025_013 = [16.1,45.1,45;17.2,50.8,50;19.0,56.1,75;20.9,60.6,85;22.8,64.7,95];
-btk_atl_2025_013 = [16.3,45.9,45;16.9,51.9,60;19.4,58.6,75;20.0,64.5,125;22.1,68.8,110];
+btk_atl_2025_013 = [16.3,45.9,45;16.9,51.9,60;19.4,58.5,75;20.0,64.6,125;22.0,68.9,110]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_013];
 myvect = [myvect;my_atl_2025_013];
 btkvect = [btkvect;btk_atl_2025_013];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 014 ... ERIN around 2025-08-13-15Z ... CERTIFIED
@@ -22436,13 +22436,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_014 = [16.6,48.6,50;18.2,54.3,65;19.9,60.0,85;21.7,64.6,100;23.9,67.3,105];
 my_atl_2025_014 = [16.4,48.5,50;17.9,53.9,60;19.9,59.4,80;21.6,63.8,90;23.7,66.4,100];
-btk_atl_2025_014 = [16.3,48.9,50;18.0,55.3,65;19.6,62.1,130;20.7,67.0,110;22.9,70.5,120];
+btk_atl_2025_014 = [16.3,48.9,50;18.0,55.2,65;19.6,62.1,130;20.7,67.0,110;22.9,70.5,120]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_014];
 myvect = [myvect;my_atl_2025_014];
 btkvect = [btkvect;btk_atl_2025_014];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 015 ... ERIN around 2025-08-13-21Z ... CERTIFIED
@@ -22452,13 +22452,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_015 = [16.9,50.1,55;18.4,55.9,75;20.2,61.4,95;22.2,65.8,100;24.8,68.2,105];
 my_atl_2025_015 = [16.8,50.4,55;18.3,56.0,80;20.0,61.1,100;22.1,65.1,100;24.7,68.0,105];
-btk_atl_2025_015 = [16.6,50.4,50;18.7,56.8,65;19.8,63.4,140;21.5,68.0,110;23.6,71.0,120];
+btk_atl_2025_015 = [16.6,50.4,55;18.7,56.8,65;19.8,63.4,140;21.5,68.0,110;23.5,71.0,115]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_015];
 myvect = [myvect;my_atl_2025_015];
 btkvect = [btkvect;btk_atl_2025_015];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 016 ... ERIN around 2025-08-14-15Z ... CERTIFIED
@@ -22468,13 +22468,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_016 = [17.8,55.0,65;19.4,60.7,90;21.3,65.1,100;23.5,68.0,105;26.5,69.8,110];
 my_atl_2025_016 = [17.8,55.1,65;19.4,60.9,90;21.2,65.3,100;23.4,68.2,110;26.2,69.7,110];
-btk_atl_2025_016 = [18.0,55.3,65;19.6,62.1,130;20.7,67.0,110;22.9,70.5,120;25.2,72.1,90];
+btk_atl_2025_016 = [18.0,55.2,65;19.6,62.1,130;20.7,67.0,110;22.9,70.5,120;25.2,72.1,85];
 nhcvect = [nhcvect;nhc_atl_2025_016];
 myvect = [myvect;my_atl_2025_016];
 btkvect = [btkvect;btk_atl_2025_016];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 017 ... ERIN around 2025-08-14-21Z ... CERTIFIED
@@ -22484,13 +22484,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_017 = [18.1,56.6,65;19.8,62.2,90;21.7,66.1,100;24.2,68.9,105;27.2,70.3,110];
 my_atl_2025_017 = [17.9,56.7,70;19.5,62.4,90;21.4,66.6,100;23.7,69.2,105;26.5,70.7,110];
-btk_atl_2025_017 = [18.7,56.8,65;19.8,63.4,140;21.5,68.0,110;23.6,71.0,120;26.1,72.5,90];
+btk_atl_2025_017 = [18.7,56.8,65;19.8,63.4,140;21.5,68.0,110;23.5,71.0,115;26.1,72.5,85]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_017];
 myvect = [myvect;my_atl_2025_017];
 btkvect = [btkvect;btk_atl_2025_017];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 018 ... ERIN around 2025-08-15-03Z ... CERTIFIED
@@ -22500,13 +22500,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_018 = [18.6,58.3,80;20.3,63.3,100;22.4,67.0,115;25.0,69.4,110;28.0,70.4,105];
 my_atl_2025_018 = [18.5,58.3,80;20.2,63.7,95;22.2,67.6,110;24.9,69.9,115;28.1,70.9,105];
-btk_atl_2025_018 = [19.4,58.6,75;20.0,64.5,125;22.1,68.8,110;24.0,71.4,110;27.2,72.8,90];
+btk_atl_2025_018 = [19.4,58.5,75;20.0,64.6,125;22.0,68.9,110;24.0,71.4,100;27.2,72.8,85]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_018];
 myvect = [myvect;my_atl_2025_018];
 btkvect = [btkvect;btk_atl_2025_018];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 019 ... ERIN around 2025-08-15-15Z ... CERTIFIED
@@ -22516,13 +22516,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_019 = [19.8,61.4,90;21.6,66.0,110;23.8,69.2,120;26.5,70.8,115;30.3,71.0,110];
 my_atl_2025_019 = [19.8,61.3,90;21.7,65.9,110;24.0,68.9,115;26.7,70.1,115;30.8,70.3,105];
-btk_atl_2025_019 = [19.6,62.1,130;20.7,67.0,110;22.9,70.5,120;25.2,72.1,90;29.6,73.7,95];
+btk_atl_2025_019 = [19.6,62.1,130;20.7,67.0,110;22.9,70.5,120;25.2,72.1,85;29.5,73.7,95]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_019];
 myvect = [myvect;my_atl_2025_019];
 btkvect = [btkvect;btk_atl_2025_019];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 020 ... ERIN around 2025-08-16-15Z ... CERTIFIED
@@ -22532,13 +22532,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_020 = [21.0,66.8,130;23.5,69.7,130;26.4,70.9,120;30.6,70.9,115;35.7,66.4,95];
 my_atl_2025_020 = [21.0,66.8,130;23.5,69.7,130;26.4,70.8,125;30.6,70.8,115;35.5,66.4,95];
-btk_atl_2025_020 = [20.7,67.0,110;22.9,70.5,120;25.2,72.1,90;29.6,73.7,95;34.9,71.7,90];
+btk_atl_2025_020 = [20.7,67.0,110;22.9,70.5,120;25.2,72.1,85;29.5,73.7,95;34.9,71.7,90]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_020];
 myvect = [myvect;my_atl_2025_020];
 btkvect = [btkvect;btk_atl_2025_020];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 021 ... ERIN around 2025-08-16-21Z ... CERTIFIED
@@ -22548,13 +22548,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_021 = [21.4,67.6,140;24.0,70.2,130;27.3,71.3,120;31.7,70.8,110;36.8,65.0,100];
 my_atl_2025_021 = [21.4,67.7,140;23.9,70.5,125;27.0,72.0,125;31.3,71.7,110;36.2,66.6,100];
-btk_atl_2025_021 = [21.5,68.0,110;23.6,71.0,120;26.1,72.5,90;30.7,73.6,95;35.9,70.1,85];
+btk_atl_2025_021 = [21.5,68.0,110;23.5,71.0,115;26.1,72.5,85;30.7,73.6,95;35.9,70.1,85]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_021];
 myvect = [myvect;my_atl_2025_021];
 btkvect = [btkvect;btk_atl_2025_021];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 022 ... ERIN around 2025-08-17-15Z ... CERTIFIED
@@ -22564,13 +22564,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_022 = [23.1,70.2,125;25.9,72.2,115;30.0,72.7,105;34.3,70.4,95;39.0,62.0,85];
 my_atl_2025_022 = [23.0,70.5,115;25.9,72.4,115;29.7,73.0,100;34.3,70.6,95;39.1,60.8,85];
-btk_atl_2025_022 = [22.9,70.5,120;25.2,72.1,90;29.6,73.7,95;34.9,71.7,90;38.5,64.6,80];
+btk_atl_2025_022 = [22.9,70.5,120;25.2,72.1,85;29.5,73.7,95;34.9,71.7,90;38.5,64.6,80]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_022];
 myvect = [myvect;my_atl_2025_022];
 btkvect = [btkvect;btk_atl_2025_022];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 023 ... ERIN around 2025-08-17-21Z ... CERTIFIED
@@ -22580,13 +22580,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_023 = [24.0,71.0,125;27.1,72.5,115;31.2,72.7,105;35.3,69.3,95;40.3,59.5,85];
 my_atl_2025_023 = [23.8,71.2,120;26.8,72.7,105;30.9,73.0,95;34.8,69.2,95;40.2,58.9,85];
-btk_atl_2025_023 = [23.6,71.0,120;26.1,72.5,90;30.7,73.6,95;35.9,70.1,85;39.4,61.4,80];
+btk_atl_2025_023 = [23.5,71.0,115;26.1,72.5,85;30.7,73.6,95;35.9,70.1,85;39.4,61.4,80]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_023];
 myvect = [myvect;my_atl_2025_023];
 btkvect = [btkvect;btk_atl_2025_023];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 024 ... ERIN around 2025-08-18-03Z ... CERTIFIED
@@ -22596,13 +22596,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_024 = [24.6,71.3,115;28.0,72.8,105;32.0,72.5,95;36.5,67.5,90;41.4,56.7,80];
 my_atl_2025_024 = [24.4,71.5,110;27.7,73.2,100;31.9,73.1,95;36.1,68.3,90;40.6,57.9,85];
-btk_atl_2025_024 = [24.0,71.4,110;27.2,72.8,90;32.1,73.3,95;36.9,68.4,85;40.7,57.8,80];
+btk_atl_2025_024 = [24.0,71.4,100;27.2,72.8,85;32.1,73.3,95;36.9,68.4,85;40.4,58.1,80]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_024];
 myvect = [myvect;my_atl_2025_024];
 btkvect = [btkvect;btk_atl_2025_024];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 025 ... ERIN around 2025-08-18-15Z ... CERTIFIED
@@ -22612,13 +22612,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_025 = [25.7,72.5,115;29.5,73.5,105;33.9,71.6,95;37.7,65.0,90;42.4,53.0,75];
 my_atl_2025_025 = [25.5,72.6,110;29.2,73.7,100;33.6,71.8,95;37.4,65.2,90;42.8,51.5,75];
-btk_atl_2025_025 = [25.2,72.1,90;29.6,73.7,95;34.9,71.7,90;38.5,64.6,80;42.2,50.4,70]; # day 5 self-made
+btk_atl_2025_025 = [25.2,72.1,85;29.5,73.7,95;34.9,71.7,90;38.5,64.6,80;42.0,50.5,75]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_025];
 myvect = [myvect;my_atl_2025_025];
 btkvect = [btkvect;btk_atl_2025_025];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 026 ... ERIN around 2025-08-18-21Z ... CERTIFIED
@@ -22628,13 +22628,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_026 = [26.5,72.8,115;30.5,73.7,100;34.8,71.2,95;38.0,64.0,85;41.0,56.5,75];
 my_atl_2025_026 = [26.4,73.0,110;30.3,74.0,95;34.4,71.8,85;37.8,65.5,80;41.1,58.5,65];
-btk_atl_2025_026 = [26.1,72.5,90;30.7,73.6,95;35.9,70.1,85;39.4,61.4,80;44.0,44.7,65]; # day 5 self-made
+btk_atl_2025_026 = [26.1,72.5,85;30.7,73.6,95;35.9,70.1,85;39.4,61.4,80;43.0,45.0,70]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_026];
 myvect = [myvect;my_atl_2025_026];
 btkvect = [btkvect;btk_atl_2025_026];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 027 ... ERIN around 2025-08-19-15Z ... CERTIFIED
@@ -22644,13 +22644,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_027 = [29.1,73.9,90;33.7,72.4,95;37.3,66.6,85;40.3,58.7,65;42.8,50.0,55];
 my_atl_2025_027 = [29.0,74.0,90;33.6,72.4,90;37.4,66.7,80;41.2,57.8,65;43.8,48.3,50];
-btk_atl_2025_027 = [29.6,73.7,95;34.9,71.7,90;38.5,64.6,80;42.2,50.4,70;50.7,30.8,75]; # days 4-5 self-made
+btk_atl_2025_027 = [29.5,73.7,95;34.9,71.7,90;38.5,64.6,80;42.0,50.5,75;50.8,30.9,80]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_027];
 myvect = [myvect;my_atl_2025_027];
 btkvect = [btkvect;btk_atl_2025_027];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;3;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 028 ... ERIN around 2025-08-19-21Z ... CERTIFIED
@@ -22660,13 +22660,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_028 = [30.3,73.8,95;34.9,71.3,95;38.4,64.7,85;41.0,56.0,65;43.0,46.0,50];
 my_atl_2025_028 = [30.2,73.9,95;34.9,71.5,95;38.6,64.7,80;42.2,53.2,60;44.6,40.7,45];
-btk_atl_2025_028 = [30.7,73.6,95;35.9,70.1,85;39.4,61.4,80;44.0,44.7,65;52.7,28.2,65]; # days 4-5 self-made
+btk_atl_2025_028 = [30.7,73.6,95;35.9,70.1,85;39.4,61.4,80;43.0,45.0,70;52.6,28.2,80]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_028];
 myvect = [myvect;my_atl_2025_028];
 btkvect = [btkvect;btk_atl_2025_028];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 029 ... ERIN around 2025-08-20-15Z ... CERTIFIED
@@ -22676,13 +22676,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_029 = [34.4,72.2,105;38.6,65.5,90;42.5,54.3,65;47.4,40.0,55;52.5,27.4,50];
 my_atl_2025_029 = [34.2,72.2,100;38.3,65.5,85;42.3,54.2,65;47.8,38.2,45;52.5,26.2,40];
-btk_atl_2025_029 = [34.9,71.7,90;38.5,64.6,80;42.2,50.4,70;50.7,30.8,75;56.1,22.2,50]; # days 3-5 self-made
+btk_atl_2025_029 = [34.9,71.7,90;38.5,64.6,80;42.0,50.5,75;50.8,30.9,80;56.1,22.1,55]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_029];
 myvect = [myvect;my_atl_2025_029];
 btkvect = [btkvect;btk_atl_2025_029];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;0;0;0];
+datasource = [datasource;3;3;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 030 ... ERIN around 2025-08-20-21Z ... CERTIFIED
@@ -22692,13 +22692,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_030 = [35.5,70.6,100;39.2,63.0,85;43.1,50.8,55;49.0,34.5,55;54.0,23.0,45];
 my_atl_2025_030 = [35.4,70.8,95;39.0,63.5,80;42.5,51.3,55;48.8,33.0,50;53.5,21.2,40];
-btk_atl_2025_030 = [35.9,70.1,85;39.4,61.4,80;44.0,44.7,65;52.7,28.2,65;57.4,21.3,45]; # days 3-5 self-made
+btk_atl_2025_030 = [35.9,70.1,85;39.4,61.4,80;43.0,45.0,70;52.6,28.2,80;57.3,21.3,50]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_030];
 myvect = [myvect;my_atl_2025_030];
 btkvect = [btkvect;btk_atl_2025_030];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;0;0;0];
+datasource = [datasource;3;2;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 031 ... ERIN around 2025-08-21-15Z ... CERTIFIED
@@ -22708,13 +22708,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_031 = [39.1,64.5,80;43.2,51.7,70;49.4,35.7,60;54.5,25.0,55;56.9,21.1,45];
 my_atl_2025_031 = [38.9,64.6,80;43.2,51.7,65;49.5,35.8,50;55.4,24.2,45;57.5,21.6,35];
-btk_atl_2025_031 = [38.5,64.6,80;42.2,50.4,70;50.7,30.8,75;56.1,22.2,50;60.0,21.6,40]; # days 2-5 self-made
+btk_atl_2025_031 = [38.5,64.6,80;42.0,50.5,75;50.8,30.9,80;56.1,22.1,55;59.9,21.6,45]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_031];
 myvect = [myvect;my_atl_2025_031];
 btkvect = [btkvect;btk_atl_2025_031];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;0;0;0;0];
+datasource = [datasource;3;2;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Wpac 035 ... KAJIKI/(ISANG) around 2025-08-23-21Z ... CERTIFIED
@@ -22739,13 +22739,13 @@ certified = [certified;2;2;2];
 
 nhc_atl_2025_032 = [34.8,57.8,50;39.3,54.3,45;44.5,46.0,35];
 my_atl_2025_032 = [34.7,58.0,45;39.4,54.4,40;45.0,46.0,35];
-btk_atl_2025_032 = [33.8,58.4,50;37.3,55.1,35;38.2,50.4,40];
+btk_atl_2025_032 = [33.8,58.4,50;37.3,55.1,35;38.2,50.3,45]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_032];
 myvect = [myvect;my_atl_2025_032];
 btkvect = [btkvect;btk_atl_2025_032];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;1;1;1];
-datasource = [datasource;1;1;1];
+datasource = [datasource;3;3;3];
 certified = [certified;2;2;2];
 
 # Wpac 036 ... KAJIKI/(ISANG) around 2025-08-24-21Z ... CERTIFIED
@@ -22770,13 +22770,13 @@ certified = [certified;2];
 
 nhc_atl_2025_033 = [35.1,57.6,50;40.0,53.0,40];
 my_atl_2025_033 = [35.3,57.7,45;40.6,53.2,40];
-btk_atl_2025_033 = [34.8,57.6,50;37.8,54.0,35];
+btk_atl_2025_033 = [34.8,57.6,50;37.8,54.0,35]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_033];
 myvect = [myvect;my_atl_2025_033];
 btkvect = [btkvect;btk_atl_2025_033];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;1;1];
-datasource = [datasource;1;1];
+datasource = [datasource;3;3];
 certified = [certified;2;2];
 
 # Atl 034 ... FERNAND around 2025-08-25-03Z ... CERTIFIED
@@ -22786,7 +22786,7 @@ certified = [certified;2;2];
 
 nhc_atl_2025_034 = [36.2,56.7,45;41.5,51.0,35];
 my_atl_2025_034 = [36.2,56.9,45;41.8,51.5,35];
-btk_atl_2025_034 = [35.6,56.8,45;38.2,52.7,40];
+btk_atl_2025_034 = [35.6,56.8,45;38.2,52.7,40]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_034];
 myvect = [myvect;my_atl_2025_034];
 btkvect = [btkvect;btk_atl_2025_034];
@@ -22802,13 +22802,13 @@ certified = [certified;2;2];
 
 nhc_epac_2025_041 = [18.2,114.2,40;20.4,117.9,50;23.0,120.2,40;25.0,121.5,30;26.3,122.2,25];
 my_epac_2025_041 = [18.2,114.4,40;20.5,118.5,50;23.1,120.9,40;25.1,121.3,25;26.0,122.1,20];
-btk_epac_2025_041 = [17.6,114.9,55;20.4,117.7,55;24.4,120.6,40;25.8,121.1,20;24.8,122.1,15]; # days 4-5 self-made
+btk_epac_2025_041 = [17.7,114.9,55;20.4,117.8,55;24.4,120.6,40;25.9,121.1,25;25.3,122.7,15]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_041];
 myvect = [myvect;my_epac_2025_041];
 btkvect = [btkvect;btk_epac_2025_041];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;3;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 042 ... JULIETTE around 2025-08-25-15Z ... CERTIFIED
@@ -22818,13 +22818,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_042 = [18.8,116.5,50;21.6,119.6,50;24.2,121.4,35;26.0,121.5,20];
 my_epac_2025_042 = [18.8,116.4,45;21.9,119.6,45;24.6,121.3,30;26.6,120.8,15];
-btk_epac_2025_042 = [18.7,116.2,60;22.5,119.2,45;25.7,120.8,30;25.6,121.6,15]; # days 3-4 self-made
+btk_epac_2025_042 = [18.7,116.2,60;22.5,119.3,45;25.5,120.7,30;25.8,121.8,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_042];
 myvect = [myvect;my_epac_2025_042];
 btkvect = [btkvect;btk_epac_2025_042];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;1;0;0];
+datasource = [datasource;3;3;2;2];
 certified = [certified;2;2;2;2];
 
 # Atl 035 ... FERNAND around 2025-08-25-21Z ... CERTIFIED
@@ -22834,13 +22834,13 @@ certified = [certified;2;2;2;2];
 
 nhc_atl_2025_035 = [38.7,53.8,40;43.0,48.0,30];
 my_atl_2025_035 = [39.0,54.0,40;43.5,48.4,30];
-btk_atl_2025_035 = [37.8,54.0,35;38.9,48.4,45];
+btk_atl_2025_035 = [37.8,54.0,35;38.9,48.4,45]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_035];
 myvect = [myvect;my_atl_2025_035];
 btkvect = [btkvect;btk_atl_2025_035];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;1;1];
-datasource = [datasource;1;1];
+datasource = [datasource;3;2];
 certified = [certified;2;2];
 
 # Epac 043 ... JULIETTE around 2025-08-25-21Z ... CERTIFIED
@@ -22850,13 +22850,13 @@ certified = [certified;2;2];
 
 nhc_epac_2025_043 = [19.3,117.7,65;22.2,120.6,55;24.5,122.0,35;25.7,122.0,25];
 my_epac_2025_043 = [19.2,117.7,60;22.1,120.9,50;24.6,122.2,30;25.1,122.3,20];
-btk_epac_2025_043 = [19.5,116.8,55;23.5,120.0,40;25.8,121.0,25;25.0,122.1,15]; # days 3-4 self-made
+btk_epac_2025_043 = [19.4,116.9,55;23.5,120.0,40;25.8,120.8,30;25.6,122.2,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_043];
 myvect = [myvect;my_epac_2025_043];
 btkvect = [btkvect;btk_epac_2025_043];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;1;0;0];
+datasource = [datasource;3;3;2;2];
 certified = [certified;2;2;2;2];
 
 # Atl 036 ... FERNAND around 2025-08-26-15Z ... CERTIFIED
@@ -22866,13 +22866,13 @@ certified = [certified;2;2;2;2];
 
 nhc_atl_2025_036 = [40.4,50.1,40];
 my_atl_2025_036 = [40.4,49.9,35];
-btk_atl_2025_036 = [38.2,50.4,40];
+btk_atl_2025_036 = [38.2,50.3,45]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_036];
 myvect = [myvect;my_atl_2025_036];
 btkvect = [btkvect;btk_atl_2025_036];
 leadtimevect = [leadtimevect;1];
 basinvect = [basinvect;1];
-datasource = [datasource;1];
+datasource = [datasource;3];
 certified = [certified;2];
 
 # Epac 044 ... JULIETTE around 2025-08-26-15Z ... CERTIFIED
@@ -22882,13 +22882,13 @@ certified = [certified;2];
 
 nhc_epac_2025_044 = [21.6,119.2,55;24.0,121.4,40;25.6,122.7,20];
 my_epac_2025_044 = [21.7,119.1,55;24.3,121.1,35;26.1,122.0,20];
-btk_epac_2025_044 = [22.5,119.2,45;25.7,120.8,30;25.6,121.6,15]; # days 2-3 self-made
+btk_epac_2025_044 = [22.5,119.3,45;25.5,120.7,30;25.8,121.8,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_044];
 myvect = [myvect;my_epac_2025_044];
 btkvect = [btkvect;btk_epac_2025_044];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;0;0];
+datasource = [datasource;3;2;2];
 certified = [certified;2;2;2];
 
 # Atl 037 ... FERNAND around 2025-08-26-21Z ... CERTIFIED
@@ -22898,13 +22898,13 @@ certified = [certified;2;2;2];
 
 nhc_atl_2025_037 = [40.1,48.3,40;43.7,37.9,35];
 my_atl_2025_037 = [40.1,48.4,35;43.7,37.9,35];
-btk_atl_2025_037 = [38.9,48.4,45;43.0,39.3,35]; # day 2 self-made
+btk_atl_2025_037 = [38.9,48.4,45;43.0,39.1,35]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_037];
 myvect = [myvect;my_atl_2025_037];
 btkvect = [btkvect;btk_atl_2025_037];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;1;1];
-datasource = [datasource;1;0];
+datasource = [datasource;2;2];
 certified = [certified;2;2];
 
 # Epac 045 ... JULIETTE around 2025-08-26-21Z ... CERTIFIED
@@ -22914,13 +22914,13 @@ certified = [certified;2;2];
 
 nhc_epac_2025_045 = [22.7,119.8,50;25.2,121.2,30;26.5,121.9,20];
 my_epac_2025_045 = [22.7,119.8,45;25.4,121.1,30;26.6,121.5,15];
-btk_epac_2025_045 = [23.5,120.0,40;25.8,121.0,25;25.0,122.1,15]; # days 2-3 self-made
+btk_epac_2025_045 = [23.5,120.0,40;25.8,120.8,30;25.6,122.2,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_045];
 myvect = [myvect;my_epac_2025_045];
 btkvect = [btkvect;btk_epac_2025_045];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;0;0];
+datasource = [datasource;3;2;2];
 certified = [certified;2;2;2];
 
 # Epac 046 ... JULIETTE around 2025-08-27-15Z ... CERTIFIED
@@ -22930,13 +22930,13 @@ certified = [certified;2;2;2];
 
 nhc_epac_2025_046 = [26.0,120.6,35;27.8,120.6,20];
 my_epac_2025_046 = [25.9,120.6,30;28.0,120.5,15];
-btk_epac_2025_046 = [25.7,120.8,30;25.6,121.6,15]; # days 1-2 self-made
+btk_epac_2025_046 = [25.5,120.7,30;25.8,121.8,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_046];
 myvect = [myvect;my_epac_2025_046];
 btkvect = [btkvect;btk_epac_2025_046];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;0;0];
+datasource = [datasource;2;2];
 certified = [certified;2;2];
 
 # Atl 038 ... FERNAND around 2025-08-27-15Z ... CERTIFIED
@@ -22946,13 +22946,13 @@ certified = [certified;2;2];
 
 nhc_atl_2025_038 = [41.6,41.9,35];
 my_atl_2025_038 = [41.5,42.1,35];
-btk_atl_2025_038 = [41.8,41.9,35]; # day 1 self-made
+btk_atl_2025_038 = [41.8,42.0,35]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_038];
 myvect = [myvect;my_atl_2025_038];
 btkvect = [btkvect;btk_atl_2025_038];
 leadtimevect = [leadtimevect;1];
 basinvect = [basinvect;1];
-datasource = [datasource;0];
+datasource = [datasource;2];
 certified = [certified;2];
 
 # Epac 047 ... KIKO around 2025-08-31-15Z ... CERTIFIED
@@ -22962,13 +22962,13 @@ certified = [certified;2];
 
 nhc_epac_2025_047 = [14.4,126.1,45;14.2,129.4,65;14.1,133.1,75;14.2,137.0,75;14.2,140.9,75];
 my_epac_2025_047 = [14.4,126.0,45;14.3,129.4,65;14.2,132.9,70;14.2,136.7,75;14.2,140.0,75];
-btk_epac_2025_047 = [13.9,125.8,45;13.8,138.1,75;13.9,130.3,90;13.8,133.3,115;14.0,136.7,100];
+btk_epac_2025_047 = [13.9,125.8,45;13.8,138.1,75;13.9,130.4,90;13.8,133.3,115;14.0,136.6,100]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_047];
 myvect = [myvect;my_epac_2025_047];
 btkvect = [btkvect;btk_epac_2025_047];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 048 ... KIKO around 2025-08-31-21Z ... CERTIFIED
@@ -22978,13 +22978,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_048 = [14.2,126.9,50;14.1,130.2,70;14.0,133.7,80;14.0,137.6,80;14.1,141.3,80];
 my_epac_2025_048 = [14.2,126.8,50;14.1,130.2,70;13.9,133.5,75;14.0,137.8,75;14.2,142.4,70];
-btk_epac_2025_048 = [13.8,126.4,55;13.8,128.6,80;13.9,131.2,110;13.8,134.2,115;14.3,137.3,105];
+btk_epac_2025_048 = [13.8,126.4,55;13.8,128.6,80;13.9,131.1,110;13.8,134.1,115;14.3,137.4,105]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_048];
 myvect = [myvect;my_epac_2025_048];
 btkvect = [btkvect;btk_epac_2025_048];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 049 ... KIKO around 2025-09-01-15Z ... CERTIFIED
@@ -22994,13 +22994,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_049 = [13.6,128.8,75;13.5,131.7,85;13.7,135.0,85;14.0,138.3,85;14.8,141.7,85];
 my_epac_2025_049 = [13.5,128.6,65;13.6,131.4,80;13.9,134.5,80;14.1,137.9,80;15.1,142.1,75];
-btk_epac_2025_049 = [13.8,128.1,75;13.9,130.3,90;13.8,133.3,115;14.0,136.7,100;15.3,140.1,115];
+btk_epac_2025_049 = [13.8,128.1,75;13.9,130.4,90;13.8,133.3,115;14.0,136.6,100;15.3,140.1,110]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_049];
 myvect = [myvect;my_epac_2025_049];
 btkvect = [btkvect;btk_epac_2025_049];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 050 ... KIKO around 2025-09-01-21Z ... CERTIFIED
@@ -23010,13 +23010,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_050 = [13.6,128.9,75;13.6,131.7,90;13.9,134.8,95;14.3,138.1,85;15.2,141.6,85];
 my_epac_2025_050 = [13.5,128.8,75;13.4,131.6,90;13.6,134.5,90;14.1,137.9,80;14.8,141.0,80];
-btk_epac_2025_050 = [13.8,128.6,80;13.9,131.2,110;13.8,134.2,115;14.3,137.3,105;15.9,140.9,110];
+btk_epac_2025_050 = [13.8,128.6,80;13.9,131.1,110;13.8,134.1,115;14.3,137.4,105;15.9,140.9,110]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_050];
 myvect = [myvect;my_epac_2025_050];
 btkvect = [btkvect;btk_epac_2025_050];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 051 ... KIKO around 2025-09-02-21Z ... CERTIFIED
@@ -23026,7 +23026,7 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_051 = [13.8,131.0,100;14.1,133.6,100;14.5,136.5,85;15.5,139.5,80;16.7,142.8,75];
 my_epac_2025_051 = [13.9,131.1,90;14.1,133.7,90;14.5,136.7,75;15.6,139.6,75;16.7,142.8,70];
-btk_epac_2025_051 = [13.9,131.2,110;13.8,134.2,115;14.3,137.3,105;15.9,140.9,110;17.8,145.0,95];
+btk_epac_2025_051 = [13.9,131.1,110;13.8,134.1,115;14.3,137.4,105;15.9,140.9,110;17.8,145.0,95]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_051];
 myvect = [myvect;my_epac_2025_051];
 btkvect = [btkvect;btk_epac_2025_051];
@@ -23042,13 +23042,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_052 = [21.8,112.0,65;24.1,113.8,70;26.2,113.3,45;28.4,111.8,35];
 my_epac_2025_052 = [21.9,112.1,65;24.6,113.6,70;26.7,113.1,40;28.8,111.7,30];
-btk_epac_2025_052 = [22.5,112.1,70;24.4,114.6,50;24.4,114.6,25;25.4,115.8,15]; # days 3-4 self-made
+btk_epac_2025_052 = [22.5,112.1,75;24.4,114.6,45;24.4,114.5,30;25.5,115.9,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_052];
 myvect = [myvect;my_epac_2025_052];
 btkvect = [btkvect;btk_epac_2025_052];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;1;0;0];
+datasource = [datasource;3;3;2;2];
 certified = [certified;2;2;2;2];
 
 # Epac 053 ... KIKO around 2025-09-03-15Z ... CERTIFIED
@@ -23058,13 +23058,13 @@ certified = [certified;2;2;2;2];
 
 nhc_epac_2025_053 = [14.0,133.4,115;14.6,136.9,110;15.2,140.6,100;16.8,143.9,90;18.5,147.7,75];
 my_epac_2025_053 = [14.0,133.4,105;14.5,136.6,100;15.1,140.2,90;17.1,143.8,80;18.9,147.4,65];
-btk_epac_2025_053 = [13.8,133.3,115;14.0,136.7,100;15.3,140.1,115;17.3,143.9,105;20.0,148.2,80];
+btk_epac_2025_053 = [13.8,133.3,115;14.0,136.6,100;15.3,140.1,110;17.2,143.9,105;20.0,148.2,85]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_053];
 myvect = [myvect;my_epac_2025_053];
 btkvect = [btkvect;btk_epac_2025_053];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 054 ... LORENA around 2025-09-03-15Z ... CERTIFIED
@@ -23074,13 +23074,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_054 = [24.5,113.7,80;26.4,113.9,50;28.4,112.8,35;30.4,110.6,20];
 my_epac_2025_054 = [24.4,113.7,70;27.2,113.7,45;28.8,112.5,30;30.8,111.1,20];
-btk_epac_2025_054 = [24.0,114.1,60;24.4,114.9,25;25.1,115.1,20;25.6,117.8,15]; # days 2-4 self-made
+btk_epac_2025_054 = [24.0,114.0,60;24.3,114.9,30;25.2,115.5,20;25.6,117.8,15]; # TCR (day 4 self-made)
 nhcvect = [nhcvect;nhc_epac_2025_054];
 myvect = [myvect;my_epac_2025_054];
 btkvect = [btkvect;btk_epac_2025_054];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;0;0;0];
+datasource = [datasource;3;2;2;0];
 certified = [certified;2;2;2;2];
 
 # Epac 055 ... KIKO around 2025-09-03-21Z ... CERTIFIED
@@ -23090,13 +23090,13 @@ certified = [certified;2;2;2;2];
 
 nhc_epac_2025_055 = [14.0,134.4,125;14.5,137.8,115;15.6,141.5,105;17.1,145.2,85;18.7,149.5,65];
 my_epac_2025_055 = [13.8,134.3,120;14.3,137.8,110;15.5,141.5,100;17.3,145.4,80;19.4,149.9,60];
-btk_epac_2025_055 = [13.8,134.2,115;14.3,137.3,105;15.9,140.9,110;17.8,145.0,95;20.6,149.3,75];
+btk_epac_2025_055 = [13.8,134.1,115;14.3,137.4,105;15.9,140.9,110;17.8,145.0,95;20.6,149.3,80]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_055];
 myvect = [myvect;my_epac_2025_055];
 btkvect = [btkvect;btk_epac_2025_055];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 056 ... LORENA around 2025-09-03-21Z ... CERTIFIED
@@ -23106,13 +23106,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_056 = [24.8,113.9,70;27.2,113.3,40;29.3,111.8,25];
 my_epac_2025_056 = [24.9,113.6,65;27.5,112.7,35;29.8,111.0,20];
-btk_epac_2025_056 = [24.4,114.6,50;24.4,114.6,25;25.4,115.8,15]; # days 2-3 self-made
+btk_epac_2025_056 = [24.4,114.6,45;24.4,114.5,30;25.5,115.9,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_056];
 myvect = [myvect;my_epac_2025_056];
 btkvect = [btkvect;btk_epac_2025_056];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;0;0];
+datasource = [datasource;3;2;2];
 certified = [certified;2;2;2];
 
 # Epac 057 ... KIKO around 2025-09-04-03Z ... CERTIFIED
@@ -23122,13 +23122,13 @@ certified = [certified;2;2;2];
 
 nhc_epac_2025_057 = [13.9,135.0,125;14.6,138.1,120;15.7,141.3,105;17.1,145.1,90;18.5,149.8,70];
 my_epac_2025_057 = [13.9,135.1,120;14.5,138.2,115;15.6,141.5,95;17.1,145.3,80;18.2,150.2,65];
-btk_epac_2025_057 = [13.8,135.0,115;14.7,138.2,115;16.3,141.9,115;18.5,146.0,90;21.3,150.3,70];
+btk_epac_2025_057 = [13.8,135.0,110;14.7,138.2,115;16.3,141.9,115;18.5,146.0,95;21.3,150.3,65]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_057];
 myvect = [myvect;my_epac_2025_057];
 btkvect = [btkvect;btk_epac_2025_057];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 058 ... LORENA around 2025-09-04-03Z ... CERTIFIED
@@ -23138,13 +23138,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_058 = [25.0,114.1,55;27.0,113.4,35;28.8,112.9,25];
 my_epac_2025_058 = [25.1,114.3,55;26.6,113.6,30;28.7,113.2,20];
-btk_epac_2025_058 = [24.5,115.0,40;24.6,114.6,20;25.4,116.4,15]; # days 2-3 self-made
+btk_epac_2025_058 = [24.5,115.0,40;24.7,114.7,25;25.8,116.5,15]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_058];
 myvect = [myvect;my_epac_2025_058];
 btkvect = [btkvect;btk_epac_2025_058];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;0;0];
+datasource = [datasource;2;2;2];
 certified = [certified;2;2;2];
 
 # Epac 059 ... KIKO around 2025-09-04-15Z ... CERTIFIED
@@ -23154,13 +23154,13 @@ certified = [certified;2;2;2];
 
 nhc_epac_2025_059 = [14.3,136.6,125;15.3,140.1,115;16.7,144.0,105;18.3,148.1,85;19.9,152.8,60];
 my_epac_2025_059 = [14.3,136.7,110;15.3,140.3,105;16.8,144.2,95;18.5,148.3,75;20.3,152.7,60];
-btk_epac_2025_059 = [14.0,136.7,100;15.3,140.1,115;17.3,143.9,105;20.0,148.2,80;22.2,152.8,40];
+btk_epac_2025_059 = [14.0,136.6,100;15.3,140.1,110;17.2,143.9,105;20.0,148.2,85;22.2,152.8,40]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_059];
 myvect = [myvect;my_epac_2025_059];
 btkvect = [btkvect;btk_epac_2025_059];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 060 ... LORENA around 2025-09-04-15Z ... CERTIFIED
@@ -23170,13 +23170,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_060 = [25.3,114.5,35;26.2,114.2,25;26.9,114.4,15];
 my_epac_2025_060 = [25.3,114.4,30;26.3,114.2,20;26.8,114.9,15];
-btk_epac_2025_060 = [24.4,114.9,25;25.1,115.1,20;25.6,117.8,15]; # days 1-3 self-made
+btk_epac_2025_060 = [24.3,114.9,30;25.2,115.5,20;25.6,117.8,15]; # TCR (day 3 self-made)
 nhcvect = [nhcvect;nhc_epac_2025_060];
 myvect = [myvect;my_epac_2025_060];
 btkvect = [btkvect;btk_epac_2025_060];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;0;0;0];
+datasource = [datasource;2;2;0];
 certified = [certified;2;2;2];
 
 # Epac 061 ... KIKO around 2025-09-05-15Z ... CERTIFIED
@@ -23186,13 +23186,13 @@ certified = [certified;2;2;2];
 
 nhc_epac_2025_061 = [15.0,140.3,105;16.4,144.2,100;18.5,148.4,80;20.7,152.8,55;22.6,157.5,35];
 my_epac_2025_061 = [15.0,140.2,95;16.3,144.2,90;18.6,148.5,75;21.0,152.8,55;22.7,158.2,35];
-btk_epac_2025_061 = [15.3,140.1,115;17.3,143.9,105;20.0,148.2,80;22.2,152.8,40;22.7,157.5,30];
+btk_epac_2025_061 = [15.3,140.1,110;17.2,143.9,105;20.0,148.2,85;22.2,152.8,40;22.7,157.4,30]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_061];
 myvect = [myvect;my_epac_2025_061];
 btkvect = [btkvect;btk_epac_2025_061];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Cpac 09 ... KIKO around 2025-09-06-15Z ... CERTIFIED
@@ -23202,13 +23202,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_cpac_2025_09 = [17.0,143.9,105;19.1,147.9,90;21.8,152.2,65;24.1,157.0,45];
 my_cpac_2025_09 = [17.0,143.9,100;19.2,147.9,85;22.2,152.1,65;24.6,156.9,45];
-btk_cpac_2025_09 = [17.3,143.9,105;20.0,148.2,80;22.2,152.8,40;22.7,157.5,30];
+btk_cpac_2025_09 = [17.2,143.9,105;20.0,148.2,85;22.2,152.8,40;22.7,157.4,30]; # TCR
 nhcvect = [nhcvect;nhc_cpac_2025_09];
 myvect = [myvect;my_cpac_2025_09];
 btkvect = [btkvect;btk_cpac_2025_09];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;5;5;5;5];
-datasource = [datasource;1;1;1;1];
+datasource = [datasource;3;3;3;2];
 certified = [certified;2;2;2;2];
 
 # Cpac 10 ... KIKO around 2025-09-06-21Z ... CERTIFIED
@@ -23216,32 +23216,32 @@ certified = [certified;2;2;2;2];
 # snapshot: https://web.archive.org/web/20250906210246/https://elioestracks.blogspot.com/2024/04/advisory-list.html
 # NHC at https://www.nhc.noaa.gov/archive/2025/ep11/ep112025.discus.027.shtml
 
-nhc_cpac_2025_10 = [17.7,144.8,95;20.1,149.0,75;22.5,153.4,55];
-my_cpac_2025_10 = [17.8,144.9,95;20.2,149.1,75;22.7,153.3,50];
-btk_cpac_2025_10 = [17.8,145.0,95;20.6,149.3,75;22.7,154.3,35];
+nhc_cpac_2025_10 = [17.7,144.8,95;20.1,149.0,75;22.5,153.4,55;24.4,153.4,55];
+my_cpac_2025_10 = [17.8,144.9,95;20.2,149.1,75;22.7,153.3,50;24.6,157.7,35];
+btk_cpac_2025_10 = [17.8,145.0,95;20.6,149.3,80;22.5,154.3,40;23.4,158.4,30]; # TCR
 nhcvect = [nhcvect;nhc_cpac_2025_10];
 myvect = [myvect;my_cpac_2025_10];
 btkvect = [btkvect;btk_cpac_2025_10];
-leadtimevect = [leadtimevect;1;2;3];
-basinvect = [basinvect;5;5;5];
-datasource = [datasource;1;1;1];
-certified = [certified;2;2;2];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;5;5;5;5];
+datasource = [datasource;3;3;3;2];
+certified = [certified;2;2;2;2];
 
 # Cpac 11 ... KIKO around 2025-09-07-03Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1964524641856405665
 # snapshot: https://web.archive.org/web/20250907030716/https://elioestracks.blogspot.com/2024/04/advisory-list.html
 # NHC at https://www.nhc.noaa.gov/archive/2025/ep11/ep112025.discus.028.shtml
 
-nhc_cpac_2025_11 = [18.2,145.9,95;20.8,150.3,75;23.2,154.8,55];
-my_cpac_2025_11 = [18.2,145.8,95;20.9,150.2,75;23.5,154.8,55];
-btk_cpac_2025_11 = [18.5,146.0,90;21.3,150.3,70;22.7,155.7,35];
+nhc_cpac_2025_11 = [18.2,145.9,95;20.8,150.3,75;23.2,154.8,55;24.8,159.2,40];
+my_cpac_2025_11 = [18.2,145.8,95;20.9,150.2,75;23.5,154.8,55;24.8,159.3,40];
+btk_cpac_2025_11 = [18.5,146.0,95;21.3,150.3,65;22.7,155.7,35;24.3,159.5,30]; # TCR
 nhcvect = [nhcvect;nhc_cpac_2025_11];
 myvect = [myvect;my_cpac_2025_11];
 btkvect = [btkvect;btk_cpac_2025_11];
-leadtimevect = [leadtimevect;1;2;3];
-basinvect = [basinvect;5;5;5];
-datasource = [datasource;1;1;1];
-certified = [certified;2;2;2];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;5;5;5;5];
+datasource = [datasource;3;3;3;2];
+certified = [certified;2;2;2;2];
 
 # Cpac 12 ... KIKO around 2025-09-07-15Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1964705520742486282
@@ -23250,13 +23250,13 @@ certified = [certified;2;2;2];
 
 nhc_cpac_2025_12 = [19.6,148.1,85;22.1,152.7,65;24.2,157.7,50];
 my_cpac_2025_12 = [19.6,148.1,80;22.4,152.7,60;24.6,157.7,45];
-btk_cpac_2025_12 = [20.0,148.2,80;22.2,152.8,40;22.7,157.5,30];
+btk_cpac_2025_12 = [20.0,148.2,85;22.2,152.8,40;22.7,157.4,30]; # TCR
 nhcvect = [nhcvect;nhc_cpac_2025_12];
 myvect = [myvect;my_cpac_2025_12];
 btkvect = [btkvect;btk_cpac_2025_12];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;5;5;5];
-datasource = [datasource;1;1;1];
+datasource = [datasource;3;3;2];
 certified = [certified;2;2;2];
 
 # Cpac 13 ... KIKO around 2025-09-07-21Z ... CERTIFIED
@@ -23264,16 +23264,16 @@ certified = [certified;2;2;2];
 # snapshot: https://web.archive.org/web/20250907205939/https://elioestracks.blogspot.com/2024/04/advisory-list.html
 # NHC at https://www.nhc.noaa.gov/archive/2025/ep11/ep112025.discus.031.shtml
 
-nhc_cpac_2025_13 = [20.2,149.3,70;22.6,154.2,55];
-my_cpac_2025_13 = [20.4,149.3,70;22.9,154.2,50];
-btk_cpac_2025_13 = [20.6,149.3,75;22.7,154.3,35];
+nhc_cpac_2025_13 = [20.2,149.3,70;22.6,154.2,55;24.6,159.5,45];
+my_cpac_2025_13 = [20.4,149.3,70;22.9,154.2,50;25.2,159.4,40];
+btk_cpac_2025_13 = [20.6,149.3,80;22.5,154.3,40;23.4,158.4,30]; # TCR
 nhcvect = [nhcvect;nhc_cpac_2025_13];
 myvect = [myvect;my_cpac_2025_13];
 btkvect = [btkvect;btk_cpac_2025_13];
-leadtimevect = [leadtimevect;1;2];
-basinvect = [basinvect;5;5];
-datasource = [datasource;1;1];
-certified = [certified;2;2];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;5;5;5];
+datasource = [datasource;3;3;2];
+certified = [certified;2;2;2];
 
 # Cpac 14 ... KIKO around 2025-09-08-15Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1965069580105286086
@@ -23282,13 +23282,13 @@ certified = [certified;2;2];
 
 nhc_cpac_2025_14 = [22.4,152.9,55;24.3,158.0,45];
 my_cpac_2025_14 = [22.6,152.8,55;24.7,158.0,45];
-btk_cpac_2025_14 = [22.2,152.8,40;22.7,157.5,30];
+btk_cpac_2025_14 = [22.2,152.8,40;22.7,157.4,30]; # TCR
 nhcvect = [nhcvect;nhc_cpac_2025_14];
 myvect = [myvect;my_cpac_2025_14];
 btkvect = [btkvect;btk_cpac_2025_14];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;5;5];
-datasource = [datasource;1;1];
+datasource = [datasource;3;2];
 certified = [certified;2;2];
 
 # Cpac 15 ... KIKO around 2025-09-08-21Z ... CERTIFIED
@@ -23296,16 +23296,16 @@ certified = [certified;2;2];
 # snapshot: https://web.archive.org/web/20250908211046/https://elioestracks.blogspot.com/2024/04/advisory-list.html
 # NHC at https://www.nhc.noaa.gov/archive/2025/ep11/ep112025.discus.035.shtml
 
-nhc_cpac_2025_15 = [23.0,154.2,50];
-my_cpac_2025_15 = [23.0,154.4,50];
-btk_cpac_2025_15 = [22.7,154.3,35];
+nhc_cpac_2025_15 = [23.0,154.2,50;24.8,159.4,45];
+my_cpac_2025_15 = [23.0,154.4,50;24.9,159.4,45];
+btk_cpac_2025_15 = [22.5,154.3,40;23.4,158.4,30]; # TCR
 nhcvect = [nhcvect;nhc_cpac_2025_15];
 myvect = [myvect;my_cpac_2025_15];
 btkvect = [btkvect;btk_cpac_2025_15];
-leadtimevect = [leadtimevect;1];
-basinvect = [basinvect;5];
-datasource = [datasource;1];
-certified = [certified;2];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;5;5];
+datasource = [datasource;3;2];
+certified = [certified;2;2];
 
 # Cpac 16 ... KIKO around 2025-09-09-15Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/1965429427757846683
@@ -23314,13 +23314,13 @@ certified = [certified;2];
 
 nhc_cpac_2025_16 = [23.7,157.9,35];
 my_cpac_2025_16 = [23.8,157.9,35];
-btk_cpac_2025_16 = [22.7,157.5,30];
+btk_cpac_2025_16 = [22.7,157.4,30]; # TCR
 nhcvect = [nhcvect;nhc_cpac_2025_16];
 myvect = [myvect;my_cpac_2025_16];
 btkvect = [btkvect;btk_cpac_2025_16];
 leadtimevect = [leadtimevect;1];
 basinvect = [basinvect;5];
-datasource = [datasource;1];
+datasource = [datasource;2];
 certified = [certified;2];
 
 # Shem 002 ... 03/03S around 2025-09-09-21Z ... CERTIFIED
@@ -23361,13 +23361,13 @@ certified = [certified;2;2];
 
 nhc_epac_2025_062 = [16.7,102.4,35;17.7,106.3,45;18.6,109.1,65;20.0,111.5,70;22.1,113.7,55];
 my_epac_2025_062 = [16.8,102.6,35;17.9,106.2,40;18.6,108.6,60;20.0,110.7,55;22.2,112.9,45];
-btk_epac_2025_062 = [17.3,102.4,35;18.4,107.7,30;18.7,110.3,40;20.4,113.9,55;22.6,117.4,30];
+btk_epac_2025_062 = [17.3,102.5,30;18.4,107.6,30;18.7,110.3,40;20.6,113.9,55;22.6,117.3,30]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_062];
 myvect = [myvect;my_epac_2025_062];
 btkvect = [btkvect;btk_epac_2025_062];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;2;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 063 ... 13E around 2025-09-12-03Z ... CERTIFIED
@@ -23377,13 +23377,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_063 = [17.1,103.5,40;18.0,107.1,50;18.9,109.9,70;20.7,112.6,70;23.0,114.7,55];
 my_epac_2025_063 = [17.3,103.3,35;18.2,106.9,45;19.0,109.7,65;20.9,112.2,55;21.8,113.7,50];
-btk_epac_2025_063 = [17.9,104.0,30;18.2,108.6,30;19.1,111.0,40;21.1,114.6,50;23.3,118.0,25];
+btk_epac_2025_063 = [17.8,104.0,25;18.1,108.4,30;19.1,111.0,45;21.1,114.7,50;23.3,118.0,25]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_063];
 myvect = [myvect;my_epac_2025_063];
 btkvect = [btkvect;btk_epac_2025_063];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;2;2;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 064 ... MARIO around 2025-09-12-15Z ... CERTIFIED
@@ -23393,13 +23393,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_064 = [18.2,105.5,35;19.1,108.5,45;20.1,111.4,55;21.7,114.2,40;23.5,117.2,35];
 my_epac_2025_064 = [18.3,105.4,35;19.3,108.6,40;20.5,111.6,55;22.3,114.5,40;24.4,117.9,35];
-btk_epac_2025_064 = [18.5,106.5,30;18.4,109.9,35;19.7,112.7,50;22.3,116.7,40;24.5,119.1,20]; # day 5 self-made
+btk_epac_2025_064 = [18.5,106.6,25;18.4,109.7,35;19.9,112.8,55;22.0,116.3,35;24.5,119.1,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_064];
 myvect = [myvect;my_epac_2025_064];
 btkvect = [btkvect;btk_epac_2025_064];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;2;3;3;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 065 ... MARIO around 2025-09-12-21Z ... CERTIFIED
@@ -23409,13 +23409,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_065 = [18.5,106.1,35;19.5,109.0,45;20.3,111.8,50;21.3,114.5,35];
 my_epac_2025_065 = [18.6,105.9,35;19.8,108.5,45;20.5,111.3,45;21.0,114.1,35];
-btk_epac_2025_065 = [18.4,107.7,30;18.7,110.3,40;20.4,113.9,55;22.6,117.4,30];
+btk_epac_2025_065 = [18.4,107.6,30;18.7,110.3,40;20.6,113.9,55;22.6,117.3,30]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_065];
 myvect = [myvect;my_epac_2025_065];
 btkvect = [btkvect;btk_epac_2025_065];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;1;1;1];
+datasource = [datasource;2;3;3;2];
 certified = [certified;2;2;2;2];
 
 # Epac 066 ... MARIO around 2025-09-14-21Z ... CERTIFIED
@@ -23425,13 +23425,13 @@ certified = [certified;2;2;2;2];
 
 nhc_epac_2025_066 = [20.4,113.9,50;22.8,117.9,35;24.9,121.2,20];
 my_epac_2025_066 = [20.6,114.1,45;23.1,118.1,30;25.3,121.2,20];
-btk_epac_2025_066 = [20.4,113.9,55;22.6,117.4,30;24.9,119.4,15]; # day 3 self-made
+btk_epac_2025_066 = [20.6,113.9,55;22.6,117.3,30;24.8,119.4,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_066];
 myvect = [myvect;my_epac_2025_066];
 btkvect = [btkvect;btk_epac_2025_066];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;1;0];
+datasource = [datasource;3;2;2];
 certified = [certified;2;2;2];
 
 # Epac 067 ... MARIO around 2025-09-15-15Z ... CERTIFIED
@@ -23441,13 +23441,13 @@ certified = [certified;2;2;2];
 
 nhc_epac_2025_067 = [22.0,116.3,45;24.7,119.2,30;26.0,120.5,20];
 my_epac_2025_067 = [22.0,116.4,50;24.6,119.1,30;26.1,120.3,20];
-btk_epac_2025_067 = [22.3,116.7,40;24.5,119.1,20;25.0,119.9,15]; # days 2-3 self-made
+btk_epac_2025_067 = [22.0,116.3,35;24.5,119.1,20;25.0,119.9,15]; # TCR (day 3 self-made)
 nhcvect = [nhcvect;nhc_epac_2025_067];
 myvect = [myvect;my_epac_2025_067];
 btkvect = [btkvect;btk_epac_2025_067];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;0;0];
+datasource = [datasource;2;2;0];
 certified = [certified;2;2;2];
 
 # Epac 068 ... MARIO around 2025-09-15-21Z ... CERTIFIED
@@ -23457,13 +23457,13 @@ certified = [certified;2;2;2];
 
 nhc_epac_2025_068 = [23.3,117.6,45;25.4,119.7,30];
 my_epac_2025_068 = [23.4,117.6,45;25.9,120.0,30];
-btk_epac_2025_068 = [22.6,117.4,30;24.9,119.4,15]; # day 2 self-made
+btk_epac_2025_068 = [22.6,117.3,30;24.8,119.4,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_068];
 myvect = [myvect;my_epac_2025_068];
 btkvect = [btkvect;btk_epac_2025_068];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;1;0];
+datasource = [datasource;2;2];
 certified = [certified;2;2];
 
 # Atl 039 ... GABRIELLE around 2025-09-17-15Z ... CERTIFIED
@@ -23473,13 +23473,13 @@ certified = [certified;2;2];
 
 nhc_atl_2025_039 = [20.8,50.6,45;22.7,54.6,45;24.7,58.3,55;27.4,60.8,65;30.0,62.5,75];
 my_atl_2025_039 = [20.6,50.6,40;22.9,54.6,40;25.7,58.2,50;28.6,60.3,60;32.1,61.4,75];
-btk_atl_2025_039 = [20.0,51.2,45;21.7,55.1,45;24.6,58.6,45;27.3,60.7,55;30.4,62.5,100];
+btk_atl_2025_039 = [20.0,51.2,45;21.7,55.1,45;24.6,58.3,50;27.3,60.7,60;30.4,62.5,100]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_039];
 myvect = [myvect;my_atl_2025_039];
 btkvect = [btkvect;btk_atl_2025_039];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;2;2;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 040 ... GABRIELLE around 2025-09-17-21Z ... CERTIFIED
@@ -23489,13 +23489,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_040 = [21.7,51.6,45;23.5,55.5,45;26.2,59.0,55;29.0,62.0,65;32.0,62.5,75];
 my_atl_2025_040 = [21.6,51.7,45;23.2,56.0,40;26.2,59.9,50;29.0,62.6,60;32.8,64.1,70];
-btk_atl_2025_040 = [20.5,52.2,45;22.1,56.1,45;25.2,58.7,55;28.1,61.5,65;31.3,62.1,115];
+btk_atl_2025_040 = [20.5,52.2,45;22.1,56.1,45;25.2,58.6,55;28.1,61.5,65;31.3,62.1,115]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_040];
 myvect = [myvect;my_atl_2025_040];
 btkvect = [btkvect;btk_atl_2025_040];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 041 ... GABRIELLE around 2025-09-18-15Z ... CERTIFIED
@@ -23505,13 +23505,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_041 = [22.1,55.3,40;24.4,59.2,40;27.7,61.5,50;31.4,61.9,70;36.5,56.2,80];
 my_atl_2025_041 = [22.0,55.6,40;24.6,59.7,40;27.9,62.3,50;31.4,62.6,75;36.9,56.5,80];
-btk_atl_2025_041 = [21.7,55.1,45;24.6,58.6,45;27.3,60.7,55;30.4,62.5,100;33.5,59.2,120];
+btk_atl_2025_041 = [21.7,55.1,45;24.6,58.3,50;27.3,60.7,60;30.4,62.5,100;33.5,59.2,120]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_041];
 myvect = [myvect;my_atl_2025_041];
 btkvect = [btkvect;btk_atl_2025_041];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Wpac 037 ... RAGASA/(NANDO) around 2025-09-18-21Z ... CERTIFIED
@@ -23536,7 +23536,7 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_042 = [22.6,56.3,40;25.3,59.8,50;29.0,62.0,65;33.0,61.0,85;39.0,52.5,80];
 my_atl_2025_042 = [22.7,56.3,40;25.6,59.6,50;29.3,62.4,65;33.3,60.9,90;40.1,52.3,80];
-btk_atl_2025_042 = [22.1,56.1,45;25.2,58.7,55;28.1,61.5,65;31.3,62.1,115;34.3,57.4,115];
+btk_atl_2025_042 = [22.1,56.1,45;25.2,58.6,55;28.1,61.5,65;31.3,62.1,115;34.3,57.4,115]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_042];
 myvect = [myvect;my_atl_2025_042];
 btkvect = [btkvect;btk_atl_2025_042];
@@ -23567,13 +23567,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_043 = [23.2,56.8,45;26.1,59.9,55;29.9,61.4,70;34.6,58.6,90;40.1,48.6,80];
 my_atl_2025_043 = [23.3,56.9,45;26.2,59.9,55;30.2,61.5,70;35.4,58.8,85;40.9,48.6,75];
-btk_atl_2025_043 = [22.9,57.0,45;25.9,59.0,55;28.9,62.1,70;32.1,61.4,120;34.9,55.2,110];
+btk_atl_2025_043 = [22.9,57.0,45;25.9,59.0,55;28.9,62.1,70;32.1,61.4,120;34.9,55.2,110]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_043];
 myvect = [myvect;my_atl_2025_043];
 btkvect = [btkvect;btk_atl_2025_043];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 044 ... GABRIELLE around 2025-09-19-15Z ... CERTIFIED
@@ -23583,13 +23583,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_044 = [24.3,58.5,50;27.8,60.8,65;32.0,60.9,85;37.5,54.0,95;41.3,40.2,75];
 my_atl_2025_044 = [24.3,58.7,50;27.9,61.1,65;32.2,61.2,85;38.0,53.7,90;42.2,39.1,70];
-btk_atl_2025_044 = [24.6,58.6,45;27.3,60.7,55;30.4,62.5,100;33.5,59.2,120;35.8,50.2,95];
+btk_atl_2025_044 = [24.6,58.3,50;27.3,60.7,60;30.4,62.5,100;33.5,59.2,120;35.8,50.2,90]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_044];
 myvect = [myvect;my_atl_2025_044];
 btkvect = [btkvect;btk_atl_2025_044];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Wpac 039 ... RAGASA/(NANDO) around 2025-09-19-21Z ... CERTIFIED
@@ -23614,13 +23614,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_045 = [25.0,59.4,55;28.6,61.4,75;33.0,59.9,90;38.1,51.3,90;42.1,38.4,70];
 my_atl_2025_045 = [25.1,59.4,60;28.5,61.5,80;32.5,60.3,90;37.8,51.9,90;41.7,37.6,70];
-btk_atl_2025_045 = [25.2,58.7,55;28.1,61.5,65;31.3,62.1,115;34.3,57.4,115;35.9,47.2,85];
+btk_atl_2025_045 = [25.2,58.6,55;28.1,61.5,65;31.3,62.1,115;34.3,57.4,115;35.9,47.2,85]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_045];
 myvect = [myvect;my_atl_2025_045];
 btkvect = [btkvect;btk_atl_2025_045];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 046 ... GABRIELLE around 2025-09-20-15Z ... CERTIFIED
@@ -23630,13 +23630,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_046 = [27.8,61.2,65;31.1,61.9,85;34.5,57.7,90;37.0,48.4,80;38.5,36.5,65];
 my_atl_2025_046 = [27.8,61.3,65;31.0,62.1,85;34.3,58.3,85;36.6,49.3,70;38.6,36.9,60];
-btk_atl_2025_046 = [27.3,60.7,55;30.4,62.5,100;33.5,59.2,120;35.8,50.2,95;36.4,36.7,65];
+btk_atl_2025_046 = [27.3,60.7,60;30.4,62.5,100;33.5,59.2,120;35.8,50.2,90;36.4,36.7,65]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_046];
 myvect = [myvect;my_atl_2025_046];
 btkvect = [btkvect;btk_atl_2025_046];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 047 ... GABRIELLE around 2025-09-20-21Z ... CERTIFIED
@@ -23646,13 +23646,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_047 = [28.4,61.1,75;31.6,60.8,90;34.8,55.8,85;36.6,46.2,70;38.6,33.8,60];
 my_atl_2025_047 = [28.5,61.2,75;31.6,60.9,85;34.5,56.1,85;36.0,47.0,70;37.7,33.5,55];
-btk_atl_2025_047 = [28.1,61.5,65;31.3,62.1,115;34.3,57.4,115;35.9,47.2,85;36.7,33.6,60];
+btk_atl_2025_047 = [28.1,61.5,65;31.3,62.1,115;34.3,57.4,115;35.9,47.2,85;36.8,33.6,60]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_047];
 myvect = [myvect;my_atl_2025_047];
 btkvect = [btkvect;btk_atl_2025_047];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Wpac 040 ... RAGASA/(NANDO) around 2025-09-20-21Z ... CERTIFIED
@@ -23677,13 +23677,13 @@ certified = [certified;2;2;2;2];
 
 nhc_atl_2025_048 = [30.3,62.0,85;33.3,59.2,90;35.6,50.5,70;36.9,38.4,65;41.0,27.1,60];
 my_atl_2025_048 = [30.5,62.1,80;33.2,59.5,85;35.4,52.0,65;36.2,40.6,60;40.1,28.9,55];
-btk_atl_2025_048 = [30.4,62.5,100;33.5,59.2,120;35.8,50.2,95;36.4,36.7,65;39.7,24.2,55];
+btk_atl_2025_048 = [30.4,62.5,100;33.5,59.2,120;35.8,50.2,90;36.4,36.7,65;39.6,24.2,55]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_048];
 myvect = [myvect;my_atl_2025_048];
 btkvect = [btkvect;btk_atl_2025_048];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Wpac 041 ... RAGASA/(NANDO) around 2025-09-21-21Z ... CERTIFIED
@@ -23708,13 +23708,13 @@ certified = [certified;2;2;2];
 
 nhc_atl_2025_049 = [32.0,61.6,100;34.7,56.2,90;36.2,45.6,75;39.0,33.3,60;42.7,23.1,55];
 my_atl_2025_049 = [31.9,61.8,100;34.6,56.5,85;36.2,46.2,70;39.8,32.9,60;46.3,21.8,50];
-btk_atl_2025_049 = [32.1,61.4,120;34.9,55.2,110;35.9,44.0,75;37.4,30.7,55;41.1,18.6,55]; # day 5 self-made
+btk_atl_2025_049 = [32.1,61.4,120;34.9,55.2,110;35.9,44.0,75;37.6,30.6,55;41.0,18.5,65]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_049];
 myvect = [myvect;my_atl_2025_049];
 btkvect = [btkvect;btk_atl_2025_049];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 050 ... GABRIELLE around 2025-09-22-15Z ... CERTIFIED
@@ -23725,13 +23725,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_050 = [33.5,59.3,110;35.6,50.6,90;37.1,37.8,70;41.6,25.0,65;45.0,16.8,55];
 my_atl_2025_050 = [33.5,59.4,105;35.5,50.7,85;36.9,38.2,70;41.2,25.6,55;45.1,15.5,50];
-btk_atl_2025_050 = [33.5,59.2,120;35.8,50.2,95;36.4,36.7,95;39.7,24.2,55;41.8,13.3,45]; # day 5 self-made
+btk_atl_2025_050 = [33.5,59.2,120;35.8,50.2,90;36.4,36.7,65;39.6,24.2,55;41.8,13.1,50]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_050];
 myvect = [myvect;my_atl_2025_050];
 btkvect = [btkvect;btk_atl_2025_050];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 051 ... GABRIELLE around 2025-09-22-21Z ... CERTIFIED
@@ -23741,13 +23741,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_051 = [34.2,57.5,110;35.7,47.3,90;37.7,34.0,70;42.8,22.9,60;44.5,15.0,45];
 my_atl_2025_051 = [34.1,57.6,110;35.3,47.3,90;36.6,34.6,70;41.9,24.8,60;44.2,17.5,45];
-btk_atl_2025_051 = [34.3,57.4,115;35.9,47.2,85;36.7,33.6,60;40.6,21.6,55;41.4,11.2,45]; # days 4-5 self-made
+btk_atl_2025_051 = [34.3,57.4,115;35.9,47.2,85;36.8,33.6,60;40.4,21.4,60;41.4,11.2,50]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_051];
 myvect = [myvect;my_atl_2025_051];
 btkvect = [btkvect;btk_atl_2025_051];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 052 ... GABRIELLE around 2025-09-23-15Z ... CERTIFIED
@@ -23757,13 +23757,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_052 = [35.6,49.9,110;37.0,37.4,85;40.7,25.2,65;44.0,16.0,50;43.0,10.8,35];
 my_atl_2025_052 = [35.6,50.0,105;36.9,37.4,80;40.8,25.2,65;43.9,16.7,50;43.2,11.1,35];
-btk_atl_2025_052 = [35.8,50.2,95;36.4,36.7,65;39.7,24.2,55;41.8,13.3,45;39.4,7.4,35]; # days 4-5 self-made
+btk_atl_2025_052 = [35.8,50.2,90;36.4,36.7,65;39.6,24.2,55;41.8,13.1,50;39.5,7.4,35]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_052];
 myvect = [myvect;my_atl_2025_052];
 btkvect = [btkvect;btk_atl_2025_052];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 053 ... GABRIELLE around 2025-09-23-21Z ... CERTIFIED
@@ -23773,13 +23773,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_053 = [35.8,47.0,95;37.4,34.6,75;41.1,23.5,60;42.7,15.5,45;40.4,10.0,35];
 my_atl_2025_053 = [35.7,47.1,95;37.1,34.7,70;40.6,23.7,60;43.0,15.1,45;41.3,8.4,35];
-btk_atl_2025_053 = [35.9,47.2,85;36.7,33.6,60;40.6,21.6,55;41.4,11.2,45;38.7,6.5,30]; # days 3-5 self-made
+btk_atl_2025_053 = [35.9,47.2,85;36.8,33.6,60;40.4,21.4,60;41.4,11.2,50;38.5,6.5,25]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_053];
 myvect = [myvect;my_atl_2025_053];
 btkvect = [btkvect;btk_atl_2025_053];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;0;0;0];
+datasource = [datasource;3;2;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 069 ... NARDA around 2025-09-23-21Z ... CERTIFIED
@@ -23789,13 +23789,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_069 = [15.1,112.2,85;15.5,116.9,85;16.8,121.2,95;18.5,123.2,90;20.4,123.3,65];
 my_epac_2025_069 = [15.1,112.2,80;15.5,117.0,80;16.7,121.4,90;18.4,123.7,80;20.4,124.1,60];
-btk_epac_2025_069 = [15.1,111.8,85;16.1,117.3,80;16.9,122.2,80;18.2,125.2,70;20.1,125.5,35];
+btk_epac_2025_069 = [15.2,111.9,85;16.1,117.3,80;16.9,122.2,75;18.2,125.2,70;20.1,125.5,35]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_069];
 myvect = [myvect;my_epac_2025_069];
 btkvect = [btkvect;btk_epac_2025_069];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 054 ... GABRIELLE around 2025-09-24-15Z ... CERTIFIED
@@ -23805,13 +23805,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_054 = [36.9,37.3,80;40.0,25.1,70;40.9,16.5,50;39.0,11.0,35;37.5,8.5,25];
 my_atl_2025_054 = [36.9,37.3,75;40.1,24.9,65;41.0,15.6,45;39.7,9.7,35;38.0,8.1,25];
-btk_atl_2025_054 = [36.4,36.7,65;39.7,24.2,55;41.8,13.3,45;39.4,7.4,35;37.4,2.3,25]; # days 3-5 self-made
+btk_atl_2025_054 = [36.4,36.7,65;39.6,24.2,55;41.8,13.1,50;39.5,7.4,35;37.4,2.3,25]; # TCR (day 5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_054];
 myvect = [myvect;my_atl_2025_054];
 btkvect = [btkvect;btk_atl_2025_054];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;0;0;0];
+datasource = [datasource;3;2;2;2;0];
 certified = [certified;2;2;2;2;2];
 
 # Atl 055 ... GABRIELLE around 2025-09-24-21Z ... CERTIFIED
@@ -23821,13 +23821,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_055 = [37.5,33.8,80;40.5,22.2,70;40.7,13.2,45;38.0,7.5,30];
 my_atl_2025_055 = [37.4,33.8,70;40.5,21.7,65;40.9,11.7,40;38.2,6.3,30];
-btk_atl_2025_055 = [36.7,33.6,60;40.6,21.6,55;41.4,11.2,45;38.7,6.5,30]; # days 2-4 self-made
+btk_atl_2025_055 = [36.8,33.6,60;40.4,21.4,60;41.4,11.2,50;38.5,6.5,25]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_055];
 myvect = [myvect;my_atl_2025_055];
 btkvect = [btkvect;btk_atl_2025_055];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;1;1;1;1];
-datasource = [datasource;1;0;0;0];
+datasource = [datasource;2;2;2;2];
 certified = [certified;2;2;2;2];
 
 # Epac 070 ... NARDA around 2025-09-24-21Z ... CERTIFIED
@@ -23837,13 +23837,13 @@ certified = [certified;2;2;2;2];
 
 nhc_epac_2025_070 = [15.6,116.7,75;16.6,121.5,85;18.2,124.4,85;20.1,124.5,55;21.9,123.5,40];
 my_epac_2025_070 = [15.6,116.7,70;16.7,121.6,80;18.2,124.7,80;20.1,124.6,45;21.7,123.9,35];
-btk_epac_2025_070 = [16.1,117.3,80;16.9,122.2,80;18.2,125.2,70;20.1,125.5,35;21.5,124.6,20]; # day 5 self-made
+btk_epac_2025_070 = [16.1,117.3,80;16.9,122.2,75;18.2,125.2,70;20.1,125.5,35;21.5,124.7,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_070];
 myvect = [myvect;my_epac_2025_070];
 btkvect = [btkvect;btk_epac_2025_070];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 056 ... HUMBERTO around 2025-09-25-15Z ... CERTIFIED
@@ -23853,13 +23853,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_056 = [22.1,57.9,55;22.8,60.1,75;24.2,64.0,105;27.0,67.8,105;30.7,69.7,95];
 my_atl_2025_056 = [22.0,57.8,55;22.6,60.0,75;23.9,63.9,105;26.7,67.6,95;30.7,69.7,85];
-btk_atl_2025_056 = [22.2,57.4,75;22.5,59.7,130;24.2,63.8,130;27.5,67.3,125;32.5,69.8,75];
+btk_atl_2025_056 = [22.1,57.4,80;22.5,59.7,130;24.2,63.8,125;27.5,67.3,125;32.5,69.8,70]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_056];
 myvect = [myvect;my_atl_2025_056];
 btkvect = [btkvect;btk_atl_2025_056];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 057 ... HUMBERTO around 2025-09-25-21Z ... CERTIFIED
@@ -23869,13 +23869,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_057 = [22.5,58.0,70;23.0,60.8,90;24.6,64.7,105;28.0,68.2,105;31.6,69.9,90];
 my_atl_2025_057 = [22.3,57.9,65;22.6,60.6,85;24.1,64.6,105;27.6,68.1,110;31.6,69.4,90];
-btk_atl_2025_057 = [22.3,57.8,95;22.7,60.7,135;25.1,64.8,125;28.5,67.9,120;33.5,69.9,70];
+btk_atl_2025_057 = [22.2,57.8,95;22.7,60.7,140;25.1,64.8,125;28.5,67.9,115;33.5,69.9,70]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_057];
 myvect = [myvect;my_atl_2025_057];
 btkvect = [btkvect;btk_atl_2025_057];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 071 ... NARDA around 2025-09-25-21Z ... CERTIFIED
@@ -23885,13 +23885,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_071 = [16.9,122.6,85;18.2,126.4,70;20.3,127.4,50;22.1,126.4,35;23.6,125.2,30];
 my_epac_2025_071 = [16.9,122.7,80;18.1,126.7,65;20.2,128.2,45;22.1,127.0,30;22.7,126.8,25];
-btk_epac_2025_071 = [16.9,122.2,80;18.2,125.2,70;20.1,125.5,35;21.5,124.6,20;21.6,124.7,20]; # days 4-5 self-made
+btk_epac_2025_071 = [16.9,122.2,75;18.2,125.2,70;20.1,125.5,35;21.5,124.7,20;21.7,124.8,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_071];
 myvect = [myvect;my_epac_2025_071];
 btkvect = [btkvect;btk_epac_2025_071];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 058 ... HUMBERTO around 2025-09-26-15Z ... CERTIFIED
@@ -23901,13 +23901,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_058 = [22.9,59.6,105;24.1,63.3,125;26.8,66.9,120;30.6,68.8,105;34.5,66.0,90];
 my_atl_2025_058 = [22.8,60.0,105;24.2,63.8,125;27.0,67.2,115;30.9,69.0,95;35.0,66.2,80];
-btk_atl_2025_058 = [22.5,59.7,130;24.2,63.8,130;27.5,67.3,125;32.5,69.8,75;36.5,64.0,60];
+btk_atl_2025_058 = [22.5,59.7,130;24.2,63.8,125;27.5,67.3,125;32.5,69.8,70;36.1,65.5,65]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_058];
 myvect = [myvect;my_atl_2025_058];
 btkvect = [btkvect;btk_atl_2025_058];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 059 ... 09L around 2025-09-26-21Z ... CERTIFIED
@@ -23917,13 +23917,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_059 = [22.7,75.8,30;25.6,76.9,45;29.7,78.0,65;31.8,78.9,65;32.3,79.3,60];
 my_atl_2025_059 = [22.7,75.9,30;25.5,76.9,45;29.6,77.7,60;32.6,79.0,50;32.7,79.2,40];
-btk_atl_2025_059 = [22.1,76.5,30;23.8,77.3,35;27.2,77.3,55;29.1,76.0,75;31.3,69.2,85];
+btk_atl_2025_059 = [22.1,76.4,30;23.8,77.3,35;27.3,77.3,50;29.2,76.0,70;31.2,69.2,80]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_059];
 myvect = [myvect;my_atl_2025_059];
 btkvect = [btkvect;btk_atl_2025_059];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;2;2;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 060 ... 09L around 2025-09-27-03Z ... CERTIFIED
@@ -23933,13 +23933,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_060 = [23.3,77.0,30;26.3,77.9,45;30.1,78.9,65;32.0,79.2,65;32.4,78.7,55];
 my_atl_2025_060 = [23.2,77.1,30;26.1,78.3,45;30.1,79.0,60;32.5,79.8,60;32.9,78.5,40];
-btk_atl_2025_060 = [22.4,76.8,30;24.6,77.1,35;28.1,77.3,55;29.4,74.7,75;31.8,66.4,85];
+btk_atl_2025_060 = [22.4,76.7,30;24.6,77.1,35;28.0,77.3,55;29.4,74.8,70;31.8,66.4,80]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_060];
 myvect = [myvect;my_atl_2025_060];
 btkvect = [btkvect;btk_atl_2025_060];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;2;2;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 061 ... HUMBERTO around 2025-09-27-03Z ... CERTIFIED
@@ -23949,13 +23949,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_061 = [22.7,61.6,140;24.8,65.3,130;27.9,68.2,115;32.1,68.2,100;36.0,62.0,90];
 my_atl_2025_061 = [22.8,61.6,135;25.0,65.4,125;27.9,68.3,115;32.3,68.3,90;36.4,61.5,85];
-btk_atl_2025_061 = [23.1,61.6,140;25.8,65.8,120;29.5,68.5,100;34.6,69.0,70;38.9,55.4,50]; # day 5 self-made
+btk_atl_2025_061 = [23.1,61.6,140;25.8,65.8,120;29.5,68.6,100;34.6,69.0,70;38.9,55.4,50]; # TCR (day 5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_061];
 myvect = [myvect;my_atl_2025_061];
 btkvect = [btkvect;btk_atl_2025_061];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;3;0];
 certified = [certified;2;2;2;2;2];
 
 # Atl 062 ... 09L around 2025-09-27-15Z ... CERTIFIED
@@ -23965,13 +23965,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_062 = [24.4,77.3,40;27.9,78.2,55;30.7,78.8,65;31.3,77.5,65;31.5,75.0,60];
 my_atl_2025_062 = [24.2,77.3,35;27.7,78.0,50;30.9,78.4,60;31.3,77.0,60;31.3,73.6,50];
-btk_atl_2025_062 = [23.1,77.3,30;26.4,77.1,50;28.9,76.9,70;30.7,71.3,80;32.9,60.9,70];
+btk_atl_2025_062 = [23.1,77.4,30;26.4,77.1,45;28.9,76.9,65;30.7,71.4,80;33.0,60.8,70]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_062];
 myvect = [myvect;my_atl_2025_062];
 btkvect = [btkvect;btk_atl_2025_062];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;2;2;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 063 ... 09L around 2025-09-27-21Z ... CERTIFIED
@@ -23981,13 +23981,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_063 = [24.9,77.6,45;28.5,78.6,60;30.8,78.6,65;31.1,76.8,65;31.5,74.0,60];
 my_atl_2025_063 = [24.8,77.4,45;28.5,78.6,60;30.9,79.3,60;31.0,77.2,50;30.7,76.0,40];
-btk_atl_2025_063 = [23.8,77.3,35;27.2,77.3,55;29.1,76.0,75;31.3,69.2,85;32.7,57.7,60]; # day 5 self-made
+btk_atl_2025_063 = [23.8,77.3,35;27.3,77.3,50;29.2,76.0,70;31.2,69.2,80;33.5,57.5,60]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_063];
 myvect = [myvect;my_atl_2025_063];
 btkvect = [btkvect;btk_atl_2025_063];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;2;2;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 064 ... HUMBERTO around 2025-09-27-21Z ... CERTIFIED
@@ -23997,13 +23997,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_064 = [24.7,64.6,140;28.0,67.5,125;32.1,68.5,105;36.1,62.4,95;42.5,46.5,85];
 my_atl_2025_064 = [24.7,64.5,135;27.9,67.4,120;31.5,69.0,100;35.7,63.8,85;42.5,48.3,75];
-btk_atl_2025_064 = [25.1,64.8,125;28.5,67.9,120;33.5,69.9,70;36.5,63.4,55;45.8,34.6,45]; # days 4-5 self-made
+btk_atl_2025_064 = [25.1,64.8,125;28.5,67.9,115;33.5,69.9,70;36.5,63.4,55;45.8,34.6,45]; # TCR (days 4-5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_064];
 myvect = [myvect;my_atl_2025_064];
 btkvect = [btkvect;btk_atl_2025_064];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;3;0;0];
 certified = [certified;2;2;2;2;2];
 
 # Atl 065 ... 09L around 2025-09-28-15Z ... CERTIFIED
@@ -24013,13 +24013,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_065 = [26.2,77.6,50;28.8,77.1,65;29.9,73.5,75;31.0,68.0,80;32.5,61.5,70];
 my_atl_2025_065 = [26.1,77.9,50;28.5,77.3,60;29.7,73.2,70;31.0,67.5,70;32.5,61.0,60];
-btk_atl_2025_065 = [26.4,77.1,50;28.9,76.9,70;30.7,71.3,80;32.9,60.9,70;37.7,49.5,50]; # day 5 self-made
+btk_atl_2025_065 = [26.4,77.1,45;28.9,76.9,65;30.7,71.4,80;33.0,60.8,70;37.3,49.3,55]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_065];
 myvect = [myvect;my_atl_2025_065];
 btkvect = [btkvect;btk_atl_2025_065];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;3;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 066 ... IMELDA around 2025-09-28-21Z ... CERTIFIED
@@ -24029,13 +24029,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_066 = [27.2,77.4,55;29.2,75.8,65;30.7,70.7,80;31.8,63.2,80;33.5,58.5,65];
 my_atl_2025_066 = [27.2,77.5,50;29.2,75.7,60;31.2,70.3,75;32.0,63.0,65;33.7,57.1,50];
-btk_atl_2025_066 = [27.2,77.3,55;29.1,76.0,75;31.3,69.2,85;32.7,57.7,60;38.7,49.1,60]; # days 4-5 self-made
+btk_atl_2025_066 = [27.3,77.3,50;29.2,76.0,70;31.2,69.2,80;33.5,57.5,60;38.9,49.1,60]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_066];
 myvect = [myvect;my_atl_2025_066];
 btkvect = [btkvect;btk_atl_2025_066];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;3;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 067 ... IMELDA around 2025-09-29-15Z ... CERTIFIED
@@ -24045,13 +24045,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_067 = [29.0,75.9,70;30.8,70.2,80;33.7,60.0,80;38.0,53.0,60;43.0,49.0,55];
 my_atl_2025_067 = [28.8,76.1,65;30.8,70.1,75;34.0,59.4,75;38.6,53.4,55;43.2,49.2,40];
-btk_atl_2025_067 = [28.9,76.9,70;30.7,71.3,80;32.9,60.9,70;37.7,49.5,50;41.9,47.4,55]; # days 4-5 self-made
+btk_atl_2025_067 = [28.9,76.9,65;30.7,71.4,80;33.0,60.8,70;37.3,49.3,55;42.0,47.5,55]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_067];
 myvect = [myvect;my_atl_2025_067];
 btkvect = [btkvect;btk_atl_2025_067];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 068 ... IMELDA around 2025-09-29-21Z ... CERTIFIED
@@ -24061,13 +24061,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_068 = [29.3,75.0,70;31.7,67.8,80;35.0,56.8,75;39.0,50.0,55;43.7,47.6,45];
 my_atl_2025_068 = [29.4,75.1,70;32.7,67.4,75;36.1,56.3,70;40.1,50.4,45;46.6,45.8,40];
-btk_atl_2025_068 = [29.1,76.0,75;31.3,69.2,85;32.7,57.7,60;38.7,49.1,60;43.4,45.6,45]; # days 3-5 self-made
+btk_atl_2025_068 = [29.2,76.0,70;31.2,69.2,80;33.5,57.5,60;38.9,49.1,60;43.5,45.8,50]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_068];
 myvect = [myvect;my_atl_2025_068];
 btkvect = [btkvect;btk_atl_2025_068];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;0;0;0];
+datasource = [datasource;3;3;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 072 ... OCTAVE around 2025-09-30-15Z ... CERTIFIED
@@ -24077,13 +24077,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_072 = [11.3,114.0,40;12.9,115.2,40;13.8,117.5,45;14.6,119.5,45;15.6,119.8,50];
 my_epac_2025_072 = [11.5,114.1,40;13.3,115.5,35;13.9,117.8,40;14.8,119.9,45;16.0,121.2,45];
-btk_epac_2025_072 = [11.4,115.4,55;12.4,118.0,55;13.3,120.7,45;14.4,123.5,50;15.6,123.9,70];
+btk_epac_2025_072 = [11.4,115.4,50;12.3,118.0,55;13.2,120.8,45;14.3,123.5,55;15.6,123.9,70]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_072];
 myvect = [myvect;my_epac_2025_072];
 btkvect = [btkvect;btk_epac_2025_072];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 069 ... IMELDA around 2025-09-30-15Z ... CERTIFIED
@@ -24093,13 +24093,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_069 = [31.0,71.0,80;34.3,60.0,80;39.3,50.4,60;43.6,46.4,50;50.5,37.0,40];
 my_atl_2025_069 = [30.9,70.9,75;34.6,59.7,70;40.0,49.9,55;44.2,46.6,40;50.7,36.0,35];
-btk_atl_2025_069 = [30.7,71.3,80;32.9,60.9,70;37.7,49.5,50;41.9,47.4,55;48.1,39.5,45]; # days 3-5 self-made
+btk_atl_2025_069 = [30.7,71.4,80;33.0,60.8,70;37.3,49.3,55;42.0,47.5,55;48.6,39.6,50]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_069];
 myvect = [myvect;my_atl_2025_069];
 btkvect = [btkvect;btk_atl_2025_069];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;0;0;0];
+datasource = [datasource;3;2;2;2;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 073 ... OCTAVE around 2025-10-01-03Z ... CERTIFIED
@@ -24109,13 +24109,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_073 = [12.5,115.2,45;13.5,117.6,45;14.4,120.5,50;15.0,121.9,55;15.8,121.5,50];
 my_epac_2025_073 = [12.4,115.3,45;13.5,117.9,40;14.6,120.6,45;15.3,122.3,50;16.3,122.4,45];
-btk_epac_2025_073 = [12.1,116.7,55;12.8,119.3,50;13.6,122.4,50;15.2,124.1,55;16.2,123.1,70];
+btk_epac_2025_073 = [11.9,116.6,55;12.9,119.2,50;13.6,122.3,50;15.0,124.1,60;16.2,123.1,80]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_073];
 myvect = [myvect;my_epac_2025_073];
 btkvect = [btkvect;btk_epac_2025_073];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 074 ... OCTAVE around 2025-10-01-15Z ... CERTIFIED
@@ -24125,13 +24125,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_074 = [12.6,117.3,55;13.7,120.0,60;14.9,122.6,60;15.9,123.6,60;16.5,123.0,50];
 my_epac_2025_074 = [12.5,117.4,60;13.8,120.4,55;15.1,123.3,60;16.1,124.4,60;16.5,124.2,45];
-btk_epac_2025_074 = [12.4,118.0,55;13.3,120.7,45;14.4,123.5,50;15.6,123.9,70;16.3,121.9,55];
+btk_epac_2025_074 = [12.3,118.0,55;13.2,120.8,45;14.3,123.5,55;15.6,123.9,70;16.3,121.9,60]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_074];
 myvect = [myvect;my_epac_2025_074];
 btkvect = [btkvect;btk_epac_2025_074];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 075 ... OCTAVE around 2025-10-01-21Z ... CERTIFIED
@@ -24142,13 +24142,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_075 = [12.9,118.2,55;13.8,120.9,60;14.9,123.4,60;15.6,124.0,60;16.0,122.5,50];
 my_epac_2025_075 = [12.8,118.1,50;13.8,120.8,55;14.8,123.0,60;15.5,124.0,50;15.6,122.7,40];
-btk_epac_2025_075 = [12.6,118.7,50;13.5,121.4,50;14.7,123.8,55;15.9,123.5,70;16.3,121.9,55];
+btk_epac_2025_075 = [12.6,118.7,55;13.3,121.6,50;14.7,123.9,55;15.9,123.5,75;16.3,121.9,60]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_075];
 myvect = [myvect;my_epac_2025_075];
 btkvect = [btkvect;btk_epac_2025_075];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 076 ... OCTAVE around 2025-10-02-15Z ... CERTIFIED
@@ -24158,13 +24158,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_076 = [13.3,120.5,55;14.4,123.0,55;15.3,124.0,65;15.9,122.9,65;16.0,120.5,50];
 my_epac_2025_076 = [13.1,120.6,50;14.4,123.2,55;15.4,124.3,60;16.1,123.3,55;16.1,122.3,40];
-btk_epac_2025_076 = [13.3,120.7,45;14.4,123.5,50;15.6,123.9,70;16.3,121.9,55;15.7,119.4,45];
+btk_epac_2025_076 = [13.2,120.8,45;14.3,123.5,55;15.6,123.9,70;16.3,121.9,60;15.7,119.7,45]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_076];
 myvect = [myvect;my_epac_2025_076];
 btkvect = [btkvect;btk_epac_2025_076];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 077 ... OCTAVE around 2025-10-03-21Z ... CERTIFIED
@@ -24174,13 +24174,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_077 = [14.7,123.7,50;15.6,123.8,55;15.7,122.5,50;15.2,120.5,40;15.0,118.0,35];
 my_epac_2025_077 = [14.6,123.9,50;15.6,124.0,50;15.8,122.7,45;15.1,121.2,35;14.6,119.4,25];
-btk_epac_2025_077 = [14.7,123.8,55;15.9,123.5,70;16.2,121.3,45;15.5,119.2,40;15.5,115.8,40];
+btk_epac_2025_077 = [14.7,123.9,55;15.9,123.5,75;16.2,121.3,50;15.5,119.2,45;15.5,115.8,40]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_077];
 myvect = [myvect;my_epac_2025_077];
 btkvect = [btkvect;btk_epac_2025_077];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 078 ... OCTAVE around 2025-10-04-15Z ... CERTIFIED
@@ -24190,13 +24190,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_078 = [15.5,124.1,55;16.0,122.6,45;15.7,120.2,35;15.2,118.0,30;16.2,114.1,30];
 my_epac_2025_078 = [15.5,123.9,55;16.2,122.2,45;15.9,119.9,30;15.2,118.2,30;16.2,114.8,30];
-btk_epac_2025_078 = [15.6,123.9,70;16.3,121.9,55;15.7,119.4,45;15.2,116.8,40;17.6,111.0,30];
+btk_epac_2025_078 = [15.6,123.9,70;16.3,121.9,60;15.7,119.7,45;15.2,116.9,40;17.6,111.0,30]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_078];
 myvect = [myvect;my_epac_2025_078];
 btkvect = [btkvect;btk_epac_2025_078];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 079 ... PRISCILLA around 2025-10-05-15Z ... CERTIFIED
@@ -24206,13 +24206,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_079 = [17.4,107.7,70;19.2,109.9,80;21.0,112.3,85;23.2,115.0,65;25.1,116.7,40];
 my_epac_2025_079 = [17.4,107.9,70;19.2,110.3,80;21.1,112.6,80;23.3,115.2,60;25.5,117.5,35];
-btk_epac_2025_079 = [17.3,107.3,75;19.6,109.8,90;21.1,112.2,70;23.6,114.5,40;25.7,115.2,40];
+btk_epac_2025_079 = [17.4,107.3,75;19.5,109.8,95;21.1,112.2,70;23.6,114.5,45;25.7,115.2,40]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_079];
 myvect = [myvect;my_epac_2025_079];
 btkvect = [btkvect;btk_epac_2025_079];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 080 ... PRISCILLA around 2025-10-05-21Z ... CERTIFIED
@@ -24222,13 +24222,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_080 = [17.7,108.1,75;19.5,110.4,90;21.4,113.0,80;23.6,115.4,60;25.4,116.6,35];
 my_epac_2025_080 = [17.6,108.0,70;19.3,110.3,85;21.3,112.9,75;23.5,115.3,55;25.0,116.7,35];
-btk_epac_2025_080 = [18.0,107.6,75;19.7,110.5,95;21.7,112.7,60;24.1,114.9,45;26.1,115.4,30];
+btk_epac_2025_080 = [17.9,107.6,75;19.7,110.5,100;21.7,112.7,60;24.1,114.9,45;26.1,115.4,30]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_080];
 myvect = [myvect;my_epac_2025_080];
 btkvect = [btkvect;btk_epac_2025_080];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 081 ... PRISCILLA around 2025-10-06-03Z ... CERTIFIED
@@ -24238,13 +24238,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_081 = [18.1,108.5,75;20.0,111.1,90;22.1,113.7,75;24.3,115.7,55;26.3,116.5,35];
 my_epac_2025_081 = [18.1,108.6,75;20.0,111.3,85;22.2,113.9,70;24.6,115.8,45;26.8,116.6,30];
-btk_epac_2025_081 = [18.6,108.2,75;20.3,111.2,95;22.3,113.3,55;24.7,115.1,45;26.5,115.2,25]; # day 5 self-made
+btk_epac_2025_081 = [18.6,108.2,75;20.3,111.2,90;22.3,113.3,55;24.7,115.1,45;26.1,115.3,30]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_081];
 myvect = [myvect;my_epac_2025_081];
 btkvect = [btkvect;btk_epac_2025_081];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 082 ... PRISCILLA around 2025-10-06-15Z ... CERTIFIED
@@ -24254,13 +24254,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_082 = [19.3,109.5,85;21.2,112.3,90;23.4,114.6,65;25.7,115.7,45;27.5,115.7,30];
 my_epac_2025_082 = [19.2,109.4,80;21.0,112.2,85;23.5,114.7,60;25.8,115.5,40;27.3,115.2,25];
-btk_epac_2025_082 = [19.6,109.8,90;21.1,112.2,70;23.6,114.5,40;25.7,115.2,40;26.2,114.7,20]; # day 5 self-made
+btk_epac_2025_082 = [19.5,109.8,95;21.1,112.2,70;23.6,114.5,45;25.7,115.2,40;26.2,114.7,25]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_082];
 myvect = [myvect;my_epac_2025_082];
 btkvect = [btkvect;btk_epac_2025_082];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 083 ... PRISCILLA around 2025-10-06-21Z ... CERTIFIED
@@ -24270,13 +24270,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_083 = [20.0,110.2,90;22.0,112.8,80;24.3,114.8,55;27.0,115.4,35;30.0,114.5,20];
 my_epac_2025_083 = [20.0,110.4,85;22.0,113.0,75;24.5,114.8,50;27.5,115.4,30;30.6,114.0,20];
-btk_epac_2025_083 = [19.7,110.5,95;21.7,112.7,60;24.1,114.9,45;26.1,115.4,30;26.5,114.6,20]; # day 5 self-made
+btk_epac_2025_083 = [19.7,110.5,100;21.7,112.7,60;24.1,114.9,45;26.1,115.4,30;26.3,114.5,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_083];
 myvect = [myvect;my_epac_2025_083];
 btkvect = [btkvect;btk_epac_2025_083];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;2;2;2;2;2];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Epac 084 ... OCTAVE around 2025-10-06-21Z ... CERTIFIED
@@ -24286,13 +24286,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_084 = [15.5,118.9,35;15.8,115.2,35];
 my_epac_2025_084 = [15.5,118.9,40;15.7,115.1,35];
-btk_epac_2025_084 = [15.5,119.2,40;15.5,115.8,40];
+btk_epac_2025_084 = [15.5,119.2,45;15.5,115.8,40]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_084];
 myvect = [myvect;my_epac_2025_084];
 btkvect = [btkvect;btk_epac_2025_084];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;1;1];
+datasource = [datasource;3;3];
 certified = [certified;2;2];
 
 # Epac 085 ... PRISCILLA around 2025-10-07-15Z ... CERTIFIED
@@ -24302,13 +24302,13 @@ certified = [certified;2;2];
 
 nhc_epac_2025_085 = [21.5,112.5,90;23.7,114.9,60;26.3,115.5,40;28.7,114.9,25];
 my_epac_2025_085 = [21.4,112.6,85;23.7,114.9,60;26.4,115.5,40;29.1,114.8,25];
-btk_epac_2025_085 = [21.1,112.2,70;23.6,114.5,40;25.7,115.2,40;26.2,114.7,20]; # day 4 self-made
+btk_epac_2025_085 = [21.1,112.2,70;23.6,114.5,45;25.7,115.2,40;26.2,114.7,25]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_085];
 myvect = [myvect;my_epac_2025_085];
 btkvect = [btkvect;btk_epac_2025_085];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;1;1;0];
+datasource = [datasource;3;3;3;2];
 certified = [certified;2;2;2;2];
 
 # Atl 070 ... JERRY around 2025-10-07-21Z ... CERTIFIED
@@ -24318,13 +24318,13 @@ certified = [certified;2;2;2;2];
 
 nhc_atl_2025_070 = [14.2,53.0,65;17.2,59.3,75;21.1,62.6,85;25.8,63.3,85;30.2,61.2,85];
 my_atl_2025_070 = [14.1,53.0,65;16.9,59.4,70;20.4,62.7,75;24.6,63.6,70;29.5,61.9,70];
-btk_atl_2025_070 = [14.4,53.8,50;16.7,59.9,55;20.9,63.5,45;27.0,63.7,40;31.0,62.7,35]; # day 5 self-made
+btk_atl_2025_070 = [14.3,53.8,55;16.7,60.0,50;20.9,63.6,50;27.0,63.7,40;31.0,62.7,35]; # TCR (day 4 oper.,day 5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_070];
 myvect = [myvect;my_atl_2025_070];
 btkvect = [btkvect;btk_atl_2025_070];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;1;0];
 certified = [certified;2;2;2;2;2];
 
 # Epac 086 ... PRISCILLA around 2025-10-07-21Z ... CERTIFIED
@@ -24334,13 +24334,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_086 = [21.8,113.2,80;24.2,115.2,55;26.7,115.4,35;29.3,114.5,20];
 my_epac_2025_086 = [21.8,113.1,75;24.1,115.0,50;26.4,115.4,30;29.2,114.5,20];
-btk_epac_2025_086 = [21.7,112.7,60;24.1,114.9,45;26.1,115.4,30;26.5,114.6,20]; # day 4 self-made
+btk_epac_2025_086 = [21.7,112.7,60;24.1,114.9,45;26.1,115.4,30;26.3,114.5,20]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_086];
 myvect = [myvect;my_epac_2025_086];
 btkvect = [btkvect;btk_epac_2025_086];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;1;1;0];
+datasource = [datasource;3;3;3;2];
 certified = [certified;2;2;2;2];
 
 # Atl 071 ... JERRY around 2025-10-08-03Z ... CERTIFIED
@@ -24350,13 +24350,13 @@ certified = [certified;2;2;2;2];
 
 nhc_atl_2025_071 = [14.9,55.1,60;18.1,60.7,70;22.1,63.3,80;26.7,63.6,85;31.7,60.1,80];
 my_atl_2025_071 = [14.9,55.2,60;18.1,61.0,65;22.2,63.4,70;26.9,63.8,70;32.6,60.6,65];
-btk_atl_2025_071 = [14.9,55.4,55;17.6,61.1,50;22.3,63.7,50;28.2,63.6,35;31.4,61.5,30]; # days 4-5 self-made
+btk_atl_2025_071 = [15.0,55.5,55;17.6,61.1,50;22.4,63.7,50;28.2,63.6,35;31.4,61.5,30]; # TCR (days 4-5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_071];
 myvect = [myvect;my_atl_2025_071];
 btkvect = [btkvect;btk_atl_2025_071];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;3;0;0];
 certified = [certified;2;2;2;2;2];
 
 # Epac 087 ... PRISCILLA around 2025-10-08-03Z ... CERTIFIED
@@ -24366,13 +24366,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_087 = [22.6,113.7,70;24.9,115.1,45;27.4,115.1,25];
 my_epac_2025_087 = [22.5,113.7,65;24.8,115.0,40;27.3,115.3,20];
-btk_epac_2025_087 = [22.3,113.3,55;24.7,115.1,45;26.5,115.2,25]; # day 3 self-made
+btk_epac_2025_087 = [22.3,113.3,55;24.7,115.1,45;26.1,115.3,30]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_087];
 myvect = [myvect;my_epac_2025_087];
 btkvect = [btkvect;btk_epac_2025_087];
 leadtimevect = [leadtimevect;1;2;3];
 basinvect = [basinvect;2;2;2];
-datasource = [datasource;1;1;0];
+datasource = [datasource;3;3;2];
 certified = [certified;2;2;2];
 
 # Atl 072 ... JERRY around 2025-10-08-15Z ... CERTIFIED
@@ -24382,13 +24382,13 @@ certified = [certified;2;2;2];
 
 nhc_atl_2025_072 = [16.1,58.2,60;20.0,61.9,65;25.1,62.2,70;29.6,61.0,70;32.7,56.9,65];
 my_atl_2025_072 = [16.4,58.3,55;20.5,62.1,60;25.6,62.0,60;29.8,61.2,55;33.8,56.5,55];
-btk_atl_2025_072 = [15.6,58.5,55;19.6,63.1,45;25.9,63.7,40;30.3,63.3,35;31.3,58.8,25]; # days 4-5 self-made
+btk_atl_2025_072 = [16.0,58.6,50;19.7,63.1,50;25.2,63.3,45;30.3,63.3,35;31.3,58.8,25]; # TCR (days 4-5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_072];
 myvect = [myvect;my_atl_2025_072];
 btkvect = [btkvect;btk_atl_2025_072];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;3;0;0];
 certified = [certified;2;2;2;2;2];
 
 # Atl 073 ... JERRY around 2025-10-08-21Z ... CERTIFIED
@@ -24398,13 +24398,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_073 = [17.4,59.7,60;21.7,62.5,65;26.4,62.5,70;30.6,61.2,70;33.1,56.9,65];
 my_atl_2025_073 = [17.2,59.7,60;21.0,62.6,65;24.8,63.3,70;29.4,62.7,75;32.4,58.6,65];
-btk_atl_2025_073 = [16.7,59.9,55;20.9,63.5,45;27.0,63.7,40;31.0,62.7,35;31.2,57.5,30]; # days 4-5 self-made
+btk_atl_2025_073 = [16.7,60.0,50;20.9,63.6,50;27.0,63.7,40;31.0,62.7,35;31.2,57.5,30]; # TCR (day 3 oper.,days 4-5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_073];
 myvect = [myvect;my_atl_2025_073];
 btkvect = [btkvect;btk_atl_2025_073];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;1;0;0];
 certified = [certified;2;2;2;2;2];
 
 # Epac 088 ... PRISCILLA around 2025-10-08-21Z ... CERTIFIED
@@ -24414,13 +24414,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_088 = [24.0,114.8,45;26.3,115.3,30];
 my_epac_2025_088 = [24.1,114.8,45;26.4,115.1,25];
-btk_epac_2025_088 = [24.1,114.9,45;26.1,115.4,30];
+btk_epac_2025_088 = [24.1,114.9,45;26.1,115.4,30]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_088];
 myvect = [myvect;my_epac_2025_088];
 btkvect = [btkvect;btk_epac_2025_088];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;1;1];
+datasource = [datasource;3;3];
 certified = [certified;2;2];
 
 # Atl 074 ... JERRY around 2025-10-09-15Z ... CERTIFIED
@@ -24430,13 +24430,13 @@ certified = [certified;2;2];
 
 nhc_atl_2025_074 = [19.0,62.4,60;24.2,63.2,70;28.5,62.4,75;31.3,59.4,75;31.4,54.6,70];
 my_atl_2025_074 = [18.6,62.1,55;23.4,63.2,65;27.1,63.4,65;29.8,61.1,60;30.6,56.0,60];
-btk_atl_2025_074 = [19.6,63.1,45;25.9,63.7,40;30.3,63.3,35;31.3,58.8,25;29.3,53.1,25]; # days 3-5 self-made
+btk_atl_2025_074 = [19.7,63.1,50;25.2,63.3,45;30.3,63.3,35;31.3,58.8,25;29.3,53.1,25]; # TCR (days 3-5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_074];
 myvect = [myvect;my_atl_2025_074];
 btkvect = [btkvect;btk_atl_2025_074];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;0;0;0];
+datasource = [datasource;3;3;0;0;0];
 certified = [certified;2;2;2;2;2];
 
 # Atl 075 ... JERRY around 2025-10-09-21Z ... CERTIFIED
@@ -24446,13 +24446,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_075 = [21.0,63.1,55;26.5,63.2,65;30.7,61.3,70;32.3,57.9,70;32.2,51.0,65];
 my_atl_2025_075 = [20.7,63.3,55;26.0,63.4,60;29.7,62.2,65;31.4,60.9,60;33.2,54.8,55];
-btk_atl_2025_075 = [20.9,63.5,45;27.0,63.7,40;31.0,62.7,35;31.2,57.5,30;29.1,51.4,25]; # days 3-5 self-made
+btk_atl_2025_075 = [20.9,63.6,50;27.0,63.7,40;31.0,62.7,35;31.2,57.5,30;29.1,51.4,25]; # TCR (day 2 oper.,days 3-5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_075];
 myvect = [myvect;my_atl_2025_075];
 btkvect = [btkvect;btk_atl_2025_075];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;0;0;0];
+datasource = [datasource;3;1;0;0;0];
 certified = [certified;2;2;2;2;2];
 
 # Atl 076 ... JERRY around 2025-10-10-15Z ... CERTIFIED
@@ -24462,13 +24462,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_076 = [24.4,63.7,50;29.2,62.7,50;31.4,59.7,50;30.4,54.6,50];
 my_atl_2025_076 = [24.1,63.7,50;29.0,62.6,50;31.2,59.5,50;30.0,55.5,55];
-btk_atl_2025_076 = [25.9,63.7,40;30.3,63.3,45;31.3,58.8,25;29.3,53.1,25]; # days 2-4 self-made
+btk_atl_2025_076 = [25.2,63.3,45;30.3,63.3,45;31.3,58.8,25;29.3,53.1,25]; # TCR (days 2-4 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_076];
 myvect = [myvect;my_atl_2025_076];
 btkvect = [btkvect;btk_atl_2025_076];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;1;1;1;1];
-datasource = [datasource;1;0;0;0];
+datasource = [datasource;3;0;0;0];
 certified = [certified;2;2;2;2];
 
 # Atl 077 ... JERRY around 2025-10-11-15Z ... CERTIFIED
@@ -24494,13 +24494,13 @@ certified = [certified;2;2];
 
 nhc_atl_2025_078 = [17.2,44.1,45;21.4,44.9,50];
 my_atl_2025_078 = [17.3,44.1,45;21.8,45.0,50];
-btk_atl_2025_078 = [17.7,44.7,40;20.8,44.7,35];
+btk_atl_2025_078 = [17.6,44.7,40;21.1,44.5,35]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_078];
 myvect = [myvect;my_atl_2025_078];
 btkvect = [btkvect;btk_atl_2025_078];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;1;1];
-datasource = [datasource;1;1];
+datasource = [datasource;3;3];
 certified = [certified;2;2];
 
 # Atl 079 ... LORENZO around 2025-10-13-21Z ... CERTIFIED
@@ -24510,13 +24510,13 @@ certified = [certified;2;2];
 
 nhc_atl_2025_079 = [17.8,44.3,45;22.6,43.6,45];
 my_atl_2025_079 = [17.9,44.6,45;22.9,44.0,45];
-btk_atl_2025_079 = [18.4,45.3,35;22.3,43.3,30];
+btk_atl_2025_079 = [18.3,45.3,35;22.3,43.3,30]; # TCR (day 1 only)
 nhcvect = [nhcvect;nhc_atl_2025_079];
 myvect = [myvect;my_atl_2025_079];
 btkvect = [btkvect;btk_atl_2025_079];
 leadtimevect = [leadtimevect;1;2];
 basinvect = [basinvect;2;2];
-datasource = [datasource;1;1];
+datasource = [datasource;3;1];
 certified = [certified;2;2];
 
 # Atl 080 ... LORENZO around 2025-10-14-15Z ... CERTIFIED
@@ -24526,13 +24526,13 @@ certified = [certified;2;2];
 
 nhc_atl_2025_080 = [22.0,44.8,40];
 my_atl_2025_080 = [22.1,44.9,40];
-btk_atl_2025_080 = [20.8,44.7,35];
+btk_atl_2025_080 = [21.1,44.5,35]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_080];
 myvect = [myvect;my_atl_2025_080];
 btkvect = [btkvect;btk_atl_2025_080];
 leadtimevect = [leadtimevect;1];
 basinvect = [basinvect;1];
-datasource = [datasource;1];
+datasource = [datasource;3];
 certified = [certified;2];
 
 # Atl 081 ... LORENZO around 2025-10-14-21Z ... CERTIFIED
@@ -24542,7 +24542,7 @@ certified = [certified;2];
 
 nhc_atl_2025_081 = [23.0,43.9,35];
 my_atl_2025_081 = [22.9,44.0,35];
-btk_atl_2025_081 = [22.3,43.3,30];
+btk_atl_2025_081 = [22.3,43.3,30]; # nothing in TCR
 nhcvect = [nhcvect;nhc_atl_2025_081];
 myvect = [myvect;my_atl_2025_081];
 btkvect = [btkvect;btk_atl_2025_081];
@@ -24573,13 +24573,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_082 = [14.8,73.5,55;15.7,74.5,60;16.5,74.5,60;16.9,74.5,65;17.2,74.9,70];
 my_atl_2025_082 = [14.8,73.7,50;15.6,74.7,55;16.4,74.3,55;17.1,74.3,60;17.3,75.0,65];
-btk_atl_2025_082 = [14.3,73.6,45;15.3,75.0,40;15.9,75.0,40;16.4,75.0,60;16.4,76.4,120];
+btk_atl_2025_082 = [14.3,73.7,45;15.2,75.0,40;15.9,75.1,45;16.4,74.9,60;16.3,76.4,115]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_082];
 myvect = [myvect;my_atl_2025_082];
 btkvect = [btkvect;btk_atl_2025_082];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Wpac 042 ... FENGSHEN/(RAMIL) around 2025-10-21-21Z ... CERTIFIED
@@ -24619,13 +24619,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_083 = [15.0,74.4,50;16.1,75.1,60;16.9,75.0,60;17.3,75.0,65;17.5,75.2,75];
 my_atl_2025_083 = [15.0,74.4,55;16.3,75.0,60;17.1,75.0,60;17.5,75.1,60;17.3,75.4,70];
-btk_atl_2025_083 = [14.3,74.0,45;15.5,75.3,40;15.8,74.5,50;16.6,75.2,75;16.4,76.9,120];
+btk_atl_2025_083 = [14.3,74.1,45;15.5,75.3,40;15.9,74.8,50;16.4,75.3,75;16.3,76.9,120]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_083];
 myvect = [myvect;my_atl_2025_083];
 btkvect = [btkvect;btk_atl_2025_083];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 084 ... MELISSA around 2025-10-22-03Z ... CERTIFIED
@@ -24635,13 +24635,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_084 = [15.1,75.2,50;15.9,75.8,55;16.9,75.7,60;17.5,76.1,65;17.6,76.2,75];
 my_atl_2025_084 = [14.9,75.2,50;15.6,76.1,55;16.6,75.9,60;17.3,76.5,70;17.3,77.1,85];
-btk_atl_2025_084 = [14.3,74.5,45;16.1,75.5,40;16.2,74.8,55;16.5,75.7,90;16.4,77.3,125];
+btk_atl_2025_084 = [14.3,74.5,45;15.7,75.5,40;16.1,74.7,55;16.4,75.7,90;16.3,77.3,125]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_084];
 myvect = [myvect;my_atl_2025_084];
 btkvect = [btkvect;btk_atl_2025_084];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 085 ... MELISSA around 2025-10-22-15Z ... CERTIFIED
@@ -24651,13 +24651,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_085 = [15.2,74.3,50;16.0,74.4,55;16.5,74.9,70;16.6,75.8,90;16.4,77.4,105];
 my_atl_2025_085 = [15.1,74.4,50;15.8,74.6,55;16.1,75.2,75;16.5,76.3,90;16.4,77.6,105];
-btk_atl_2025_085 = [15.3,75.0,40;15.9,75.0,40;16.4,75.0,60;16.4,76.4,120;16.4,78.0,140];
+btk_atl_2025_085 = [15.2,75.0,40;15.9,75.1,45;16.4,74.9,60;16.3,76.4,115;16.3,78.0,145]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_085];
 myvect = [myvect;my_atl_2025_085];
 btkvect = [btkvect;btk_atl_2025_085];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Shem 006 ... CHENGE around 2025-10-22-21Z ... CERTIFIED
@@ -24683,13 +24683,13 @@ certified = [certified;2;2;2;2];
 
 nhc_atl_2025_086 = [14.9,74.6,50;15.6,74.8,55;16.3,75.6,70;16.2,76.7,100;16.0,78.0,115];
 my_atl_2025_086 = [15.0,74.7,50;15.6,74.8,55;16.3,75.8,70;16.2,77.2,95;16.1,78.6,115];
-btk_atl_2025_086 = [15.5,75.3,40;15.8,74.5,50;16.6,75.2,75;16.4,76.9,120;16.5,78.3,150];
+btk_atl_2025_086 = [15.5,75.3,40;15.9,74.8,50;16.4,75.3,75;16.3,76.9,120;16.4,78.3,155]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_086];
 myvect = [myvect;my_atl_2025_086];
 btkvect = [btkvect;btk_atl_2025_086];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 087 ... MELISSA around 2025-10-23-09Z ... CERTIFIED
@@ -24699,13 +24699,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_087 = [15.6,75.0,50;16.4,75.1,60;16.7,76.0,85;16.9,77.0,105;17.1,78.0,115];
 my_atl_2025_087 = [15.6,75.1,50;16.5,75.4,65;17.0,76.2,85;17.4,77.3,105;18.0,78.5,110];
-btk_atl_2025_087 = [16.0,75.4,40;16.3,74.9,60;16.3,76.0,110;16.3,77.7,135;16.9,78.4,150];
+btk_atl_2025_087 = [15.8,75.3,40;16.3,74.7,60;16.3,76.0,105;16.3,77.7,135;16.9,78.4,155]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_087];
 myvect = [myvect;my_atl_2025_087];
 btkvect = [btkvect;btk_atl_2025_087];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 088 ... MELISSA around 2025-10-23-15Z ... CERTIFIED
@@ -24715,13 +24715,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_088 = [16.4,74.9,50;17.1,75.2,75;17.4,76.4,105;17.4,77.7,115;17.7,78.4,115];
 my_atl_2025_088 = [16.1,74.9,50;16.8,75.2,65;17.3,76.2,95;17.4,77.6,100;17.8,78.1,105];
-btk_atl_2025_088 = [15.9,75.0,40;16.4,75.0,60;16.4,76.4,120;16.4,78.0,140;17.5,78.1,155];
+btk_atl_2025_088 = [15.9,75.1,45;16.4,74.9,60;16.3,76.4,115;16.3,78.0,145;17.5,78.1,165]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_088];
 myvect = [myvect;my_atl_2025_088];
 btkvect = [btkvect;btk_atl_2025_088];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 089 ... MELISSA around 2025-10-23-21Z ... CERTIFIED
@@ -24731,13 +24731,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_089 = [16.0,75.0,50;16.8,75.4,80;17.1,76.7,115;17.1,77.8,125;18.0,78.4,125];
 my_atl_2025_089 = [16.0,75.1,50;16.9,75.3,75;17.4,76.7,100;17.5,77.8,115;18.9,78.5,110];
-btk_atl_2025_089 = [15.8,74.5,50;16.6,75.2,75;16.4,76.9,120;16.5,78.3,150;18.2,77.9,145];
+btk_atl_2025_089 = [15.9,74.8,50;16.4,75.3,75;16.3,76.9,120;16.4,78.3,155;18.2,78.0,145]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_089];
 myvect = [myvect;my_atl_2025_089];
 btkvect = [btkvect;btk_atl_2025_089];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 090 ... MELISSA around 2025-10-24-03Z ... CERTIFIED
@@ -24747,13 +24747,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_090 = [16.8,75.2,50;17.3,76.0,80;17.5,77.2,115;17.7,78.3,125;19.3,78.5,125];
 my_atl_2025_090 = [16.6,75.3,50;17.1,76.1,80;17.6,77.0,115;17.8,78.2,125;19.9,78.0,120];
-btk_atl_2025_090 = [16.2,74.8,55;16.5,75.7,90;16.4,77.3,125;16.5,78.6,150;18.8,77.1,110];
+btk_atl_2025_090 = [16.1,74.7,55;16.4,75.7,90;16.3,77.3,125;16.5,78.6,155;18.8,77.1,105]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_090];
 myvect = [myvect;my_atl_2025_090];
 btkvect = [btkvect;btk_atl_2025_090];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 091 ... MELISSA around 2025-10-24-15Z ... CERTIFIED
@@ -24763,13 +24763,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_091 = [16.3,74.6,60;16.6,76.0,85;16.6,77.5,125;17.5,78.3,130;20.4,76.7,105];
 my_atl_2025_091 = [16.2,74.8,60;16.4,76.3,80;16.3,77.8,115;17.1,78.4,130;19.8,76.2,110];
-btk_atl_2025_091 = [16.4,75.0,60;16.4,76.4,120;16.4,78.0,140;17.5,78.1,155;20.7,75.8,90];
+btk_atl_2025_091 = [16.4,74.9,60;16.3,76.4,115;16.3,78.0,145;17.5,78.1,165;20.9,75.8,85]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_091];
 myvect = [myvect;my_atl_2025_091];
 btkvect = [btkvect;btk_atl_2025_091];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 092 ... MELISSA around 2025-10-25-15Z ... CERTIFIED
@@ -24779,13 +24779,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_092 = [16.5,76.2,100;16.7,77.3,135;17.9,77.2,115;20.5,75.1,95;25.0,71.0,75];
 my_atl_2025_092 = [16.6,76.3,95;16.7,77.4,115;18.0,77.1,100;20.9,74.8,85;26.2,69.9,75];
-btk_atl_2025_092 = [16.4,76.4,120;16.4,78.0,140;17.5,78.1,155;20.7,75.8,90;26.7,72.7,90];
+btk_atl_2025_092 = [16.3,76.4,115;16.3,78.0,145;17.5,78.1,165;20.9,75.8,85;26.7,72.7,90];
 nhcvect = [nhcvect;nhc_atl_2025_092];
 myvect = [myvect;my_atl_2025_092];
 btkvect = [btkvect;btk_atl_2025_092];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Atl 093 ... MELISSA around 2025-10-25-21Z ... CERTIFIED
@@ -24795,13 +24795,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_093 = [16.7,76.5,115;16.9,77.6,140;18.8,76.7,115;22.0,73.4,90;27.0,69.0,80];
 my_atl_2025_093 = [16.6,76.6,115;16.8,77.8,125;18.8,77.0,95;22.2,73.8,80;27.3,69.2,70];
-btk_atl_2025_093 = [16.4,76.9,120;16.5,78.3,150;18.2,77.9,145;22.1,75.3,80;28.9,70.9,90];
+btk_atl_2025_093 = [16.3,76.9,120;16.4,78.3,155;18.2,78.0,145;22.1,75.4,80;28.9,70.9,85]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_093];
 myvect = [myvect;my_atl_2025_093];
 btkvect = [btkvect;btk_atl_2025_093];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 089 ... SONIA around 2025-10-25-21Z ... CERTIFIED
@@ -24811,13 +24811,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_089 = [13.7,120.3,55;14.7,121.9,60;15.1,124.7,40;15.0,128.0,30];
 my_epac_2025_089 = [13.8,120.1,55;14.8,122.0,60;15.5,124.8,35;15.5,127.9,25];
-btk_epac_2025_089 = [13.7,119.6,40;14.0,121.3,35;15.2,123.9,40;15.4,127.7,25]; # day 4 self-made
+btk_epac_2025_089 = [13.7,119.5,40;14.0,121.3,35;15.2,123.9,35;15.5,127.8,25]; # TCR
 nhcvect = [nhcvect;nhc_epac_2025_089];
 myvect = [myvect;my_epac_2025_089];
 btkvect = [btkvect;btk_epac_2025_089];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;1;1;0];
+datasource = [datasource;3;3;3;2];
 certified = [certified;2;2;2;2];
 
 # Atl 094 ... MELISSA around 2025-10-26-03Z ... CERTIFIED
@@ -24827,13 +24827,13 @@ certified = [certified;2;2;2;2];
 
 nhc_atl_2025_094 = [16.4,77.0,125;17.2,77.7,140;19.4,76.1,105;23.0,72.8,90;28.0,68.0,75];
 my_atl_2025_094 = [16.4,77.0,120;17.2,77.7,125;19.7,75.8,90;23.4,72.5,80;28.2,67.5,75];
-btk_atl_2025_094 = [16.4,77.3,125;16.5,78.6,150;18.8,77.1,110;23.5,74.8,80;31.4,68.8,85];
+btk_atl_2025_094 = [16.3,77.3,125;16.5,78.6,155;18.8,77.1,105;23.5,74.8,80;31.3,68.7,80]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_094];
 myvect = [myvect;my_atl_2025_094];
 btkvect = [btkvect;btk_atl_2025_094];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;3];
 certified = [certified;2;2;2;2;2];
 
 # Epac 090 ... SONIA around 2025-10-26-03Z ... CERTIFIED
@@ -24843,13 +24843,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_epac_2025_090 = [13.8,120.4,55;14.7,122.3,55;15.0,125.4,35;14.8,128.7,25];
 my_epac_2025_090 = [13.8,120.1,55;15.0,122.1,50;15.2,125.2,30;14.9,128.5,25];
-btk_epac_2025_090 = [14.0,119.7,40;14.4,121.9,35;15.4,124.8,35;15.1,128.7,25]; # day 4 self-made
+btk_epac_2025_090 = [13.9,119.7,40;14.3,121.8,35;15.3,124.8,30;15.1,128.7,25]; # TCR (day 4 self-made)
 nhcvect = [nhcvect;nhc_epac_2025_090];
 myvect = [myvect;my_epac_2025_090];
 btkvect = [btkvect;btk_epac_2025_090];
 leadtimevect = [leadtimevect;1;2;3;4];
 basinvect = [basinvect;2;2;2;2];
-datasource = [datasource;1;1;1;0];
+datasource = [datasource;3;3;2;0];
 certified = [certified;2;2;2;2];
 
 # Atl 095 ... MELISSA around 2025-10-26-15Z ... CERTIFIED
@@ -24859,13 +24859,13 @@ certified = [certified;2;2;2;2];
 
 nhc_atl_2025_095 = [16.6,77.8,140;17.8,77.7,135;20.9,75.1,95;25.5,71.0,85;32.0,65.5,75];
 my_atl_2025_095 = [16.5,77.9,135;17.6,78.0,125;20.5,75.6,80;25.3,71.6,75;32.0,65.5,75];
-btk_atl_2025_095 = [16.4,78.0,140;17.5,78.1,155;20.7,75.8,90;26.7,72.7,90;37.5,62.1,75];
+btk_atl_2025_095 = [16.3,78.0,145;17.5,78.1,165;20.9,75.8,85;26.7,72.7,90;37.7,62.1,75]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_095];
 myvect = [myvect;my_atl_2025_095];
 btkvect = [btkvect;btk_atl_2025_095];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 096 ... MELISSA around 2025-10-26-21Z ... CERTIFIED
@@ -24875,13 +24875,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_096 = [16.6,78.2,140;18.4,77.5,115;22.1,74.4,90;28.0,69.5,80;37.0,60.0,70];
 my_atl_2025_096 = [16.6,78.2,135;18.4,77.5,105;22.3,74.3,80;28.5,69.3,75;37.2,59.4,65];
-btk_atl_2025_096 = [16.5,78.3,150;18.2,77.9,145;22.1,75.3,80;28.9,70.9,90;40.6,58.9,70];
+btk_atl_2025_096 = [16.4,78.3,155;18.2,78.0,145;22.1,75.4,80;28.9,70.9,85;40.6,58.9,70]; # TCR
 nhcvect = [nhcvect;nhc_atl_2025_096];
 myvect = [myvect;my_atl_2025_096];
 btkvect = [btkvect;btk_atl_2025_096];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;1];
+datasource = [datasource;3;3;3;3;2];
 certified = [certified;2;2;2;2;2];
 
 # Atl 097 ... MELISSA around 2025-10-27-15Z ... CERTIFIED
@@ -24891,13 +24891,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_097 = [17.8,77.9,140;20.8,75.5,95;25.9,71.2,85;34.3,63.0,75;42.8,50.0,60];
 my_atl_2025_097 = [17.7,78.0,135;20.7,75.8,85;25.5,71.8,75;33.8,63.6,70;42.2,50.2,55];
-btk_atl_2025_097 = [17.5,78.1,155;20.7,75.8,90;26.7,72.7,90;37.5,62.1,75;49.8,48.1,50]; # day 5 self-made
+btk_atl_2025_097 = [17.5,78.1,165;20.9,75.8,85;26.7,72.7,90;37.7,62.1,75;49.8,48.1,50]; # TCR (day 5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_097];
 myvect = [myvect;my_atl_2025_097];
 btkvect = [btkvect;btk_atl_2025_097];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;2;0];
 certified = [certified;2;2;2;2;2];
 
 # Atl 098 ... MELISSA around 2025-10-27-21Z ... CERTIFIED
@@ -24907,13 +24907,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_098 = [18.2,77.8,125;21.8,75.0,95;27.8,69.9,80;37.1,60.0,70;44.7,45.4,60];
 my_atl_2025_098 = [18.2,77.9,120;21.8,75.1,85;27.9,70.1,75;37.0,60.4,60;44.8,46.4,55];
-btk_atl_2025_098 = [18.2,77.9,145;22.1,75.3,80;28.9,70.9,90;40.6,58.9,70;52.2,46.4,50]; # day 5 self-made
+btk_atl_2025_098 = [18.2,78.0,145;22.1,75.4,80;28.9,70.9,85;40.6,58.9,70;52.2,46.4,50]; # TCR (day 5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_098];
 myvect = [myvect;my_atl_2025_098];
 btkvect = [btkvect;btk_atl_2025_098];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;1;0];
+datasource = [datasource;3;3;3;2;0];
 certified = [certified;2;2;2;2;2];
 
 # Atl 099 ... MELISSA around 2025-10-28-03Z ... CERTIFIED
@@ -24923,13 +24923,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_099 = [18.8,77.4,120;23.0,74.3,85;29.8,68.2,75;38.9,56.5,60;47.5,40.0,50];
 my_atl_2025_099 = [18.8,77.4,115;23.2,74.2,80;30.1,68.2,70;39.7,56.7,60;48.4,40.5,50];
-btk_atl_2025_099 = [18.8,77.1,110;23.5,74.8,80;31.4,68.8,85;43.8,55.7,60;53.3,44.2,50]; # days 4-5 self-made
+btk_atl_2025_099 = [18.8,77.1,105;23.5,74.8,80;31.3,68.7,80;43.7,56.0,70;53.3,44.2,50]; # TCR (day 5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_099];
 myvect = [myvect;my_atl_2025_099];
 btkvect = [btkvect;btk_atl_2025_099];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;3;2;0];
 certified = [certified;2;2;2;2;2];
 
 # Atl 100 ... MELISSA around 2025-10-28-15Z ... CERTIFIED
@@ -24939,13 +24939,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_100 = [21.0,75.7,100;26.6,71.5,90;35.9,61.5,75;45.9,47.1,60;52.8,30.3,45];
 my_atl_2025_100 = [21.0,75.8,95;26.7,71.5,85;36.2,61.4,70;46.4,46.9,55;52.9,31.9,45];
-btk_atl_2025_100 = [20.7,75.8,90;26.7,72.7,90;37.5,62.1,75;49.8,48.1,50;54.1,38.7,45]; # days 4-5 self-made
+btk_atl_2025_100 = [20.9,75.8,85;26.7,72.7,90;37.7,62.1,75;49.8,48.1,50;54.1,38.7,45]; # TCR (days 4-5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_100];
 myvect = [myvect;my_atl_2025_100];
 btkvect = [btkvect;btk_atl_2025_100];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;2;0;0];
 certified = [certified;2;2;2;2;2];
 
 # Atl 101 ... MELISSA around 2025-10-28-21Z ... certification failed
@@ -24955,13 +24955,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_101 = [22.2,75.3,100;28.9,70.0,90;39.0,58.3,70;48.4,42.2,50;54.8,25.1,40];
 my_atl_2025_101 = [22.1,75.4,95;28.8,70.2,85;39.0,58.8,65;48.5,42.7,50;55.1,25.8,40];
-btk_atl_2025_101 = [22.1,75.3,80;28.9,70.9,90;40.6,58.9,70;52.2,46.4,50;53.9,35.1,50]; # days 4-5 self-made
+btk_atl_2025_101 = [22.1,75.4,80;28.9,70.9,85;40.6,58.9,70;52.2,46.4,50;53.9,35.1,50]; # TCR (days 4-5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_101];
 myvect = [myvect;my_atl_2025_101];
 btkvect = [btkvect;btk_atl_2025_101];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;1;0;0];
+datasource = [datasource;3;3;2;0;0];
 certified = [certified;2;2;2;2;2];
 
 # Atl 102 ... MELISSA around 2025-10-29-21Z ... CERTIFIED
@@ -24971,13 +24971,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_102 = [29.1,70.3,90;40.7,58.7,75;52.0,45.4,55;56.0,32.5,45;57.0,27.5,40];
 my_atl_2025_102 = [29.2,70.3,85;40.9,58.6,65;52.5,45.9,55;55.3,33.7,45;57.2,25.6,40];
-btk_atl_2025_102 = [28.9,70.9,90;40.6,58.9,70;52.2,46.4,50;53.9,35.1,50;58.4,19.5,40]; # days 3-5 self-made
+btk_atl_2025_102 = [28.9,70.9,85;40.6,58.9,70;52.2,46.4,50;53.9,35.1,50;58.4,19.5,40]; # TCR (days 3-5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_102];
 myvect = [myvect;my_atl_2025_102];
 btkvect = [btkvect;btk_atl_2025_102];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;1;0;0;0];
+datasource = [datasource;3;2;0;0;0];
 certified = [certified;2;2;2;2;2];
 
 # Atl 103 ... MELISSA around 2025-10-30-21Z ... CERTIFIED
@@ -24987,13 +24987,13 @@ certified = [certified;2;2;2;2;2];
 
 nhc_atl_2025_103 = [40.4,59.3,75;51.3,45.8,60;55.1,33.9,55;57.6,23.0,45;61.7,15.5,35];
 my_atl_2025_103 = [40.3,59.1,70;51.0,44.8,60;55.8,31.4,55;57.8,21.8,45;61.9,16.2,35];
-btk_atl_2025_103 = [40.6,58.9,70;52.2,46.4,50;53.9,35.1,50;58.4,19.5,40;70.4,0.2,35]; # days 2-5 self-made
+btk_atl_2025_103 = [40.6,58.9,70;52.2,46.4,50;53.9,35.1,50;58.4,19.5,40;70.4,0.2,35]; # TCR (days 2-5 self-made)
 nhcvect = [nhcvect;nhc_atl_2025_103];
 myvect = [myvect;my_atl_2025_103];
 btkvect = [btkvect;btk_atl_2025_103];
 leadtimevect = [leadtimevect;1;2;3;4;5];
 basinvect = [basinvect;1;1;1;1;1];
-datasource = [datasource;1;0;0;0;0];
+datasource = [datasource;2;0;0;0;0];
 certified = [certified;2;2;2;2;2];
 
 # Wpac 043 ... KALMAEGI around 2025-11-01-21Z ... CERTIFIED
@@ -25954,15 +25954,1117 @@ certified = [certified;2;2;2;2;2];
 
 # Shem 049 ... GRANT around 2026-01-03-15Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/2007467086583312458
+# snapshot: https://web.archive.org/web/20260103150547/https://elioestracks.blogspot.com/2024/04/advisory-list.html
 
-nhc_shem_2026_049 = [];
-my_shem_2026_049 = [];
-btk_shem_2026_049 = [];
+nhc_shem_2026_049 = [15.3,60.4,35;15.8,56.2,40;16.8,52.6,40];
+my_shem_2026_049 = [15.6,60.1,35;16.1,56.0,35;17.2,52.1,30];
+btk_shem_2026_049 = [16.1,59.7,30;16.7,55.3,25;17.7,51.1,25];
 nhcvect = [nhcvect;nhc_shem_2026_049];
 myvect = [myvect;my_shem_2026_049];
 btkvect = [btkvect;btk_shem_2026_049];
-leadtimevect = [leadtimevect;];
-basinvect = [basinvect;];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+datasource = [datasource;1;1;1];
+certified = [certified;2;2;2];
+
+# Shem 050 ... JENNA around 2026-01-05-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2008279648292008365
+# snapshot: https://web.archive.org/web/20260105205341/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_050 = [16.8,93.4,75;18.2,90.7,50;18.0,87.7,35;17.7,83.7,30];
+my_shem_2026_050 = [16.9,93.5,70;18.3,90.6,45;18.2,87.4,30;17.7,83.4,30];
+btk_shem_2026_050 = [16.7,93.6,80;18.6,91.2,50;17.8,88.6,35;17.7,85.4,25];
+nhcvect = [nhcvect;nhc_shem_2026_050];
+myvect = [myvect;my_shem_2026_050];
+btkvect = [btkvect;btk_shem_2026_050];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+datasource = [datasource;1;1;1;1];
+certified = [certified;2;2;2;2];
+
+# Shem 051 ... JENNA around 2026-01-06-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2008643915008929994
+# snapshot: https://web.archive.org/web/20260106210118/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# snapshot: https://archive.ph/kjYt7
+
+nhc_shem_2026_051 = [18.0,91.1,50;17.9,87.9,35;17.9,84.0,30];
+my_shem_2026_051 = [18.5,91.1,45;18.7,87.6,35;18.8,83.8,30];
+btk_shem_2026_051 = [18.6,91.2,50;17.8,88.6,35;17.7,85.4,25];
+nhcvect = [nhcvect;nhc_shem_2026_051];
+myvect = [myvect;my_shem_2026_051];
+btkvect = [btkvect;btk_shem_2026_051];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+datasource = [datasource;];
+certified = [certified;];
+
+# Shem 052 ... 12U/92P around 2026-01-08-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2009282380385710134
+# snapshot: https://web.archive.org/web/20260108152300/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# (no JTWC forecast)
+
+# Shem 053 ... KOJI around 2026-01-10-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2010001973681025303
+# snapshot: https://web.archive.org/web/20260110150111/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_053 = [20.3,146.5,35];
+my_shem_2026_053 = [20.3,146.4,35];
+btk_shem_2026_053 = [21.4,146.8,25];
+nhcvect = [nhcvect;nhc_shem_2026_053];
+myvect = [myvect;my_shem_2026_053];
+btkvect = [btkvect;btk_shem_2026_053];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;3];
+datasource = [datasource;1];
+certified = [certified;2];
+
+# Shem 054 ... 06/14S around 2026-01-10-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2010095617868280063
+# snapshot: https://web.archive.org/web/20260110211058/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_054 = [16.3,77.0,55;17.4,77.5,70;17.9,76.9,70;17.7,75.6,60;17.3,73.1,45];
+my_shem_2026_054 = [16.3,77.3,50;17.5,78.0,55;18.3,77.7,60;18.0,76.9,45;17.6,74.8,30];
+btk_shem_2026_054 = [16.0,77.4,75;17.0,78.0,115;17.2,77.6,80;17.2,76.2,70;16.9,72.7,120];
+nhcvect = [nhcvect;nhc_shem_2026_054];
+myvect = [myvect;my_shem_2026_054];
+btkvect = [btkvect;btk_shem_2026_054];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 055 ... DUDZAI around 2026-01-11-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2010373294323532253
+# snapshot: https://web.archive.org/web/20260111153224/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# (no JTWC forecast)
+
+# Shem 056 ... DUDZAI around 2026-01-11-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2010451426162708696
+# snapshot: https://web.archive.org/web/20260111204617/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# snapshot: https://archive.ph/DWi8C
+
+nhc_shem_2026_056 = [16.6,77.9,95;17.0,78.0,85;17.4,76.5,75;17.6,74.3,75;18.2,71.4,80];
+my_shem_2026_056 = [16.9,77.9,85;17.4,77.6,80;17.9,76.2,65;18.3,74.2,60;19.2,71.6,55];
+btk_shem_2026_056 = [17.0,78.0,115;17.2,77.6,80;17.2,76.2,70;16.9,72.7,120;17.4,69.6,100];
+nhcvect = [nhcvect;nhc_shem_2026_056];
+myvect = [myvect;my_shem_2026_056];
+btkvect = [btkvect;btk_shem_2026_056];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 057 ... DUDZAI around 2026-01-12-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2010728944727982591
+# snapshot: https://web.archive.org/web/20260112150720/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# (no JTWC forecast)
+
+# Shem 058 ... DUDZAI around 2026-01-12-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2010819600993103884
+# snapshot: https://web.archive.org/web/20260112210638/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_058 = [17.4,77.5,95;17.3,75.9,80;17.3,73.4,85;18.1,70.4,90;20.0,67.7,90];
+my_shem_2026_058 = [17.5,77.7,90;17.7,76.0,75;17.5,73.4,80;18.2,70.3,85;20.8,66.8,65];
+btk_shem_2026_058 = [17.2,77.6,80;17.2,76.2,70;16.9,72.7,120;17.4,69.6,100;18.5,66.8,55];
+nhcvect = [nhcvect;nhc_shem_2026_058];
+myvect = [myvect;my_shem_2026_058];
+btkvect = [btkvect;btk_shem_2026_058];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 059 ... DUDZAI around 2026-01-13-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2010998073615433771
+# snapshot: https://web.archive.org/web/20260113085837/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_059 = [17.3,77.0,80;17.1,74.7,85;17.1,72.1,90;18.3,69.0,90;20.0,66.5,80];
+my_shem_2026_059 = [17.4,76.9,75;17.2,74.6,90;17.2,71.8,90;18.6,68.4,80;20.5,65.4,70];
+btk_shem_2026_059 = [17.2,77.1,65;17.1,74.3,95;16.8,71.3,120;17.5,67.9,70;20.3,65.5,60];
+nhcvect = [nhcvect;nhc_shem_2026_059];
+myvect = [myvect;my_shem_2026_059];
+btkvect = [btkvect;btk_shem_2026_059];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 060 ... DUDZAI around 2026-01-13-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011180524748828769
+# snapshot: https://web.archive.org/web/20260113205944/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_060 = [17.2,76.0,65;17.1,73.4,80;17.7,70.2,80;19.5,66.8,70;21.5,63.6,65];
+my_shem_2026_060 = [17.2,75.9,70;17.2,73.6,70;17.6,70.3,75;19.9,67.3,60;22.1,63.5,45];
+btk_shem_2026_060 = [17.2,76.2,70;16.9,72.7,120;17.4,69.6,100;18.5,66.8,60;21.0,64.0,50];
+nhcvect = [nhcvect;nhc_shem_2026_060];
+myvect = [myvect;my_shem_2026_060];
+btkvect = [btkvect;btk_shem_2026_060];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 061 ... DUDZAI around 2026-01-14-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011545616510566569
+# snapshot: https://web.archive.org/web/20260114211350/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_061 = [17.0,73.7,80;17.3,70.6,70;18.6,68.1,60;20.1,65.8,60;21.6,62.2,55];
+my_shem_2026_061 = [17.3,73.2,75;17.7,70.4,60;19.2,67.5,55;20.7,64.1,45;22.3,60.8,40];
+btk_shem_2026_061 = [16.9,72.7,120;17.4,69.6,100;18.5,66.8,55;21.0,64.0,50;22.0,59.6,50];
+nhcvect = [nhcvect;nhc_shem_2026_061];
+myvect = [myvect;my_shem_2026_061];
+btkvect = [btkvect;btk_shem_2026_061];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 001 ... 01W/(ADA) around 2026-01-14-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011545616510566569
+# snapshot: https://web.archive.org/web/20260114211350/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_001 = [10.9,128.9,35;12.6,126.8,45;14.2,125.9,35;15.3,126.3,35;16.5,128.1,30];
+my_wpac_2026_001 = [11.0,128.7,35;12.7,126.4,45;14.0,125.7,40;15.2,126.2,35;16.0,127.6,30];
+btk_wpac_2026_001 = [10.2,129.1,30;12.8,125.7,45;14.3,125.0,45;16.1,125.7,25;17.0,128.1,30];
+nhcvect = [nhcvect;nhc_wpac_2026_001];
+myvect = [myvect;my_wpac_2026_001];
+btkvect = [btkvect;btk_wpac_2026_001];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 002 ... NOKAEN/(ADA) around 2026-01-15-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011808610976776420
+# snapshot: https://web.archive.org/web/20260115143819/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_002 = [11.6,127.1,35;13.4,125.4,40;14.6,125.5,35;15.0,126.7,35;14.9,128.1,30];
+my_wpac_2026_002 = [11.8,127.2,35;13.4,125.4,40;14.5,125.4,35;14.9,126.6,35;14.6,127.4,30];
+btk_wpac_2026_002 = [12.2,127.0,40;15.0,124.1,50;15.3,125.7,30;17.0,127.0,30;17.7,131.9,35];
+nhcvect = [nhcvect;nhc_wpac_2026_002];
+myvect = [myvect;my_wpac_2026_002];
+btkvect = [btkvect;btk_wpac_2026_002];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 003 ... NOKAEN/(ADA) around 2026-01-15-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011904184032059583
+# snapshot: https://web.archive.org/web/20260115211749/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_003 = [12.1,126.9,35;13.6,125.8,35;14.9,125.9,35;15.3,127.8,30;14.4,128.7,25];
+my_wpac_2026_003 = [12.2,126.7,35;13.8,125.6,40;14.9,125.9,35;15.5,127.5,25;14.1,128.2,20];
+btk_wpac_2026_003 = [12.8,125.7,45;14.3,125.0,45;16.1,125.7,25;17.0,128.1,30;17.1,133.0,30];
+nhcvect = [nhcvect;nhc_wpac_2026_003];
+myvect = [myvect;my_wpac_2026_003];
+btkvect = [btkvect;btk_wpac_2026_003];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 062 ... DUDZAI around 2026-01-15-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011907123949494667
+# snapshot: https://web.archive.org/web/20260115211749/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_062 = [17.0,70.0,105;18.8,67.6,75;21.0,64.6,60;23.0,60.5,55;26.4,56.7,55];
+my_shem_2026_062 = [17.0,69.9,85;19.0,67.8,60;21.3,64.5,55;23.3,59.4,60;27.5,56.2,55];
+btk_shem_2026_062 = [17.4,69.6,100;18.5,66.8,55;21.0,64.0,50;22.0,59.6,50;26.2,56.7,55];
+nhcvect = [nhcvect;nhc_shem_2026_062];
+myvect = [myvect;my_shem_2026_062];
+btkvect = [btkvect;btk_shem_2026_062];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 004 ... NOKAEN/(ADA) around 2026-01-16-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011991808587251990
+# snapshot: https://web.archive.org/web/20260116024606/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_004 = [13.2,126.9,35;14.9,125.9,40;15.8,126.7,35;15.9,127.9,30;14.7,129.3,25];
+my_wpac_2026_004 = [13.3,126.6,35;14.7,125.8,45;15.6,126.3,40;15.5,127.4,30;14.4,128.6,25];
+btk_wpac_2026_004 = [13.5,125.0,45;14.4,125.2,40;16.6,126.5,35;17.3,129.1,30;16.7,133.3,30];
+nhcvect = [nhcvect;nhc_wpac_2026_004];
+myvect = [myvect;my_wpac_2026_004];
+btkvect = [btkvect;btk_wpac_2026_004];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 063 ... DUDZAI around 2026-01-16-15Z ... certification failed
+# my at https://x.com/elioeFIN/status/2012174716451078487
+# snapshot: https://web.archive.org/web/20260116211243/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# (snapshot above was made 6h too late due to enormous queue)
+# (archive.ph was inaccessible - and continues to be inaccessible as of this writing - due to reCAPTCHA error)
+
+nhc_shem_2026_063 = [18.3,67.8,80;20.3,65.1,60;21.7,60.8,60;24.9,56.6,60;31.9,56.8,55];
+my_shem_2026_063 = [18.4,68.1,65;20.7,65.4,50;22.3,60.9,55;25.6,56.8,55;32.6,56.3,45];
+btk_shem_2026_063 = [18.0,67.4,55;20.8,65.0,50;21.7,60.7,50;24.9,57.0,55;32.3,59.3,55];
+nhcvect = [nhcvect;nhc_shem_2026_063];
+myvect = [myvect;my_shem_2026_063];
+btkvect = [btkvect;btk_shem_2026_063];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;0;0;0;0;0];
+
+# Wpac 005 ... NOKAEN/(ADA) around 2026-01-17-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2012633734407688578
+# snapshot: https://web.archive.org/web/20260117211439/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_005 = [15.7,126.0,40;16.7,128.3,40;16.4,130.1,35;14.6,131.0,35];
+my_wpac_2026_005 = [16.5,125.3,40;17.3,128.1,40;16.4,130.0,30;13.7,130.4,30];
+btk_wpac_2026_005 = [16.1,125.7,25;17.0,128.1,30;17.1,133.0,30;13.9,134.8,25];
+nhcvect = [nhcvect;nhc_wpac_2026_005];
+myvect = [myvect;my_wpac_2026_005];
+btkvect = [btkvect;btk_wpac_2026_005];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+datasource = [datasource;1;1;1;1];
+certified = [certified;2;2;2;2];
+
+# Shem 064 ... DUDZAI around 2026-01-18-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2012898430880776360
+# snapshot: https://web.archive.org/web/20260118144653/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_064 = [22.3,60.8,50;25.6,57.3,50;32.4,59.2,50];
+my_shem_2026_064 = [22.8,60.7,55;26.2,57.2,60;32.5,58.8,45];
+btk_shem_2026_064 = [21.7,60.7,50;24.9,57.0,55;32.3,59.3,55];
+nhcvect = [nhcvect;nhc_shem_2026_064];
+myvect = [myvect;my_shem_2026_064];
+btkvect = [btkvect;btk_shem_2026_064];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+datasource = [datasource;1;1;1];
+certified = [certified;2;2;2];
+
+# Shem 065 ... 06F/16P around 2026-01-21-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2013996231228350747
+# snapshot: https://web.archive.org/web/20260121153012/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_065 = [25.0,171.5,35;25.9,179.2,30];
+my_shem_2026_065 = [25.0,171.2,35;25.7,178.4,30];
+btk_shem_2026_065 = [25.2,172.4,40;15.9,178.8,30];
+nhcvect = [nhcvect;nhc_shem_2026_065];
+myvect = [myvect;my_shem_2026_065];
+btkvect = [btkvect;btk_shem_2026_065];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+datasource = [datasource;1;1];
+certified = [certified;2;2];
+
+# Shem 066 ... 09/97S around 2026-01-28-15Z ... certification failed
+# my at https://x.com/elioeFIN/status/2016526624011796597
+# snapshot: https://web.archive.org/web/20260128162054/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# snapshot: https://web.archive.org/web/20260128162505/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# (web.archive.org "Service unavailable", snapshots above came too late, archive.ph reCAPTCHA error)
+# (no JTWC forecast)
+
+# Shem 067 ... 09/97S around 2026-01-29-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2016888564080853362
+# snapshot: https://web.archive.org/web/20260129150749/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# (no JTWC forecast)
+
+# Shem 068 ... 09/19S around 2026-01-29-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2016978513727733997
+# snapshot: https://web.archive.org/web/20260129210132/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_068 = [15.9,44.2,65;18.2,47.5,30;20.7,51.3,40;22.5,53.9,50;24.5,56.1,65];
+my_shem_2026_068 = [16.0,43.8,70;18.3,46.8,30;20.9,50.6,45;22.7,53.2,50;24.3,54.1,35];
+btk_shem_2026_068 = [15.5,43.9,95;18.0,47.3,45;21.0,51.0,45;22.9,53.5,55;23.9,54.9,45];
+nhcvect = [nhcvect;nhc_shem_2026_068];
+myvect = [myvect;my_shem_2026_068];
+btkvect = [btkvect;btk_shem_2026_068];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 069 ... FYTIA around 2026-01-30-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2017248485209162092
+# snapshot: https://web.archive.org/web/20260130145508/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_069 = [17.2,46.1,50;20.0,49.8,45;22.0,52.6,55;23.4,54.6,60;25.0,56.3,65];
+my_shem_2026_069 = [17.4,45.9,40;20.1,49.8,40;22.0,52.6,55;23.7,54.0,45;24.8,55.3,55];
+btk_shem_2026_069 = [17.1,46.5,60;20.4,50.3,45;22.1,53.1,50;23.8,54.5,50;23.4,55.2,25];
+nhcvect = [nhcvect;nhc_shem_2026_069];
+myvect = [myvect;my_shem_2026_069];
+btkvect = [btkvect;btk_shem_2026_069];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 070 ... FYTIA around 2026-01-31-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2017431490997436432
+# snapshot: https://web.archive.org/web/20260131030311/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_070 = [18.8,48.4,35;21.5,51.9,50;23.1,54.1,50;24.3,55.3,55;26.3,57.6,50];
+my_shem_2026_070 = [18.8,48.7,30;21.3,51.9,45;22.9,54.0,50;24.4,55.0,50;26.6,57.0,40];
+btk_shem_2026_070 = [18.8,48.3,40;20.6,52.0,45;23.3,54.0,55;23.6,54.8,45;23.0,55.2,20];
+nhcvect = [nhcvect;nhc_shem_2026_070];
+myvect = [myvect;my_shem_2026_070];
+btkvect = [btkvect;btk_shem_2026_070];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 071 ... FYTIA around 2026-01-31-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2017612474934030478
+# snapshot: https://web.archive.org/web/20260131145908/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_071 = [20.2,50.4,35;22.2,53.1,50;23.9,55.1,50;25.4,56.5,55;27.8,59.2,50];
+my_shem_2026_071 = [20.6,50.7,40;22.5,53.2,55;24.2,54.8,50;25.7,55.7,55;29.1,59.2,55];
+btk_shem_2026_071 = [20.4,50.3,45;22.1,53.1,50;23.8,54.5,50;23.4,55.2,25;24.4,56.0,20];
+nhcvect = [nhcvect;nhc_shem_2026_071];
+myvect = [myvect;my_shem_2026_071];
+btkvect = [btkvect;btk_shem_2026_071];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 072 ... FYTIA around 2026-02-01-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2017793882512064717
+# snapshot: https://web.archive.org/web/20260201030043/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_072 = [21.5,51.7,45;23.2,53.8,50;24.2,54.9,55;25.7,56.4,55;27.4,58.3,50];
+my_shem_2026_072 = [21.7,52.0,50;23.5,54.1,55;25.2,56.0,50;27.9,58.5,55;31.2,61.9,50];
+btk_shem_2026_072 = [20.6,52.0,45;23.3,54.0,55;23.6,54.8,45;23.0,55.2,20;25.6,57.7,20];
+nhcvect = [nhcvect;nhc_shem_2026_072];
+myvect = [myvect;my_shem_2026_072];
+btkvect = [btkvect;btk_shem_2026_072];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 073 ... FYTIA around 2026-02-02-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2018155174007591389
+# snapshot: https://web.archive.org/web/20260202025833/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_073 = [22.2,54.0,55;23.1,55.0,45;24.0,55.7,40;26.0,58.0,35];
+my_shem_2026_073 = [23.2,53.8,55;23.7,54.9,40;24.7,55.9,30;27.7,59.5,25];
+btk_shem_2026_073 = [23.3,54.0,55;23.6,54.8,45;23.0,55.2,20;25.6,57.7,20];
+nhcvect = [nhcvect;nhc_shem_2026_073];
+myvect = [myvect;my_shem_2026_073];
+btkvect = [btkvect;btk_shem_2026_073];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+datasource = [datasource;1;1;1;1];
+certified = [certified;2;2;2;2];
+
+# Shem 074 ... FYTIA around 2026-02-02-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2018335446489518107
+# snapshot: https://web.archive.org/web/20260202145109/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_074 = [23.7,54.8,45;24.9,55.9,40;26.8,58.0,35];
+my_shem_2026_074 = [23.6,54.5,45;24.5,55.4,35;25.8,57.2,30];
+btk_shem_2026_074 = [23.8,54.5,50;23.4,55.2,25;24.4,56.0,20];
+nhcvect = [nhcvect;nhc_shem_2026_074];
+myvect = [myvect;my_shem_2026_074];
+btkvect = [btkvect;btk_shem_2026_074];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+datasource = [datasource;1;1;1];
+certified = [certified;2;2;2];
+
+# Shem 075 ... FYTIA around 2026-02-03-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2018521424802230776
+# snapshot: https://web.archive.org/web/20260203031043/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_075 = [24.4,55.2,45;25.6,56.7,35];
+my_shem_2026_075 = [24.2,55.2,40;25.2,56.4,30];
+btk_shem_2026_075 = [23.6,54.8,45;23.0,55.2,20];
+nhcvect = [nhcvect;nhc_shem_2026_075];
+myvect = [myvect;my_shem_2026_075];
+btkvect = [btkvect;btk_shem_2026_075];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+datasource = [datasource;1;1];
+certified = [certified;2;2];
+
+# Wpac 006 ... PENHA/(BASYANG) around 2026-02-04-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019064358215553278
+# snapshot: https://web.archive.org/web/20260204151453/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_006 = [8.5,127.0,40;10.0,122.4,35;11.1,120.7,30];
+my_wpac_2026_006 = [8.5,126.9,40;10.0,122.4,35;11.1,120.4,30];
+btk_wpac_2026_006 = [8.4,127.0,40;10.1,122.8,25;11.7,121.6,15];
+nhcvect = [nhcvect;nhc_wpac_2026_006];
+myvect = [myvect;my_wpac_2026_006];
+btkvect = [btkvect;btk_wpac_2026_006];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+datasource = [datasource;1;1;1];
+certified = [certified;2;2;2];
+
+# Wpac 007 ... PENHA/(BASYANG) around 2026-02-04-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019150316483277023
+# snapshot: https://web.archive.org/web/20260204205117/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_007 = [8.6,125.8,40;10.2,121.8,35];
+my_wpac_2026_007 = [8.5,125.8,40;9.9,121.9,35];
+btk_wpac_2026_007 = [9.3,125.8,35;9.8,122.1,20];
+nhcvect = [nhcvect;nhc_wpac_2026_007];
+myvect = [myvect;my_wpac_2026_007];
+btkvect = [btkvect;btk_wpac_2026_007];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+datasource = [datasource;1;1];
+certified = [certified;2;2];
+
+# Wpac 008 ... PENHA/(BASYANG) around 2026-02-05-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019241976105955418
+# snapshot: https://web.archive.org/web/20260205025630/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_008 = [8.7,124.7,35;10.3,121.4,30];
+my_wpac_2026_008 = [8.9,124.6,35;10.3,121.6,30];
+btk_wpac_2026_008 = [9.8,124.8,30;10.0,121.5,15];
+nhcvect = [nhcvect;nhc_wpac_2026_008];
+myvect = [myvect;my_wpac_2026_008];
+btkvect = [btkvect;btk_wpac_2026_008];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+datasource = [datasource;1;1];
+certified = [certified;2;2];
+
+# Wpac 009 ... PENHA/(BASYANG) around 2026-02-05-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019337718992662702
+# snapshot: https://web.archive.org/web/20260205092031/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_009 = [9.5,122.7,35;11.4,120.0,25];
+my_wpac_2026_009 = [9.5,122.8,35;11.4,120.0,25];
+btk_wpac_2026_009 = [9.9,123.6,30;11.3,121.7,15];
+nhcvect = [nhcvect;nhc_wpac_2026_009];
+myvect = [myvect;my_wpac_2026_009];
+btkvect = [btkvect;btk_wpac_2026_009];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+datasource = [datasource;1;1];
+certified = [certified;2;2];
+
+# Shem 076 ... 10/90S around 2026-02-05-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019518032687870035
+# snapshot: https://web.archive.org/web/20260205211305/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# (no JTWC forecast)
+
+# Shem 077 ... MITCHELL around 2026-02-06-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019879663049535977
+# snapshot: https://web.archive.org/web/20260206210827/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_077 = [20.6,116.1,80;23.1,114.2,55;26.2,115.8,30];
+my_shem_2026_077 = [20.6,116.2,75;23.3,114.1,45;26.5,115.4,30];
+btk_shem_2026_077 = [20.3,116.2,80;22.1,113.8,60;25.9,114.6,30];
+nhcvect = [nhcvect;nhc_shem_2026_077];
+myvect = [myvect;my_shem_2026_077];
+btkvect = [btkvect;btk_shem_2026_077];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+datasource = [datasource;1;1;1];
+certified = [certified;2;2;2];
+
+# Shem 078 ... MITCHELL around 2026-02-07-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019971732426101125
+# snapshot: https://web.archive.org/web/20260207031218/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_078 = [20.9,115.7,80;23.6,114.4,45;27.0,117.2,30];
+my_shem_2026_078 = [20.8,115.9,70;23.7,114.3,35;27.0,116.8,30];
+btk_shem_2026_078 = [20.7,115.6,75;23.1,113.6,55;27.1,115.4,25];
+nhcvect = [nhcvect;nhc_shem_2026_078];
+myvect = [myvect;my_shem_2026_078];
+btkvect = [btkvect;btk_shem_2026_078];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+datasource = [datasource;1;1;1];
+certified = [certified;2;2;2];
+
+# Shem 079 ... MITCHELL around 2026-02-07-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2020149634853728277
+# snapshot: https://web.archive.org/web/20260207151624/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_079 = [22.1,114.5,85;25.5,114.8,45;28.1,118.3,30];
+my_shem_2026_079 = [22.0,114.5,80;25.3,114.5,35;27.5,117.9,25];
+btk_shem_2026_079 = [21.6,114.0,60;25.3,113.8,45;28.8,118.4,20];
+nhcvect = [nhcvect;nhc_shem_2026_079];
+myvect = [myvect;my_shem_2026_079];
+btkvect = [btkvect;btk_shem_2026_079];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+datasource = [datasource;1;1;1];
+certified = [certified;2;2;2];
+
+# Shem 080 ... MITCHELL around 2026-02-07-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2020238681899176219
+# snapshot: https://web.archive.org/web/20260207205417/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_080 = [22.5,114.2,65;26.1,115.0,45];
+my_shem_2026_080 = [22.4,114.0,60;26.0,114.7,35];
+btk_shem_2026_080 = [22.1,113.8,60;25.9,114.6,30];
+nhcvect = [nhcvect;nhc_shem_2026_080];
+myvect = [myvect;my_shem_2026_080];
+btkvect = [btkvect;btk_shem_2026_080];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+datasource = [datasource;1;1];
+certified = [certified;2;2];
+
+# Shem 081 ... GEZANI around 2026-02-08-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2020516040719864308
+# snapshot: https://web.archive.org/web/20260208151750/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_081 = [18.0,53.7,50;17.5,49.5,75;18.5,44.4,30;19.8,40.3,45;21.8,36.8,65];
+my_shem_2026_081 = [17.5,53.6,60;17.5,49.6,85;18.3,43.9,35;20.3,40.0,60;22.4,36.7,75];
+btk_shem_2026_081 = [18.0,53.8,60;18.1,50.1,110;18.9,44.7,25;20.4,40.0,75;22.5,36.4,90];
+nhcvect = [nhcvect;nhc_shem_2026_081];
+myvect = [myvect;my_shem_2026_081];
+btkvect = [btkvect;btk_shem_2026_081];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 082 ... GEZANI around 2026-02-09-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2020878526241546601
+# snapshot: https://web.archive.org/web/20260209152219/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_082 = [18.0,50.0,95;19.1,44.7,30;20.6,40.1,50;22.5,36.9,70;25.7,36.5,80];
+my_shem_2026_082 = [18.3,50.1,105;19.1,45.0,30;20.2,40.3,55;22.3,36.7,80;25.9,36.2,85];
+btk_shem_2026_082 = [18.1,50.1,110;18.9,44.7,25;20.4,40.0,75;22.5,36.4,90;25.9,36.6,90];
+nhcvect = [nhcvect;nhc_shem_2026_082];
+myvect = [myvect;my_shem_2026_082];
+btkvect = [btkvect;btk_shem_2026_082];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 083 ... GEZANI around 2026-02-10-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2021148017974239490
+# snapshot: https://web.archive.org/web/20260210091349/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# (no JTWC forecast)
+
+# Shem 084 ... GEZANI around 2026-02-10-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2021233219329225152
+# snapshot: https://web.archive.org/web/20260210145429/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_084 = [18.9,45.1,30;20.5,40.7,50;22.4,37.3,65;25.1,36.8,70;26.8,38.7,70];
+my_shem_2026_084 = [18.9,44.9,30;20.3,40.5,45;21.7,36.7,65;25.2,36.3,70;27.1,38.6,65];
+btk_shem_2026_084 = [18.9,44.7,25;20.4,40.0,75;22.5,36.4,90;25.9,36.6,90;26.4,40.1,80];
+nhcvect = [nhcvect;nhc_shem_2026_084];
+myvect = [myvect;my_shem_2026_084];
+btkvect = [btkvect;btk_shem_2026_084];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 085 ... GEZANI around 2026-12-12-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2021784461528932571
+# snapshot: https://web.archive.org/web/20260212031649/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_085 = [21.2,38.3,80;23.9,36.2,95;26.4,37.9,95;26.6,40.8,80;27.2,41.6,60];
+my_shem_2026_085 = [20.9,38.0,80;23.4,36.0,100;26.1,37.6,85;26.2,41.0,70;26.3,41.2,55];
+btk_shem_2026_085 = [21.3,38.2,90;24.1,35.7,95;26.8,38.6,85;25.4,41.8,75;26.4,44.1,55];
+nhcvect = [nhcvect;nhc_shem_2026_085];
+myvect = [myvect;my_shem_2026_085];
+btkvect = [btkvect;btk_shem_2026_085];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 086 ... GEZANI around 2026-12-12-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2021964814827106814
+# snapshot: https://web.archive.org/web/20260212152323/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_086 = [22.5,36.6,100;25.5,36.6,105;26.4,40.5,90;26.0,42.8,65;28.8,43.3,55];
+my_shem_2026_086 = [22.0,36.3,95;  25.3,36.2,95; 26.2,39.8,80;25.7,41.5,60;28.1,42.1,55];
+btk_shem_2026_086 = [22.5,36.4,90; 25.9,36.6,90; 26.4,40.1,80;24.9,42.5,65;30.0,42.5,50];
+nhcvect = [nhcvect;nhc_shem_2026_086];
+myvect = [myvect;my_shem_2026_086];
+btkvect = [btkvect;btk_shem_2026_086];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 087 ... GEZANI around 2026-02-13-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2022143434149318818
+# snapshot: https://web.archive.org/web/20260213030624/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_087 = [23.9,36.2,105;26.5,38.5,90;26.2,42.0,75;26.7,42.8,65;30.2,41.8,50];
+my_shem_2026_087 = [23.9,35.8,105;26.5,38.2,85;26.2,42.0,75;27.3,43.1,60;30.4,42.0,40];
+btk_shem_2026_087 = [24.1,35.7,95;26.8,38.6,85;25.4,41.8,75;26.4,44.1,55;32.9,41.7,45];
+nhcvect = [nhcvect;nhc_shem_2026_087];
+myvect = [myvect;my_shem_2026_087];
+btkvect = [btkvect;btk_shem_2026_087];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 088 ... GEZANI around 2026-02-13-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2022321919563874684
+# snapshot: https://web.archive.org/web/20260213145619/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_088 = [25.3,36.6,95;25.9,39.6,70;24.9,41.3,60;27.8,41.6,55;31.8,40.6,45];
+my_shem_2026_088 = [25.4,36.6,95;26.0,39.7,75;25.0,41.8,60;28.5,41.2,50;33.8,40.4,45];
+btk_shem_2026_088 = [25.9,36.6,90;26.4,40.1,80;24.9,42.5,65;30.0,42.5,50;35.7,41.6,45];
+nhcvect = [nhcvect;nhc_shem_2026_088];
+myvect = [myvect;my_shem_2026_088];
+btkvect = [btkvect;btk_shem_2026_088];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 089 ... GEZANI around 2026-02-14-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2022508412232208764
+# snapshot: https://web.archive.org/web/20260214031522/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_089 = [26.2,37.6,95;25.7,41.0,70;25.8,42.4,60;30.5,41.6,55];
+my_shem_2026_089 = [25.9,37.6,90;25.1,40.3,70;25.7,41.7,60;30.0,40.8,55];
+btk_shem_2026_089 = [26.8,38.6,85;25.4,41.8,75;26.4,44.1,55;32.9,41.7,45];
+nhcvect = [nhcvect;nhc_shem_2026_089];
+myvect = [myvect;my_shem_2026_089];
+btkvect = [btkvect;btk_shem_2026_089];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+datasource = [datasource;1;1;1;1];
+certified = [certified;2;2;2;2];
+
+# Shem 090 ... GEZANI around 2026-02-15-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2023046669248426465
+# snapshot: https://web.archive.org/web/20260215145610/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_090 = [25.4,42.4,70;28.8,42.2,60;34.0,41.3,55];
+my_shem_2026_090 = [25.0,42.6,70;29.2,42.4,60;34.4,41.2,50];
+btk_shem_2026_090 = [24.9,42.5,65;30.0,42.5,50;35.7,41.6,45];
+nhcvect = [nhcvect;nhc_shem_2026_090];
+myvect = [myvect;my_shem_2026_090];
+btkvect = [btkvect;btk_shem_2026_090];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+datasource = [datasource;1;1;1];
+certified = [certified;2;2;2];
+
+# Shem 091 ... GEZANI around 2026-02-17-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2023685696427266219
+# snapshot: https://web.archive.org/web/20260217091429/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_091 = [35.6,41.9,45];
+my_shem_2026_091 = [34.8,41.5,45];
+btk_shem_2026_091 = [34.3,41.1,50];
+nhcvect = [nhcvect;nhc_shem_2026_091];
+myvect = [myvect;my_shem_2026_091];
+btkvect = [btkvect;btk_shem_2026_091];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;3];
+datasource = [datasource;1];
+certified = [certified;2];
+
+# Shem 092 ... HORACIO around 2026-02-20-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2024867146438717661
+# snapshot: https://web.archive.org/web/20260220153336/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_092 = [16.1,73.0,60;17.3,69.4,80;19.7,66.0,95;22.9,64.4,100;27.9,65.6,80];
+my_shem_2026_092 = [16.3,72.8,60;17.3,69.1,80;19.9,65.7,100;23.4,64.3,95;28.3,65.4,70];
+btk_shem_2026_092 = [16.9,73.1,35;17.6,69.1,50;19.8,65.8,110;23.8,64.5,110;29.2,66.8,60];
+nhcvect = [nhcvect;nhc_shem_2026_092];
+myvect = [myvect;my_shem_2026_092];
+btkvect = [btkvect;btk_shem_2026_092];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 093 ... HORACIO around 2026-02-21-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2025319724314239085
+# snapshot: https://web.archive.org/web/20260221213523/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_093 = [18.2,68.1,60;20.9,65.2,95;24.9,64.8,95;29.3,66.9,65;31.7,66.5,50];
+my_shem_2026_093 = [18.1,68.2,65;21.1,65.1,100;25.2,64.6,90;30.1,67.3,60;32.1,69.0,35];
+btk_shem_2026_093 = [17.8,68.2,55;20.7,65.1,140;24.8,64.9,95;30.6,67.8,65;31.9,69.4,45];
+nhcvect = [nhcvect;nhc_shem_2026_093];
+myvect = [myvect;my_shem_2026_093];
+btkvect = [btkvect;btk_shem_2026_093];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 094 ... 29U/24P around 2026-03-04-09Z ... certification failed
+# my at https://x.com/elioeFIN/status/2029122436466168162
+
+nhc_shem_2026_094 = [15.7,148.4,40;17.9,145.9,35;19.6,144.4,20];
+my_shem_2026_094 = [15.7,148.3,40;18.0,145.8,35;19.9,143.9,20];
+btk_shem_2026_094 = [16.1,147.5,30;17.7,146.0,25;19.6,140.8,20];
+nhcvect = [nhcvect;nhc_shem_2026_094];
+myvect = [myvect;my_shem_2026_094];
+btkvect = [btkvect;btk_shem_2026_094];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+datasource = [datasource;1;1;1];
+certified = [certified;0;0;0];
+
+# Wpac 010 ... NURI around 2026-03-11-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2031651138164994408
+# snapshot: https://web.archive.org/web/20260311084722/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_010 = [11.2,138.7,30];
+my_wpac_2026_010 = [11.5,139.0,30];
+btk_wpac_2026_010 = [9.8,138.2,20];
+nhcvect = [nhcvect;nhc_wpac_2026_010];
+myvect = [myvect;my_wpac_2026_010];
+btkvect = [btkvect;btk_wpac_2026_010];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;3];
+datasource = [datasource;1];
+certified = [certified;2];
+
+# Shem 095 ... NARELLE around 2026-03-17-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2033838622827336042
+# snapshot: https://web.archive.org/web/20260317094629/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# (no JTWC forecast)
+
+# Shem 096 ... INDUSA around 2026-04-02-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2039717580143763734
+# snapshot: https://web.archive.org/web/20260402145855/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_096 = [16.0,71.6,65;21.3,69.8,85;28.6,70.8,70;35.3,74.0,45];
+my_shem_2026_096 = [16.1,71.4,70;21.2,69.6,90;28.4,70.6,75;35.2,74.0,40];
+btk_shem_2026_096 = [16.5,72.2,60;21.8,70.3,80;29.5,71.6,55;35.6,74.9,35];
+nhcvect = [nhcvect;nhc_shem_2026_096];
+myvect = [myvect;my_shem_2026_096];
+btkvect = [btkvect;btk_shem_2026_096];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+datasource = [datasource;1;1;1;1];
+certified = [certified;2;2;2;2];
+
+# Shem 097 ... MAILA around 2026-04-04-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2040448407567815036
+# snapshot: https://web.archive.org/web/20260404153033/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_097 = [9.4,154.7,70;9.9,155.5,95;9.7,155.8,90;9.7,155.3,75;10.2,154.5,75];
+my_shem_2026_097 = [9.5,154.6,65;9.9,155.3,90;9.9,155.5,90;10.0,155.1,85;10.9,154.2,80];
+btk_shem_2026_097 = [9.3,154.6,75;9.7,155.5,95;9.7,156.3,110;8.6,155.7,105;8.3,154.4,85];
+nhcvect = [nhcvect;nhc_shem_2026_097];
+myvect = [myvect;my_shem_2026_097];
+btkvect = [btkvect;btk_shem_2026_097];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 098 ... MAILA around 2026-04-05-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2040799743618462151
+# snapshot: https://web.archive.org/web/20260405151004/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_098 = [9.6,155.3,100;9.5,155.7,100;9.5,154.7,75;9.9,153.3,80;10.9,151.4,80];
+my_shem_2026_098 = [9.7,155.4,95;9.7,155.7,95;9.6,154.7,80;9.9,152.9,75;11.5,150.2,70];
+btk_shem_2026_098 = [9.7,155.5,95;9.7,156.3,110;8.6,155.7,105;8.3,154.4,85;8.4,154.3,45];
+nhcvect = [nhcvect;nhc_shem_2026_098];
+myvect = [myvect;my_shem_2026_098];
+btkvect = [btkvect;btk_shem_2026_098];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 099 ... VAIANU around 2026-04-05-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2040807463788708085
+# snapshot: https://web.archive.org/web/20260405151004/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# (day 4 missing due to gaps)
+
+nhc_shem_2026_099 = [16.7,173.8,85;19.6,175.9,105;23.4,178.6,85;29.1,180.8,60];
+my_shem_2026_099 = [16.7,173.7,75;19.6,175.7,90;23.2,178.3,80;28.7,179.9,55];
+btk_shem_2026_099 = [16.5,173.8,95;20.0,175.9,95;24.6,178.4,65;30.1,178.5,55];
+nhcvect = [nhcvect;nhc_shem_2026_099];
+myvect = [myvect;my_shem_2026_099];
+btkvect = [btkvect;btk_shem_2026_099];
+leadtimevect = [leadtimevect;1;2;3;5]; # NOTE THE MISSING DAY 4 !!!!!
+basinvect = [basinvect;3;3;3;3];
+datasource = [datasource;1;1;1;1];
+certified = [certified;2;2;2;2];
+
+# Shem 100 ... MAILA around 2026-04-06-15Z ... CERTIFIED (I swear!)
+# my at https://x.com/elioeFIN/status/2041165114410156162
+# snapshot missing from archive.org listing
+
+nhc_shem_2026_100 = [9.4,155.9,90;9.3,154.6,75;9.8,152.6,90;10.8,150.0,70;11.5,146.7,65];
+my_shem_2026_100 = [9.8,156.0,90;9.4,154.9,85;10.0,152.9,70;11.4,149.4,70;11.7,146.9,70];
+btk_shem_2026_100 = [9.7,156.3,110;8.6,155.7,105;8.3,154.4,85;8.4,154.3,45;8.7,155.4,30];
+nhcvect = [nhcvect;nhc_shem_2026_100];
+myvect = [myvect;my_shem_2026_100];
+btkvect = [btkvect;btk_shem_2026_100];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;1;1;1;1;1];
+
+# Shem 101 ... VAIANU around 2026-04-06-15Z ... CERTIFIED (I swear!)
+# my at https://x.com/elioeFIN/status/2041166219814789597
+# snapshot missing from archive.org listing
+# (day 3 missing due to gaps)
+
+nhc_shem_2026_101 = [19.8,175.9,105;23.6,178.3,85;28.9,178.6,60;32.0,176.5,55];
+my_shem_2026_101 = [19.7,175.9,105;23.4,178.3,80;28.8,178.7,55;32.1,176.6,50];
+btk_shem_2026_101 = [20.0,175.9,95;24.6,178.4,65;30.1,178.5,55;33.3,175.8,40];
+nhcvect = [nhcvect;nhc_shem_2026_101];
+myvect = [myvect;my_shem_2026_101];
+btkvect = [btkvect;btk_shem_2026_101];
+leadtimevect = [leadtimevect;1;2;4;5]; # NOTE THE MISSING DAY 3 !!!!
+basinvect = [basinvect;3;3;3;3];
+datasource = [datasource;1;1;1;1];
+certified = [certified;1;1;1;1];
+
+# Shem 102 ... MAILA around 2026-04-07-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2041526473589133613
+# snapshot: https://web.archive.org/web/20260407145232/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_102 = [9.2,155.5,120;9.4,153.8,115;10.6,151.5,85;11.8,149.0,75;12.8,146.5,70];
+my_shem_2026_102 = [9.4,155.5,110;9.7,153.4,105;10.8,151.1,75;12.0,148.7,70;12.6,146.4,65];
+btk_shem_2026_102 = [8.6,155.7,105;8.3,154.4,85;8.4,154.3,45;8.7,155.4,30;11.3,154.7,25];
+nhcvect = [nhcvect;nhc_shem_2026_102];
+myvect = [myvect;my_shem_2026_102];
+btkvect = [btkvect;btk_shem_2026_102];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 103 ... VAIANU around 2026-04-07-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2041528452830872001
+# snapshot: https://web.archive.org/web/20260407145232/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+# (day 2 missing due to gaps)
+
+nhc_shem_2026_103 = [24.2,178.3,75;29.0,178.6,55;33.0,176.3,50];
+my_shem_2026_103 = [24.2,178.4,75;29.2,179.1,50;33.2,176.7,45];
+btk_shem_2026_103 = [24.6,178.4,65;30.1,178.5,55;33.3,175.8,40];
+nhcvect = [nhcvect;nhc_shem_2026_103];
+myvect = [myvect;my_shem_2026_103];
+btkvect = [btkvect;btk_shem_2026_103];
+leadtimevect = [leadtimevect;1;3;4]; # NOTE THE MISSING DAY 2 !!!!!!
+basinvect = [basinvect;3;3;3];
+datasource = [datasource;1;1;1];
+certified = [certified;2;2;2];
+
+# Shem 104 ... MAILA around 2026-04-07-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2041615340812009800
+# snapshot: https://web.archive.org/web/20260407204219/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_104 = [9.1,154.9,120;9.6,153.1,90;10.8,150.7,75;12.0,148.2,70;13.0,145.7,65];
+my_shem_2026_104 = [9.3,155.1,115;9.6,153.0,85;11.0,150.5,70;11.9,148.6,65;12.8,146.0,65];
+btk_shem_2026_104 = [8.6,155.4,110;8.3,154.2,75;8.2,154.2,40;9.0,155.7,30;11.6,153.8,25];
+nhcvect = [nhcvect;nhc_shem_2026_104];
+myvect = [myvect;my_shem_2026_104];
+btkvect = [btkvect;btk_shem_2026_104];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Shem 105 ... VAIANU around 2026-04-07-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2041616588848140495
+# snapshot: https://web.archive.org/web/20260407204219/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_105 = [25.1,179.0,65;27.2,179.3,55;30.1,178.4,55;34.9,176.5,50];
+my_shem_2026_105 = [25.1,178.9,70;27.3,179.3,50;30.3,178.2,50;35.1,176.2,45];
+btk_shem_2026_105 = [25.4,178.5,60;28.2,178.9,55;30.6,177.5,50;34.9,176.3,35];
+nhcvect = [nhcvect;nhc_shem_2026_105];
+myvect = [myvect;my_shem_2026_105];
+btkvect = [btkvect;btk_shem_2026_105];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+datasource = [datasource;1;1;1;1];
+certified = [certified;2;2;2;2];
+
+# Shem 106 ... MAILA around 2026-04-08-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2041893838302720216
+# snapshot: https://web.archive.org/web/20260408150548/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_shem_2026_106 = [8.5,154.5,110;9.3,153.1,85;10.9,150.7,65;11.8,148.4,55];
+my_shem_2026_106 = [8.8,154.5,105;9.5,152.8,80;11.1,150.5,65;12.1,148.7,55];
+btk_shem_2026_106 = [8.3,154.4,85;8.4,154.3,45;8.7,155.4,30;11.3,154.7,25];
+nhcvect = [nhcvect;nhc_shem_2026_106];
+myvect = [myvect;my_shem_2026_106];
+btkvect = [btkvect;btk_shem_2026_106];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+datasource = [datasource;1;1;1;1];
+certified = [certified;2;2;2;2];
+
+# Shem 107 ... MAILA around 2026-04-09-15Z ... CERTIFIED (I swear!)
+# my at https://x.com/elioeFIN/status/2042256359765217776
+# snapshot missing from archive.org listing
+
+nhc_shem_2026_107 = [8.4,153.5,60;9.2,152.4,40;9.8,151.9,40];
+my_shem_2026_107 = [8.8,153.1,60;9.8,151.7,50;10.6,150.6,50];
+btk_shem_2026_107 = [8.4,154.3,45;8.7,155.4,30;11.3,154.7,25];
+nhcvect = [nhcvect;nhc_shem_2026_107];
+myvect = [myvect;my_shem_2026_107];
+btkvect = [btkvect;btk_shem_2026_107];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+datasource = [datasource;1;1;1];
+certified = [certified;1;1;1];
+
+# Wpac 011 ... SINLAKU around 2026-04-09-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2042348940188667920
+# snapshot: https://web.archive.org/web/20260409211344/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_011 = [8.4,150.8,55;9.3,150.1,75;10.8,148.1,95;12.6,145.5,105;14.7,143.3,105];
+my_wpac_2026_011 = [8.4,150.1,55;9.2,149.7,75;10.8,147.4,100;12.7,144.7,100;14.7,142.7,100];
+btk_wpac_2026_011 = [8.0,151.0,60;9.3,151.5,95;11.6,149.5,155;13.7,147.0,145;15.2,145.4,115];
+nhcvect = [nhcvect;nhc_wpac_2026_011];
+myvect = [myvect;my_wpac_2026_011];
+btkvect = [btkvect;btk_wpac_2026_011];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 012 ... SINLAKU around 2026-04-10-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2042619144818794534
+# snapshot: https://web.archive.org/web/20260410151037/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_012 = [9.2,150.4,80;10.8,148.1,110;12.6,145.5,115;14.1,143.8,115;15.9,142.1,110];
+my_wpac_2026_012 = [9.0,150.4,80;10.7,148.2,105;12.5,145.2,115;14.2,143.2,105;15.6,141.3,110];
+btk_wpac_2026_012 = [9.0,151.1,85;11.1,150.2,150;13.1,147.4,150;14.9,145.8,125;16.2,144.6,110];
+nhcvect = [nhcvect;nhc_wpac_2026_012];
+myvect = [myvect;my_wpac_2026_012];
+btkvect = [btkvect;btk_wpac_2026_012];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 013 ... SINLAKU around 2026-04-10-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2042707072844796205
+# snapshot: https://web.archive.org/web/20260410205445/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_013 = [9.3,150.4,85;11.3,147.7,115;13.0,145.4,115;14.4,143.6,110;16.1,142.1,110];
+my_wpac_2026_013 = [9.3,150.5,85;11.4,147.9,115;13.4,145.2,115;14.8,143.3,110;16.1,141.5,105];
+btk_wpac_2026_013 = [9.3,151.5,95;11.6,149.5,155;13.7,147.0,145;15.2,145.4,115;16.7,144.5,115];
+nhcvect = [nhcvect;nhc_wpac_2026_013];
+myvect = [myvect;my_wpac_2026_013];
+btkvect = [btkvect;btk_wpac_2026_013];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 014 ... SINLAKU around 2026-04-11-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2042979832221274440
+# snapshot: web.archive.org/web/20260411150233/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_014 = [10.8,149.5,110;12.9,146.6,125;14.5,144.2,115;16.3,142.8,100;18.5,142.1,85];
+my_wpac_2026_014 = [10.9,149.5,105;13.0,146.5,125;14.9,144.1,110;16.6,142.8,100;18.4,141.9,80];
+btk_wpac_2026_014 = [11.1,150.2,150;13.1,147.4,150;14.9,145.8,125;16.2,144.6,110;18.4,144.8,90];
+nhcvect = [nhcvect;nhc_wpac_2026_014];
+myvect = [myvect;my_wpac_2026_014];
+btkvect = [btkvect;btk_wpac_2026_014];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 015 ... SINLAKU around 2026-04-12-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2043341508951060642
+# snapshot: https://web.archive.org/web/20260412145758/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_015 = [13.3,147.7,145;15.3,145.7,135;17.4,144.7,125;19.8,144.6,105;22.6,145.4,80];
+my_wpac_2026_015 = [13.3,147.5,140;15.2,145.5,135;17.4,144.4,130;19.9,144.1,105;22.6,145.5,75];
+btk_wpac_2026_015 = [13.1,147.4,150;14.9,145.8,125;16.2,144.6,110;18.4,144.8,90;20.8,146.2,80];
+nhcvect = [nhcvect;nhc_wpac_2026_015];
+myvect = [myvect;my_wpac_2026_015];
+btkvect = [btkvect;btk_wpac_2026_015];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 016 ... SINLAKU around 2026-04-12-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2043427916483019074
+# snapshot: web.archive.org/web/20260412204039/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_016 = [13.9,146.7,140;15.8,145.1,115;17.7,144.2,100;20.3,144.4,90;23.0,145.4,75];
+my_wpac_2026_016 = [13.9,146.6,140;15.7,145.0,115;17.5,143.9,100;20.0,144.1,90;22.9,145.0,70];
+btk_wpac_2026_016 = [13.7,147.0,145;15.2,145.4,115;16.7,144.5,115;19.0,145.0,85;21.3,146.5,70];
+nhcvect = [nhcvect;nhc_wpac_2026_016];
+myvect = [myvect;my_wpac_2026_016];
+btkvect = [btkvect;btk_wpac_2026_016];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 017 ... SINLAKU around 2026-04-13-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2043704897980244272
+# snapshot: https://web.archive.org/web/20260413150253/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_017 = [14.9,145.7,135;16.6,144.7,110;18.8,144.4,95;21.4,145.5,80;24.8,147.6,70];
+my_wpac_2026_017 = [15.1,145.6,130;16.7,144.5,110;19.0,143.9,95;21.4,144.7,75;24.9,146.8,60];
+btk_wpac_2026_017 = [14.9,145.8,125;16.2,144.6,110;18.4,144.8,90;20.8,146.2,80;24.3,147.5,60];
+nhcvect = [nhcvect;nhc_wpac_2026_017];
+myvect = [myvect;my_wpac_2026_017];
+btkvect = [btkvect;btk_wpac_2026_017];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 018 ... SINLAKU around 2026-04-13-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2043792290901061915
+# snapshot: https://web.archive.org/web/20260413204705/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_018 = [15.5,145.9,125;17.5,145.3,105;20.2,146.2,85;22.9,148.9,70;25.9,152.7,65];
+my_wpac_2026_018 = [15.6,145.7,120;17.5,145.2,105;20.2,145.8,85;22.6,148.0,65;26.4,150.6,60];
+btk_wpac_2026_018 = [15.2,145.4,115;16.7,144.5,115;19.0,145.0,85;21.3,146.5,70;25.3,148.5,55];
+nhcvect = [nhcvect;nhc_wpac_2026_018];
+myvect = [myvect;my_wpac_2026_018];
+btkvect = [btkvect;btk_wpac_2026_018];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 019 ... SINLAKU around 2026-04-14-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2044063758595555365
+# snapshot: https://web.archive.org/web/20260414144816/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_019 = [16.5,144.9,110;19.1,145.0,90;21.9,146.7,75;25.3,149.3,65;29.1,155.4,55];
+my_wpac_2026_019 = [16.5,144.9,110;19.0,144.9,90;21.9,146.8,70;25.4,149.4,55;29.0,155.8,50];
+btk_wpac_2026_019 = [16.2,144.6,110;18.4,144.8,90;20.8,146.2,80;24.3,147.5,60;28.3,153.7,55];
+nhcvect = [nhcvect;nhc_wpac_2026_019];
+myvect = [myvect;my_wpac_2026_019];
+btkvect = [btkvect;btk_wpac_2026_019];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+datasource = [datasource;1;1;1;1;1];
+certified = [certified;2;2;2;2;2];
+
+# Wpac 020 ... SINLAKU around 2026-04-15-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2044426756191404302
+# snapshot: https://web.archive.org/web/20260415144822/https://elioestracks.blogspot.com/2024/04/advisory-list.html
+
+nhc_wpac_2026_020 = [18.4,144.6,110;21.2,146.2,85;24.6,148.5,70;28.3,154.9,60];
+my_wpac_2026_020 = [18.4,144.5,105;21.2,146.1,80;24.8,148.5,65;28.4,154.7,55];
+btk_wpac_2026_020 = [18.4,144.8,90;20.8,146.2,80;24.3,147.5,60;28.3,153.7,55];
+nhcvect = [nhcvect;nhc_wpac_2026_020];
+myvect = [myvect;my_wpac_2026_020];
+btkvect = [btkvect;btk_wpac_2026_020];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+datasource = [datasource;1;1;1;1];
+certified = [certified;2;2;2;2];
+
 
 
 

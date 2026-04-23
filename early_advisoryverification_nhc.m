@@ -1,5 +1,5 @@
 # to be run with GNU Octave
-# data last added 2026/01/05, data ready for forecasts issued on or before 2025/12/31
+# data last added 2026/04/19, data ready for forecasts issued on or before 2026/04/14
 
 # to compare elioe's performance to U.S. agencies;
 # regarding "early advisories" posted most likely before NHC/CPHC/JTWC advisories had become public (if they existed in that advisory cycle);
@@ -16860,7 +16860,7 @@ basinvect = [basinvect;3;3;3;3];
 
 my_epac_2025_007 = [11.7,92.9,40;13.4,94.6,65;16.1,96.9,60];
 nhc_epac_2025_007 = [11.8,93.1,40;13.5,95.1,70;15.8,97.4,80];
-btk_epac_2025_007 = [12.5,94.1,45;14.2,96.3,90;17.1,99.3,65];
+btk_epac_2025_007 = [12.3,94.0,45;14.2,96.3,95;17.1,99.3,65]; # TCR
 myvect = [myvect;my_epac_2025_007];
 nhcvect = [nhcvect;nhc_epac_2025_007];
 btkvect = [btkvect;btk_epac_2025_007];
@@ -16937,7 +16937,7 @@ basinvect = [basinvect;3;3];
 
 my_epac_2025_012 = [14.7,101.6,35;16.6,105.1,55;18.5,108.1,65;20.4,111.0,50;22.1,113.9,35];
 nhc_epac_2025_012 = [14.5,101.5,35;16.8,104.6,60;18.8,107.5,85;20.9,109.9,65;22.6,112.1,40];
-btk_epac_2025_012 = [14.5,101.3,40;16.7,104.7,70;18.4,107.9,100;19.9,110.5,55;22.5,113.6,30]; # day 5 self-made
+btk_epac_2025_012 = [14.6,101.4,40;16.8,104.7,70;18.4,107.9,100;20.0,110.6,50;22.3,113.8,30]; # TCR
 myvect = [myvect;my_epac_2025_012];
 nhcvect = [nhcvect;nhc_epac_2025_012];
 btkvect = [btkvect;btk_epac_2025_012];
@@ -17064,7 +17064,7 @@ basinvect = [basinvect;3;3;3;3;3];
 
 my_atl_2025_006 = [17.6,34.8,35;17.7,42.0,45;18.6,48.4,60;20.1,54.4,80;21.9,59.7,95];
 nhc_atl_2025_006 = [17.4,35.1,50;17.1,41.7,60;18.0,48.4,80;19.6,54.0,90;21.5,60.0,100];
-btk_atl_2025_006 = [17.3,35.4,40;16.4,42.7,45;16.3,48.9,50;18.0,55.3,65;19.6,62.1,130];
+btk_atl_2025_006 = [17.3,35.4,40;16.4,42.7,45;16.3,48.9,50;18.0,55.2,65;19.6,62.1,130]; # TCR
 myvect = [myvect;my_atl_2025_006];
 nhcvect = [nhcvect;nhc_atl_2025_006];
 btkvect = [btkvect;btk_atl_2025_006];
@@ -17109,7 +17109,7 @@ basinvect = [basinvect;3;3];
 
 my_epac_2025_013 = [17.0,103.1,35;18.3,106.0,40;18.8,107.7,45;19.8,109.8,40;22.1,112.1,40];
 nhc_epac_2025_013 = [16.7,102.4,35;17.7,106.3,45;18.6,109.1,65;20.0,111.5,70;22.1,113.7,55];
-btk_epac_2025_013 = [17.3,102.4,35;18.4,107.7,30;18.7,110.3,40;20.4,113.9,55;22.6,117.4,30];
+btk_epac_2025_013 = [17.3,102.5,30;18.4,107.6,30;18.7,110.3,40;20.6,113.9,55;22.6,117.3,30]; # TCR
 myvect = [myvect;my_epac_2025_013];
 nhcvect = [nhcvect;nhc_epac_2025_013];
 btkvect = [btkvect;btk_epac_2025_013];
@@ -17134,7 +17134,7 @@ basinvect = [basinvect;2;2;2;2;2];
 
 my_atl_2025_012 = [22.9,75.9,40;25.7,77.0,50;29.9,78.0,60;32.9,79.6,50;32.7,79.9,35];
 nhc_atl_2025_012 = [22.7,75.8,30;25.6,76.9,45;29.7,78.0,65;31.8,78.9,65;32.3,79.3,60];
-btk_atl_2025_012 = [22.1,76.5,30;23.8,77.3,35;27.2,77.3,55;29.1,76.0,75;31.3,69.2,85];
+btk_atl_2025_012 = [22.1,76.4,30;23.8,77.3,35;27.3,77.3,50;29.2,76.0,70;31.2,69.2,80]; # TCR
 myvect = [myvect;my_atl_2025_012];
 nhcvect = [nhcvect;nhc_atl_2025_012];
 btkvect = [btkvect;btk_atl_2025_012];
@@ -17208,7 +17208,7 @@ basinvect = [basinvect;3;3;3];
 
 my_atl_2025_014 = [14.7,73.6,50;15.4,74.6,50;16.1,73.8,50;17.1,73.8,50;17.2,74.9,55];
 nhc_atl_2025_014 = [14.8,73.5,55;15.7,74.5,60;16.5,74.5,60;16.9,74.5,65;17.2,74.9,70];
-btk_atl_2025_014 = [14.3,73.6,45;15.3,75.0,40;15.9,75.0,40;16.4,75.0,60;16.4,76.4,120];
+btk_atl_2025_014 = [14.3,73.7,45;15.2,75.0,40;15.9,75.1,45;16.4,74.9,60;16.3,76.4,115]; # TCR
 myvect = [myvect;my_atl_2025_014];
 nhcvect = [nhcvect;nhc_atl_2025_014];
 btkvect = [btkvect;btk_atl_2025_014];
@@ -17486,14 +17486,618 @@ basinvect = [basinvect;3;3;3;3;3];
 # Shem 016 ... GRANT before 2026-01-03-15Z ... CERTIFIED
 # my at https://x.com/elioeFIN/status/2007435338906493159
 
-my_shem_2026_016 = [];
-nhc_shem_2026_016 = [];
-btk_shem_2026_016 = [];
+my_shem_2026_016 = [15.8,60.2,35;16.4,55.9,35;17.6,52.2,30];
+nhc_shem_2026_016 = [15.3,60.4,35;15.8,56.2,40;16.8,52.6,40];
+btk_shem_2026_016 = [16.1,59.7,30;16.7,55.3,25;17.7,51.1,25];
 myvect = [myvect;my_shem_2026_016];
 nhcvect = [nhcvect;nhc_shem_2026_016];
 btkvect = [btkvect;btk_shem_2026_016];
-leadtimevect = [leadtimevect;];
-basinvect = [basinvect;];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Shem 017 ... 11U/12S before 2026-01-05-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2007991445706387865
+# (no JTWC forecast)
+
+# Shem 018 ... JENNA before 2026-01-06-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2008619332486431201
+
+my_shem_2026_018 = [18.6,91.1,50;18.5,87.5,35;18.1,83.4,20];
+nhc_shem_2026_018 = [18.0,91.1,50;17.9,87.9,35;17.9,84.0,30];
+btk_shem_2026_018 = [18.6,91.2,50;17.8,88.6,35;17.7,85.4,25];
+myvect = [myvect;my_shem_2026_018];
+nhcvect = [nhcvect;nhc_shem_2026_018];
+btkvect = [btkvect;btk_shem_2026_018];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Nio 01 ... BOB 01 / 90B before 2026-01-08-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2009349036005048545
+# (no JTWC forecast)
+
+# Shem 019 ... 12U/92P before 2026-01-08-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2009354081790546158
+# (no JTWC forecast)
+
+# Nio 02 ... BOB 01 / 90B before 2026-01-09-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2009440491558064391
+# (no JTWC forecast)
+
+# Shem 020 ... 12U/92P before 2026-01-09-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2009445064452477184
+# (no JTWC forecast)
+
+# Nio 03 ... BOB 01 / 90B before 2026-01-09-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2009707611424469375
+# (no JTWC forecast)
+
+# Shem 021 .... 12U/92P before 2026-01-09-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2009712346575384870
+# (no JTWC forecast)
+
+# Shem 022 ... 06/93S before 2026-01-10-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2010064034348098040
+
+my_shem_2026_022 = [16.2,77.5,50;17.6,78.3,50;18.3,78.0,50;18.0,77.0,30;17.7,74.7,25];
+nhc_shem_2026_022 = [16.3,77.0,55;17.4,77.5,70;17.9,76.9,70;17.7,75.6,60;17.3,73.1,45];
+btk_shem_2026_022 = [16.0,77.4,75;17.0,78.0,115;17.2,77.6,80;17.2,76.2,70;16.9,72.7,120];
+myvect = [myvect;my_shem_2026_022];
+nhcvect = [nhcvect;nhc_shem_2026_022];
+btkvect = [btkvect;btk_shem_2026_022];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 023 ... DUDZAI before 2026-01-11-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2010429998520533364
+
+my_shem_2026_023 = [16.9,77.9,85;17.5,77.3,80;18.0,76.0,65;18.4,74.2,50;19.1,71.3,45];
+nhc_shem_2026_023 = [16.6,77.9,95;17.0,78.0,85;17.4,76.5,75;17.6,74.3,75;18.2,71.4,80];
+btk_shem_2026_023 = [17.0,78.0,115;17.2,77.6,80;17.2,76.2,70;16.9,72.7,120;17.4,69.6,100];
+myvect = [myvect;my_shem_2026_023];
+nhcvect = [nhcvect;nhc_shem_2026_023];
+btkvect = [btkvect;btk_shem_2026_023];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 024 ... DUDZAI before 2026-01-12-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2010790008823955558
+
+my_shem_2026_024 = [17.3,77.6,90;17.6,76.0,75;17.5,73.4,85;18.2,70.4,85;20.9,66.1,55];
+nhc_shem_2026_024 = [17.4,77.5,95;17.3,75.9,80;17.3,73.4,85;18.1,70.4,90;20.0,67.7,90];
+btk_shem_2026_024 = [17.2,77.6,80;17.2,76.2,70;16.9,72.7,120;17.4,69.6,100;18.5,66.8,55];
+myvect = [myvect;my_shem_2026_024];
+nhcvect = [nhcvect;nhc_shem_2026_024];
+btkvect = [btkvect;btk_shem_2026_024];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 025 ... DUDZAI before 2026-01-13-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011069056258879725
+# (no JTWC forecast)
+
+# Shem 026 ... DUDZAI before 2026-01-13-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011152178350883098
+
+my_shem_2026_026 = [17.2,76.0,70;17.1,73.6,75;17.6,70.5,85;19.9,67.4,65;22.0,63.6,55];
+nhc_shem_2026_026 = [17.2,76.0,65;17.1,73.4,80;17.7,70.2,80;19.5,66.8,70;21.5,63.6,65];
+btk_shem_2026_026 = [17.2,76.2,70;16.9,72.7,120;17.4,69.6,100;18.5,66.8,55;21.0,64.0,50];
+myvect = [myvect;my_shem_2026_026];
+nhcvect = [nhcvect;nhc_shem_2026_026];
+btkvect = [btkvect;btk_shem_2026_026];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 027 ... DUDZAI before 2026-01-14-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011251303192965460
+# (no JTWC forecast)
+
+# Shem 028 ... DUDZAI before 2026-01-14-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011511607252169106
+
+my_shem_2026_028 = [17.3,73.1,75;17.7,70.1,60;19.3,67.1,55;20.8,63.5,45;22.6,59.2,35];
+nhc_shem_2026_028 = [17.0,73.7,80;17.3,70.6,70;18.6,68.1,60;20.1,65.8,60;21.6,62.2,55];
+btk_shem_2026_028 = [16.9,72.7,120;17.4,69.6,100;18.5,66.8,55;21.0,64.0,50;22.0,59.6,50];
+myvect = [myvect;my_shem_2026_028];
+nhcvect = [nhcvect;nhc_shem_2026_028];
+btkvect = [btkvect;btk_shem_2026_028];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 001 ... 01W/(ADA) before 2026-01-14-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011519316731314442
+
+my_wpac_2026_001 = [11.0,128.5,40;12.8,125.8,45;13.8,125.3,50;15.2,125.8,35;16.0,127.5,30];
+nhc_wpac_2026_001 = [10.9,128.9,35;12.6,126.8,45;14.2,125.9,35;15.3,126.3,35;16.5,128.1,30];
+btk_wpac_2026_001 = [10.2,129.1,30;12.8,125.7,45;14.3,125.0,45;16.1,125.7,25;17.0,128.1,30];
+myvect = [myvect;my_wpac_2026_001];
+nhcvect = [nhcvect;nhc_wpac_2026_001];
+btkvect = [btkvect;btk_wpac_2026_001];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 002 ... NOKAEN/(ADA) before 2026-01-15-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011879710012362807
+
+my_wpac_2026_002 = [12.2,126.6,35;14.2,125.0,45;14.8,125.9,30;15.5,127.5,30;14.2,128.3,20];
+nhc_wpac_2026_002 = [12.1,126.9,35;13.6,125.8,35;14.9,125.9,35;15.3,127.8,30;14.4,128.7,25];
+btk_wpac_2026_002 = [12.8,125.7,45;14.3,125.0,45;16.1,125.7,25;17.0,128.1,30;17.1,133.0,30];
+myvect = [myvect;my_wpac_2026_002];
+nhcvect = [nhcvect;nhc_wpac_2026_002];
+btkvect = [btkvect;btk_wpac_2026_002];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 029 ... DUDZAI before 2026-01-15-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011883813228724626
+
+my_shem_2026_029 = [17.0,69.9,85;18.9,67.9,55;21.6,64.5,55;23.5,59.4,60;28.2,55.7,45];
+nhc_shem_2026_029 = [17.0,70.0,105;18.8,67.6,75;21.0,64.6,60;23.0,60.5,55;26.4,56.7,55];
+btk_shem_2026_029 = [17.4,69.6,100;18.5,66.8,55;21.0,64.0,50;22.0,59.6,50;26.2,56.7,55];
+myvect = [myvect;my_shem_2026_029];
+nhcvect = [nhcvect;nhc_shem_2026_029];
+btkvect = [btkvect;btk_shem_2026_029];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 003 ... NOKAEN/(ADA) before 2026-01-16-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2011971346205466833
+
+my_wpac_2026_003 = [13.4,126.5,35;14.3,125.4,40;15.6,126.0,45;15.3,127.0,30;14.0,128.3,25];
+nhc_wpac_2026_003 = [13.2,126.9,35;14.9,125.9,40;15.8,126.7,35;15.9,127.9,30;14.7,129.3,25];
+btk_wpac_2026_003 = [13.5,125.0,45;14.4,125.2,40;16.6,126.5,35;17.3,129.1,30;16.7,133.3,30];
+myvect = [myvect;my_wpac_2026_003];
+nhcvect = [nhcvect;nhc_wpac_2026_003];
+btkvect = [btkvect;btk_wpac_2026_003];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 030 ... DUDZAI before 2026-01-16-15Z ... certification failed?
+# my at https://x.com/elioeFIN/status/2012149249866379723
+
+my_shem_2026_030 = [18.5,68.3,65;20.9,65.6,55;22.5,60.9,60;25.9,56.9,55;33.2,56.5,40];
+nhc_shem_2026_030 = [18.3,67.8,80;20.3,65.1,60;21.7,60.8,60;24.9,56.6,60;31.9,56.8,55];
+btk_shem_2026_030 = [18.0,67.4,55;20.8,65.0,50;21.7,60.7,50;24.9,57.0,55;32.3,59.3,55];
+myvect = [myvect;my_shem_2026_030];
+nhcvect = [nhcvect;nhc_shem_2026_030];
+btkvect = [btkvect;btk_shem_2026_030];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 004 ... NOKAEN/(ADA) before 2026-01-17-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2012611455250559225
+
+my_wpac_2026_004 = [16.7,125.0,45;17.7,127.7,45;16.1,130.1,40;13.2,130.1,30];
+nhc_wpac_2026_004 = [15.7,126.0,40;16.7,128.3,40;16.4,130.1,35;14.6,131.0,35];
+btk_wpac_2026_004 = [16.1,125.7,25;17.0,128.1,30;17.1,133.0,30;13.9,134.8,25];
+myvect = [myvect;my_wpac_2026_004];
+nhcvect = [nhcvect;nhc_wpac_2026_004];
+btkvect = [btkvect;btk_wpac_2026_004];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Shem 031 ... 09/97S before 2026-01-29-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2016946184334541066
+
+my_shem_2026_031 = [15.9,43.6,60;18.3,46.2,30;21.0,49.9,40;22.8,53.4,45;24.3,53.5,30];
+nhc_shem_2026_031 = [15.9,44.2,65;18.2,47.5,30;20.7,51.3,40;22.5,53.9,50;24.5,56.1,65];
+btk_shem_2026_031 = [15.5,43.9,95;18.0,47.3,45;21.0,51.0,45;22.9,53.5,55;23.9,54.9,45];
+myvect = [myvect;my_shem_2026_031];
+nhcvect = [nhcvect;nhc_shem_2026_031];
+btkvect = [btkvect;btk_shem_2026_031];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 032 ... FYTIA before 2026-01-30-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2017046458835390623
+# (no JTWC forecast)
+
+# Shem 033 ... FYTIA before 2026-01-30-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2017322736125682084
+# (no JTWC forecast)
+
+# Shem 034 ... FYTIA before 2026-01-31-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2017401177126621376
+
+my_shem_2026_034 = [18.7,48.7,30;21.1,51.9,40;22.9,53.8,50;24.6,55.2,55;26.7,57.1,35];
+nhc_shem_2026_034 = [18.8,48.4,35;21.5,51.9,50;23.1,54.1,50;24.3,55.3,55;26.3,57.6,50];
+btk_shem_2026_034 = [18.8,48.3,40;20.6,52.0,45;23.3,54.0,55;23.6,54.8,45;23.0,55.2,20];
+myvect = [myvect;my_shem_2026_034];
+nhcvect = [nhcvect;nhc_shem_2026_034];
+btkvect = [btkvect;btk_shem_2026_034];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 035 ... FYTIA before 2026-01-31-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2017684028699119635
+# (no JTWC forecast)
+
+# Shem 036 ... FYTIA before 2026-02-01-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2017772326696141134
+
+my_shem_2026_036 = [21.7,52.0,50;23.8,54.3,55;25.7,56.2,50;28.7,59.3,50;34.8,65.2,40];
+nhc_shem_2026_036 = [21.5,51.7,45;23.2,53.8,50;24.2,54.9,55;25.7,56.4,55;27.4,58.3,50];
+btk_shem_2026_036 = [20.6,52.0,45;23.3,54.0,55;23.6,54.8,45;23.0,55.2,20;25.6,57.7,20];
+myvect = [myvect;my_shem_2026_036];
+nhcvect = [nhcvect;nhc_shem_2026_036];
+btkvect = [btkvect;btk_shem_2026_036];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 037 ... FYTIA before 2026-02-01-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2018040798432858606
+# (no JTWC forecast)
+
+# Shem 038 ... FYTIA before 2026-02-02-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2018125659407569384
+
+my_shem_2026_038 = [23.2,53.8,55;24.0,54.9,40;25.1,56.2,35;28.6,60.1,30];
+nhc_shem_2026_038 = [22.2,54.0,55;23.1,55.0,45;24.0,55.7,40;26.0,58.0,35];
+btk_shem_2026_038 = [23.3,54.0,55;23.6,54.8,45;23.0,55.2,20;25.6,57.7,20];
+myvect = [myvect;my_shem_2026_038];
+nhcvect = [nhcvect;nhc_shem_2026_038];
+btkvect = [btkvect;btk_shem_2026_038];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Shem 039 ... FYTIA before 2026-02-02-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2018312081171165570
+
+my_shem_2026_039 = [23.7,54.5,40;24.3,55.3,30;25.4,56.8,30];
+nhc_shem_2026_039 = [23.7,54.8,45;24.9,55.9,40;26.8,58.0,35];
+btk_shem_2026_039 = [23.8,54.5,50;23.4,55.2,25;24.4,56.0,20];
+myvect = [myvect;my_shem_2026_039];
+nhcvect = [nhcvect;nhc_shem_2026_039];
+btkvect = [btkvect;btk_shem_2026_039];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Shem 040 ... FYTIA before 2026-02-03-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2018487055009923246
+
+my_shem_2026_040 = [24.1,55.2,30;24.9,56.2,30];
+nhc_shem_2026_040 = [24.4,55.2,45;25.6,56.7,35];
+btk_shem_2026_040 = [23.6,54.8,45;23.0,55.2,20];
+myvect = [myvect;my_shem_2026_040];
+nhcvect = [nhcvect;nhc_shem_2026_040];
+btkvect = [btkvect;btk_shem_2026_040];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Shem 041 ... FYTIA before 2026-02-03-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2018585861512950038
+# (no JTWC forecast)
+
+# Wpac 005 ... TD/94W/(BASYANG) before 2026-02-03-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2018773057276461511
+# (no JTWC forecast)
+
+# Wpac 006 ... PENHA/(BASYANG) before 2026-02-04-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019125017309806958
+
+my_wpac_2026_006 = [8.4,125.7,35;9.5,121.8,30];
+nhc_wpac_2026_006 = [8.6,125.8,40;10.2,121.8,35];
+btk_wpac_2026_006 = [9.3,125.8,35;9.8,122.1,20];
+myvect = [myvect;my_wpac_2026_006];
+nhcvect = [nhcvect;nhc_wpac_2026_006];
+btkvect = [btkvect;btk_wpac_2026_006];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Wpac 007 ... PENHA/(BASYANG) before 2026-02-05-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019215569594294668
+
+my_wpac_2026_007 = [9.0,124.6,35;10.3,121.9,30];
+nhc_wpac_2026_007 = [8.7,124.7,35;10.3,121.4,30];
+btk_wpac_2026_007 = [9.8,124.8,30;10.0,121.5,15];
+myvect = [myvect;my_wpac_2026_007];
+nhcvect = [nhcvect;nhc_wpac_2026_007];
+btkvect = [btkvect;btk_wpac_2026_007];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Wpac 008 ... PENHA/(BASYANG) before 2026-02-05-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019397394786640227
+
+my_wpac_2026_008 = [9.7,122.2,35;11.6,119.7,25];
+nhc_wpac_2026_008 = [9.9,122.6,35;11.6,120.1,25];
+btk_wpac_2026_008 = [10.1,122.8,25;11.7,121.6,15];
+myvect = [myvect;my_wpac_2026_008];
+nhcvect = [nhcvect;nhc_wpac_2026_008];
+btkvect = [btkvect;btk_wpac_2026_008];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Shem 042 ... 10/90S before 2026-02-06-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019582011439251785
+# (no JTWC forecast)
+
+# Shem 043 ... 10/90S before 2026-02-06-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019848458044338479
+# (no JTWC forecast)
+
+# Shem 044 ... MITCHELL before 2026-02-06-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019853395209699823
+
+my_shem_2026_044 = [20.6,116.3,70;23.2,114.3,45;26.4,115.4,30];
+nhc_shem_2026_044 = [20.6,116.1,80;23.1,114.2,55;26.2,115.8,30];
+btk_shem_2026_044 = [20.3,116.2,80;22.1,113.8,60;25.9,114.6,30];
+myvect = [myvect;my_shem_2026_044];
+nhcvect = [nhcvect;nhc_shem_2026_044];
+btkvect = [btkvect;btk_shem_2026_044];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Shem 045 ... 10/90S before 2026-02-07-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2019939776686604415
+# (no JTWC forecast)
+
+# Shem 046 ... MITCHELL before 2026-02-07-03Z ... CERTIFIED 
+# my at https://x.com/elioeFIN/status/2019944069896839187
+
+my_shem_2026_046 = [20.8,116.0,70;23.5,114.4,35;26.9,116.7,30];
+nhc_shem_2026_046 = [20.9,115.7,80;23.6,114.4,45;27.0,117.2,30];
+btk_shem_2026_046 = [20.7,115.6,75;23.1,113.6,55;27.1,115.4,25];
+myvect = [myvect;my_shem_2026_046];
+nhcvect = [nhcvect;nhc_shem_2026_046];
+btkvect = [btkvect;btk_shem_2026_046];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Shem 047 ... MITCHELL before 2026-02-07-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2020127835403210785
+
+my_shem_2026_047 = [21.9,114.5,70;25.2,114.4,30;27.7,118.3,25];
+nhc_shem_2026_047 = [22.1,114.5,85;25.5,114.8,45;28.1,118.3,30];
+btk_shem_2026_047 = [21.6,114.0,60;25.3,113.8,45;28.8,118.4,20];
+myvect = [myvect;my_shem_2026_047];
+nhcvect = [nhcvect;nhc_shem_2026_047];
+btkvect = [btkvect;btk_shem_2026_047];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;4;4;4];
+
+# Shem 048 ... GEZANI before 2026-02-08-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2020573442269990976
+# (no JTWC forecast)
+
+# Shem 049 ... GEZANI before 2026-02-09-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2020942903892488590
+# (no JTWC forecast)
+
+# Shem 050 ... GEZANI before 2026-02-10-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2021216227335516643
+
+my_shem_2026_050 = [18.9,44.8,30;20.1,40.4,40;21.5,36.5,55;24.8,35.9,75;27.1,38.2,65];
+nhc_shem_2026_050 = [18.9,45.1,30;20.5,40.7,50;22.4,37.3,65;25.1,36.8,70;26.8,38.7,70];
+btk_shem_2026_050 = [18.9,44.7,25;20.4,40.0,75;22.5,36.4,90;25.9,36.6,90;26.4,40.1,80];
+myvect = [myvect;my_shem_2026_050];
+nhcvect = [nhcvect;nhc_shem_2026_050];
+btkvect = [btkvect;btk_shem_2026_050];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 051 ... GEZANI before 2026-02-11-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2021665154405212393
+# (no JTWC forecast)
+
+# Shem 052 ... GEZANI before 2026-02-12-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2021754821745787064
+
+my_shem_2026_052 = [20.9,38.0,75;23.2,35.9,95;26.1,37.6,80;26.1,41.5,65;25.8,42.1,45];
+nhc_shem_2026_052 = [21.2,38.3,80;23.9,36.2,95;26.4,37.9,95;26.6,40.8,80;27.2,41.6,60];
+btk_shem_2026_052 = [21.3,38.2,90;24.1,35.7,95;26.8,38.6,85;25.4,41.8,75;26.4,44.1,55];
+myvect = [myvect;my_shem_2026_052];
+nhcvect = [nhcvect;nhc_shem_2026_052];
+btkvect = [btkvect;btk_shem_2026_052];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 053 ... GEZANI before 2026-02-12-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2022026940417503677
+# (no JTWC forecast)
+
+# Shem 054 ... GEZANI before 2026-02-13-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2022112136785469850
+
+my_shem_2026_054 = [23.9,35.6,100;26.5,38.1,85;26.5,42.2,80;27.7,43.9,60;31.0,43.1,35];
+nhc_shem_2026_054 = [23.9,36.2,105;26.5,38.5,90;26.2,42.0,75;26.7,42.8,65;30.2,41.8,50];
+btk_shem_2026_054 = [24.1,35.7,95;26.8,38.6,85;25.4,41.8,75;26.4,44.1,55;32.9,41.7,45];
+myvect = [myvect;my_shem_2026_054];
+nhcvect = [nhcvect;nhc_shem_2026_054];
+btkvect = [btkvect;btk_shem_2026_054];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 055 ... GEZANI before 2026-02-13-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2022390138404483421
+# (no JTWC forecast)
+
+# Shem 056 ... GEZANI before 2026-02-14-03Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2022473679129456818
+
+my_shem_2026_056 = [25.9,37.5,100;24.6,39.8,75;26.0,41.5,65;29.9,40.5,55];
+nhc_shem_2026_056 = [26.2,37.6,95;25.7,41.0,70;25.8,42.4,60;30.5,41.6,55];
+btk_shem_2026_056 = [26.8,38.6,85;25.4,41.8,75;26.4,44.1,55;32.9,41.7,45];
+myvect = [myvect;my_shem_2026_056];
+nhcvect = [nhcvect;nhc_shem_2026_056];
+btkvect = [btkvect;btk_shem_2026_056];
+leadtimevect = [leadtimevect;1;2;3;4];
+basinvect = [basinvect;3;3;3;3];
+
+# Shem 057 ... GEZANI before 2026-02-14-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2022747068201320891
+# (no JTWC forecast)
+
+# Shem 058 ... GEZANI before 2026-02-15-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2023118022375080096
+
+my_shem_2026_058 = [26.4,44.0,65;31.4,42.1,50;36.1,41.2,50];
+nhc_shem_2026_058 = [26.3,43.8,70;31.2,42.4,60;35.7,42.4,55];
+btk_shem_2026_058 = [25.3,43.6,60;31.5,42.1,50;36.8,42.3,40];
+myvect = [myvect;my_shem_2026_058];
+nhcvect = [nhcvect;nhc_shem_2026_058];
+btkvect = [btkvect;btk_shem_2026_058];
+leadtimevect = [leadtimevect;1;2;3];
+basinvect = [basinvect;3;3;3];
+
+# Shem 059 ... GEZANI before 2026-02-16-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2023293810420424848
+
+my_shem_2026_059 = [28.7,43.3,50;34.2,41.2,45];
+nhc_shem_2026_059 = [28.4,43.0,60;33.8,41.6,60];
+btk_shem_2026_059 = [29.6,43.9,50;34.3,41.1,50];
+myvect = [myvect;my_shem_2026_059];
+nhcvect = [nhcvect;nhc_shem_2026_059];
+btkvect = [btkvect;btk_shem_2026_059];
+leadtimevect = [leadtimevect;1;2];
+basinvect = [basinvect;3;3];
+
+# Shem 060 ... GEZANI before 2026-02-17-09Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2023663354426921114
+
+my_shem_2026_060 = [34.8,41.4,40];
+nhc_shem_2026_060 = [35.6,41.9,45];
+btk_shem_2026_060 = [34.3,41.1,50];
+myvect = [myvect;my_shem_2026_060];
+nhcvect = [nhcvect;nhc_shem_2026_060];
+btkvect = [btkvect;btk_shem_2026_060];
+leadtimevect = [leadtimevect;1];
+basinvect = [basinvect;3];
+
+# Shem 061 ... 11/97S before 2026-02-19-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2024563022669213752
+# (no JTWC forecast)
+
+# Shem 062 ... HORACIO before 2026-02-20-15Z ... certification failed
+# my at https://x.com/elioeFIN/status/2024830308919460193
+
+my_shem_2026_062 = [16.2,72.8,60;17.1,68.9,75;19.9,65.4,90;23.4,63.9,90;28.3,65.5,65];
+nhc_shem_2026_062 = [16.1,73.0,60;17.3,69.4,80;19.7,66.0,95;22.9,64.4,100;27.9,65.6,80];
+btk_shem_2026_062 = [16.9,73.1,35;17.6,69.1,50;19.8,65.8,110;23.8,64.5,110;29.2,66.8,60];
+myvect = [myvect;my_shem_2026_062];
+nhcvect = [nhcvect;nhc_shem_2026_062];
+btkvect = [btkvect;btk_shem_2026_062];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 063 ... HORACIO before 2026-02-20-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2024927006870127054
+
+my_shem_2026_063 = [16.2,72.0,55;17.7,68.0,80;20.7,64.9,95;24.7,64.2,80;29.0,67.5,55];
+nhc_shem_2026_063 = [16.4,72.3,55;17.8,68.5,75;20.6,65.6,100;24.2,64.9,90;28.1,66.4,60];
+btk_shem_2026_063 = [16.9,71.8,45;17.8,68.2,55;20.7,65.1,140;24.8,64.9,95;30.6,67.8,65];
+myvect = [myvect;my_shem_2026_063];
+nhcvect = [nhcvect;nhc_shem_2026_063];
+btkvect = [btkvect;btk_shem_2026_063];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 064 ... HORACIO before 2026-02-21-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2025285001000980883
+
+my_shem_2026_064 = [18.1,68.3,60;21.3,65.1,90;25.6,64.6,85;30.6,66.9,55;32.4,68.2,30];
+nhc_shem_2026_064 = [18.2,68.1,60;20.9,65.2,95;24.9,64.8,95;29.3,66.9,65;31.7,66.5,50];
+btk_shem_2026_064 = [17.8,68.2,55;20.7,65.1,140;24.8,64.9,95;30.6,67.8,65;31.9,69.4,45];
+myvect = [myvect;my_shem_2026_064];
+nhcvect = [nhcvect;nhc_shem_2026_064];
+btkvect = [btkvect;btk_shem_2026_064];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 065 ... HORACIO before 2026-02-22-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2025561850662793350
+# (no JTWC forecast)
+
+# Shem 066 ... NARELLE before 2026-03-18-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2034351700048236876
+# (no JTWC forecast)
+
+# Shem 067 ... NARELLE before 2026-03-20-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2034988417805615435
+
+my_shem_2026_067 = [13.6,136.7,80;14.0,132.2,30;14.4,127.5,30;15.4,123.1,40;16.3,118.6,70];
+nhc_shem_2026_067 = [13.5,136.4,80;14.0,131.9,45;14.8,126.7,50;15.8,122.4,50;17.0,118.4,70];
+btk_shem_2026_067 = [13.1,136.8,80;14.1,131.5,35;15.1,126.8,35;16.4,122.4,45;17.9,117.9,90];
+myvect = [myvect;my_shem_2026_067];
+nhcvect = [nhcvect;nhc_shem_2026_067];
+btkvect = [btkvect;btk_shem_2026_067];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Shem 068 ... 13/99S before 2026-04-01-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2039417987988341038
+# (no JTWC forecast)
+
+# Shem 069 ... INDUSA before 2026-04-03-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2040063241905188995
+# (no JTWC forecast)
+
+# Shem 070 ... MAILA before 2026-04-04-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2040513628839747968
+# (no JTWC forecast)
+
+# Wpac 009 ... TD/90W before 2026-04-08-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2041959063299195072
+# (no JTWC forecast)
+
+# Wpac 010 ... SINLAKU before 2026-04-09-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2042327571069641116
+
+my_wpac_2026_010 = [8.5,149.6,60;9.2,148.8,85;10.9,146.6,110;12.7,143.8,110;14.8,142.2,105];
+nhc_wpac_2026_010 = [8.4,150.8,55;9.3,150.1,75;10.8,148.1,95;12.6,145.5,105;14.7,143.3,105];
+btk_wpac_2026_010 = [8.0,151.0,60;9.3,151.5,95;11.6,149.5,155;13.7,147.0,145;15.2,145.4,115];
+myvect = [myvect;my_wpac_2026_010];
+nhcvect = [nhcvect;nhc_wpac_2026_010];
+btkvect = [btkvect;btk_wpac_2026_010];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 011 ... SINLAKU before 2026-04-10-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2042686194971034110
+
+my_wpac_2026_011 = [9.3,150.6,90;11.5,148.3,110;13.7,145.2,120;15.0,143.3,110;16.3,141.3,105];
+nhc_wpac_2026_011 = [9.3,150.4,85;11.3,147.7,115;13.0,145.4,115;14.4,143.6,110;16.1,142.1,110];
+btk_wpac_2026_011 = [9.3,151.5,95;11.6,149.5,155;13.7,147.0,145;15.2,145.4,115;16.7,144.5,115];
+myvect = [myvect;my_wpac_2026_011];
+nhcvect = [nhcvect;nhc_wpac_2026_011];
+btkvect = [btkvect;btk_wpac_2026_011];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 012 ... SINLAKU before 2026-04-12-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2043407039653638255
+
+my_wpac_2026_012 = [13.9,146.6,145;15.5,144.8,125;17.4,143.6,120;19.8,144.0,95;22.9,144.6,70];
+nhc_wpac_2026_012 = [13.9,146.7,140;15.8,145.1,115;17.7,144.2,100;20.3,144.4,90;23.0,145.4,75];
+btk_wpac_2026_012 = [13.7,147.0,145;15.2,145.4,115;16.7,144.5,115;19.0,145.0,85;21.3,146.5,70];
+myvect = [myvect;my_wpac_2026_012];
+nhcvect = [nhcvect;nhc_wpac_2026_012];
+btkvect = [btkvect;btk_wpac_2026_012];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 013 ... SINLAKU before 2026-04-13-21Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2043772303121555608
+
+my_wpac_2026_013 = [15.6,145.6,120;17.5,144.7,105;20.3,145.4,90;22.6,147.2,65;26.7,148.7,55];
+nhc_wpac_2026_013 = [15.5,145.9,125;17.5,145.3,105;20.2,146.2,85;22.9,148.9,70;25.9,152.7,65];
+btk_wpac_2026_013 = [15.2,145.4,115;16.7,144.5,115;19.0,145.0,85;21.3,146.5,70;25.3,148.5,55];
+myvect = [myvect;my_wpac_2026_013];
+nhcvect = [nhcvect;nhc_wpac_2026_013];
+btkvect = [btkvect;btk_wpac_2026_013];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
+
+# Wpac 014 ... SINLAKU before 2026-04-14-15Z ... CERTIFIED
+# my at https://x.com/elioeFIN/status/2044041745004908682
+
+my_wpac_2026_014 = [16.5,144.8,110;19.0,144.9,85;22.0,147.0,65;25.6,149.8,50;29.2,156.9,50];
+nhc_wpac_2026_014 = [16.5,144.9,110;19.1,145.0,90;21.9,146.7,75;25.3,149.3,65;29.1,155.4,55];
+btk_wpac_2026_014 = [16.2,144.6,110;18.4,144.8,90;20.8,146.2,80;24.3,147.5,60;28.3,153.7,55];
+myvect = [myvect;my_wpac_2026_014];
+nhcvect = [nhcvect;nhc_wpac_2026_014];
+btkvect = [btkvect;btk_wpac_2026_014];
+leadtimevect = [leadtimevect;1;2;3;4;5];
+basinvect = [basinvect;3;3;3;3;3];
 
 
 

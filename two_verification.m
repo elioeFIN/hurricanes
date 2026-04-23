@@ -9,6 +9,7 @@ x1=1 ; # AOI in NAtl subtropics around April 24, 2024
 x2=1 ; # Invest 92L in June 2024
 x3=1 ; # Invest 96L in September 2024 (perhaps formed 2024/09/22/00)
 x4=1 ; # AOI in NAtl subtropics (perhaps formed 2024/12/21/12)
+x5=1 ; # Francis/Ulli near SW Spain (perhaps formed 2026/01/04/12)
 
 
 # 001 - before 2023-05-25-01Z - ghost
@@ -580,7 +581,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 072 - before 2024-01-09-01Z - ghost
@@ -588,7 +589,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 073 - before 2024-01-10-19Z - ghost
@@ -596,7 +597,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 074 - before 2024-01-11-19Z - ghost
@@ -604,7 +605,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.1,0.2];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 075 - before 2024-01-30-01Z - nothing projected/formed in NHC AOR
@@ -624,7 +625,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 080 - before 2024-02-06-01Z - nothing projected/formed in NHC AOR
@@ -635,7 +636,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 082 - before 2024-02-08-01Z - ghost
@@ -643,7 +644,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 083 - before 2024-02-09-01Z - ghost
@@ -651,7 +652,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.1,0.2];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 084 - before 2024-02-10-01Z - ghost
@@ -659,7 +660,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.1,0.2];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 085 - before 2024-02-11-01Z - ghost
@@ -667,7 +668,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.1,0.1];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 086 - before 2024-02-12-01Z - nothing projected/formed in NHC AOR
@@ -738,7 +739,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 108 - before 2024-04-06-19Z - nothing projected/formed in NHC AOR
@@ -752,7 +753,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0];
-formed = [formed,x1];
+formed = [formed,x1]; # post-season analysis and I disagree
 leadtime = [leadtime,7];
 
 # 111 - before 2024-04-19-01Z - possible unrecognized TC
@@ -760,7 +761,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,x1];
+formed = [formed,x1]; # post-season analysis and I disagree
 leadtime = [leadtime,7];
 
 # 112 - before 2024-04-20-19Z - possible unrecognized TC
@@ -768,7 +769,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.2];
-formed = [formed,x1];
+formed = [formed,x1]; # post-season analysis and I disagree
 leadtime = [leadtime,7];
 
 # 113 - before 2024-04-22-01Z - possible unrecognized TC
@@ -776,7 +777,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.1,0.2];
-formed = [formed,x1,x1];
+formed = [formed,x1,x1]; # post-season analysis and I disagree
 leadtime = [leadtime,2,7];
 
 # 114 - before 2024-04-23-07Z - ghost, possible unrecognized TC
@@ -784,7 +785,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0,0,0,0];
 myvect = [myvect,0.1,0.1,0.2,0.2];
-formed = [formed,0,0,x1,x1];
+formed = [formed,0,0,x1,x1]; # post-season analysis and I disagree
 leadtime = [leadtime,2,7,2,7];
 
 # 115 - before 2024-04-26-01Z - nothing projected/formed in NHC AOR
@@ -819,7 +820,7 @@ leadtime = [leadtime,2,7,2,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.2];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 125 - before 2024-05-12-01Z - ghost
@@ -827,7 +828,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.2];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 126 - before 2024-05-13-01Z - ghost
@@ -835,7 +836,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.2];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 127 - before 2024-05-14-01Z - ghost
@@ -843,7 +844,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.3];
 myvect = [myvect,0.4];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 128 - before 2024-05-15-01Z - ghost,ghost
@@ -851,7 +852,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.3,0];
 myvect = [myvect,0.3,0.1];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,7,7];
 
 # 129 - before 2024-05-16-01Z - ghost,ghost
@@ -859,7 +860,7 @@ leadtime = [leadtime,7,7];
 
 nhcvect = [nhcvect,0,0,0.4];
 myvect = [myvect,0.1,0.1,0.4];
-formed = [formed,0,0,0];
+formed = [formed,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
 # 130 - before 2024-05-17-01Z - ghost,ghost,ghost
@@ -867,7 +868,7 @@ leadtime = [leadtime,2,7,7];
 
 nhcvect = [nhcvect,0,0.2,0.2,0.4];
 myvect = [myvect,0.1,0.2,0.2,0.4];
-formed = [formed,0,0,0,0];
+formed = [formed,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,7,2,7,7];
 
 # 131 - before 2024-05-18-01Z - ghost,ghost
@@ -875,7 +876,7 @@ leadtime = [leadtime,7,2,7,7];
 
 nhcvect = [nhcvect,0.2,0.2,0.2];
 myvect = [myvect,0.2,0.2,0.2];
-formed = [formed,0,0,0];
+formed = [formed,0,0,0]; # post-season analysis
 leadtime = [leadtime,7,2,7];
 
 # 132 - before 2024-05-20-01Z - nothing projected/formed in NHC AOR
@@ -892,7 +893,7 @@ leadtime = [leadtime,7,2,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 136 - before 2024-05-29-01Z - ghost
@@ -900,7 +901,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 137 - before 2024-05-30-19Z - ghost
@@ -908,7 +909,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.1,0.2];
 myvect = [myvect,0.1,0.2];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 138 - before 2024-06-02-13Z - ghost
@@ -916,7 +917,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0.1,0.1];
 myvect = [myvect,0.1,0.1];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 139 - before 2024-06-03-13Z - ghost
@@ -924,15 +925,15 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0.1,0.1];
 myvect = [myvect,0.1,0.1];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 140 - before 2024-06-05-01Z - ghost
 # my at https://x.com/elioeFIN/status/1798135299106807844
 
 nhcvect = [nhcvect,0];
-myvect = [myvect,1];
-formed = [formed,0];
+myvect = [myvect,0.1];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 141 - before 2024-06-06-01Z - ghost
@@ -940,7 +941,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 142 - before 2024-06-07-19Z - ghost
@@ -948,7 +949,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 143 - before 2024-06-09-01Z - ghost
@@ -956,7 +957,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.2];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 144 - before 2024-06-10-01Z - ghost
@@ -964,7 +965,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.2];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 145 - before 2024-06-12-01Z - 90L,Alberto,90E
@@ -972,7 +973,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.1,0.2,0,0.2];
 myvect = [myvect,0.1,0.2,0.2,0.2];
-formed = [formed,0,0,0,0];
+formed = [formed,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 146 - before 2024-06-13-01Z - 90L,Alberto,90E
@@ -980,7 +981,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.2,0.2,0.3,0.2];
 myvect = [myvect,0.2,0.2,0.5,0.2];
-formed = [formed,0,0,1,0];
+formed = [formed,0,0,1,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 147 - before 2024-06-14-01Z - 90L,Alberto,90E
@@ -988,7 +989,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.2,0.2,0.4,0.1,0.2];
 myvect = [myvect,0.2,0.2,0.5,0.2,0.4];
-formed = [formed,0,0,1,0,0];
+formed = [formed,0,0,1,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,2,7];
 
 # 148 - before 2024-06-17-01Z - 90E,Alberto,93L,92L
@@ -996,7 +997,7 @@ leadtime = [leadtime,2,7,7,2,7];
 
 nhcvect = [nhcvect,0.3,0.3,0.5,0.7,0,0.3];
 myvect = [myvect,0.3,0.3,0.5,0.8,0.2,0.3];
-formed = [formed,0,0,0,1,0,x2];
+formed = [formed,0,0,0,1,0,x2]; # post-season analysis and I disagree
 leadtime = [leadtime,2,7,2,7,7,7];
 
 # 149 - before 2024-06-18-07Z - Alberto,93L,92L
@@ -1004,7 +1005,7 @@ leadtime = [leadtime,2,7,2,7,7,7];
 
 nhcvect = [nhcvect,0.8,0.8,0.2,0.1,0.2];
 myvect = [myvect,0.8,0.8,0.4,0.1,0.2];
-formed = [formed,1,1,0,0,x2];
+formed = [formed,1,1,0,0,x2]; # post-season analysis and I disagree
 leadtime = [leadtime,2,7,7,2,7];
 
 # 150 - before 2024-06-19-07Z - Alberto,93L,92L
@@ -1012,7 +1013,7 @@ leadtime = [leadtime,2,7,7,2,7];
 
 nhcvect = [nhcvect,0.8,0.8,0.3,0.1,0.2];
 myvect = [myvect,0.8,0.8,0.5,0.1,0.2];
-formed = [formed,1,1,0,x2,x2];
+formed = [formed,1,1,0,x2,x2]; # post-season analysis and I disagree
 leadtime = [leadtime,2,7,7,2,7];
 
 # 151 - before 2024-06-21-01Z - 92L,93L,Chris
@@ -1020,7 +1021,7 @@ leadtime = [leadtime,2,7,7,2,7];
 
 nhcvect = [nhcvect,0.5,0.5,0.3,0.6,0];
 myvect = [myvect,0.5,0.5,0.3,0.7,0.1];
-formed = [formed,x2,x2,0,0,0];
+formed = [formed,x2,x2,0,0,0]; # post-season analysis and I disagree
 leadtime = [leadtime,2,7,2,7,7];
 
 # 152 - before 2024-06-22-07Z - 93L,Chris,Beryl
@@ -1028,7 +1029,7 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.5,0.5,0,0];
 myvect = [myvect,0.6,0.6,0.1,0];
-formed = [formed,0,0,0,1];
+formed = [formed,0,0,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 153 - before 2024-06-24-01Z - 93L,Chris,Chris*(Epac),Beryl
@@ -1036,7 +1037,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.1,0.1,0,0,0];
 myvect = [myvect,0.1,0.1,0.1,0.1,0.1];
-formed = [formed,0,0,1,0,1];
+formed = [formed,0,0,1,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,7,7];
 
 # 154 - before 2024-06-26-01Z - Chris,Chris*(Epac),Beryl
@@ -1044,7 +1045,7 @@ leadtime = [leadtime,2,7,7,7,7];
 
 nhcvect = [nhcvect,0.1,0.2,0,0.2];
 myvect = [myvect,0.1,0.2,0.1,0.4];
-formed = [formed,0,1,0,1];
+formed = [formed,0,1,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 155 - before 2024-06-28-01Z - Beryl,96L,Chris,Aletta
@@ -1052,7 +1053,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.7,0.9,0,0.2,0.3,0];
 myvect = [myvect,0.7,0.9,0.1,0.2,0.3,0.1];
-formed = [formed,1,1,0,0,1,1];
+formed = [formed,1,1,0,0,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,2,7,7];
 
 # 156 - before 2024-06-29-01Z - 96L,Chris,Aletta
@@ -1060,7 +1061,7 @@ leadtime = [leadtime,2,7,7,2,7,7];
 
 nhcvect = [nhcvect,0.4,0.4,0.4,0];
 myvect = [myvect,0.4,0.4,0.5,0];
-formed = [formed,0,1,1,1];
+formed = [formed,0,1,1,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,7];
 
 # 157 - before 2024-06-30-01Z - 96L,Chris,Aletta
@@ -1068,7 +1069,7 @@ leadtime = [leadtime,7,2,7,7];
 
 nhcvect = [nhcvect,0.3,0.7,0.5,0.5,0.3];
 myvect = [myvect,0.3,0.7,0.6,0.6,0.3];
-formed = [formed,0,0,1,1,1];
+formed = [formed,0,0,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7];
 
 # 158 - before 2024-07-02-13Z - 96L,ghost,Aletta
@@ -1076,7 +1077,7 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.2,0.3,0,0.3,0.5];
 myvect = [myvect,0.2,0.3,0.1,0.3,0.5];
-formed = [formed,0,0,0,1,1];
+formed = [formed,0,0,0,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,2,7];
 
 # 159 - before 2024-07-07-01Z - ghost,ghost?
@@ -1084,7 +1085,7 @@ leadtime = [leadtime,2,7,7,2,7];
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.1,0.1];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,7,7];
 
 # 160 - before 2024-07-08-01Z - ghost?
@@ -1092,7 +1093,7 @@ leadtime = [leadtime,7,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 161 - before 2024-07-09-01Z - nothing projected/formed in NHC AOR
@@ -1103,7 +1104,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.1,0.1];
 myvect = [myvect,0.1,0.1];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 163 - before 2024-07-12-01Z - ghost,92E
@@ -1111,7 +1112,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0,0.2];
 myvect = [myvect,0.1,0.2];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,7,7];
 
 # 164 - before 2024-07-15-01Z - ghost,ghost,ghost,92E
@@ -1119,7 +1120,7 @@ leadtime = [leadtime,7,7];
 
 nhcvect = [nhcvect,0,0,0,0.1,0.3];
 myvect = [myvect,0.1,0.1,0.1,0.1,0.5];
-formed = [formed,0,0,0,0,0];
+formed = [formed,0,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,7,7,7,2,7];
 
 # 165 - before 2024-07-16-19Z - 92E
@@ -1127,7 +1128,7 @@ leadtime = [leadtime,7,7,7,2,7];
 
 nhcvect = [nhcvect,0.4,0.4];
 myvect = [myvect,0.5,0.5];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 166 - before 2024-07-17-19Z - 92E,Bud
@@ -1135,7 +1136,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0.3,0.3,0.2];
 myvect = [myvect,0.3,0.3,0.3];
-formed = [formed,0,0,1];
+formed = [formed,0,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
 # 167 - before 2024-07-18-19Z - 92E,Bud
@@ -1143,7 +1144,7 @@ leadtime = [leadtime,2,7,7];
 
 nhcvect = [nhcvect,0.1,0.1,0.2];
 myvect = [myvect,0.1,0.1,0.2];
-formed = [formed,0,0,1];
+formed = [formed,0,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
 # 168 - before 2024-07-22-01Z - ghost,ghost,Bud
@@ -1151,23 +1152,23 @@ leadtime = [leadtime,2,7,7];
 
 nhcvect = [nhcvect,0.1,0.3,0.1,0.1,0];
 myvect = [myvect,0.1,0.3,0.1,0.1,0];
-formed = [formed,0,0,0,0,1];
+formed = [formed,0,0,0,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7];
 
-# 169 - before 2024-07-24-07Z - Bud,ghost
+# 169 - before 2024-07-24-07Z - Bud,ghost,Carlotta
 # my at https://x.com/elioeFIN/status/1815989403900055798
 
-nhcvect = [nhcvect,0.3,0.3,0.1,0.2];
-myvect = [myvect,0.3,0.3,0.1,0.2];
-formed = [formed,1,1,0,0];
-leadtime = [leadtime,2,7,2,7];
+nhcvect = [nhcvect,0.3,0.3,0.1,0.2,0];
+myvect = [myvect,0.3,0.3,0.1,0.2,0];
+formed = [formed,1,1,0,0,1]; # post-season analysis
+leadtime = [leadtime,2,7,2,7,7];
 
-# 170 - before 2024-07-27-19Z - Debby,Fabio,Carlotta,Daniel
+# 170 - before 2024-07-27-19Z - Debby,Fabio,Carlotta,Daniel,Emilia
 # my at https://x.com/elioeFIN/status/1817259243570913595
 
 nhcvect = [nhcvect,0.3,0,0.5,0.3];
 myvect = [myvect,0.4,0.1,0.6,0.3];
-formed = [formed,1,0,1,1];
+formed = [formed,1,0,1,1]; # post-season analysis
 leadtime = [leadtime,7,7,7,7];
 
 # 171 - before 2024-07-29-01Z - Debby,Fabio,Carlotta,Daniel,Emilia
@@ -1175,7 +1176,7 @@ leadtime = [leadtime,7,7,7,7];
 
 nhcvect = [nhcvect,0.4,0.3,0.2,0.7,0.3,0];
 myvect = [myvect,0.5,0.4,0.2,0.8,0.3,0];
-formed = [formed,1,0,0,1,1,1];
+formed = [formed,1,0,0,1,1,1]; # post-season analysis
 leadtime = [leadtime,7,7,2,7,7,7];
 
 # 172 - before 2024-07-31-19Z - Debby,Fabio,Daniel,Emilia
@@ -1183,7 +1184,7 @@ leadtime = [leadtime,7,7,2,7,7,7];
 
 nhcvect = [nhcvect,0.6,0.1,0.8,0.3,0.3,0];
 myvect = [myvect,0.6,0.1,0.9,0.3,0.3,0];
-formed = [formed,1,0,1,0,1,1];
+formed = [formed,1,0,1,0,1,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,2,7,7];
 
 # 173 - before 2024-08-02-13Z - Debby,Fabio,Emilia,Daniel
@@ -1191,7 +1192,7 @@ leadtime = [leadtime,7,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.6,0.9,0.4,0.9,0,0,0.2,0.2];
 myvect = [myvect,0.6,0.9,0.4,0.9,0,0.1,0.2,0.2];
-formed = [formed,1,1,0,1,1,1,1,1];
+formed = [formed,1,1,0,1,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,2,7,2,7];
 
 # 174 - before 2024-08-04-19Z - ghost,Fabio
@@ -1199,7 +1200,7 @@ leadtime = [leadtime,2,7,2,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.1,0.2,0.8,0.9];
 myvect = [myvect,0.1,0.2,0.8,0.9];
-formed = [formed,1,1,0,0];
+formed = [formed,0,0,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7];
 
 # 175 - before 2024-08-04-19Z - ghost,ghost,Ernesto
@@ -1207,7 +1208,7 @@ leadtime = [leadtime,2,7,2,7];
 
 nhcvect = [nhcvect,0.1,0.3,0,0];
 myvect = [myvect,0.1,0.4,0.1,0.1];
-formed = [formed,0,0,0,1];
+formed = [formed,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 176 - before 2024-08-09-19Z - ghost,Ernesto,98E
@@ -1215,7 +1216,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0,0,0.6,0.1,0.3];
 myvect = [myvect,0.1,0.2,0.7,0.1,0.3];
-formed = [formed,0,0,1,0,0];
+formed = [formed,0,0,1,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,2,7];
 
 # 177 - before 2024-08-12-01Z - Ernesto,Hone,Gilma
@@ -1223,7 +1224,7 @@ leadtime = [leadtime,2,7,7,2,7];
 
 nhcvect = [nhcvect,0.8,0.9,0,0];
 myvect = [myvect,0.8,0.9,0.1,0];
-formed = [formed,1,1,0,1];
+formed = [formed,1,1,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 178 - before 2024-08-14-01Z - Gilma,Hone
@@ -1231,7 +1232,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.2,0];
 myvect = [myvect,0.3,0.2];
-formed = [formed,1,0];
+formed = [formed,1,0]; # post-season analysis
 leadtime = [leadtime,7,7];
 
 # 179 - before 2024-08-15-13Z - ghost,Gilma,ghost,Hone
@@ -1239,7 +1240,7 @@ leadtime = [leadtime,7,7];
 
 nhcvect = [nhcvect,0,0.5,0.3,0.6,0];
 myvect = [myvect,0.2,0.6,0.3,0.6,0.2];
-formed = [formed,0,1,0,0,1];
+formed = [formed,0,1,0,0,1]; # post-season analysis
 leadtime = [leadtime,7,7,2,7,7];
 
 # 180 - before 2024-08-16-13Z - ghost,Gilma,Hone
@@ -1247,7 +1248,7 @@ leadtime = [leadtime,7,7,2,7,7];
 
 nhcvect = [nhcvect,0,0.3,0.8,0,0.4];
 myvect = [myvect,0.3,0.3,0.9,0.1,0.4];
-formed = [formed,0,1,1,0,1];
+formed = [formed,0,1,1,0,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,2,7];
 
 # 181 - before 2024-08-17-19Z - ghost,ghost,Gilma,Hone,90E
@@ -1255,7 +1256,7 @@ leadtime = [leadtime,7,2,7,2,7];
 
 nhcvect = [nhcvect,0,0,0.7,0.9,0.1,0.7,0.2,0.2];
 myvect = [myvect,0.2,0.2,0.8,0.9,0.2,0.7,0.2,0.2];
-formed = [formed,0,0,1,1,0,1,0,0];
+formed = [formed,0,0,1,1,0,1,0,0]; # post-season analysis
 leadtime = [leadtime,7,7,2,7,2,7,2,7];
 
 # 182 - before 2024-18-19-07Z - ghost,ghost,Hector,Hone,90E
@@ -1263,7 +1264,7 @@ leadtime = [leadtime,7,7,2,7,2,7,2,7];
 
 nhcvect = [nhcvect,0,0,0.2,0.2,0.4,0.5,0.7];
 myvect = [myvect,0.1,0.1,0.3,0.2,0.4,0.5,0.7];
-formed = [formed,0,0,1,1,1,0,1];
+formed = [formed,0,0,1,0,1,0,0]; # post-season analysis
 leadtime = [leadtime,7,7,7,2,7,2,7];
 
 # 183 - before 2024-08-20-13Z - Hector,Hone
@@ -1271,7 +1272,7 @@ leadtime = [leadtime,7,7,7,2,7,2,7];
 
 nhcvect = [nhcvect,0,0.4,0.8,0.8];
 myvect = [myvect,0.1,0.6,0.8,0.9];
-formed = [formed,0,1,1,1];
+formed = [formed,0,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7];
 
 # 184 - before 2024-08-22-01Z - ghost,Hector,Hone
@@ -1279,7 +1280,7 @@ leadtime = [leadtime,2,7,2,7];
 
 nhcvect = [nhcvect,0,0.4,0.8,0.9,0.9];
 myvect = [myvect,0.1,0.5,0.9,0.9,0.9];
-formed = [formed,0,0,1,1,1];
+formed = [formed,0,0,1,1,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,2,7];
 
 # 185 - before 2024-08-27-19Z - ghost,Francine,92L
@@ -1287,7 +1288,7 @@ leadtime = [leadtime,7,2,7,2,7];
 
 nhcvect = [nhcvect,0,0.2,0];
 myvect = [myvect,0.1,0.2,0.1];
-formed = [formed,0,0,0];
+formed = [formed,0,0,0]; # post-season analysis
 leadtime = [leadtime,7,7,7];
 
 # 186 - before 2024-08-28-19Z - Francine,92L
@@ -1295,7 +1296,7 @@ leadtime = [leadtime,7,7,7];
 
 nhcvect = [nhcvect,0.2,0];
 myvect = [myvect,0.2,0.2];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,7,7];
 
 # 187 - before 2024-08-29-19Z - Francine,92L
@@ -1303,7 +1304,7 @@ leadtime = [leadtime,7,7];
 
 nhcvect = [nhcvect,0.4,0];
 myvect = [myvect,0.4,0.2];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,7,7];
 
 # 188 - before 2024-08-30-19Z - 90L,Francine,92L
@@ -1311,7 +1312,7 @@ leadtime = [leadtime,7,7];
 
 nhcvect = [nhcvect,0.1,0.2,0.4,0.2];
 myvect = [myvect,0.1,0.2,0.4,0.2];
-formed = [formed,0,0,0,0];
+formed = [formed,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 189 - before 2024-08-31-19Z - 90L,Francine,92L
@@ -1319,7 +1320,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.1,0.2,0.4,0];
 myvect = [myvect,0.1,0.2,0.4,0.1];
-formed = [formed,0,0,0,0];
+formed = [formed,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 190 - before 2024-09-02-01Z - 90L,Francine,92L
@@ -1327,7 +1328,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.1,0.1,0.1,0.4,0.3];
 myvect = [myvect,0.1,0.1,0.1,0.4,0.3];
-formed = [formed,0,0,0,0,0];
+formed = [formed,0,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7];
 
 # 191 - before 2024-09-03-13Z - Gordon,92L,ghost,Francine,93E
@@ -1335,7 +1336,7 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0,0.1,0.4,0.1,0.1,0.4,0];
 myvect = [myvect,0.1,0.1,0.4,0.1,0.1,0.4,0.1];
-formed = [formed,0,0,0,0,0,1,0];
+formed = [formed,0,0,0,0,0,1,0]; # post-season analysis
 leadtime = [leadtime,7,2,7,2,7,7,7];
 
 # 192 - before 2024-09-04-19Z - Gordon,92L,ghost,99L,Francine,Ileana
@@ -1343,7 +1344,7 @@ leadtime = [leadtime,7,2,7,2,7,7,7];
 
 nhcvect = [nhcvect,0,0.1,0.2,0.1,0.1,0.1,0.2,0.3,0];
 myvect = [myvect,0.1,0.1,0.3,0.1,0.1,0.1,0.2,0.3,0.2];
-formed = [formed,1,0,0,0,0,0,0,1,0];
+formed = [formed,1,0,0,0,0,0,0,1,0]; # post-season analysis
 leadtime = [leadtime,7,2,7,2,7,2,7,7,7];
 
 # 193 - before 2024-09-05-19Z - Gordon,92L,ghost,99L,Francine,90L,Ileana
@@ -1351,7 +1352,7 @@ leadtime = [leadtime,7,2,7,2,7,2,7,7,7];
 
 nhcvect = [nhcvect,0,0.2,0.1,0.3,0.3,0.2,0.1,0.1,0.3];
 myvect = [myvect,0.2,0.2,0.1,0.3,0.3,0.2,0.1,0.2,0.4];
-formed = [formed,1,0,0,0,0,1,0,0,1];
+formed = [formed,1,0,0,0,0,1,0,0,1]; # post-season analysis
 leadtime = [leadtime,7,7,7,2,7,7,2,7,7];
 
 # 194 - before 2024-09-07-13Z - Gordon,92L,Francine,Ileana
@@ -1359,7 +1360,7 @@ leadtime = [leadtime,7,7,7,2,7,7,2,7,7];
 
 nhcvect = [nhcvect,0,0.3,0.4,0.6,0.3];
 myvect = [myvect,0.1,0.3,0.4,0.6,0.4];
-formed = [formed,1,0,1,1,1];
+formed = [formed,1,0,1,1,1]; # post-season analysis
 leadtime = [leadtime,7,7,2,7,7];
 
 # 195 - before 2024-09-09-07Z - 92L,Gordon,Francine,Ileana
@@ -1367,7 +1368,7 @@ leadtime = [leadtime,7,7,2,7,7];
 
 nhcvect = [nhcvect,0.6,0.7,0,0.6,0.9,0.9,0.6];
 myvect = [myvect,0.6,0.7,0.1,0.7,0.9,0.9,0.7];
-formed = [formed,0,0,0,1,1,1,1];
+formed = [formed,0,0,0,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,2,7,7];
 
 # 196 - before 2024-09-15-19Z - 08L,96L,John
@@ -1375,7 +1376,7 @@ leadtime = [leadtime,2,7,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.5,0.5,0,0,0];
 myvect = [myvect,0.6,0.6,0.1,0.2,0];
-formed = [formed,0,0,0,x3,1];
+formed = [formed,0,0,0,x3,1]; # post-season analysis and I disagree
 leadtime = [leadtime,2,7,2,7,7];
 
 # 197 - before 2024-09-16-19Z - 08L,96L,Helene,Joyce,John
@@ -1383,7 +1384,7 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.1,0.1,0,0,0,0];
 myvect = [myvect,0.1,0.1,0.2,0.1,0.1,0];
-formed = [formed,0,0,x3,0,0,1];
+formed = [formed,0,0,x3,0,0,1]; # post-season analysis and I disagree
 leadtime = [leadtime,2,7,7,7,7,7];
 
 # 198 - before 2024-09-17-19Z - 96L,ex-Gordon,Helene,Joyce,John
@@ -1391,23 +1392,23 @@ leadtime = [leadtime,2,7,7,7,7,7];
 
 nhcvect = [nhcvect,0,0.2,0.4,0,0,0];
 myvect = [myvect,0.2,0.2,0.5,0.2,0.2,0];
-formed = [formed,x3,0,0,1,0,1];
+formed = [formed,x3,0,0,1,0,1]; # post-season analysis and I disagree
 leadtime = [leadtime,7,2,7,7,7,7];
 
-# 199 - before 2024-09-18-19Z - ex-Gordon,96L,Joyce,Kirk,Helene,John
+# 199 - before 2024-09-18-19Z - ex-Gordon,96L,Joyce,Kirk,Helene,John,Isaac
 # my at https://x.com/elioeFIN/status/1836467622293958717
 
-nhcvect = [nhcvect,0.2,0.5,0,0,0,0.2,0];
-myvect = [myvect,0.2,0.5,0.2,0.2,0.1,0.3,0.1];
-formed = [formed,0,0,x3,0,0,1,1];
-leadtime = [leadtime,2,7,7,7,7,7,7];
+nhcvect = [nhcvect,0.2,0.5,0,0,0,0.2,0,0];
+myvect = [myvect,0.2,0.5,0.2,0.2,0.1,0.3,0.1,0];
+formed = [formed,0,0,x3,0,0,1,1,1]; # post-season analysis and I disagree
+leadtime = [leadtime,2,7,7,7,7,7,7,7];
 
 # 200 - before 2024-09-19-19Z - ex-Gordon,96L,Joyce,Kirk,Helene,John,ghost,Isaac
 # my at https://x.com/elioeFIN/status/1836828096361590940
 
 nhcvect = [nhcvect,0.3,0.3,0.1,0.2,0,0,0.4,0,0.2,0];
 myvect = [myvect,0.4,0.5,0.1,0.3,0.2,0.2,0.4,0.2,0.2,0];
-formed = [formed,0,0,0,x3,0,0,1,1,0,1];
+formed = [formed,0,0,0,x3,0,0,1,1,0,1]; # post-season analysis and I disagree
 leadtime = [leadtime,2,7,2,7,7,7,7,7,7,7];
 
 # 201 - before 2024-09-21-19Z - ex-Gordon,96L,Joyce,Kirk,Helene,John,ghost,Isaac
@@ -1415,7 +1416,7 @@ leadtime = [leadtime,2,7,2,7,7,7,7,7,7,7];
 
 nhcvect = [nhcvect,0,0,0.1,0.1,0.4,0,0.6,0.1,0.3,0.5,0];
 myvect = [myvect,0.1,0.1,0.1,0.1,0.5,0.1,0.7,0.2,0.5,0.5,0];
-formed = [formed,0,0,x3,x3,1,0,1,1,1,0,1];
+formed = [formed,0,0,x3,x3,1,0,1,1,1,0,1]; # post-season analysis and I disagree
 leadtime = [leadtime,2,7,2,7,7,7,7,2,7,7,7];
 
 # 202 - before 2024-09-22-19Z - Joyce,Kirk,Helene,John,ghost,Isaac
@@ -1423,39 +1424,39 @@ leadtime = [leadtime,2,7,2,7,7,7,7,2,7,7,7];
 
 nhcvect = [nhcvect,0.5,0,0.4,0.8,0.7,0.7,0.1,0.4,0];
 myvect = [myvect,0.6,0.1,0.5,0.9,0.7,0.8,0.1,0.4,0];
-formed = [formed,1,1,1,1,1,1,0,0,1];
+formed = [formed,1,1,1,1,1,1,0,0,1]; # post-season analysis
 leadtime = [leadtime,7,7,2,7,2,7,2,7,7];
 
 # 203 - before 2024-09-23-19Z - Joyce,Kirk,Leslie,Isaac,Helene,ghost
 # my at https://x.com/elioeFIN/status/1838280024698376646
 
-nhcvect = [nhcvect,0.2,0.7,0,0,0,0.9,0.9,0.1,0.1];
-myvect = [myvect,0.2,0.7,0.1,0.1,0.2,0.9,0.9,0.1,0.1];
-formed = [formed,0,1,1,0,1,1,1,0,0];
-leadtime = [leadtime,2,7,7,7,7,2,7,2,7];
+nhcvect = [nhcvect,0.2,0.7,0,0,0,0,0.9,0.9,0.1,0.1];
+myvect = [myvect,0.2,0.7,0.1,0.1,0,0.2,0.9,0.9,0.1,0.1];
+formed = [formed,0,1,1,0,1,1,1,1,0,0]; # post-season analysis
+leadtime = [leadtime,2,7,7,7,2,7,2,7,2,7];
 
 # 204 - before 2024-09-24-19Z - Joyce,Kirk,Leslie,Isaac,ex-John,11E
 # my at https://x.com/elioeFIN/status/1838643577070469124
 
 nhcvect = [nhcvect,0.4,0.8,0,0,0,0,0.5,0.5,0];
 myvect = [myvect,0.4,0.9,0.1,0.1,0.1,0.2,0.5,0.5,0];
-formed = [formed,0,1,1,0,1,1,1,1,1];
+formed = [formed,0,1,1,0,1,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,7,2,7,2,7,7];
 
-# 205 - before 2024-09-27-13Z - Joyce,Kirk,Milton,11E
+# 205 - before 2024-09-27-13Z - Joyce,Kirk,Milton,11E,Leslie
 # my at https://x.com/elioeFIN/status/1839640540310020528
 
-nhcvect = [nhcvect,0.9,0.9,0,0.2,0.3,0];
-myvect = [myvect,0.9,0.9,0.1,0.4,0.3,0.1];
-formed = [formed,1,1,0,1,1,1];
-leadtime = [leadtime,2,7,2,7,7,7];
+nhcvect = [nhcvect,0.9,0.9,0,0.2,0.3,0,0];
+myvect = [myvect,0.9,0.9,0.1,0.4,0.3,0.1,0];
+formed = [formed,1,1,0,1,0,1,1]; # post-season analysis
+leadtime = [leadtime,2,7,2,7,7,7,7];
 
 # 206 - before 2024-10-02-01Z - Leslie,Milton,97E,98E
 # my at https://x.com/elioeFIN/status/1841263347204846042
 
 nhcvect = [nhcvect,0.9,0.9,0,0.4,0.5,0.8,0,0];
 myvect = [myvect,0.9,0.9,0.1,0.5,0.5,0.8,0.1,0.1];
-formed = [formed,1,1,0,1,0,0,0,0];
+formed = [formed,1,1,0,1,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,2,7,2,7];
 
 # 207 - before 2024-10-06-07Z - Oscar,ghost
@@ -1463,7 +1464,7 @@ leadtime = [leadtime,2,7,2,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.3,0.3,0.6];
 myvect = [myvect,0.3,0.3,0.6];
-formed = [formed,0,0,0];
+formed = [formed,0,0,0]; # post-season analysis
 leadtime = [leadtime,7,2,7];
 
 # 208 - before 2024-10-10-19Z - Oscar,Nadine,ghost
@@ -1471,7 +1472,7 @@ leadtime = [leadtime,7,2,7];
 
 nhcvect = [nhcvect,0.2,0.2,0,0];
 myvect = [myvect,0.2,0.3,0.1,0.1];
-formed = [formed,0,0,0,0];
+formed = [formed,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 209 - before 2024-10-12-19Z - Oscar,Nadine
@@ -1479,7 +1480,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.3,0.3,0];
 myvect = [myvect,0.3,0.4,0.2];
-formed = [formed,0,1,1];
+formed = [formed,0,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
 # 210 - before 2024-10-13-19Z - Oscar,Nadine
@@ -1487,23 +1488,23 @@ leadtime = [leadtime,2,7,7];
 
 nhcvect = [nhcvect,0.1,0.4,0];
 myvect = [myvect,0.1,0.4,0.2];
-formed = [formed,0,1,1];
+formed = [formed,0,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
-# 211 - before 2024-10-16-01Z - Oscar,Nadine
+# 211 - before 2024-10-16-01Z - Oscar,Nadine,Kristy
 # my at https://x.com/elioeFIN/status/1846338759530577942
 
-nhcvect = [nhcvect,0.3,0.5,0.1,0.2];
-myvect = [myvect,0.3,0.5,0.1,0.3];
-formed = [formed,0,1,0,1];
-leadtime = [leadtime,2,7,2,7];
+nhcvect = [nhcvect,0.3,0.5,0.1,0.2,0];
+myvect = [myvect,0.3,0.5,0.1,0.3,0];
+formed = [formed,0,1,0,1,1]; # post-season analysis
+leadtime = [leadtime,2,7,2,7,7];
 
 # 212 - before 2024-10-17-19Z - Oscar,Nadine,Kristy
 # my at https://x.com/elioeFIN/status/1846972652252180983
 
 nhcvect = [nhcvect,0.2,0.3,0.3,0.3,0.3];
 myvect = [myvect,0.2,0.3,0.3,0.4,0.4];
-formed = [formed,1,1,1,1,1];
+formed = [formed,1,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7];
 
 # 213 - before 2024-10-19-01Z - Nadine,Oscar,Kristy
@@ -1511,7 +1512,7 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.7,0.7,0.3,0.3,0.6];
 myvect = [myvect,0.7,0.7,0.3,0.3,0.7];
-formed = [formed,1,1,1,1,1];
+formed = [formed,1,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7];
 
 # 214 - before 2024-10-28-01Z - Rafael,Patty,91E,Lane
@@ -1519,31 +1520,31 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.4,0,0.3,0.7,0.2];
 myvect = [myvect,0.5,0.1,0.3,0.7,0.2];
-formed = [formed,0,1,0,0,1];
+formed = [formed,0,1,0,0,1]; # post-season analysis
 leadtime = [leadtime,7,7,2,7,7];
 
-# 215 - before 2024-10-29-01Z - Rafael,Patty,ghost,91E,Lane
+# 215 - before 2024-10-29-01Z - Rafael,Patty,ghost,91E,Lane,14E
 # my at https://x.com/elioeFIN/status/1851044325330751713
 
-nhcvect = [nhcvect,0.4,0,0,0,0.2,0.4,0.1,0.2];
-myvect = [myvect,0.5,0.1,0.1,0.1,0.2,0.4,0.2,0.3];
-formed = [formed,1,1,0,0,0,0,0,1];
-leadtime = [leadtime,7,7,2,7,2,7,2,7];
+nhcvect = [nhcvect,0.4,0,0,0,0.2,0.4,0.1,0.2,0];
+myvect = [myvect,0.5,0.1,0.1,0.1,0.2,0.4,0.2,0.3,0];
+formed = [formed,1,1,0,0,0,0,0,1,1]; # post-season analysis
+leadtime = [leadtime,7,7,2,7,2,7,2,7,7];
 
-# 216 - before 2024-10-30-01Z - Rafael,91E,Lane,Patty
+# 216 - before 2024-10-30-01Z - Rafael,91E,Lane,Patty,14E
 # my at https://x.com/elioeFIN/status/1851408273238606037
 
-nhcvect = [nhcvect,0.4,0.2,0.3,0.1,0.2,0];
-myvect = [myvect,0.5,0.2,0.3,0.2,0.3,0];
-formed = [formed,1,0,0,0,1,1];
-leadtime = [leadtime,7,2,7,2,7,7];
+nhcvect = [nhcvect,0.4,0.2,0.3,0.1,0.2,0,0];
+myvect = [myvect,0.5,0.2,0.3,0.2,0.3,0,0];
+formed = [formed,1,0,0,0,1,1,1]; # post-season analysis
+leadtime = [leadtime,7,2,7,2,7,7,7];
 
 # 217 - before 2024-10-31-01Z - Rafael,Patty,91E,Lane,14E
 # my at https://x.com/elioeFIN/status/1851773929276232057
 
 nhcvect = [nhcvect,0.4,0,0,0.1,0.2,0.1,0.2,0,0];
 myvect = [myvect,0.4,0.1,0.1,0.1,0.2,0.1,0.2,0.1,0.1];
-formed = [formed,1,1,1,0,0,1,1,0,1];
+formed = [formed,1,1,1,0,0,1,1,0,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,2,7,2,7,2,7];
 
 # 218 - before 2024-11-01-01Z - Rafael,ghost,Patty,Lane,14E
@@ -1551,7 +1552,7 @@ leadtime = [leadtime,7,2,7,2,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.1,0.6,0.1,0.1,0.2,0.2,0.4,0.4,0,0.3];
 myvect = [myvect,0.1,0.7,0.1,0.1,0.2,0.2,0.4,0.4,0.1,0.3];
-formed = [formed,0,1,0,0,1,1,1,1,0,1];
+formed = [formed,0,1,0,0,1,1,1,1,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,2,7,2,7,2,7];
 
 # 219 - before 2024-11-06-01Z - 98L,14E,ghost
@@ -1559,7 +1560,7 @@ leadtime = [leadtime,2,7,2,7,2,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.2,0.3,0.5,0.5,0];
 myvect = [myvect,0.2,0.3,0.5,0.5,0.1];
-formed = [formed,2,7,2,7,7];
+formed = [formed,0,0,1,1,0]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7];
 
 # 220 - before 2024-11-10-13Z - 98L,Sara,ghost
@@ -1567,7 +1568,7 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.1,0.1,0,0];
 myvect = [myvect,0.1,0.1,0.1,0.1];
-formed = [formed,0,0,1,0];
+formed = [formed,0,0,1,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 221 - before 2024-11-11-19Z - Sara,ghost,ghost
@@ -1575,7 +1576,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.1,0.5,0,0];
 myvect = [myvect,0.1,0.6,0.1,0.1];
-formed = [formed,0,1,0,0];
+formed = [formed,0,1,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 222 - before 2024-11-13-01Z - Sara,ghost,ghost,ghost,ghost,ghost
@@ -1583,7 +1584,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.7,0.9,0,0,0,0,0,0,0];
 myvect = [myvect,0.7,0.9,0.1,0.1,0.2,0.1,0.1,0.1,0.2];
-formed = [formed,1,1,0,0,0,0,0,0,0];
+formed = [formed,1,1,0,0,0,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7,7,2,7,2,7];
 
 # 223 - before 2024-11-16-13Z - ghost,ghost,ghost
@@ -1591,7 +1592,7 @@ leadtime = [leadtime,2,7,7,7,7,2,7,2,7];
 
 nhcvect = [nhcvect,0,0,0,0,0.1,0.1];
 myvect = [myvect,0.2,0.2,0.2,0.2,0.2,0.3];
-formed = [formed,0,0,0,0,0,0];
+formed = [formed,0,0,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,2,7];
 
 # 224 - before 2024-11-18-01Z - ghost,ghost
@@ -1599,7 +1600,7 @@ leadtime = [leadtime,2,7,2,7,2,7];
 
 nhcvect = [nhcvect,0,0.1,0.1];
 myvect = [myvect,0.1,0.1,0.1];
-formed = [formed,0,0,0];
+formed = [formed,0,0,0]; # post-season analysis
 leadtime = [leadtime,7,2,7];
 
 # 225 - before 2024-11-19-01Z - nothing projected/formed in NHC AOR
@@ -1613,7 +1614,7 @@ leadtime = [leadtime,7,2,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 228 - before 2024-11-22-19Z - ghost
@@ -1621,7 +1622,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 229 - before 2024-11-24-01Z - ghost 
@@ -1629,7 +1630,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 230 - before 2024-11-25-01Z - ghost
@@ -1637,7 +1638,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 231 - before 2024-11-26-13Z - ghost
@@ -1645,7 +1646,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 232 - before 2024-11-27-13Z - nothing projected/formed in NHC AOR
@@ -1662,7 +1663,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 236 - before 2024-12-03-07Z - nothing projected/formed in NHC AOR
@@ -1685,7 +1686,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,x4];
+formed = [formed,x4]; # post-season analysis and I disagree
 leadtime = [leadtime,7];
 
 # 242 - before 2024-12-16-01Z - possible unrecognized STC
@@ -1693,7 +1694,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0];
-formed = [formed,x4];
+formed = [formed,x4]; # post-season analysis and I disagree
 leadtime = [leadtime,7];
 
 # 243 - before 2024-12-17-01Z - possible unrecognized STC
@@ -1701,7 +1702,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.2];
-formed = [formed,x4];
+formed = [formed,x4]; # post-season analysis and I disagree
 leadtime = [leadtime,7];
 
 # 244 - before 2024-12-18-01Z - possible unrecognized STC
@@ -1709,7 +1710,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.2];
-formed = [formed,x4];
+formed = [formed,x4]; # post-season analysis and I disagree
 leadtime = [leadtime,7];
 
 # 245 - before 2024-12-19-01Z - possible unrecognized STC
@@ -1717,7 +1718,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.1,0.3];
-formed = [formed,x4,x4];
+formed = [formed,x4,x4]; # post-season analysis and I disagree
 leadtime = [leadtime,2,7];
 
 # 246 - before 2024-12-20-01Z - possible unrecognized STC
@@ -1725,7 +1726,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.1,0.1];
-formed = [formed,x4,x4];
+formed = [formed,x4,x4]; # post-season analysis and I disagree
 leadtime = [leadtime,2,7];
 
 # 247 - before 2024-12-24-01Z - nothing projected/formed in NHC AOR
@@ -1736,7 +1737,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 249 - before 2024-12-29-19Z - ghost
@@ -1744,7 +1745,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.3];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 250 - before 2024-12-30-19Z - ghost
@@ -1752,7 +1753,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.1,0.2];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 251 - before 2025-01-02-01Z - ghost
@@ -1760,7 +1761,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.1,0.1];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 252 - before 2025-01-03-19Z - nothing projected/formed in NHC AOR
@@ -1819,7 +1820,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 270 - before 2025-02-23-01Z - nothing projected/formed in NHC AOR
@@ -1845,7 +1846,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 277 - before 2025-03-11-01Z - nothing projected/formed in NHC AOR
@@ -1859,7 +1860,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 280 - before 2025-03-14-19Z - nothing projected/formed in NHC AOR
@@ -1870,7 +1871,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0,0,0];
 myvect = [myvect,0.1,0.1,0.1];
-formed = [formed,0,0,0];
+formed = [formed,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
 # 282 - before 2025-03-17-01Z - nothing projected/formed in NHC AOR
@@ -1914,7 +1915,7 @@ leadtime = [leadtime,2,7,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 295 - before 2025-04-05-19Z - ghost
@@ -1922,7 +1923,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 296 - before 2025-04-07-01Z - ghost
@@ -1930,7 +1931,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 297 - before 2025-04-08-01Z - ghost
@@ -1938,7 +1939,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 298 - before 2025-04-09-01Z - nothing projected/formed in NHC AOR
@@ -2024,7 +2025,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.1,0.1];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 325 - before 2025-05-15-19Z - nothing projected/formed in NHC AOR
@@ -2044,7 +2045,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 330 - before 2025-05-20-19Z - Alvin
@@ -2052,7 +2053,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.2];
 myvect = [myvect,0.2];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 331 - before 2025-05-21-19Z - Alvin
@@ -2060,7 +2061,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.4];
 myvect = [myvect,0.4];
-formed = [formed,1];
+formed = [formed,1]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 332 - before 2025-05-22-19Z - Alvin
@@ -2068,7 +2069,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.5];
 myvect = [myvect,0.6];
-formed = [formed,1];
+formed = [formed,1]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 333 - before 2025-05-23-19Z - Alvin
@@ -2076,7 +2077,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.7];
 myvect = [myvect,0.8];
-formed = [formed,1];
+formed = [formed,1]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 334 - before 2025-05-24-19Z - Alvin
@@ -2084,7 +2085,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.8];
 myvect = [myvect,0.9];
-formed = [formed,1];
+formed = [formed,1]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 335 - before 2025-05-25-19Z - Alvin
@@ -2092,7 +2093,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.1,0.8];
 myvect = [myvect,0.2,0.9];
-formed = [formed,0,1];
+formed = [formed,0,1]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 336 - before 2025-05-26-19Z - Alvin
@@ -2100,7 +2101,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0.7,0.9];
 myvect = [myvect,0.7,0.9];
-formed = [formed,1,1];
+formed = [formed,1,1]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 337 - before 2025-05-27-19Z - Alvin
@@ -2108,7 +2109,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,1,1];
 myvect = [myvect,1,1];
-formed = [formed,1,1];
+formed = [formed,1,1]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 338 - before 2025-05-29-19Z - Barbara
@@ -2116,7 +2117,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 339 - before 2025-05-30-19Z - Barbara
@@ -2124,7 +2125,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.3];
 myvect = [myvect,0.4];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 340 - before 2025-05-31-19Z - ghost,Barbara
@@ -2132,7 +2133,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0,0.4];
 myvect = [myvect,0.1,0.5];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,7,7];
 
 # 341 - before 2025-06-01-19Z - ghost,Barbara,Cosme
@@ -2140,7 +2141,7 @@ leadtime = [leadtime,7,7];
 
 nhcvect = [nhcvect,0,0.4,0];
 myvect = [myvect,0.1,0.6,0];
-formed = [formed,0,1,1];
+formed = [formed,0,1,1]; # post-season analysis
 leadtime = [leadtime,7,7,7];
 
 # 342 - before 2025-06-02-19Z - ghost,Barbara,Cosme
@@ -2148,7 +2149,7 @@ leadtime = [leadtime,7,7,7];
 
 nhcvect = [nhcvect,0.1,0.4,0];
 myvect = [myvect,0.1,0.6,0];
-formed = [formed,0,1,1];
+formed = [formed,0,1,1]; # post-season analysis
 leadtime = [leadtime,7,7,7];
 
 # 343 - before 2025-06-03-19Z - ghost,Dalila,Barbara,Cosme
@@ -2156,7 +2157,7 @@ leadtime = [leadtime,7,7,7];
 
 nhcvect = [nhcvect,0.1,0.1,0,0.7,0];
 myvect = [myvect,0.1,0.1,0.1,0.8,0];
-formed = [formed,0,0,0,1,1];
+formed = [formed,0,0,0,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,7,7];
 
 # 344 - before 2025-06-04-19Z - Barbara,Dalila,Cosme
@@ -2164,7 +2165,7 @@ leadtime = [leadtime,2,7,7,7,7];
 
 nhcvect = [nhcvect,0.1,0.8,0,0];
 myvect = [myvect,0.1,0.8,0.1,0];
-formed = [formed,0,1,0,1];
+formed = [formed,0,1,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 345 - before 2025-06-05-19Z - Dalila,Barbara,Cosme
@@ -2172,7 +2173,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0,0.4,0.8,0,0.3];
 myvect = [myvect,0.1,0.4,0.7,0.1,0.6];
-formed = [formed,0,0,1,0,1];
+formed = [formed,0,0,1,0,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,2,7];
 
 # 346 - before 2025-06-07-19Z - Dalila,Barbara,Cosme
@@ -2180,7 +2181,7 @@ leadtime = [leadtime,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.3,0.9,0.9,0.7,0.8];
 myvect = [myvect,0.4,0.9,0.9,0.7,0.8];
-formed = [formed,1,1,1,1,1];
+formed = [formed,1,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,2,7];
 
 # 347 - before 2025-06-09-19Z - Dalila
@@ -2188,7 +2189,7 @@ leadtime = [leadtime,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.6];
 myvect = [myvect,0.6];
-formed = [formed,1];
+formed = [formed,1]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 348 - before 2025-06-11-19Z - Erick,Dalila
@@ -2196,7 +2197,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.2,0.5,0.9];
 myvect = [myvect,0.3,0.6,0.9];
-formed = [formed,1,1,1];
+formed = [formed,1,1,1]; # post-season analysis
 leadtime = [leadtime,7,2,7];
 
 # 349 - before 2025-06-12-19Z - ghost,Erick,Dalila
@@ -2204,7 +2205,7 @@ leadtime = [leadtime,7,2,7];
 
 nhcvect = [nhcvect,0,0,0.2,0.9,0.9];
 myvect = [myvect,0.1,0.1,0.4,0.9,0.9];
-formed = [formed,0,0,1,1,1];
+formed = [formed,0,0,1,1,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,2,7];
 
 # 350 - before 2025-06-13-19Z - Erick
@@ -2212,7 +2213,7 @@ leadtime = [leadtime,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.3];
 myvect = [myvect,0.3];
-formed = [formed,1];
+formed = [formed,1]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 351 - before 2025-06-14-19Z - Erick
@@ -2220,7 +2221,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.2,0.5];
 myvect = [myvect,0.3,0.6];
-formed = [formed,0,1];
+formed = [formed,0,1]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 352 - before 2025-06-15-19Z - Erick
@@ -2228,23 +2229,23 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0.4,0.7];
 myvect = [myvect,0.5,0.8];
-formed = [formed,1,1];
+formed = [formed,1,1]; # post-season analysis
 leadtime = [leadtime,2,7];
 
-# 353 - before 2025-06-16-19Z - Erick
+# 353 - before 2025-06-16-19Z - Erick,Andrea
 # my at https://x.com/elioeFIN/status/1934672749189845260
 
-nhcvect = [nhcvect,0.9,0.9];
-myvect = [myvect,0.9,0.9];
-formed = [formed,1,1];
-leadtime = [leadtime,2,7];
+nhcvect = [nhcvect,0.9,0.9,0];
+myvect = [myvect,0.9,0.9,0];
+formed = [formed,1,1,1];
+leadtime = [leadtime,2,7,7];
 
 # 354 - before 2025-06-18-19Z - Flossie,Andrea
 # my at https://x.com/elioeFIN/status/1935393709379448863
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.2,0];
-formed = [formed,0,1];
+formed = [formed,0,1]; # post-season analysis
 leadtime = [leadtime,7,7];
 
 # 355 - before 2025-06-19-19Z - Barry,Flossie,Andrea
@@ -2252,23 +2253,23 @@ leadtime = [leadtime,7,7];
 
 nhcvect = [nhcvect,0,0.2,0];
 myvect = [myvect,0.1,0.3,0];
-formed = [formed,0,0,1];
+formed = [formed,0,0,1]; # post-season analysis
 leadtime = [leadtime,7,7,7];
 
 # 356 - before 2025-06-21-19Z - Flossie,Andrea,Barry
 # my at https://x.com/elioeFIN/status/1936485922381656144
 
-nhcvect = [nhcvect,0,0.7,0,0];
-myvect = [myvect,0.1,0.8,0,0];
-formed = [formed,0,0,1,1];
-leadtime = [leadtime,2,7,7,7];
+nhcvect = [nhcvect,0,0.7,0,0,0];
+myvect = [myvect,0.1,0.8,0,0,0];
+formed = [formed,0,0,1,1,1]; # post-season analysis
+leadtime = [leadtime,2,7,2,7,7];
 
 # 357 - before 2025-06-22-19Z - Andrea,Flossie,Barry
 # my at https://x.com/elioeFIN/status/1936840945951211755
 
 nhcvect = [nhcvect,0.2,0.2,0.1,0.7,0];
 myvect = [myvect,0.2,0.2,0.2,0.8,0];
-formed = [formed,1,1,0,1,1];
+formed = [formed,1,1,0,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7];
 
 # 358 - before 2025-06-24-19Z - Flossie,Barry
@@ -2276,7 +2277,7 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.1,0.7,0];
 myvect = [myvect,0.2,0.7,0];
-formed = [formed,0,1,1];
+formed = [formed,0,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
 # 359 - before 2025-06-25-19Z - Flossie,Barry
@@ -2284,7 +2285,7 @@ leadtime = [leadtime,2,7,7];
 
 nhcvect = [nhcvect,0.4,0.8,0];
 myvect = [myvect,0.4,0.8,0];
-formed = [formed,0,1,1];
+formed = [formed,0,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
 # 360 - before 2025-06-26-19Z - Flossie,Barry
@@ -2292,7 +2293,7 @@ leadtime = [leadtime,2,7,7];
 
 nhcvect = [nhcvect,0.5,0.8,0,0];
 myvect = [myvect,0.6,0.8,0,0];
-formed = [formed,0,1,1,1];
+formed = [formed,0,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7];
 
 # 361 - before 2025-06-27-19Z - Barry,Flossie,Chantal
@@ -2300,7 +2301,7 @@ leadtime = [leadtime,2,7,2,7];
 
 nhcvect = [nhcvect,0.2,0.3,0.6,0.9,0];
 myvect = [myvect,0.2,0.3,0.6,0.9,0];
-formed = [formed,1,1,1,1,1];
+formed = [formed,1,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7];
 
 # 362 - before 2025-06-30-01Z - Chantal,96E
@@ -2308,7 +2309,7 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.2,0.2];
 myvect = [myvect,0.3,0.3];
-formed = [formed,1,0];
+formed = [formed,1,0]; # post-season analysis
 leadtime = [leadtime,7,7];
 
 # 363 - before 2025-07-01-19Z - Chantal,96E
@@ -2316,7 +2317,7 @@ leadtime = [leadtime,7,7];
 
 nhcvect = [nhcvect,0.3,0.4];
 myvect = [myvect,0.3,0.4];
-formed = [formed,1,0];
+formed = [formed,1,0]; # post-season analysis
 leadtime = [leadtime,7,7];
 
 # 364 - before 2025-07-03-19Z - Chantal,96E,ghost
@@ -2324,7 +2325,7 @@ leadtime = [leadtime,7,7];
 
 nhcvect = [nhcvect,0.3,0.6,0.4,0.8,0];
 myvect = [myvect,0.3,0.6,0.4,0.8,0.1];
-formed = [formed,1,1,0,0,0];
+formed = [formed,1,1,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7];
 
 # 365 - before 2025-07-05-19Z - 96E,ghost
@@ -2332,7 +2333,7 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.6,0.8,0.2];
 myvect = [myvect,0.6,0.8,0.2];
-formed = [formed,0,0,0];
+formed = [formed,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
 # 366 - before 2025-07-07-19Z - ghost,96E
@@ -2340,7 +2341,7 @@ leadtime = [leadtime,2,7,7];
 
 nhcvect = [nhcvect,0.1,0.1,0.1];
 myvect = [myvect,0.1,0.1,0.1];
-formed = [formed,0,0,0];
+formed = [formed,0,0,0]; # post-season analysis
 leadtime = [leadtime,7,2,7];
 
 # 367 - before 2025-07-08-19Z - ghost
@@ -2348,7 +2349,7 @@ leadtime = [leadtime,7,2,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 368 - before 2025-07-10-19Z - ghost
@@ -2356,7 +2357,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.2];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 369 - before 2025-07-13-19Z - 93L
@@ -2364,7 +2365,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.2];
 myvect = [myvect,0.2];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 370 - before 2025-07-14-19Z - 93L
@@ -2372,7 +2373,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0.2,0.3];
 myvect = [myvect,0.2,0.3];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 371 - before 2025-07-18-19Z - ghost,ghost
@@ -2380,7 +2381,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0,0.2];
 myvect = [myvect,0.2,0.2];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,7,7];
 
 # 372 - before 2025-07-19-19Z - 94L,ghost,ghost,ghost
@@ -2388,7 +2389,7 @@ leadtime = [leadtime,7,7];
 
 nhcvect = [nhcvect,0.1,0.2,0,0,0.2,0.3];
 myvect = [myvect,0.1,0.2,0.2,0.1,0.2,0.3];
-formed = [formed,0,0,0,0,0,0];
+formed = [formed,0,0,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7,2,7];
 
 # 373 - before 2025-07-21-01Z - 94L,ghost,ghost,ghost,Iona
@@ -2396,7 +2397,7 @@ leadtime = [leadtime,2,7,7,7,2,7];
 
 nhcvect = [nhcvect,0.2,0.2,0,0,0.1,0.1,0];
 myvect = [myvect,0.2,0.2,0.3,0.1,0.1,0.1,0];
-formed = [formed,0,0,0,0,0,0,1];
+formed = [formed,0,0,0,0,0,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,7,2,7,7];
 
 # 374 - before 2025-07-22-19Z - ghost,Iona,Keli
@@ -2404,7 +2405,7 @@ leadtime = [leadtime,2,7,7,7,2,7,7];
 
 nhcvect = [nhcvect,0,0.2,0];
 myvect = [myvect,0.2,0.2,0];
-formed = [formed,0,1,1];
+formed = [formed,0,1,1]; # post-season analysis
 leadtime = [leadtime,7,7,7];
 
 # 375 - before 2025-07-24-19Z - ghost,ghost,Gil,Iona,Keli
@@ -2412,7 +2413,7 @@ leadtime = [leadtime,7,7,7];
 
 nhcvect = [nhcvect,0.1,0.1,0,0,0.4,0];
 myvect = [myvect,0.1,0.1,0.2,0.1,0.4,0];
-formed = [formed,0,0,0,1,1,1];
+formed = [formed,0,0,0,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,7,7,7];
 
 # 376 - before 2025-07-25-19Z - ghost,ghost,ghost,Gil,Iona,Keli
@@ -2420,7 +2421,7 @@ leadtime = [leadtime,2,7,7,7,7,7];
 
 nhcvect = [nhcvect,0.1,0.1,0,0,0.3,0.4,0.6,0];
 myvect = [myvect,0.1,0.1,0.1,0.2,0.4,0.4,0.6,0];
-formed = [formed,0,0,0,0,1,1,1,1];
+formed = [formed,0,0,0,0,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,7,7,2,7,7];
 
 # 377 - before 2025-08-03-19Z - 96L,Dexter,ghost,Ivo,Henriette
@@ -2428,7 +2429,7 @@ leadtime = [leadtime,2,7,7,7,7,2,7,7];
 
 nhcvect = [nhcvect,0.4,0.7,0.7,0.2,0.5,0.9,0.9];
 myvect = [myvect,0.5,0.7,0.7,0.2,0.5,0.9,0.9];
-formed = [formed,0,1,1,0,1,1,1];
+formed = [formed,0,1,1,0,1,1,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,7,7,2,7];
 
 # 378 - before 2025-08-08-19Z - 96L,ghost,Erin
@@ -2436,7 +2437,7 @@ leadtime = [leadtime,7,2,7,7,7,2,7];
 
 nhcvect = [nhcvect,0.4,0.1,0.1,0];
 myvect = [myvect,0.4,0.2,0.2,0.2];
-formed = [formed,0,0,0,1];
+formed = [formed,0,0,0,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,7];
 
 # 379 - before 2025-08-09-19Z - Erin,96L
@@ -2444,7 +2445,7 @@ leadtime = [leadtime,7,2,7,7];
 
 nhcvect = [nhcvect,0.1,0.5,0.2];
 myvect = [myvect,0.1,0.6,0.2];
-formed = [formed,1,1,0];
+formed = [formed,1,1,0]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
 # 380 - before 2025-08-13-10Z - ghost,98L,Fernand
@@ -2452,7 +2453,7 @@ leadtime = [leadtime,2,7,7];
 
 nhcvect = [nhcvect,0.1,0.1,0.1,0.2,0];
 myvect = [myvect,0.1,0.1,0.1,0.2,0.1];
-formed = [formed,0,0,0,0,0];
+formed = [formed,0,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7];
 
 # 381 - before 2025-08-15-01Z - 98L,ghost,Fernand
@@ -2460,7 +2461,7 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.5,0.5,0,0];
 myvect = [myvect,0.5,0.5,0.1,0.1];
-formed = [formed,0,0,0,0];
+formed = [formed,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 382 - before 2025-08-16-19Z - ghost,ghost,Fernand
@@ -2468,7 +2469,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.1,0.1,0,0,0];
 myvect = [myvect,0.1,0.1,0.2,0.2,0.2];
-formed = [formed,0,0,0,0,1];
+formed = [formed,0,0,0,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7];
 
 # 383 - before 2025-08-18-01Z - Fernand,ghost,Juliette
@@ -2476,7 +2477,7 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.4,0,0,0];
 myvect = [myvect,0.5,0.1,0.1,0];
-formed = [formed,1,0,0,1];
+formed = [formed,1,0,0,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,7];
 
 # 384 - before 2025-08-19-19Z - 99L,Fernand,Juliette
@@ -2484,7 +2485,7 @@ leadtime = [leadtime,7,2,7,7];
 
 nhcvect = [nhcvect,0.3,0.3,0.1,0.6,0];
 myvect = [myvect,0.3,0.3,0.1,0.6,0];
-formed = [formed,0,0,0,1,1];
+formed = [formed,0,0,0,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7];
 
 # 385 - before 2025-08-22-19Z - 99L,Fernand,Juliette,93E
@@ -2492,7 +2493,7 @@ leadtime = [leadtime,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.3,0.4,0.8,0.9,0.1,0.6,0];
 myvect = [myvect,0.2,0.4,0.8,0.9,0.1,0.7,0.1];
-formed = [formed,0,0,1,1,0,1,0];
+formed = [formed,0,0,1,1,1,1,0]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,2,7,7];
 
 # 386 - before 2025-08-23-19Z - 99L,Fernand,Juliette
@@ -2500,7 +2501,7 @@ leadtime = [leadtime,2,7,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.2,0.2,1,1,0.4,0.7];
 myvect = [myvect,0.2,0.2,1,1,0.4,0.7];
-formed = [formed,0,0,1,1,1,1];
+formed = [formed,0,0,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,2,7];
 
 # 387 - before 2025-08-25-01Z - 99L,Kiko
@@ -2508,7 +2509,7 @@ leadtime = [leadtime,2,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.3,0.3,0];
 myvect = [myvect,0.3,0.3,0.1];
-formed = [formed,0,0,1];
+formed = [formed,0,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
 # 388 - before 2025-08-27-19Z - Lorena,Kiko,ghost
@@ -2516,7 +2517,7 @@ leadtime = [leadtime,2,7,7];
 
 nhcvect = [nhcvect,0.3,0.2,0.6,0.2,0.2];
 myvect = [myvect,0.4,0.2,0.6,0.2,0.2];
-formed = [formed,1,0,1,0,0];
+formed = [formed,1,0,1,0,0]; # post-season analysis
 leadtime = [leadtime,7,2,7,2,7];
 
 # 389 - before 2025-08-28-19Z - 91L,Lorena,Kiko
@@ -2524,7 +2525,7 @@ leadtime = [leadtime,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.2,0.5,0.5,0.8];
 myvect = [myvect,0.2,0.6,0.5,0.8];
-formed = [formed,0,1,0,1];
+formed = [formed,0,1,0,1]; # post-season analysis
 leadtime = [leadtime,7,7,2,7];
 
 # 390 - before 2025-08-29-19Z - 91L,Lorena,Kiko
@@ -2532,7 +2533,7 @@ leadtime = [leadtime,7,7,2,7];
 
 nhcvect = [nhcvect,0.3,0.1,0.6,0.5,0.7];
 myvect = [myvect,0.3,0.1,0.7,0.5,0.7];
-formed = [formed,0,0,1,1,1];
+formed = [formed,0,0,1,1,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,2,7];
 
 # 391 - before 2025-09-02-13Z - 91L,ghost
@@ -2540,7 +2541,7 @@ leadtime = [leadtime,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.3,0.7,0];
 myvect = [myvect,0.3,0.7,0.1];
-formed = [formed,0,0,0];
+formed = [formed,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
 # 392 - before 2025-09-06-19Z - 91L,ghost,ghost,Mario
@@ -2548,7 +2549,7 @@ leadtime = [leadtime,2,7,7];
 
 nhcvect = [nhcvect,0.2,0.2,0,0.2,0];
 myvect = [myvect,0.2,0.2,0.1,0.2,0];
-formed = [formed,0,0,0,0,1];
+formed = [formed,0,0,0,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,7,7];
 
 # 393 - before 2025-09-07-19Z - Mario
@@ -2556,7 +2557,7 @@ leadtime = [leadtime,2,7,7,7,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,1];
+formed = [formed,1]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 394 - before 2025-09-10-01Z - Gabrielle,Mario
@@ -2564,7 +2565,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0,0.4,0.8];
 myvect = [myvect,0.2,0.4,0.8];
-formed = [formed,0,1,1];
+formed = [formed,0,1,1]; # post-season analysis
 leadtime = [leadtime,7,2,7];
 
 # 395 - before 2025-09-12-01Z - Gabrielle,ghost,96E,ghost,ghost
@@ -2572,7 +2573,7 @@ leadtime = [leadtime,7,2,7];
 
 nhcvect = [nhcvect,0.3,0,0,0,0];
 myvect = [myvect,0.4,0.1,0.1,0.1,0.2];
-formed = [formed,1,0,0,0,0];
+formed = [formed,1,0,0,0,0]; # post-season analysis
 leadtime = [leadtime,7,7,7,7,7];
 
 # 396 - before 2025-09-13-19Z - Gabrielle,96E,ghost,Mario(regen.),ghost
@@ -2580,7 +2581,7 @@ leadtime = [leadtime,7,7,7,7,7];
 
 nhcvect = [nhcvect,0.5,0.2,0.1,0.4,0,0,0.2];
 myvect = [myvect,0.6,0.3,0.1,0.4,0.1,0.1,0.4];
-formed = [formed,1,0,0,0,1,1,0];
+formed = [formed,1,0,0,0,1,1,0]; # post-season analysis
 leadtime = [leadtime,7,7,2,7,2,7,7];
 
 # 397 - before 2025-09-15-13Z - Gabrielle,Imelda,96E,ghost,Narda
@@ -2588,7 +2589,7 @@ leadtime = [leadtime,7,7,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.4,0.8,0,0,0.2,0.6,0,0];
 myvect = [myvect,0.5,0.8,0.1,0.2,0.3,0.7,0.1,0];
-formed = [formed,1,1,0,0,0,0,0,1];
+formed = [formed,0,1,0,0,0,0,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,2,7,7,7];
 
 # 398 - before 2025-09-16-19Z - Imelda,Gabrielle,96E,Narda,ghost
@@ -2598,7 +2599,7 @@ leadtime = [leadtime,2,7,2,7,2,7,7,7];
 
 nhcvect = [nhcvect,0,0.2,0.9,0.9,0.7,0.9,0,0];
 myvect = [myvect,0.1,0.3,0.9,0.9,0.7,0.9,0.1,0.1];
-formed = [formed,0,0,1,1,0,0,1,0];
+formed = [formed,0,0,1,1,0,0,1,0]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,2,7,7,7];
 
 # 399 - before 2025-09-24-01Z - Humberto,Imelda,ghost,Octave
@@ -2606,7 +2607,7 @@ leadtime = [leadtime,2,7,2,7,2,7,7,7];
 
 nhcvect = [nhcvect,0.7,0.9,0.3,0.7,0,0];
 myvect = [myvect,0.7,0.9,0.3,0.7,0.1,0];
-formed = [formed,1,1,0,1,0,1];
+formed = [formed,1,1,0,1,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,7,7];
 
 # 400 - before 2025-09-26-01Z - Imelda,ghost,ghost,Octave
@@ -2614,7 +2615,7 @@ leadtime = [leadtime,2,7,2,7,7,7];
 
 nhcvect = [nhcvect,0.8,0.9,0,0,0,0];
 myvect = [myvect,0.8,0.9,0.1,0.1,0.1,0];
-formed = [formed,1,1,0,0,0,1];
+formed = [formed,1,1,0,0,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,2,7,7];
 
 # 401 - before 2025-09-29-13Z - ghost,Priscilla,ghost,Octave
@@ -2622,7 +2623,7 @@ leadtime = [leadtime,2,7,7,2,7,7];
 
 nhcvect = [nhcvect,0,0.4,0.1,0.1,0.8,0.9];
 myvect = [myvect,0.1,0.4,0.1,0.1,0.8,0.9];
-formed = [formed,0,1,0,0,1,1];
+formed = [formed,0,1,0,0,1,1]; # post-season analysis
 leadtime = [leadtime,7,7,2,7,2,7];
 
 # 402 - before 2025-10-01-01Z - Priscilla,Jerry
@@ -2630,23 +2631,23 @@ leadtime = [leadtime,7,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.1,0.8,0];
 myvect = [myvect,0.1,0.8,0];
-formed = [formed,0,1,1];
+formed = [formed,0,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
-# 403 - before 2025-10-02-19Z - Jerry,ghost,Priscilla,Raymond
+# 403 - before 2025-10-02-19Z - Jerry,ghost,Priscilla,Raymond,Karen
 # my at https://x.com/elioeFIN/status/1973803534245118451
 
-nhcvect = [nhcvect,0.2,0.1,0.1,0.7,0.9,0];
-myvect = [myvect,0.3,0.1,0.1,0.7,0.9,0.1];
-formed = [formed,1,0,0,1,1,1];
-leadtime = [leadtime,7,2,7,2,7,7];
+nhcvect = [nhcvect,0.2,0.1,0.1,0.7,0.9,0,0];
+myvect = [myvect,0.3,0.1,0.1,0.7,0.9,0.1,0];
+formed = [formed,1,0,0,1,1,1,1]; # post-season analysis
+leadtime = [leadtime,7,2,7,2,7,7,7];
 
 # 404 - before 2025-10-03-19Z - Jerry,ghost,Raymond,Priscilla,Karen
 # my at https://x.com/elioeFIN/status/1974169082879750456
 
 nhcvect = [nhcvect,0.5,0.1,0.1,0,0.3,0.9,0.9,0];
 myvect = [myvect,0.6,0.1,0.1,0.1,0.5,0.9,0.9,0];
-formed = [formed,1,0,0,0,1,1,1,1];
+formed = [formed,1,0,0,0,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,7,2,7,2,7,2,7,7];
 
 # 405 - before 2025-10-04-19Z - Jerry,97L,Raymond,Priscilla,Karen
@@ -2654,7 +2655,7 @@ leadtime = [leadtime,7,2,7,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.1,0.6,0,0,0.6,1,1,0];
 myvect = [myvect,0.1,0.7,0.1,0.1,0.7,1,1,0];
-formed = [formed,0,1,0,0,1,1,1,1];
+formed = [formed,0,1,0,0,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,2,7,2,7,7];
 
 # 406 - before 2025-10-06-01Z - Jerry,Raymond,Karen
@@ -2662,7 +2663,7 @@ leadtime = [leadtime,2,7,7,2,7,2,7,7];
 
 nhcvect = [nhcvect,0.5,0.7,0.6,0];
 myvect = [myvect,0.5,0.7,0.7,0];
-formed = [formed,1,1,1,1];
+formed = [formed,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 407 - before 2025-10-08-01Z - ghost,Raymond,Karen,Lorenzo
@@ -2670,7 +2671,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.1,0.1,0.5,0.8,0,0,0];
 myvect = [myvect,0.1,0.1,0.5,0.9,0,0,0];
-formed = [formed,0,0,1,1,1,1,1];
+formed = [formed,0,0,1,1,1,1,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,2,7,7];
 
 # 408 - before 2025-10-10-19Z - 91E,Lorenzo
@@ -2678,7 +2679,7 @@ leadtime = [leadtime,2,7,2,7,2,7,7];
 
 nhcvect = [nhcvect,0,0];
 myvect = [myvect,0.1,0];
-formed = [formed,0,1];
+formed = [formed,0,1]; # post-season analysis
 leadtime = [leadtime,7,7];
 
 # 409 - before 2025-10-11-19Z - Lorenzo,Melissa,91E
@@ -2686,7 +2687,7 @@ leadtime = [leadtime,7,7];
 
 nhcvect = [nhcvect,0.2,0.4,0,0.3];
 myvect = [myvect,0.2,0.4,0.1,0.4];
-formed = [formed,1,1,0,0];
+formed = [formed,1,1,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7];
 
 # 410 - before 2025-10-13-01Z - Lorenzo,Melissa,ghost,91E
@@ -2694,7 +2695,7 @@ leadtime = [leadtime,2,7,7,7];
 
 nhcvect = [nhcvect,0.6,0.7,0,0,0.4];
 myvect = [myvect,0.6,0.7,0.1,0.1,0.4];
-formed = [formed,1,1,0,0,0];
+formed = [formed,1,1,0,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,7,7,7];
 
 # 411 - before 2025-10-14-19Z - 91E,Melissa
@@ -2702,7 +2703,7 @@ leadtime = [leadtime,2,7,7,7,7];
 
 nhcvect = [nhcvect,0.2,0.6,0];
 myvect = [myvect,0.3,0.7,0];
-formed = [formed,0,0,1];
+formed = [formed,0,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,7];
 
 # 412 - before 2025-10-15-19Z - ghost,Melissa,91E
@@ -2710,7 +2711,7 @@ leadtime = [leadtime,2,7,7];
 
 nhcvect = [nhcvect,0,0,0.4,0.6];
 myvect = [myvect,0.1,0.1,0.4,0.7];
-formed = [formed,0,1,0,0];
+formed = [formed,0,1,0,0]; # post-season analysis
 leadtime = [leadtime,7,7,2,7];
 
 # 413 - before 2025-10-17-01Z - ghost,Melissa,91E
@@ -2718,7 +2719,7 @@ leadtime = [leadtime,7,7,2,7];
 
 nhcvect = [nhcvect,0.1,0.1,0.1,0.3,0.5,0.5];
 myvect = [myvect,0.1,0.2,0.1,0.4,0.5,0.5];
-formed = [formed,0,0,0,1,0,0];
+formed = [formed,0,0,0,1,0,0]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,2,7];
 
 # 414 - before 2025-10-18-19Z - ghost,Melissa,Sonia
@@ -2726,7 +2727,7 @@ leadtime = [leadtime,2,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.1,0.1,0.1,0.3,0.1,0.2];
 myvect = [myvect,0.1,0.1,0.1,0.4,0.1,0.2];
-formed = [formed,0,0,0,1,0,1];
+formed = [formed,0,0,0,1,0,1]; # post-season analysis
 leadtime = [leadtime,2,7,2,7,2,7];
 
 # 415 - before 2025-10-30-19Z - nothing projected/formed in NHC AOR
@@ -2737,7 +2738,7 @@ leadtime = [leadtime,2,7,2,7,2,7];
 
 nhcvect = [nhcvect,0.1,0.1];
 myvect = [myvect,0.1,0.1];
-formed = [formed,0,0];
+formed = [formed,0,0]; # post-season analysis
 leadtime = [leadtime,2,7];
 
 # 417 - before 2025-11-06-19Z - ghost
@@ -2745,7 +2746,7 @@ leadtime = [leadtime,2,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 418 - before 2025-11-07-19Z - ghost
@@ -2753,7 +2754,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.2];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 419 - before 2025-11-08-19Z - nothing projected/formed in NHC AOR
@@ -2764,7 +2765,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 421 - before 2025-11-11-19Z - nothing projected/formed in NHC AOR
@@ -2775,7 +2776,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 423 - before 2025-11-14-19Z - nothing projected/formed in NHC AOR
@@ -2834,7 +2835,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 441 - before 2025-12-15-01Z - ghost
@@ -2842,7 +2843,7 @@ leadtime = [leadtime,7];
 
 nhcvect = [nhcvect,0];
 myvect = [myvect,0.1];
-formed = [formed,0];
+formed = [formed,0]; # post-season analysis
 leadtime = [leadtime,7];
 
 # 442 - before 2025-12-17-01Z - nothing projected/formed in NHC AOR
@@ -2859,6 +2860,101 @@ leadtime = [leadtime,7];
 
 # 446 - before 2025-12-24-19Z - nothing projected/formed in NHC AOR
 # my at https://x.com/elioeFIN/status/2003891378519236854
+
+# 447 - before 2026-01-02-19Z - Francis/Ulli
+# my at https://x.com/elioeFIN/status/2007149367577415854
+
+nhcvect = [nhcvect,0,0];
+myvect = [myvect,0.1,0.1];
+formed = [formed,x5,x5];
+leadtime = [leadtime,2,7];
+
+# 448 - before 2026-01-04-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2007882812805030130
+
+# 449 - before 2026-01-09-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2009682772055539949
+
+# 450 - before 2026-01-11-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2010403019284746480
+
+# 451 - before 2026-01-13-13Z - ghost
+# my at https://x.com/elioeFIN/status/2011048180029231130
+
+nhcvect = [nhcvect,0];
+myvect = [myvect,0.1];
+formed = [formed,0];
+leadtime = [leadtime,7];
+
+# 452 - before 2026-01-20-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2013674021531926991
+
+# 453 - before 2026-01-23-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2014761919886901253
+
+# 454 - before 2026-01-24-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2015124564032848379
+
+# 455 - before 2026-01-26-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2015569680035938557
+
+# 456 - before 2026-01-27-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2016202739512959105
+
+# 457 - before 2026-01-29-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2016654041015550251
+
+# 458 - before 2026-01-31-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2017648601552286026
+
+# 459 - before 2026-02-02-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2018376065173835903
+
+# 460 - before 2026-02-19-13Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2024437628246859904
+
+# 461 - before 2026-02-21-13Z - ghost
+# my at https://x.com/elioeFIN/status/2025178253481087378
+
+nhcvect = [nhcvect,0];
+myvect = [myvect,0.1];
+formed = [formed,0];
+leadtime = [leadtime,7];
+
+# 462 - before 2026-02-22-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2025611805989441742
+
+# 463 - before 2026-02-26-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2027067256144900174
+
+# 464 - before 2026-02-28-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2027807668467863971
+
+# 465 - before 2026-03-10-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2031428715960279091
+
+# 466 - before 2026-03-23-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2036133752200380738
+
+# 467 - before 2026-03-27-13Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2037490841221005430
+
+# 468 - before 2026-03-28-13Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2037861111609909672
+
+# 469 - before 2026-03-29-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2038305965741641947
+
+# 470 - before 2026-03-31-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2039010245851148589
+
+# 471 - before 2026-04-22-01Z - ?
+# my at https://x.com/elioeFIN/status/2046741536642130342
+
+nhcvect = [nhcvect,];
+myvect = [myvect,];
+formed = [formed,];
+leadtime = [leadtime,];
 
 
 
