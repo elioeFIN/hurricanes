@@ -5,11 +5,11 @@ leadtime = [];
 
 # uncertain if formed or not:
 
-x1=1 ; # AOI in NAtl subtropics around April 24, 2024
-x2=1 ; # Invest 92L in June 2024
-x3=1 ; # Invest 96L in September 2024 (perhaps formed 2024/09/22/00)
-x4=1 ; # AOI in NAtl subtropics (perhaps formed 2024/12/21/12)
-x5=1 ; # Francis/Ulli near SW Spain (perhaps formed 2026/01/04/12)
+x1=0 ; # AOI in NAtl subtropics around April 24, 2024
+x2=0 ; # Invest 92L in June 2024
+x3=0 ; # Invest 96L in September 2024 (perhaps formed 2024/09/22/00)
+x4=0 ; # AOI in NAtl subtropics (perhaps formed 2024/12/21/12)
+x5=0 ; # Francis/Ulli near SW Spain (perhaps formed 2026/01/04/12)
 
 
 # 001 - before 2023-05-25-01Z - ghost
@@ -2948,13 +2948,288 @@ leadtime = [leadtime,7];
 # 470 - before 2026-03-31-19Z - nothing projected/formed in NHC AOR
 # my at https://x.com/elioeFIN/status/2039010245851148589
 
-# 471 - before 2026-04-22-01Z - ?
+# 471 - before 2026-04-22-01Z - ghost
 # my at https://x.com/elioeFIN/status/2046741536642130342
 
-nhcvect = [nhcvect,];
-myvect = [myvect,];
-formed = [formed,];
-leadtime = [leadtime,];
+nhcvect = [nhcvect,0];
+myvect = [myvect,0.1];
+formed = [formed,0];
+leadtime = [leadtime,7];
+
+# 472 - before 2026-04-23-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2047375780351475838
+
+# 473 - before 2026-04-25-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2047820835197522286
+
+# 474 - before 2026-04-27-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2048553311071023310
+
+# 475 - before 2026-04-28-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2049188528051859689
+
+# 476 - before 2026-04-29-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2049551720900899026
+
+# 477 - before 2026-05-01-13Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2050187129829961798
+
+# 478 - before 2026-05-02-19Z - ghost
+# my at https://x.com/elioeFIN/status/2050637369330520310
+
+nhcvect = [nhcvect,0];
+myvect = [myvect,0.2];
+formed = [formed,0];
+leadtime = [leadtime,7];
+
+# 479 - before 2026-05-04-01Z - ghost
+# my at https://x.com/elioeFIN/status/2051090310071976254
+
+nhcvect = [nhcvect,0];
+myvect = [myvect,0.1];
+formed = [formed,0];
+leadtime = [leadtime,7];
+
+# 480 - before 2026-05-05-13Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2051634453374517662
+
+# 481 - before 2026-05-09-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2053173464849097206
+
+# 482 - before 2026-05-11-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2053627005338296831
+
+# 483 - before 2026-05-12-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2054262764630069252
+
+# 484 - before 2026-05-14-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2054987264858493061
+
+# 485 - before 2026-05-16-13Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2055623193176486086
+
+# 486 - before 2026-05-17-19Z - ghost
+# my at https://x.com/elioeFIN/status/2056068404713300190
+
+nhcvect = [nhcvect,0];
+myvect = [myvect,0.1];
+formed = [formed,0];
+leadtime = [leadtime,7];
+
+# 487 - before 2026-05-18-19Z - ghost
+# my at https://x.com/elioeFIN/status/2056428278009749990
+
+nhcvect = [nhcvect,0];
+myvect = [myvect,0.1];
+formed = [formed,0];
+leadtime = [leadtime,7];
+
+# 488 - before 2026-05-20-01Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2056879022122889581
+
+# 489 - before 2026-05-21-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2057517258654548091
+
+# 490 - before 2026-05-23-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2058248080823099412
+
+# 491 - before 2026-05-24-19Z - ghost,Amanda
+# my at https://x.com/elioeFIN/status/2058608230054408261
+
+nhcvect = [nhcvect,0,0];
+myvect = [myvect,0.1,0.1];
+formed = [formed,0,0];
+leadtime = [leadtime,7,7];
+
+# 492 - before 2026-05-26-01Z - Amanda
+# my at https://x.com/elioeFIN/status/2059059360592982233
+
+nhcvect = [nhcvect,0];
+myvect = [myvect,0.1];
+formed = [formed,0];
+leadtime = [leadtime,7];
+
+# 493 - before 2026-05-28-19Z - Amanda
+# my at https://x.com/elioeFIN/status/2060056363816886367
+
+nhcvect = [nhcvect,0.4];
+myvect = [myvect,0.5];
+formed = [formed,1];
+leadtime = [leadtime,7];
+
+# 494 - before 2026-05-29-19Z - Amanda
+# my at https://x.com/elioeFIN/status/2060418015317967153
+
+nhcvect = [nhcvect,0.7];
+myvect = [myvect,0.8];
+formed = [formed,1];
+leadtime = [leadtime,7];
+
+# 495 - before 2026-06-01-01Z - Boris/Cristina,Amanda
+# my at https://x.com/elioeFIN/status/2061229928293474503
+
+nhcvect = [nhcvect,0.2,0.2,0.9];
+myvect = [myvect,0.3,0.3,0.9];
+formed = [formed,1,1,1];
+leadtime = [leadtime,7,2,7];
+
+# 496 - before 2026-06-03-01Z - Boris/Cristina,Cristina/Boris
+# my at https://x.com/elioeFIN/status/2061957142429503556
+
+nhcvect = [nhcvect,0.5,0];
+myvect = [myvect,0.6,0];
+formed = [formed,1,1];
+leadtime = [leadtime,7,7];
+
+# 497 - before 2026-06-04-19Z - Cristina,Boris
+# my at https://x.com/elioeFIN/status/2062595269007425789
+
+nhcvect = [nhcvect,0.1,0.7,0.2,0.8];
+myvect = [myvect,0.1,0.7,0.2,0.8];
+formed = [formed,0,1,0,1];
+leadtime = [leadtime,2,7,2,7];
+
+# 498 - before 2026-06-06-19Z - Arthur,Cristina,Boris
+# my at https://x.com/elioeFIN/status/2063315188342792306
+
+nhcvect = [nhcvect,0,0.7,0.7,0.7,0.7];
+myvect = [myvect,0.1,0.7,0.7,0.8,0.8];
+formed = [formed,0,1,1,1,1];
+leadtime = [leadtime,7,2,7,2,7];
+
+# 499 - before 2026-06-10-19Z - Arthur,ex-Amanda
+# my at https://x.com/elioeFIN/status/2064771732733329871
+
+nhcvect = [nhcvect,0.1,0,0];
+myvect = [myvect,0.2,0.1,0.2];
+formed = [formed,1,0,0];
+leadtime = [leadtime,7,2,7];
+
+# 500 - before 2026-06-12-01Z - Arthur,ex-Amanda
+# my at https://x.com/elioeFIN/status/2065223334615265712
+
+nhcvect = [nhcvect,0.1,0.1,0,0];
+myvect = [myvect,0.1,0.2,0.1,0.2];
+formed = [formed,0,1,0,0];
+leadtime = [leadtime,2,7,2,7];
+
+# 501 - before 2026-06-13-13Z - Arthur, ex-Amanda
+# my at https://x.com/elioeFIN/status/2065765591063908660
+
+nhcvect = [nhcvect,0.2,0.2,0.1,0.1];
+myvect = [myvect,0.2,0.2,0.1,0.1];
+formed = [formed,0,1,0,0];
+leadtime = [leadtime,2,7,2,7];
+
+# 502 - before 2026-06-15-01Z - Arthur,93E/ex-Amanda
+# my at https://x.com/elioeFIN/status/2066309130940199235
+
+nhcvect = [nhcvect,0.3,0.3,0.3];
+myvect = [myvect,0.3,0.3,0.3];
+formed = [formed,1,0,0];
+leadtime = [leadtime,7,2,7];
+
+# 503 - before 2026-06-17-19Z - nothing projected/formed in NHC AOR
+# my at https://x.com/elioeFIN/status/2067306283472949750
+
+# 504 - before 2026-06-19-01Z - ex-Arthur
+# my at https://x.com/elioeFIN/status/2067762077846921568
+
+# 505 - before 2026-06-22-13Z - ghost,94E
+# my at https://x.com/elioeFIN/status/2069032241020244011
+
+nhcvect = [nhcvect,0.3,0.1,0.2];
+myvect = [myvect,0.3,0.1,0.2];
+formed = [formed,0,0,0];
+leadtime = [leadtime,7,2,7];
+
+# 506 - before 2026-06-24-19Z - ghost,94E,Douglas,Bavi
+# my at https://x.com/elioeFIN/status/2069840075278430504
+
+nhcvect = [nhcvect,0,0.4,0.4,0.6,0,0];
+myvect = [myvect,0.1,0.4,0.4,0.6,0.1,0.1];
+formed = [formed,0,0,0,1,0,0];
+leadtime = [leadtime,7,2,7,7,2,7];
+
+# 507 - before 2026-06-25-19Z - ghost,Douglas
+# my at https://x.com/elioeFIN/status/2070206934053994520
+
+nhcvect = [nhcvect,0,0.8];
+myvect = [myvect,0.2,0.8];
+formed = [formed,0,1];
+leadtime = [leadtime,7,7];
+
+# 508 - before 2026-06-27-19Z - ghost,ghost,Douglas
+# my at https://x.com/elioeFIN/status/2070933636363272411
+
+nhcvect = [nhcvect,0.2,0,0.1,0.5];
+myvect = [myvect,0.2,0.1,0.1,0.5];
+formed = [formed,0,0,0,1];
+leadtime = [leadtime,7,7,2,7];
+
+# 509 - before 2026-06-29-19Z - ghost,ghost,Douglas
+# my at https://x.com/elioeFIN/status/2071657328697340406
+
+nhcvect = [nhcvect,0.1,0.1,0,0.6,0.7];
+myvect = [myvect,0.2,0.2,0.1,0.6,0.7];
+formed = [formed,0,0,0,1,1];
+leadtime = [leadtime,2,7,7,2,7];
+
+# 510 - before 2026-07-06-19Z - ghost,Elida,ghost,90C
+# my at https://x.com/elioeFIN/status/2074186530680111306
+
+nhcvect = [nhcvect,0,0,0,0];
+myvect = [myvect,0.1,0.1,0.1,0.1];
+formed = [formed,0,0,0,0];
+leadtime = [leadtime,7,7,7,7];
+
+# 511 - before 2026-07-09-01Z - ghost,Elida,91C,90C
+# my at https://x.com/elioeFIN/status/2075006528466170156
+
+nhcvect = [nhcvect,0,0.4,0.2,0.1,0.6];
+myvect = [myvect,0.1,0.5,0.2,0.1,0.6];
+formed = [formed,0,1,0,0,0];
+leadtime = [leadtime,7,7,7,2,7];
+
+# 512 - before 2026-07-10-13Z - ghost,Elida,ghost,91C,90C
+# my at https://x.com/elioeFIN/status/2075555622578249890
+
+nhcvect = [nhcvect,0,0.7,0.2,0.4,0.4,0.5];
+myvect = [myvect,0.1,0.7,0.3,0.4,0.4,0.5];
+formed = [formed,0,1,0,0,0,0];
+leadtime = [leadtime,7,7,7,7,2,7];
+
+# 513 - before 2026-07-12-13Z - ghost,ghost,Elida,Fausto,ghost,91C,90C
+# my at https://x.com/elioeFIN/status/2076281659096236350
+
+nhcvect = [nhcvect,0,0,0.4,0.9,0.3,0.2,0.2,0.1,0.3,0.1,0.2];
+myvect = [myvect,0.1,0.1,0.4,0.9,0.4,0.2,0.2,0.2,0.4,0.1,0.4];
+formed = [formed,0,0,0,1,1,0,0,0,0,0,0];
+leadtime = [leadtime,7,7,2,7,7,2,7,2,7,2,7];
+
+# 514 - before 2026-07-16-01Z - ghost,ghost,Bertha,Fausto,ghost,91C,90C
+# my at https://x.com/elioeFIN/status/2077538871496085832
+
+nhcvect = [nhcvect,0.1,0.1,0,0.2,0,0.8,0,0.1,0.1,0.5,0.5];
+myvect = [myvect,0.2,0.2,0.2,0.2,0.1,0.8,0.1,0.1,0.2,0.5,0.5];
+formed = [formed,0,0,0,1,0,1,0,0,0,0,0];
+leadtime = [leadtime,2,7,7,7,2,7,7,2,7,2,7];
+
+# 515 - before 2026-07-17-19Z - ghost,ghost,Bertha,Genevieve,Fausto,ghost
+# my at https://x.com/elioeFIN/status/2078179232488804564
+
+nhcvect = [nhcvect,0.1,0.1,0,0.1,0.3,0.2,0.7,0.9,0];
+myvect = [myvect,0.1,0.1,0.1,0.1,0.3,0.3,0.7,0.9,0.1];
+formed = [formed,0,0,0,1,1,1,1,1,0];
+leadtime = [leadtime,2,7,7,2,7,7,2,7,7];
+
+# 516 - before 2026-08-01-19Z - ghost,ghost
+# my at https://x.com/elioeFIN/status/2083610108970377577
+
+nhcvect = [nhcvect,0,0];
+myvect = [myvect,0.1,0.1];
+formed = [formed,0,0];
+leadtime = [leadtime,7,7];
 
 
 
